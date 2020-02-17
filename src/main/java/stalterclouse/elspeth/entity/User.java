@@ -23,6 +23,9 @@ public class User {
     @Column(name = "username")
     private String username;
 
+    @Column(name = "password")
+    private String password;
+
     @Column(name = "first_name")
     private String firstName;
 
@@ -48,6 +51,18 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
+
+    public User(String username, String password, String firstName, String lastName, String instrument, String skillLevel, int practiceCounter, LocalDate birthDate, int studioSize) {
+        this.username = username;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.instrument = instrument;
+        this.skillLevel = skillLevel;
+        this.practiceCounter = practiceCounter;
+        this.birthDate = birthDate;
+        this.studioSize = studioSize;
+    }
 
     /**
      * Calculates a user's age based on their date of birth
