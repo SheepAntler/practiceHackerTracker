@@ -73,9 +73,7 @@ class UserDaoTest {
         assertNotEquals(0,id);
         User insertedUser = dao.getById(id);
         assertEquals("brandNew", insertedUser.getUsername());
-        // Could continue comparing all values, but
-        // it may make sense to use .equals()
-        // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
+        //assertSame(newUser, insertedUser);
     }
 
     /**
@@ -101,7 +99,7 @@ class UserDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<User> users = dao.getByPropertyLike("instrument", "flugelhorn");
+        List<User> users = dao.getByPropertyEqual("instrument", "flugelhorn");
         assertEquals(1, users.size());
         assertEquals(4, users.get(0).getId());
     }

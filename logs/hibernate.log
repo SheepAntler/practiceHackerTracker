@@ -1,298 +1,298 @@
-[DEBUG] 2020-02-17 06:43:46.059 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
-[DEBUG] 2020-02-17 06:43:46.064 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
-[DEBUG] 2020-02-17 06:43:46.068 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
-[INFO ] 2020-02-17 06:43:46.156 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
-[DEBUG] 2020-02-17 06:43:46.164 [main] Environment - HHH000206: hibernate.properties not found
-[DEBUG] 2020-02-17 06:43:46.547 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
-[DEBUG] 2020-02-17 06:43:46.547 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
-[DEBUG] 2020-02-17 06:43:46.560 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
-[DEBUG] 2020-02-17 06:43:47.097 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
-[DEBUG] 2020-02-17 06:43:47.138 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
-[DEBUG] 2020-02-17 06:43:47.139 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
-[INFO ] 2020-02-17 06:43:47.156 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-[DEBUG] 2020-02-17 06:43:47.196 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@e93f3d5
-[DEBUG] 2020-02-17 06:43:47.196 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@e93f3d5
-[DEBUG] 2020-02-17 06:43:47.196 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@e93f3d5
-[DEBUG] 2020-02-17 06:43:47.197 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@7180e701
-[DEBUG] 2020-02-17 06:43:47.198 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@73eb8672
-[DEBUG] 2020-02-17 06:43:47.199 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@5a865416
-[DEBUG] 2020-02-17 06:43:47.200 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@5baaae4c
-[DEBUG] 2020-02-17 06:43:47.200 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@5baaae4c
-[DEBUG] 2020-02-17 06:43:47.200 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@5baaae4c
-[DEBUG] 2020-02-17 06:43:47.201 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@72ab05ed
-[DEBUG] 2020-02-17 06:43:47.201 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@72ab05ed
-[DEBUG] 2020-02-17 06:43:47.202 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@72ab05ed
-[DEBUG] 2020-02-17 06:43:47.203 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@6b7d1df8
-[DEBUG] 2020-02-17 06:43:47.203 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@6b7d1df8
-[DEBUG] 2020-02-17 06:43:47.203 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@6b7d1df8
-[DEBUG] 2020-02-17 06:43:47.204 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@23eee4b8
-[DEBUG] 2020-02-17 06:43:47.204 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@23eee4b8
-[DEBUG] 2020-02-17 06:43:47.204 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@23eee4b8
-[DEBUG] 2020-02-17 06:43:47.205 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@23cd4ff2
-[DEBUG] 2020-02-17 06:43:47.205 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@23cd4ff2
-[DEBUG] 2020-02-17 06:43:47.205 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@23cd4ff2
-[DEBUG] 2020-02-17 06:43:47.206 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@12477988
-[DEBUG] 2020-02-17 06:43:47.206 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@12477988
-[DEBUG] 2020-02-17 06:43:47.206 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@12477988
-[DEBUG] 2020-02-17 06:43:47.207 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@22101c80
-[DEBUG] 2020-02-17 06:43:47.207 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@22101c80
-[DEBUG] 2020-02-17 06:43:47.207 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@22101c80
-[DEBUG] 2020-02-17 06:43:47.208 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@267bbe1a
-[DEBUG] 2020-02-17 06:43:47.208 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@267bbe1a
-[DEBUG] 2020-02-17 06:43:47.209 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@60f2e0bd
-[DEBUG] 2020-02-17 06:43:47.209 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@60f2e0bd
-[DEBUG] 2020-02-17 06:43:47.210 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@53667cbe
-[DEBUG] 2020-02-17 06:43:47.210 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@53667cbe
-[DEBUG] 2020-02-17 06:43:47.211 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@464a4442
-[DEBUG] 2020-02-17 06:43:47.211 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@4303b7f0
-[DEBUG] 2020-02-17 06:43:47.212 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@1450078a
-[DEBUG] 2020-02-17 06:43:47.212 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@1450078a
-[DEBUG] 2020-02-17 06:43:47.213 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@796d3c9f
-[DEBUG] 2020-02-17 06:43:47.213 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@796d3c9f
-[DEBUG] 2020-02-17 06:43:47.217 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@7ed9ae94
-[DEBUG] 2020-02-17 06:43:47.217 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@7ed9ae94
-[DEBUG] 2020-02-17 06:43:47.219 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@4b6ac111
-[DEBUG] 2020-02-17 06:43:47.219 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@4b6ac111
-[DEBUG] 2020-02-17 06:43:47.220 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@5491f68b
-[DEBUG] 2020-02-17 06:43:47.220 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@5491f68b
-[DEBUG] 2020-02-17 06:43:47.221 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@54dcbb9f
-[DEBUG] 2020-02-17 06:43:47.221 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@54dcbb9f
-[DEBUG] 2020-02-17 06:43:47.223 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5f78de22
-[DEBUG] 2020-02-17 06:43:47.223 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5f78de22
-[DEBUG] 2020-02-17 06:43:47.224 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@bcb09a6
-[DEBUG] 2020-02-17 06:43:47.224 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@bcb09a6
-[DEBUG] 2020-02-17 06:43:47.226 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@3b152928
-[DEBUG] 2020-02-17 06:43:47.226 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@3b152928
-[DEBUG] 2020-02-17 06:43:47.228 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@70325d20
-[DEBUG] 2020-02-17 06:43:47.228 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@70325d20
-[DEBUG] 2020-02-17 06:43:47.229 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@187eb9a8
-[DEBUG] 2020-02-17 06:43:47.229 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@187eb9a8
-[DEBUG] 2020-02-17 06:43:47.233 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@63429932
-[DEBUG] 2020-02-17 06:43:47.233 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@63429932
-[DEBUG] 2020-02-17 06:43:47.233 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@63429932
-[DEBUG] 2020-02-17 06:43:47.235 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@18fdb6cf
-[DEBUG] 2020-02-17 06:43:47.236 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@4463d9d3
-[DEBUG] 2020-02-17 06:43:47.237 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@4463d9d3
-[DEBUG] 2020-02-17 06:43:47.237 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@4463d9d3
-[DEBUG] 2020-02-17 06:43:47.238 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@13d186db
-[DEBUG] 2020-02-17 06:43:47.239 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@7b60c3e
-[DEBUG] 2020-02-17 06:43:47.239 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@7b60c3e
-[DEBUG] 2020-02-17 06:43:47.241 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@2adddc06
-[DEBUG] 2020-02-17 06:43:47.242 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@2adddc06
-[DEBUG] 2020-02-17 06:43:47.243 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@6a714237
-[DEBUG] 2020-02-17 06:43:47.243 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6a714237
-[DEBUG] 2020-02-17 06:43:47.244 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@35c09b94
-[DEBUG] 2020-02-17 06:43:47.244 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@35c09b94
-[DEBUG] 2020-02-17 06:43:47.245 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@17ae7628
-[DEBUG] 2020-02-17 06:43:47.248 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@17ae7628
-[DEBUG] 2020-02-17 06:43:47.249 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@66434cc8
-[DEBUG] 2020-02-17 06:43:47.254 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@29182679
-[DEBUG] 2020-02-17 06:43:47.254 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@29182679
-[DEBUG] 2020-02-17 06:43:47.254 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@29182679
-[DEBUG] 2020-02-17 06:43:47.256 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@682c1e93
-[DEBUG] 2020-02-17 06:43:47.256 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@682c1e93
-[DEBUG] 2020-02-17 06:43:47.256 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@682c1e93
-[DEBUG] 2020-02-17 06:43:47.257 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@715fb77
-[DEBUG] 2020-02-17 06:43:47.258 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@3e9803c2
-[DEBUG] 2020-02-17 06:43:47.258 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@7808fb9
-[DEBUG] 2020-02-17 06:43:47.259 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@7808fb9
-[DEBUG] 2020-02-17 06:43:47.259 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@7808fb9
-[DEBUG] 2020-02-17 06:43:47.260 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@a567e72
-[DEBUG] 2020-02-17 06:43:47.260 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@a567e72
-[DEBUG] 2020-02-17 06:43:47.260 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@a567e72
-[DEBUG] 2020-02-17 06:43:47.260 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@72805168
-[DEBUG] 2020-02-17 06:43:47.261 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@7c211fd0
-[DEBUG] 2020-02-17 06:43:47.262 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@3703bf3c
-[DEBUG] 2020-02-17 06:43:47.263 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@3703bf3c
-[DEBUG] 2020-02-17 06:43:47.263 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@278f8425
-[DEBUG] 2020-02-17 06:43:47.265 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@4bdcaf36
-[DEBUG] 2020-02-17 06:43:47.266 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@4bdcaf36
-[DEBUG] 2020-02-17 06:43:47.267 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@5e742e4
-[DEBUG] 2020-02-17 06:43:47.267 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@5e742e4
-[DEBUG] 2020-02-17 06:43:47.268 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@71c905a3
-[DEBUG] 2020-02-17 06:43:47.268 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@247667dd
-[DEBUG] 2020-02-17 06:43:47.269 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@458544e0
-[DEBUG] 2020-02-17 06:43:47.273 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@21f9277b
-[DEBUG] 2020-02-17 06:43:47.273 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@21f9277b
-[DEBUG] 2020-02-17 06:43:47.274 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@3a095ec0
-[DEBUG] 2020-02-17 06:43:47.274 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@4f20a5e0
-[DEBUG] 2020-02-17 06:43:47.274 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@54da32dc
-[DEBUG] 2020-02-17 06:43:47.274 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@1d782abe
-[DEBUG] 2020-02-17 06:43:47.274 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@6df7988f
-[DEBUG] 2020-02-17 06:43:47.275 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@27b22f74
-[DEBUG] 2020-02-17 06:43:47.275 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@22fba58c
-[DEBUG] 2020-02-17 06:43:47.275 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@7e8a46b7
-[DEBUG] 2020-02-17 06:43:47.317 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
-[DEBUG] 2020-02-17 06:43:47.318 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
-[DEBUG] 2020-02-17 06:43:47.318 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
-[DEBUG] 2020-02-17 06:43:47.319 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
-[DEBUG] 2020-02-17 06:43:47.319 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
-[DEBUG] 2020-02-17 06:43:47.320 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
-[DEBUG] 2020-02-17 06:43:47.320 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
-[DEBUG] 2020-02-17 06:43:47.321 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
-[DEBUG] 2020-02-17 06:43:47.323 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
-[DEBUG] 2020-02-17 06:43:47.323 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
-[DEBUG] 2020-02-17 06:43:47.324 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
-[DEBUG] 2020-02-17 06:43:47.324 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
-[DEBUG] 2020-02-17 06:43:47.324 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
-[DEBUG] 2020-02-17 06:43:47.325 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
-[INFO ] 2020-02-17 06:43:47.330 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_practiceHacker
-[INFO ] 2020-02-17 06:43:47.330 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
-[INFO ] 2020-02-17 06:43:47.330 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
-[INFO ] 2020-02-17 06:43:47.444 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
-[DEBUG] 2020-02-17 06:43:48.148 [main] JdbcEnvironmentInitiator - Database ->
+[DEBUG] 2020-02-17 06:59:34.961 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2020-02-17 06:59:34.980 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2020-02-17 06:59:34.987 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2020-02-17 06:59:35.161 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2020-02-17 06:59:35.166 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2020-02-17 06:59:35.495 [main] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2020-02-17 06:59:35.495 [main] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2020-02-17 06:59:35.504 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2020-02-17 06:59:35.830 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2020-02-17 06:59:35.869 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2020-02-17 06:59:35.870 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2020-02-17 06:59:35.890 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2020-02-17 06:59:35.927 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@469d003c
+[DEBUG] 2020-02-17 06:59:35.927 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@469d003c
+[DEBUG] 2020-02-17 06:59:35.927 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@469d003c
+[DEBUG] 2020-02-17 06:59:35.928 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@e8fadb0
+[DEBUG] 2020-02-17 06:59:35.929 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@6eafb10e
+[DEBUG] 2020-02-17 06:59:35.930 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@3bc735b3
+[DEBUG] 2020-02-17 06:59:35.931 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@4642b71d
+[DEBUG] 2020-02-17 06:59:35.931 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@4642b71d
+[DEBUG] 2020-02-17 06:59:35.931 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@4642b71d
+[DEBUG] 2020-02-17 06:59:35.932 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@3eb631b8
+[DEBUG] 2020-02-17 06:59:35.933 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@3eb631b8
+[DEBUG] 2020-02-17 06:59:35.933 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@3eb631b8
+[DEBUG] 2020-02-17 06:59:35.934 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@6ef7623
+[DEBUG] 2020-02-17 06:59:35.935 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@6ef7623
+[DEBUG] 2020-02-17 06:59:35.935 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@6ef7623
+[DEBUG] 2020-02-17 06:59:35.936 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@41477a6d
+[DEBUG] 2020-02-17 06:59:35.936 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@41477a6d
+[DEBUG] 2020-02-17 06:59:35.937 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@41477a6d
+[DEBUG] 2020-02-17 06:59:35.939 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@591fd34d
+[DEBUG] 2020-02-17 06:59:35.939 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@591fd34d
+[DEBUG] 2020-02-17 06:59:35.939 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@591fd34d
+[DEBUG] 2020-02-17 06:59:35.940 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@6ecd665
+[DEBUG] 2020-02-17 06:59:35.940 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@6ecd665
+[DEBUG] 2020-02-17 06:59:35.940 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@6ecd665
+[DEBUG] 2020-02-17 06:59:35.941 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@2a037324
+[DEBUG] 2020-02-17 06:59:35.943 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@2a037324
+[DEBUG] 2020-02-17 06:59:35.943 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@2a037324
+[DEBUG] 2020-02-17 06:59:35.944 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@4d8539de
+[DEBUG] 2020-02-17 06:59:35.944 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@4d8539de
+[DEBUG] 2020-02-17 06:59:35.945 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@a619c2
+[DEBUG] 2020-02-17 06:59:35.945 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@a619c2
+[DEBUG] 2020-02-17 06:59:35.946 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@5173200b
+[DEBUG] 2020-02-17 06:59:35.946 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@5173200b
+[DEBUG] 2020-02-17 06:59:35.947 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@69b2f8e5
+[DEBUG] 2020-02-17 06:59:35.948 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@1a411233
+[DEBUG] 2020-02-17 06:59:35.949 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@3605c4d3
+[DEBUG] 2020-02-17 06:59:35.949 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@3605c4d3
+[DEBUG] 2020-02-17 06:59:35.950 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@1ee29c84
+[DEBUG] 2020-02-17 06:59:35.950 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@1ee29c84
+[DEBUG] 2020-02-17 06:59:35.957 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@732bb66d
+[DEBUG] 2020-02-17 06:59:35.957 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@732bb66d
+[DEBUG] 2020-02-17 06:59:35.959 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@1517f633
+[DEBUG] 2020-02-17 06:59:35.959 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@1517f633
+[DEBUG] 2020-02-17 06:59:35.961 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@312afbc7
+[DEBUG] 2020-02-17 06:59:35.961 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@312afbc7
+[DEBUG] 2020-02-17 06:59:35.962 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@2d7e1102
+[DEBUG] 2020-02-17 06:59:35.963 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@2d7e1102
+[DEBUG] 2020-02-17 06:59:35.964 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@6a74d228
+[DEBUG] 2020-02-17 06:59:35.964 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@6a74d228
+[DEBUG] 2020-02-17 06:59:35.966 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@6ac97b84
+[DEBUG] 2020-02-17 06:59:35.966 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@6ac97b84
+[DEBUG] 2020-02-17 06:59:35.968 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@38499e48
+[DEBUG] 2020-02-17 06:59:35.968 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@38499e48
+[DEBUG] 2020-02-17 06:59:35.970 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@75f2099
+[DEBUG] 2020-02-17 06:59:35.970 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@75f2099
+[DEBUG] 2020-02-17 06:59:35.971 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@5183d589
+[DEBUG] 2020-02-17 06:59:35.972 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@5183d589
+[DEBUG] 2020-02-17 06:59:35.973 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@11653e3b
+[DEBUG] 2020-02-17 06:59:35.974 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@11653e3b
+[DEBUG] 2020-02-17 06:59:35.974 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@11653e3b
+[DEBUG] 2020-02-17 06:59:35.976 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@16fe9c29
+[DEBUG] 2020-02-17 06:59:35.978 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@7808fb9
+[DEBUG] 2020-02-17 06:59:35.978 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@7808fb9
+[DEBUG] 2020-02-17 06:59:35.978 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@7808fb9
+[DEBUG] 2020-02-17 06:59:35.979 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@47c64cfe
+[DEBUG] 2020-02-17 06:59:35.980 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@34b9fc7d
+[DEBUG] 2020-02-17 06:59:35.980 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@34b9fc7d
+[DEBUG] 2020-02-17 06:59:35.982 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@588ffeb
+[DEBUG] 2020-02-17 06:59:35.982 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@588ffeb
+[DEBUG] 2020-02-17 06:59:35.983 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@34cf5a97
+[DEBUG] 2020-02-17 06:59:35.983 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@34cf5a97
+[DEBUG] 2020-02-17 06:59:35.984 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@6443b128
+[DEBUG] 2020-02-17 06:59:35.985 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@6443b128
+[DEBUG] 2020-02-17 06:59:36.002 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@61d01788
+[DEBUG] 2020-02-17 06:59:36.003 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@61d01788
+[DEBUG] 2020-02-17 06:59:36.004 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@69cac930
+[DEBUG] 2020-02-17 06:59:36.006 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@4e868ef5
+[DEBUG] 2020-02-17 06:59:36.006 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@4e868ef5
+[DEBUG] 2020-02-17 06:59:36.006 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@4e868ef5
+[DEBUG] 2020-02-17 06:59:36.008 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@afb5821
+[DEBUG] 2020-02-17 06:59:36.008 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@afb5821
+[DEBUG] 2020-02-17 06:59:36.009 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@afb5821
+[DEBUG] 2020-02-17 06:59:36.015 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@56ccd751
+[DEBUG] 2020-02-17 06:59:36.020 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@1d207fad
+[DEBUG] 2020-02-17 06:59:36.021 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@488b50ec
+[DEBUG] 2020-02-17 06:59:36.021 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@488b50ec
+[DEBUG] 2020-02-17 06:59:36.021 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@488b50ec
+[DEBUG] 2020-02-17 06:59:36.022 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@6d2d99fc
+[DEBUG] 2020-02-17 06:59:36.022 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@6d2d99fc
+[DEBUG] 2020-02-17 06:59:36.022 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@6d2d99fc
+[DEBUG] 2020-02-17 06:59:36.023 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@201aa8c1
+[DEBUG] 2020-02-17 06:59:36.024 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@4f20a5e0
+[DEBUG] 2020-02-17 06:59:36.026 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@4aac85fa
+[DEBUG] 2020-02-17 06:59:36.026 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@4aac85fa
+[DEBUG] 2020-02-17 06:59:36.027 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@30cecdca
+[DEBUG] 2020-02-17 06:59:36.028 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@43cf6ea3
+[DEBUG] 2020-02-17 06:59:36.028 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@43cf6ea3
+[DEBUG] 2020-02-17 06:59:36.030 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@2abc224d
+[DEBUG] 2020-02-17 06:59:36.031 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@2abc224d
+[DEBUG] 2020-02-17 06:59:36.031 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@60723d6a
+[DEBUG] 2020-02-17 06:59:36.031 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@ff6077
+[DEBUG] 2020-02-17 06:59:36.033 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@30135202
+[DEBUG] 2020-02-17 06:59:36.036 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@63e5e5b4
+[DEBUG] 2020-02-17 06:59:36.036 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@63e5e5b4
+[DEBUG] 2020-02-17 06:59:36.037 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@5e840abf
+[DEBUG] 2020-02-17 06:59:36.037 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@56de6d6b
+[DEBUG] 2020-02-17 06:59:36.037 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@5972d253
+[DEBUG] 2020-02-17 06:59:36.037 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@4fcc0416
+[DEBUG] 2020-02-17 06:59:36.037 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@31e32ea2
+[DEBUG] 2020-02-17 06:59:36.037 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@1473b8c0
+[DEBUG] 2020-02-17 06:59:36.037 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@5b5c0057
+[DEBUG] 2020-02-17 06:59:36.038 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@749f539e
+[DEBUG] 2020-02-17 06:59:36.068 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2020-02-17 06:59:36.069 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2020-02-17 06:59:36.070 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2020-02-17 06:59:36.070 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2020-02-17 06:59:36.073 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2020-02-17 06:59:36.075 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2020-02-17 06:59:36.075 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2020-02-17 06:59:36.076 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2020-02-17 06:59:36.077 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2020-02-17 06:59:36.077 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2020-02-17 06:59:36.078 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2020-02-17 06:59:36.078 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2020-02-17 06:59:36.078 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2020-02-17 06:59:36.079 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2020-02-17 06:59:36.090 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_practiceHacker
+[INFO ] 2020-02-17 06:59:36.090 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2020-02-17 06:59:36.092 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2020-02-17 06:59:36.278 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2020-02-17 06:59:36.969 [main] JdbcEnvironmentInitiator - Database ->
        name : MySQL
     version : 8.0.19
       major : 8
       minor : 0
-[DEBUG] 2020-02-17 06:43:48.149 [main] JdbcEnvironmentInitiator - Driver ->
+[DEBUG] 2020-02-17 06:59:36.973 [main] JdbcEnvironmentInitiator - Driver ->
        name : MySQL Connector/J
     version : mysql-connector-java-8.0.19 (Revision: a0ca826f5cdf51a98356fdfb1bf251eb042f80bf)
       major : 8
       minor : 0
-[DEBUG] 2020-02-17 06:43:48.149 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
-[INFO ] 2020-02-17 06:43:48.177 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-[DEBUG] 2020-02-17 06:43:48.191 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
-[DEBUG] 2020-02-17 06:43:48.224 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
-[DEBUG] 2020-02-17 06:43:48.312 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
-[DEBUG] 2020-02-17 06:43:48.318 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4a34e9f] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@6f6621e3]
-[DEBUG] 2020-02-17 06:43:48.363 [main] AnnotationBinder - Binding entity from annotated class: stalterclouse.elspeth.entity.User
-[DEBUG] 2020-02-17 06:43:48.384 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
-[DEBUG] 2020-02-17 06:43:48.395 [main] EntityBinder - Import with entity name User
-[DEBUG] 2020-02-17 06:43:48.401 [main] EntityBinder - Bind entity stalterclouse.elspeth.entity.User on table users
-[DEBUG] 2020-02-17 06:43:48.428 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=id, insertable=true, updatable=true, unique=false}
-[DEBUG] 2020-02-17 06:43:48.432 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
-[DEBUG] 2020-02-17 06:43:48.434 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:id]
-[DEBUG] 2020-02-17 06:43:48.436 [main] SimpleValueBinder - building SimpleValue for id
-[DEBUG] 2020-02-17 06:43:48.438 [main] PropertyBinder - Building property id
-[DEBUG] 2020-02-17 06:43:48.441 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
-[DEBUG] 2020-02-17 06:43:48.442 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=birth_date, insertable=true, updatable=true, unique=false}
-[DEBUG] 2020-02-17 06:43:48.442 [main] PropertyBinder - MetadataSourceProcessor property birthDate with lazy=false
-[DEBUG] 2020-02-17 06:43:48.443 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:birthDate]
-[DEBUG] 2020-02-17 06:43:48.443 [main] SimpleValueBinder - building SimpleValue for birthDate
-[DEBUG] 2020-02-17 06:43:48.443 [main] PropertyBinder - Building property birthDate
-[DEBUG] 2020-02-17 06:43:48.443 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
-[DEBUG] 2020-02-17 06:43:48.444 [main] PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
-[DEBUG] 2020-02-17 06:43:48.444 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:firstName]
-[DEBUG] 2020-02-17 06:43:48.444 [main] SimpleValueBinder - building SimpleValue for firstName
-[DEBUG] 2020-02-17 06:43:48.444 [main] PropertyBinder - Building property firstName
-[DEBUG] 2020-02-17 06:43:48.444 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=instrument, insertable=true, updatable=true, unique=false}
-[DEBUG] 2020-02-17 06:43:48.446 [main] PropertyBinder - MetadataSourceProcessor property instrument with lazy=false
-[DEBUG] 2020-02-17 06:43:48.448 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:instrument]
-[DEBUG] 2020-02-17 06:43:48.448 [main] SimpleValueBinder - building SimpleValue for instrument
-[DEBUG] 2020-02-17 06:43:48.448 [main] PropertyBinder - Building property instrument
-[DEBUG] 2020-02-17 06:43:48.448 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
-[DEBUG] 2020-02-17 06:43:48.450 [main] PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
-[DEBUG] 2020-02-17 06:43:48.450 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:lastName]
-[DEBUG] 2020-02-17 06:43:48.451 [main] SimpleValueBinder - building SimpleValue for lastName
-[DEBUG] 2020-02-17 06:43:48.451 [main] PropertyBinder - Building property lastName
-[DEBUG] 2020-02-17 06:43:48.452 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=password, insertable=true, updatable=true, unique=false}
-[DEBUG] 2020-02-17 06:43:48.452 [main] PropertyBinder - MetadataSourceProcessor property password with lazy=false
-[DEBUG] 2020-02-17 06:43:48.453 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:password]
-[DEBUG] 2020-02-17 06:43:48.453 [main] SimpleValueBinder - building SimpleValue for password
-[DEBUG] 2020-02-17 06:43:48.453 [main] PropertyBinder - Building property password
-[DEBUG] 2020-02-17 06:43:48.453 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=practice_counter, insertable=true, updatable=true, unique=false}
-[DEBUG] 2020-02-17 06:43:48.453 [main] PropertyBinder - MetadataSourceProcessor property practiceCounter with lazy=false
-[DEBUG] 2020-02-17 06:43:48.453 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:practiceCounter]
-[DEBUG] 2020-02-17 06:43:48.453 [main] SimpleValueBinder - building SimpleValue for practiceCounter
-[DEBUG] 2020-02-17 06:43:48.453 [main] PropertyBinder - Building property practiceCounter
-[DEBUG] 2020-02-17 06:43:48.454 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=skill_level, insertable=true, updatable=true, unique=false}
-[DEBUG] 2020-02-17 06:43:48.454 [main] PropertyBinder - MetadataSourceProcessor property skillLevel with lazy=false
-[DEBUG] 2020-02-17 06:43:48.455 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:skillLevel]
-[DEBUG] 2020-02-17 06:43:48.455 [main] SimpleValueBinder - building SimpleValue for skillLevel
-[DEBUG] 2020-02-17 06:43:48.455 [main] PropertyBinder - Building property skillLevel
-[DEBUG] 2020-02-17 06:43:48.455 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=studio_size, insertable=true, updatable=true, unique=false}
-[DEBUG] 2020-02-17 06:43:48.456 [main] PropertyBinder - MetadataSourceProcessor property studioSize with lazy=false
-[DEBUG] 2020-02-17 06:43:48.456 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:studioSize]
-[DEBUG] 2020-02-17 06:43:48.456 [main] SimpleValueBinder - building SimpleValue for studioSize
-[DEBUG] 2020-02-17 06:43:48.456 [main] PropertyBinder - Building property studioSize
-[DEBUG] 2020-02-17 06:43:48.457 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=username, insertable=true, updatable=true, unique=false}
-[DEBUG] 2020-02-17 06:43:48.457 [main] PropertyBinder - MetadataSourceProcessor property username with lazy=false
-[DEBUG] 2020-02-17 06:43:48.457 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:username]
-[DEBUG] 2020-02-17 06:43:48.457 [main] SimpleValueBinder - building SimpleValue for username
-[DEBUG] 2020-02-17 06:43:48.457 [main] PropertyBinder - Building property username
-[DEBUG] 2020-02-17 06:43:48.459 [main] SimpleValueBinder - Starting fillSimpleValue for id
-[DEBUG] 2020-02-17 06:43:48.460 [main] SimpleValueBinder - Starting fillSimpleValue for birthDate
-[DEBUG] 2020-02-17 06:43:48.460 [main] SimpleValueBinder - Starting fillSimpleValue for firstName
-[DEBUG] 2020-02-17 06:43:48.460 [main] SimpleValueBinder - Starting fillSimpleValue for instrument
-[DEBUG] 2020-02-17 06:43:48.462 [main] SimpleValueBinder - Starting fillSimpleValue for lastName
-[DEBUG] 2020-02-17 06:43:48.462 [main] SimpleValueBinder - Starting fillSimpleValue for password
-[DEBUG] 2020-02-17 06:43:48.463 [main] SimpleValueBinder - Starting fillSimpleValue for practiceCounter
-[DEBUG] 2020-02-17 06:43:48.463 [main] SimpleValueBinder - Starting fillSimpleValue for skillLevel
-[DEBUG] 2020-02-17 06:43:48.463 [main] SimpleValueBinder - Starting fillSimpleValue for studioSize
-[DEBUG] 2020-02-17 06:43:48.463 [main] SimpleValueBinder - Starting fillSimpleValue for username
-[DEBUG] 2020-02-17 06:43:48.465 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [users]
-[DEBUG] 2020-02-17 06:43:48.494 [main] SessionFactoryImpl - Building session factory
-[DEBUG] 2020-02-17 06:43:48.495 [main] Settings - SessionFactory name : null
-[DEBUG] 2020-02-17 06:43:48.496 [main] Settings - Automatic flush during beforeCompletion(): enabled
-[DEBUG] 2020-02-17 06:43:48.496 [main] Settings - Automatic session close at end of transaction: disabled
-[DEBUG] 2020-02-17 06:43:48.496 [main] Settings - Statistics: disabled
-[DEBUG] 2020-02-17 06:43:48.496 [main] Settings - Deleted entity synthetic identifier rollback: disabled
-[DEBUG] 2020-02-17 06:43:48.496 [main] Settings - Default entity-mode: pojo
-[DEBUG] 2020-02-17 06:43:48.496 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
-[DEBUG] 2020-02-17 06:43:48.496 [main] Settings - Allow initialization of lazy state outside session : disabled
-[DEBUG] 2020-02-17 06:43:48.496 [main] Settings - Using BatchFetchStyle : LEGACY
-[DEBUG] 2020-02-17 06:43:48.496 [main] Settings - Default batch fetch size: -1
-[DEBUG] 2020-02-17 06:43:48.496 [main] Settings - Maximum outer join fetch depth: 2
-[DEBUG] 2020-02-17 06:43:48.496 [main] Settings - Default null ordering: NONE
-[DEBUG] 2020-02-17 06:43:48.496 [main] Settings - Order SQL updates by primary key: disabled
-[DEBUG] 2020-02-17 06:43:48.496 [main] Settings - Order SQL inserts for batching: disabled
-[DEBUG] 2020-02-17 06:43:48.496 [main] Settings - multi-tenancy strategy : NONE
-[DEBUG] 2020-02-17 06:43:48.496 [main] Settings - JTA Track by Thread: enabled
-[DEBUG] 2020-02-17 06:43:48.497 [main] Settings - Query language substitutions: {}
-[DEBUG] 2020-02-17 06:43:48.497 [main] Settings - Named query checking : enabled
-[DEBUG] 2020-02-17 06:43:48.497 [main] Settings - Second-level cache: disabled
-[DEBUG] 2020-02-17 06:43:48.497 [main] Settings - Second-level query cache: disabled
-[DEBUG] 2020-02-17 06:43:48.497 [main] Settings - Second-level query cache factory: null
-[DEBUG] 2020-02-17 06:43:48.497 [main] Settings - Second-level cache region prefix: null
-[DEBUG] 2020-02-17 06:43:48.497 [main] Settings - Optimize second-level cache for minimal puts: disabled
-[DEBUG] 2020-02-17 06:43:48.497 [main] Settings - Structured second-level cache entries: disabled
-[DEBUG] 2020-02-17 06:43:48.497 [main] Settings - Second-level cache direct-reference entries: disabled
-[DEBUG] 2020-02-17 06:43:48.498 [main] Settings - Automatic eviction of collection cache: disabled
-[DEBUG] 2020-02-17 06:43:48.498 [main] Settings - JDBC batch size: 15
-[DEBUG] 2020-02-17 06:43:48.498 [main] Settings - JDBC batch updates for versioned data: enabled
-[DEBUG] 2020-02-17 06:43:48.498 [main] Settings - Scrollable result sets: enabled
-[DEBUG] 2020-02-17 06:43:48.498 [main] Settings - Wrap result sets: disabled
-[DEBUG] 2020-02-17 06:43:48.498 [main] Settings - JDBC3 getGeneratedKeys(): enabled
-[DEBUG] 2020-02-17 06:43:48.498 [main] Settings - JDBC result set fetch size: null
-[DEBUG] 2020-02-17 06:43:48.498 [main] Settings - Connection release mode: AFTER_TRANSACTION
-[DEBUG] 2020-02-17 06:43:48.498 [main] Settings - Generate SQL with comments: disabled
-[DEBUG] 2020-02-17 06:43:48.498 [main] Settings - JPA compliance - query : 
-[DEBUG] 2020-02-17 06:43:48.499 [main] Settings - JPA compliance - closed-handling : 
-[DEBUG] 2020-02-17 06:43:48.500 [main] Settings - JPA compliance - lists : 
-[DEBUG] 2020-02-17 06:43:48.501 [main] Settings - JPA compliance - transactions : 
-[INFO ] 2020-02-17 06:43:48.551 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
-[DEBUG] 2020-02-17 06:43:48.574 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
-[DEBUG] 2020-02-17 06:43:48.574 [main] SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=gnome, awt.toolkit=sun.awt.X11.XToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/home/student/intellij/lib/idea_rt.jar:/home/student/intellij/plugins/junit/lib/junit5-rt.jar:/home/student/intellij/plugins/junit/lib/junit-rt.jar:/home/student/IdeaProjects/practiceHackerTracker/practiceHackerTracker/target/test-classes:/home/student/IdeaProjects/practiceHackerTracker/practiceHackerTracker/target/classes:/home/student/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/home/student/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/home/student/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/home/student/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/home/student/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/student/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/student/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/home/student/.m2/repository/mysql/mysql-connector-java/8.0.19/mysql-connector-java-8.0.19.jar:/home/student/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/home/student/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/home/student/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/home/student/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/home/student/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/student/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/home/student/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/home/student/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/student/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/student/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/home/student/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/home/student/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/student/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/home/student/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/home/student/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/home/student/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/home/student/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/home/student/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/home/student/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/home/student/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/home/student/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar:/home/student/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar, java.vm.vendor=Ubuntu, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=https://ubuntu.com/, user.timezone=America/Chicago, os.name=Linux, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/usr/lib/jvm/java-11-openjdk-amd64/lib, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 stalterclouse.elspeth.persistence.UserDaoTest,getByPropertyEqualSuccess, jdk.debug=release, sun.cpu.endian=little, user.home=/home/student, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2020-01-14, java.home=/usr/lib/jvm/java-11-openjdk-amd64, file.separator=/, java.vm.compressedOopsMode=32-bit, line.separator=
-, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, connection.password=student, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.c3p0.max_size=20, java.runtime.version=11.0.6+10-post-Ubuntu-1ubuntu118.04.1, user.name=student, path.separator=:, hibernate.connection.username=****, os.version=5.3.0-28-generic, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/test_practiceHacker, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugs.launchpad.net/ubuntu/+source/openjdk-lts, java.io.tmpdir=/tmp, java.version=11.0.6, user.dir=/home/student/IdeaProjects/practiceHackerTracker/practiceHackerTracker, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@37468787, java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.vendor=Ubuntu, java.vm.info=mixed mode, sharing, java.vm.version=11.0.6+10-post-Ubuntu-1ubuntu118.04.1, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:mysql://localhost:3306/test_practiceHacker, java.class.version=55.0}
-[DEBUG] 2020-02-17 06:43:48.590 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
-[DEBUG] 2020-02-17 06:43:48.591 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
-[DEBUG] 2020-02-17 06:43:48.592 [main] SessionFactoryImpl - Instantiated session factory
-[DEBUG] 2020-02-17 06:43:48.592 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4a34e9f] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@862f408]
-[DEBUG] 2020-02-17 06:43:48.629 [main] ClassLoaderAccessImpl - Not known whether passed class name [stalterclouse.elspeth.entity.User] is safe
-[DEBUG] 2020-02-17 06:43:48.629 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : stalterclouse.elspeth.entity.User
-[DEBUG] 2020-02-17 06:43:48.653 [main] ClassLoaderAccessImpl - Not known whether passed class name [stalterclouse.elspeth.entity.User] is safe
-[DEBUG] 2020-02-17 06:43:48.653 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : stalterclouse.elspeth.entity.User
-[DEBUG] 2020-02-17 06:43:48.950 [main] AbstractEntityPersister - Static SQL for entity: stalterclouse.elspeth.entity.User
-[DEBUG] 2020-02-17 06:43:48.950 [main] AbstractEntityPersister -  Version select: select id from users where id =?
-[DEBUG] 2020-02-17 06:43:48.951 [main] AbstractEntityPersister -  Snapshot select: select user_.id, user_.birth_date as birth_da2_0_, user_.first_name as first_na3_0_, user_.instrument as instrume4_0_, user_.last_name as last_nam5_0_, user_.password as password6_0_, user_.practice_counter as practice7_0_, user_.skill_level as skill_le8_0_, user_.studio_size as studio_s9_0_, user_.username as usernam10_0_ from users user_ where user_.id=?
-[DEBUG] 2020-02-17 06:43:48.951 [main] AbstractEntityPersister -  Insert 0: insert into users (birth_date, first_name, instrument, last_name, password, practice_counter, skill_level, studio_size, username, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-[DEBUG] 2020-02-17 06:43:48.951 [main] AbstractEntityPersister -  Update 0: update users set birth_date=?, first_name=?, instrument=?, last_name=?, password=?, practice_counter=?, skill_level=?, studio_size=?, username=? where id=?
-[DEBUG] 2020-02-17 06:43:48.952 [main] AbstractEntityPersister -  Delete 0: delete from users where id=?
-[DEBUG] 2020-02-17 06:43:48.952 [main] AbstractEntityPersister -  Identity insert: insert into users (birth_date, first_name, instrument, last_name, password, practice_counter, skill_level, studio_size, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
-[DEBUG] 2020-02-17 06:43:48.971 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@52226e57]
-[DEBUG] 2020-02-17 06:43:48.972 [main] MetamodelGraphWalker - Visiting attribute path : birthDate
-[DEBUG] 2020-02-17 06:43:48.972 [main] MetamodelGraphWalker - Visiting attribute path : firstName
-[DEBUG] 2020-02-17 06:43:48.972 [main] MetamodelGraphWalker - Visiting attribute path : instrument
-[DEBUG] 2020-02-17 06:43:48.972 [main] MetamodelGraphWalker - Visiting attribute path : lastName
-[DEBUG] 2020-02-17 06:43:48.973 [main] MetamodelGraphWalker - Visiting attribute path : password
-[DEBUG] 2020-02-17 06:43:48.973 [main] MetamodelGraphWalker - Visiting attribute path : practiceCounter
-[DEBUG] 2020-02-17 06:43:48.973 [main] MetamodelGraphWalker - Visiting attribute path : skillLevel
-[DEBUG] 2020-02-17 06:43:48.973 [main] MetamodelGraphWalker - Visiting attribute path : studioSize
-[DEBUG] 2020-02-17 06:43:48.973 [main] MetamodelGraphWalker - Visiting attribute path : username
-[DEBUG] 2020-02-17 06:43:48.973 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
-[DEBUG] 2020-02-17 06:43:48.987 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
-[DEBUG] 2020-02-17 06:43:48.992 [main] LoadPlanTreePrinter - LoadPlan(entity=stalterclouse.elspeth.entity.User)
+[DEBUG] 2020-02-17 06:59:36.973 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2020-02-17 06:59:37.033 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2020-02-17 06:59:37.053 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2020-02-17 06:59:37.088 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2020-02-17 06:59:37.148 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2020-02-17 06:59:37.151 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@6dfcffb5] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@184fb68d]
+[DEBUG] 2020-02-17 06:59:37.233 [main] AnnotationBinder - Binding entity from annotated class: stalterclouse.elspeth.entity.User
+[DEBUG] 2020-02-17 06:59:37.260 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2020-02-17 06:59:37.266 [main] EntityBinder - Import with entity name User
+[DEBUG] 2020-02-17 06:59:37.269 [main] EntityBinder - Bind entity stalterclouse.elspeth.entity.User on table users
+[DEBUG] 2020-02-17 06:59:37.290 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-17 06:59:37.293 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2020-02-17 06:59:37.295 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:id]
+[DEBUG] 2020-02-17 06:59:37.297 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2020-02-17 06:59:37.299 [main] PropertyBinder - Building property id
+[DEBUG] 2020-02-17 06:59:37.302 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2020-02-17 06:59:37.304 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=birth_date, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-17 06:59:37.304 [main] PropertyBinder - MetadataSourceProcessor property birthDate with lazy=false
+[DEBUG] 2020-02-17 06:59:37.304 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:birthDate]
+[DEBUG] 2020-02-17 06:59:37.304 [main] SimpleValueBinder - building SimpleValue for birthDate
+[DEBUG] 2020-02-17 06:59:37.304 [main] PropertyBinder - Building property birthDate
+[DEBUG] 2020-02-17 06:59:37.305 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-17 06:59:37.305 [main] PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+[DEBUG] 2020-02-17 06:59:37.305 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:firstName]
+[DEBUG] 2020-02-17 06:59:37.305 [main] SimpleValueBinder - building SimpleValue for firstName
+[DEBUG] 2020-02-17 06:59:37.305 [main] PropertyBinder - Building property firstName
+[DEBUG] 2020-02-17 06:59:37.305 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=instrument, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-17 06:59:37.305 [main] PropertyBinder - MetadataSourceProcessor property instrument with lazy=false
+[DEBUG] 2020-02-17 06:59:37.305 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:instrument]
+[DEBUG] 2020-02-17 06:59:37.305 [main] SimpleValueBinder - building SimpleValue for instrument
+[DEBUG] 2020-02-17 06:59:37.306 [main] PropertyBinder - Building property instrument
+[DEBUG] 2020-02-17 06:59:37.306 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-17 06:59:37.306 [main] PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+[DEBUG] 2020-02-17 06:59:37.306 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:lastName]
+[DEBUG] 2020-02-17 06:59:37.306 [main] SimpleValueBinder - building SimpleValue for lastName
+[DEBUG] 2020-02-17 06:59:37.306 [main] PropertyBinder - Building property lastName
+[DEBUG] 2020-02-17 06:59:37.306 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=password, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-17 06:59:37.306 [main] PropertyBinder - MetadataSourceProcessor property password with lazy=false
+[DEBUG] 2020-02-17 06:59:37.306 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:password]
+[DEBUG] 2020-02-17 06:59:37.306 [main] SimpleValueBinder - building SimpleValue for password
+[DEBUG] 2020-02-17 06:59:37.306 [main] PropertyBinder - Building property password
+[DEBUG] 2020-02-17 06:59:37.307 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=practice_counter, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-17 06:59:37.307 [main] PropertyBinder - MetadataSourceProcessor property practiceCounter with lazy=false
+[DEBUG] 2020-02-17 06:59:37.307 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:practiceCounter]
+[DEBUG] 2020-02-17 06:59:37.307 [main] SimpleValueBinder - building SimpleValue for practiceCounter
+[DEBUG] 2020-02-17 06:59:37.307 [main] PropertyBinder - Building property practiceCounter
+[DEBUG] 2020-02-17 06:59:37.307 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=skill_level, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-17 06:59:37.307 [main] PropertyBinder - MetadataSourceProcessor property skillLevel with lazy=false
+[DEBUG] 2020-02-17 06:59:37.307 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:skillLevel]
+[DEBUG] 2020-02-17 06:59:37.307 [main] SimpleValueBinder - building SimpleValue for skillLevel
+[DEBUG] 2020-02-17 06:59:37.307 [main] PropertyBinder - Building property skillLevel
+[DEBUG] 2020-02-17 06:59:37.307 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=studio_size, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-17 06:59:37.307 [main] PropertyBinder - MetadataSourceProcessor property studioSize with lazy=false
+[DEBUG] 2020-02-17 06:59:37.307 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:studioSize]
+[DEBUG] 2020-02-17 06:59:37.308 [main] SimpleValueBinder - building SimpleValue for studioSize
+[DEBUG] 2020-02-17 06:59:37.308 [main] PropertyBinder - Building property studioSize
+[DEBUG] 2020-02-17 06:59:37.308 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(users), mappingColumn=username, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-02-17 06:59:37.308 [main] PropertyBinder - MetadataSourceProcessor property username with lazy=false
+[DEBUG] 2020-02-17 06:59:37.308 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [stalterclouse.elspeth.entity.User:username]
+[DEBUG] 2020-02-17 06:59:37.308 [main] SimpleValueBinder - building SimpleValue for username
+[DEBUG] 2020-02-17 06:59:37.308 [main] PropertyBinder - Building property username
+[DEBUG] 2020-02-17 06:59:37.310 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2020-02-17 06:59:37.311 [main] SimpleValueBinder - Starting fillSimpleValue for birthDate
+[DEBUG] 2020-02-17 06:59:37.311 [main] SimpleValueBinder - Starting fillSimpleValue for firstName
+[DEBUG] 2020-02-17 06:59:37.311 [main] SimpleValueBinder - Starting fillSimpleValue for instrument
+[DEBUG] 2020-02-17 06:59:37.311 [main] SimpleValueBinder - Starting fillSimpleValue for lastName
+[DEBUG] 2020-02-17 06:59:37.311 [main] SimpleValueBinder - Starting fillSimpleValue for password
+[DEBUG] 2020-02-17 06:59:37.311 [main] SimpleValueBinder - Starting fillSimpleValue for practiceCounter
+[DEBUG] 2020-02-17 06:59:37.311 [main] SimpleValueBinder - Starting fillSimpleValue for skillLevel
+[DEBUG] 2020-02-17 06:59:37.311 [main] SimpleValueBinder - Starting fillSimpleValue for studioSize
+[DEBUG] 2020-02-17 06:59:37.311 [main] SimpleValueBinder - Starting fillSimpleValue for username
+[DEBUG] 2020-02-17 06:59:37.313 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [users]
+[DEBUG] 2020-02-17 06:59:37.342 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2020-02-17 06:59:37.344 [main] Settings - SessionFactory name : null
+[DEBUG] 2020-02-17 06:59:37.344 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2020-02-17 06:59:37.344 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2020-02-17 06:59:37.344 [main] Settings - Statistics: disabled
+[DEBUG] 2020-02-17 06:59:37.344 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2020-02-17 06:59:37.344 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2020-02-17 06:59:37.344 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2020-02-17 06:59:37.344 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2020-02-17 06:59:37.344 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2020-02-17 06:59:37.345 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2020-02-17 06:59:37.345 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2020-02-17 06:59:37.345 [main] Settings - Default null ordering: NONE
+[DEBUG] 2020-02-17 06:59:37.345 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2020-02-17 06:59:37.345 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2020-02-17 06:59:37.345 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2020-02-17 06:59:37.345 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2020-02-17 06:59:37.345 [main] Settings - Query language substitutions: {}
+[DEBUG] 2020-02-17 06:59:37.345 [main] Settings - Named query checking : enabled
+[DEBUG] 2020-02-17 06:59:37.345 [main] Settings - Second-level cache: disabled
+[DEBUG] 2020-02-17 06:59:37.346 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2020-02-17 06:59:37.346 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2020-02-17 06:59:37.346 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2020-02-17 06:59:37.346 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2020-02-17 06:59:37.346 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2020-02-17 06:59:37.346 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2020-02-17 06:59:37.346 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2020-02-17 06:59:37.346 [main] Settings - JDBC batch size: 15
+[DEBUG] 2020-02-17 06:59:37.346 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2020-02-17 06:59:37.346 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2020-02-17 06:59:37.346 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2020-02-17 06:59:37.346 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2020-02-17 06:59:37.346 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2020-02-17 06:59:37.346 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2020-02-17 06:59:37.347 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2020-02-17 06:59:37.347 [main] Settings - JPA compliance - query : 
+[DEBUG] 2020-02-17 06:59:37.347 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2020-02-17 06:59:37.347 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2020-02-17 06:59:37.347 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2020-02-17 06:59:37.392 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2020-02-17 06:59:37.407 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2020-02-17 06:59:37.408 [main] SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=gnome, awt.toolkit=sun.awt.X11.XToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/home/student/intellij/lib/idea_rt.jar:/home/student/intellij/plugins/junit/lib/junit5-rt.jar:/home/student/intellij/plugins/junit/lib/junit-rt.jar:/home/student/IdeaProjects/practiceHackerTracker/practiceHackerTracker/target/test-classes:/home/student/IdeaProjects/practiceHackerTracker/practiceHackerTracker/target/classes:/home/student/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/home/student/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/home/student/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/home/student/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/home/student/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/student/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/student/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/home/student/.m2/repository/mysql/mysql-connector-java/8.0.19/mysql-connector-java-8.0.19.jar:/home/student/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/home/student/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/home/student/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/home/student/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/home/student/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/student/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/home/student/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/home/student/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/student/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/student/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/home/student/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/home/student/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/student/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/home/student/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/home/student/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/home/student/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/home/student/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/home/student/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/home/student/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/home/student/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/home/student/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar:/home/student/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar, java.vm.vendor=Ubuntu, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=https://ubuntu.com/, user.timezone=America/Chicago, os.name=Linux, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/usr/lib/jvm/java-11-openjdk-amd64/lib, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 stalterclouse.elspeth.persistence.UserDaoTest, jdk.debug=release, sun.cpu.endian=little, user.home=/home/student, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2020-01-14, java.home=/usr/lib/jvm/java-11-openjdk-amd64, file.separator=/, java.vm.compressedOopsMode=32-bit, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, connection.password=student, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.c3p0.max_size=20, java.runtime.version=11.0.6+10-post-Ubuntu-1ubuntu118.04.1, user.name=student, path.separator=:, hibernate.connection.username=****, os.version=5.3.0-28-generic, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/test_practiceHacker, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugs.launchpad.net/ubuntu/+source/openjdk-lts, java.io.tmpdir=/tmp, java.version=11.0.6, user.dir=/home/student/IdeaProjects/practiceHackerTracker/practiceHackerTracker, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@4a2929a4, java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.vendor=Ubuntu, java.vm.info=mixed mode, sharing, java.vm.version=11.0.6+10-post-Ubuntu-1ubuntu118.04.1, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:mysql://localhost:3306/test_practiceHacker, java.class.version=55.0}
+[DEBUG] 2020-02-17 06:59:37.433 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2020-02-17 06:59:37.433 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2020-02-17 06:59:37.434 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2020-02-17 06:59:37.434 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@6dfcffb5] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@54db056b]
+[DEBUG] 2020-02-17 06:59:37.495 [main] ClassLoaderAccessImpl - Not known whether passed class name [stalterclouse.elspeth.entity.User] is safe
+[DEBUG] 2020-02-17 06:59:37.495 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : stalterclouse.elspeth.entity.User
+[DEBUG] 2020-02-17 06:59:37.510 [main] ClassLoaderAccessImpl - Not known whether passed class name [stalterclouse.elspeth.entity.User] is safe
+[DEBUG] 2020-02-17 06:59:37.511 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : stalterclouse.elspeth.entity.User
+[DEBUG] 2020-02-17 06:59:37.820 [main] AbstractEntityPersister - Static SQL for entity: stalterclouse.elspeth.entity.User
+[DEBUG] 2020-02-17 06:59:37.820 [main] AbstractEntityPersister -  Version select: select id from users where id =?
+[DEBUG] 2020-02-17 06:59:37.820 [main] AbstractEntityPersister -  Snapshot select: select user_.id, user_.birth_date as birth_da2_0_, user_.first_name as first_na3_0_, user_.instrument as instrume4_0_, user_.last_name as last_nam5_0_, user_.password as password6_0_, user_.practice_counter as practice7_0_, user_.skill_level as skill_le8_0_, user_.studio_size as studio_s9_0_, user_.username as usernam10_0_ from users user_ where user_.id=?
+[DEBUG] 2020-02-17 06:59:37.821 [main] AbstractEntityPersister -  Insert 0: insert into users (birth_date, first_name, instrument, last_name, password, practice_counter, skill_level, studio_size, username, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2020-02-17 06:59:37.821 [main] AbstractEntityPersister -  Update 0: update users set birth_date=?, first_name=?, instrument=?, last_name=?, password=?, practice_counter=?, skill_level=?, studio_size=?, username=? where id=?
+[DEBUG] 2020-02-17 06:59:37.821 [main] AbstractEntityPersister -  Delete 0: delete from users where id=?
+[DEBUG] 2020-02-17 06:59:37.821 [main] AbstractEntityPersister -  Identity insert: insert into users (birth_date, first_name, instrument, last_name, password, practice_counter, skill_level, studio_size, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2020-02-17 06:59:37.841 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@467b0f6e]
+[DEBUG] 2020-02-17 06:59:37.842 [main] MetamodelGraphWalker - Visiting attribute path : birthDate
+[DEBUG] 2020-02-17 06:59:37.843 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2020-02-17 06:59:37.843 [main] MetamodelGraphWalker - Visiting attribute path : instrument
+[DEBUG] 2020-02-17 06:59:37.843 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2020-02-17 06:59:37.844 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2020-02-17 06:59:37.844 [main] MetamodelGraphWalker - Visiting attribute path : practiceCounter
+[DEBUG] 2020-02-17 06:59:37.844 [main] MetamodelGraphWalker - Visiting attribute path : skillLevel
+[DEBUG] 2020-02-17 06:59:37.844 [main] MetamodelGraphWalker - Visiting attribute path : studioSize
+[DEBUG] 2020-02-17 06:59:37.844 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2020-02-17 06:59:37.844 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-02-17 06:59:37.855 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-02-17 06:59:37.859 [main] LoadPlanTreePrinter - LoadPlan(entity=stalterclouse.elspeth.entity.User)
     - Returns
        - EntityReturnImpl(entity=stalterclouse.elspeth.entity.User, querySpaceUid=<gen:0>, path=stalterclouse.elspeth.entity.User)
     - QuerySpaces
@@ -301,20 +301,20 @@
           - alias suffix - 0_
           - suffixed key columns - {id1_0_0_}
 
-[DEBUG] 2020-02-17 06:43:48.997 [main] EntityLoader - Static select for entity stalterclouse.elspeth.entity.User [NONE]: select user0_.id as id1_0_0_, user0_.birth_date as birth_da2_0_0_, user0_.first_name as first_na3_0_0_, user0_.instrument as instrume4_0_0_, user0_.last_name as last_nam5_0_0_, user0_.password as password6_0_0_, user0_.practice_counter as practice7_0_0_, user0_.skill_level as skill_le8_0_0_, user0_.studio_size as studio_s9_0_0_, user0_.username as usernam10_0_0_ from users user0_ where user0_.id=?
-[DEBUG] 2020-02-17 06:43:48.997 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2cca611f]
-[DEBUG] 2020-02-17 06:43:48.998 [main] MetamodelGraphWalker - Visiting attribute path : birthDate
-[DEBUG] 2020-02-17 06:43:48.998 [main] MetamodelGraphWalker - Visiting attribute path : firstName
-[DEBUG] 2020-02-17 06:43:48.998 [main] MetamodelGraphWalker - Visiting attribute path : instrument
-[DEBUG] 2020-02-17 06:43:48.998 [main] MetamodelGraphWalker - Visiting attribute path : lastName
-[DEBUG] 2020-02-17 06:43:48.998 [main] MetamodelGraphWalker - Visiting attribute path : password
-[DEBUG] 2020-02-17 06:43:48.998 [main] MetamodelGraphWalker - Visiting attribute path : practiceCounter
-[DEBUG] 2020-02-17 06:43:48.998 [main] MetamodelGraphWalker - Visiting attribute path : skillLevel
-[DEBUG] 2020-02-17 06:43:48.998 [main] MetamodelGraphWalker - Visiting attribute path : studioSize
-[DEBUG] 2020-02-17 06:43:48.998 [main] MetamodelGraphWalker - Visiting attribute path : username
-[DEBUG] 2020-02-17 06:43:48.998 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
-[DEBUG] 2020-02-17 06:43:48.998 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
-[DEBUG] 2020-02-17 06:43:49.001 [main] LoadPlanTreePrinter - LoadPlan(entity=stalterclouse.elspeth.entity.User)
+[DEBUG] 2020-02-17 06:59:37.862 [main] EntityLoader - Static select for entity stalterclouse.elspeth.entity.User [NONE]: select user0_.id as id1_0_0_, user0_.birth_date as birth_da2_0_0_, user0_.first_name as first_na3_0_0_, user0_.instrument as instrume4_0_0_, user0_.last_name as last_nam5_0_0_, user0_.password as password6_0_0_, user0_.practice_counter as practice7_0_0_, user0_.skill_level as skill_le8_0_0_, user0_.studio_size as studio_s9_0_0_, user0_.username as usernam10_0_0_ from users user0_ where user0_.id=?
+[DEBUG] 2020-02-17 06:59:37.863 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@52ea0269]
+[DEBUG] 2020-02-17 06:59:37.863 [main] MetamodelGraphWalker - Visiting attribute path : birthDate
+[DEBUG] 2020-02-17 06:59:37.863 [main] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2020-02-17 06:59:37.863 [main] MetamodelGraphWalker - Visiting attribute path : instrument
+[DEBUG] 2020-02-17 06:59:37.863 [main] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2020-02-17 06:59:37.863 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2020-02-17 06:59:37.863 [main] MetamodelGraphWalker - Visiting attribute path : practiceCounter
+[DEBUG] 2020-02-17 06:59:37.863 [main] MetamodelGraphWalker - Visiting attribute path : skillLevel
+[DEBUG] 2020-02-17 06:59:37.863 [main] MetamodelGraphWalker - Visiting attribute path : studioSize
+[DEBUG] 2020-02-17 06:59:37.863 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2020-02-17 06:59:37.863 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-02-17 06:59:37.864 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-02-17 06:59:37.864 [main] LoadPlanTreePrinter - LoadPlan(entity=stalterclouse.elspeth.entity.User)
     - Returns
        - EntityReturnImpl(entity=stalterclouse.elspeth.entity.User, querySpaceUid=<gen:0>, path=stalterclouse.elspeth.entity.User)
     - QuerySpaces
@@ -323,25 +323,68 @@
           - alias suffix - 0_
           - suffixed key columns - {id1_0_0_}
 
-[DEBUG] 2020-02-17 06:43:49.002 [main] EntityLoader - Static select for entity stalterclouse.elspeth.entity.User [READ]: select user0_.id as id1_0_0_, user0_.birth_date as birth_da2_0_0_, user0_.first_name as first_na3_0_0_, user0_.instrument as instrume4_0_0_, user0_.last_name as last_nam5_0_0_, user0_.password as password6_0_0_, user0_.practice_counter as practice7_0_0_, user0_.skill_level as skill_le8_0_0_, user0_.studio_size as studio_s9_0_0_, user0_.username as usernam10_0_0_ from users user0_ where user0_.id=?
-[DEBUG] 2020-02-17 06:43:49.017 [main] Loader - Static select for action ACTION_MERGE on entity stalterclouse.elspeth.entity.User: select user0_.id as id1_0_0_, user0_.birth_date as birth_da2_0_0_, user0_.first_name as first_na3_0_0_, user0_.instrument as instrume4_0_0_, user0_.last_name as last_nam5_0_0_, user0_.password as password6_0_0_, user0_.practice_counter as practice7_0_0_, user0_.skill_level as skill_le8_0_0_, user0_.studio_size as studio_s9_0_0_, user0_.username as usernam10_0_0_ from users user0_ where user0_.id=?
-[DEBUG] 2020-02-17 06:43:49.017 [main] Loader - Static select for action ACTION_REFRESH on entity stalterclouse.elspeth.entity.User: select user0_.id as id1_0_0_, user0_.birth_date as birth_da2_0_0_, user0_.first_name as first_na3_0_0_, user0_.instrument as instrume4_0_0_, user0_.last_name as last_nam5_0_0_, user0_.password as password6_0_0_, user0_.practice_counter as practice7_0_0_, user0_.skill_level as skill_le8_0_0_, user0_.studio_size as studio_s9_0_0_, user0_.username as usernam10_0_0_ from users user0_ where user0_.id=?
-[DEBUG] 2020-02-17 06:43:49.047 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
-[DEBUG] 2020-02-17 06:43:49.048 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
-[DEBUG] 2020-02-17 06:43:49.048 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
-[DEBUG] 2020-02-17 06:43:49.054 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[INFO ] 2020-02-17 06:43:49.054 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-[DEBUG] 2020-02-17 06:43:49.055 [main] NamedQueryRepository - Checking 0 named HQL queries
-[DEBUG] 2020-02-17 06:43:49.055 [main] NamedQueryRepository - Checking 0 named SQL queries
-[DEBUG] 2020-02-17 06:43:49.057 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@21de60a7
-[DEBUG] 2020-02-17 06:43:49.059 [main] SessionFactoryRegistry - Registering SessionFactory: e99aef9c-cf71-4651-8c8e-4ed55a02ab51 (<unnamed>)
-[DEBUG] 2020-02-17 06:43:49.060 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
-[DEBUG] 2020-02-17 06:43:49.215 [main] StatisticsInitiator - Statistics initialized [enabled=false]
-[DEBUG] 2020-02-17 06:43:49.243 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.instrument like :param0
-[DEBUG] 2020-02-17 06:43:49.266 [main] QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@7af0affa
-[DEBUG] 2020-02-17 06:43:49.287 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from stalterclouse.elspeth.entity.User as generatedAlias0 where generatedAlias0.instrument like :param0
-[DEBUG] 2020-02-17 06:43:49.293 [main] ErrorTracker - throwQueryException() : no errors
-[DEBUG] 2020-02-17 06:43:49.305 [main] QueryTranslatorImpl - --- HQL AST ---
+[DEBUG] 2020-02-17 06:59:37.864 [main] EntityLoader - Static select for entity stalterclouse.elspeth.entity.User [READ]: select user0_.id as id1_0_0_, user0_.birth_date as birth_da2_0_0_, user0_.first_name as first_na3_0_0_, user0_.instrument as instrume4_0_0_, user0_.last_name as last_nam5_0_0_, user0_.password as password6_0_0_, user0_.practice_counter as practice7_0_0_, user0_.skill_level as skill_le8_0_0_, user0_.studio_size as studio_s9_0_0_, user0_.username as usernam10_0_0_ from users user0_ where user0_.id=?
+[DEBUG] 2020-02-17 06:59:37.882 [main] Loader - Static select for action ACTION_MERGE on entity stalterclouse.elspeth.entity.User: select user0_.id as id1_0_0_, user0_.birth_date as birth_da2_0_0_, user0_.first_name as first_na3_0_0_, user0_.instrument as instrume4_0_0_, user0_.last_name as last_nam5_0_0_, user0_.password as password6_0_0_, user0_.practice_counter as practice7_0_0_, user0_.skill_level as skill_le8_0_0_, user0_.studio_size as studio_s9_0_0_, user0_.username as usernam10_0_0_ from users user0_ where user0_.id=?
+[DEBUG] 2020-02-17 06:59:37.882 [main] Loader - Static select for action ACTION_REFRESH on entity stalterclouse.elspeth.entity.User: select user0_.id as id1_0_0_, user0_.birth_date as birth_da2_0_0_, user0_.first_name as first_na3_0_0_, user0_.instrument as instrume4_0_0_, user0_.last_name as last_nam5_0_0_, user0_.password as password6_0_0_, user0_.practice_counter as practice7_0_0_, user0_.skill_level as skill_le8_0_0_, user0_.studio_size as studio_s9_0_0_, user0_.username as usernam10_0_0_ from users user0_ where user0_.id=?
+[DEBUG] 2020-02-17 06:59:37.905 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2020-02-17 06:59:37.906 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2020-02-17 06:59:37.906 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2020-02-17 06:59:37.910 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2020-02-17 06:59:37.910 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2020-02-17 06:59:37.911 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2020-02-17 06:59:37.911 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2020-02-17 06:59:37.914 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@7c40ffef
+[DEBUG] 2020-02-17 06:59:37.917 [main] SessionFactoryRegistry - Registering SessionFactory: 8b43c7fb-fe65-4baf-9b97-df9917f908ea (<unnamed>)
+[DEBUG] 2020-02-17 06:59:37.917 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2020-02-17 06:59:38.108 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2020-02-17 06:59:38.124 [main] SQL - select user0_.id as id1_0_0_, user0_.birth_date as birth_da2_0_0_, user0_.first_name as first_na3_0_0_, user0_.instrument as instrume4_0_0_, user0_.last_name as last_nam5_0_0_, user0_.password as password6_0_0_, user0_.practice_counter as practice7_0_0_, user0_.skill_level as skill_le8_0_0_, user0_.studio_size as studio_s9_0_0_, user0_.username as usernam10_0_0_ from users user0_ where user0_.id=?
+[DEBUG] 2020-02-17 06:59:38.144 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2020-02-17 06:59:38.144 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2020-02-17 06:59:38.156 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#3]
+[DEBUG] 2020-02-17 06:59:38.156 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 1989-12-12
+[DEBUG] 2020-02-17 06:59:38.156 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.156 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Elspeth
+[DEBUG] 2020-02-17 06:59:38.157 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.157 [main] TwoPhaseLoad - Processing attribute `instrument` : value = violin
+[DEBUG] 2020-02-17 06:59:38.157 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.157 [main] TwoPhaseLoad - Processing attribute `lastName` : value = StalterClouse
+[DEBUG] 2020-02-17 06:59:38.157 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.157 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:38.157 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.157 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 28
+[DEBUG] 2020-02-17 06:59:38.157 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.157 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = professional
+[DEBUG] 2020-02-17 06:59:38.157 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.157 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 18
+[DEBUG] 2020-02-17 06:59:38.157 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.157 [main] TwoPhaseLoad - Processing attribute `username` : value = sheepAntler
+[DEBUG] 2020-02-17 06:59:38.157 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.158 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#3]
+[DEBUG] 2020-02-17 06:59:38.159 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-02-17 06:59:38.159 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : stalterclouse.elspeth.entity.User#3
+[DEBUG] 2020-02-17 06:59:38.160 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 06:59:38.168 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2020-02-17 06:59:38.168 [main] TransactionImpl - begin
+[DEBUG] 2020-02-17 06:59:38.184 [main] TransactionImpl - committing
+[DEBUG] 2020-02-17 06:59:38.184 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2020-02-17 06:59:38.184 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2020-02-17 06:59:38.185 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2020-02-17 06:59:38.185 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2020-02-17 06:59:38.186 [main] EntityPrinter - Listing entities:
+[DEBUG] 2020-02-17 06:59:38.186 [main] EntityPrinter - stalterclouse.elspeth.entity.User{firstName=Elspeth, lastName=StalterClouse, password=password, practiceCounter=28, instrument=violin, id=3, birthDate=1989-12-12, skillLevel=professional, studioSize=18, username=sheepAntler}
+[DEBUG] 2020-02-17 06:59:38.191 [main] SQL - delete from users where id=?
+[DEBUG] 2020-02-17 06:59:38.198 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 06:59:38.199 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 06:59:38.199 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2020-02-17 06:59:38.199 [main] SQL - select user0_.id as id1_0_0_, user0_.birth_date as birth_da2_0_0_, user0_.first_name as first_na3_0_0_, user0_.instrument as instrume4_0_0_, user0_.last_name as last_nam5_0_0_, user0_.password as password6_0_0_, user0_.practice_counter as practice7_0_0_, user0_.skill_level as skill_le8_0_0_, user0_.studio_size as studio_s9_0_0_, user0_.username as usernam10_0_0_ from users user0_ where user0_.id=?
+[DEBUG] 2020-02-17 06:59:38.202 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-02-17 06:59:38.202 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : stalterclouse.elspeth.entity.User#3
+[DEBUG] 2020-02-17 06:59:38.202 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 06:59:38.326 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.username like :param0
+[DEBUG] 2020-02-17 06:59:38.362 [main] QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@7ed49a7f
+[DEBUG] 2020-02-17 06:59:38.417 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from stalterclouse.elspeth.entity.User as generatedAlias0 where generatedAlias0.username like :param0
+[DEBUG] 2020-02-17 06:59:38.421 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2020-02-17 06:59:38.427 [main] QueryTranslatorImpl - --- HQL AST ---
  \-[QUERY] Node: 'query'
     +-[SELECT_FROM] Node: 'SELECT_FROM'
     |  +-[FROM] Node: 'from'
@@ -360,21 +403,21 @@
        \-[LIKE] Node: 'like'
           +-[DOT] Node: '.'
           |  +-[IDENT] Node: 'generatedAlias0'
-          |  \-[IDENT] Node: 'instrument'
+          |  \-[IDENT] Node: 'username'
           \-[COLON] Node: ':'
              \-[IDENT] Node: 'param0'
 
-[DEBUG] 2020-02-17 06:43:49.321 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
-[DEBUG] 2020-02-17 06:43:49.332 [main] FromElement - FromClause{level=1} : stalterclouse.elspeth.entity.User (generatedAlias0) -> user0_
-[DEBUG] 2020-02-17 06:43:49.333 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
-[DEBUG] 2020-02-17 06:43:49.336 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
-[DEBUG] 2020-02-17 06:43:49.337 [main] DotNode - getDataType() : instrument -> org.hibernate.type.StringType@53667cbe
-[DEBUG] 2020-02-17 06:43:49.337 [main] FromReferenceNode - Resolved : generatedAlias0.instrument -> user0_.instrument
-[DEBUG] 2020-02-17 06:43:49.339 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
-[DEBUG] 2020-02-17 06:43:49.339 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} users user0_ ) ( where ( like ( user0_.instrument user0_.id instrument ) ? ) ) )
-[DEBUG] 2020-02-17 06:43:49.348 [main] JoinProcessor - Using FROM fragment [users user0_]
-[DEBUG] 2020-02-17 06:43:49.348 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
-[DEBUG] 2020-02-17 06:43:49.349 [main] QueryTranslatorImpl - --- SQL AST ---
+[DEBUG] 2020-02-17 06:59:38.446 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2020-02-17 06:59:38.461 [main] FromElement - FromClause{level=1} : stalterclouse.elspeth.entity.User (generatedAlias0) -> user0_
+[DEBUG] 2020-02-17 06:59:38.462 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2020-02-17 06:59:38.466 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2020-02-17 06:59:38.467 [main] DotNode - getDataType() : username -> org.hibernate.type.StringType@5173200b
+[DEBUG] 2020-02-17 06:59:38.468 [main] FromReferenceNode - Resolved : generatedAlias0.username -> user0_.username
+[DEBUG] 2020-02-17 06:59:38.470 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2020-02-17 06:59:38.470 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} users user0_ ) ( where ( like ( user0_.username user0_.id username ) ? ) ) )
+[DEBUG] 2020-02-17 06:59:38.479 [main] JoinProcessor - Using FROM fragment [users user0_]
+[DEBUG] 2020-02-17 06:59:38.479 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2020-02-17 06:59:38.480 [main] QueryTranslatorImpl - --- SQL AST ---
  \-[SELECT] QueryNode: 'SELECT'  querySpaces (users)
     +-[SELECT_CLAUSE] SelectClause: '{select clause}'
     |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_0_' {alias=generatedAlias0, className=stalterclouse.elspeth.entity.User, tableAlias=user0_}
@@ -383,36 +426,599 @@
     |  \-[FROM_FRAGMENT] FromElement: 'users user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=users,tableAlias=user0_,origin=null,columns={,className=stalterclouse.elspeth.entity.User}}
     \-[WHERE] SqlNode: 'where'
        \-[LIKE] BinaryLogicOperatorNode: 'like'
+          +-[DOT] DotNode: 'user0_.username' {propertyName=username,dereferenceType=PRIMITIVE,getPropertyPath=username,path=generatedAlias0.username,tableAlias=user0_,className=stalterclouse.elspeth.entity.User,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'user0_.id' {alias=generatedAlias0, className=stalterclouse.elspeth.entity.User, tableAlias=user0_}
+          |  \-[IDENT] IdentNode: 'username' {originalText=username}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@5173200b}
+
+[DEBUG] 2020-02-17 06:59:38.480 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2020-02-17 06:59:38.487 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from stalterclouse.elspeth.entity.User as generatedAlias0 where generatedAlias0.username like :param0
+[DEBUG] 2020-02-17 06:59:38.487 [main] QueryTranslatorImpl - SQL: select user0_.id as id1_0_, user0_.birth_date as birth_da2_0_, user0_.first_name as first_na3_0_, user0_.instrument as instrume4_0_, user0_.last_name as last_nam5_0_, user0_.password as password6_0_, user0_.practice_counter as practice7_0_, user0_.skill_level as skill_le8_0_, user0_.studio_size as studio_s9_0_, user0_.username as usernam10_0_ from users user0_ where user0_.username like ?
+[DEBUG] 2020-02-17 06:59:38.487 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2020-02-17 06:59:38.502 [main] SQL - select user0_.id as id1_0_, user0_.birth_date as birth_da2_0_, user0_.first_name as first_na3_0_, user0_.instrument as instrume4_0_, user0_.last_name as last_nam5_0_, user0_.password as password6_0_, user0_.practice_counter as practice7_0_, user0_.skill_level as skill_le8_0_, user0_.studio_size as studio_s9_0_, user0_.username as usernam10_0_ from users user0_ where user0_.username like ?
+[DEBUG] 2020-02-17 06:59:38.506 [main] Loader - Result set row: 0
+[DEBUG] 2020-02-17 06:59:38.506 [main] Loader - Result row: EntityKey[stalterclouse.elspeth.entity.User#1]
+[DEBUG] 2020-02-17 06:59:38.507 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#1]
+[DEBUG] 2020-02-17 06:59:38.507 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 2009-09-09
+[DEBUG] 2020-02-17 06:59:38.507 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.507 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Elaine
+[DEBUG] 2020-02-17 06:59:38.507 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.507 [main] TwoPhaseLoad - Processing attribute `instrument` : value = violin
+[DEBUG] 2020-02-17 06:59:38.507 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.507 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Markowitz
+[DEBUG] 2020-02-17 06:59:38.507 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.507 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:38.507 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.507 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 12
+[DEBUG] 2020-02-17 06:59:38.507 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.507 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = beginner
+[DEBUG] 2020-02-17 06:59:38.507 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.507 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 8
+[DEBUG] 2020-02-17 06:59:38.507 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.507 [main] TwoPhaseLoad - Processing attribute `username` : value = fluffybunny
+[DEBUG] 2020-02-17 06:59:38.508 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.508 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#1]
+[DEBUG] 2020-02-17 06:59:38.509 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 06:59:38.563 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0
+[DEBUG] 2020-02-17 06:59:38.564 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from stalterclouse.elspeth.entity.User as generatedAlias0
+[DEBUG] 2020-02-17 06:59:38.564 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2020-02-17 06:59:38.565 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[IDENT] Node: 'stalterclouse'
+       |     |  |  |  \-[IDENT] Node: 'elspeth'
+       |     |  |  \-[IDENT] Node: 'entity'
+       |     |  \-[IDENT] Node: 'User'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+[DEBUG] 2020-02-17 06:59:38.565 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2020-02-17 06:59:38.565 [main] FromElement - FromClause{level=1} : stalterclouse.elspeth.entity.User (generatedAlias0) -> user0_
+[DEBUG] 2020-02-17 06:59:38.565 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2020-02-17 06:59:38.565 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2020-02-17 06:59:38.565 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} users user0_ ) )
+[DEBUG] 2020-02-17 06:59:38.566 [main] JoinProcessor - Using FROM fragment [users user0_]
+[DEBUG] 2020-02-17 06:59:38.566 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2020-02-17 06:59:38.566 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (users)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_0_' {alias=generatedAlias0, className=stalterclouse.elspeth.entity.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.birth_date as birth_da2_0_, user0_.first_name as first_na3_0_, user0_.instrument as instrume4_0_, user0_.last_name as last_nam5_0_, user0_.password as password6_0_, user0_.practice_counter as practice7_0_, user0_.skill_level as skill_le8_0_, user0_.studio_size as studio_s9_0_, user0_.username as usernam10_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'users user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=users,tableAlias=user0_,origin=null,columns={,className=stalterclouse.elspeth.entity.User}}
+
+[DEBUG] 2020-02-17 06:59:38.566 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2020-02-17 06:59:38.566 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from stalterclouse.elspeth.entity.User as generatedAlias0
+[DEBUG] 2020-02-17 06:59:38.566 [main] QueryTranslatorImpl - SQL: select user0_.id as id1_0_, user0_.birth_date as birth_da2_0_, user0_.first_name as first_na3_0_, user0_.instrument as instrume4_0_, user0_.last_name as last_nam5_0_, user0_.password as password6_0_, user0_.practice_counter as practice7_0_, user0_.skill_level as skill_le8_0_, user0_.studio_size as studio_s9_0_, user0_.username as usernam10_0_ from users user0_
+[DEBUG] 2020-02-17 06:59:38.566 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2020-02-17 06:59:38.567 [main] SQL - select user0_.id as id1_0_, user0_.birth_date as birth_da2_0_, user0_.first_name as first_na3_0_, user0_.instrument as instrume4_0_, user0_.last_name as last_nam5_0_, user0_.password as password6_0_, user0_.practice_counter as practice7_0_, user0_.skill_level as skill_le8_0_, user0_.studio_size as studio_s9_0_, user0_.username as usernam10_0_ from users user0_
+[DEBUG] 2020-02-17 06:59:38.575 [main] Loader - Result set row: 0
+[DEBUG] 2020-02-17 06:59:38.575 [main] Loader - Result row: EntityKey[stalterclouse.elspeth.entity.User#1]
+[DEBUG] 2020-02-17 06:59:38.576 [main] Loader - Result set row: 1
+[DEBUG] 2020-02-17 06:59:38.576 [main] Loader - Result row: EntityKey[stalterclouse.elspeth.entity.User#2]
+[DEBUG] 2020-02-17 06:59:38.576 [main] Loader - Result set row: 2
+[DEBUG] 2020-02-17 06:59:38.576 [main] Loader - Result row: EntityKey[stalterclouse.elspeth.entity.User#3]
+[DEBUG] 2020-02-17 06:59:38.577 [main] Loader - Result set row: 3
+[DEBUG] 2020-02-17 06:59:38.577 [main] Loader - Result row: EntityKey[stalterclouse.elspeth.entity.User#4]
+[DEBUG] 2020-02-17 06:59:38.577 [main] Loader - Result set row: 4
+[DEBUG] 2020-02-17 06:59:38.578 [main] Loader - Result row: EntityKey[stalterclouse.elspeth.entity.User#5]
+[DEBUG] 2020-02-17 06:59:38.578 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#1]
+[DEBUG] 2020-02-17 06:59:38.578 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 2009-09-09
+[DEBUG] 2020-02-17 06:59:38.578 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.578 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Elaine
+[DEBUG] 2020-02-17 06:59:38.578 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.578 [main] TwoPhaseLoad - Processing attribute `instrument` : value = violin
+[DEBUG] 2020-02-17 06:59:38.579 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.579 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Markowitz
+[DEBUG] 2020-02-17 06:59:38.579 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.579 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:38.579 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.579 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 12
+[DEBUG] 2020-02-17 06:59:38.579 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.579 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = beginner
+[DEBUG] 2020-02-17 06:59:38.579 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.579 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 8
+[DEBUG] 2020-02-17 06:59:38.579 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.579 [main] TwoPhaseLoad - Processing attribute `username` : value = fluffybunny
+[DEBUG] 2020-02-17 06:59:38.579 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#1]
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#2]
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 2004-01-12
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Jonathan
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Processing attribute `instrument` : value = viola
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Dunlop
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 45
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = intermediate
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 2
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Processing attribute `username` : value = madBratsche
+[DEBUG] 2020-02-17 06:59:38.580 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#2]
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#3]
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 1989-12-12
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Elspeth
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Processing attribute `instrument` : value = violin
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Processing attribute `lastName` : value = StalterClouse
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 28
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = professional
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 18
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Processing attribute `username` : value = sheepAntler
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#3]
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#4]
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 2002-06-04
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.581 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Louise
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Processing attribute `instrument` : value = flugelhorn
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Janak
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 44
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = advanced
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 1
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Processing attribute `username` : value = GeezLouise
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#4]
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#5]
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 1986-10-02
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Mickey
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Processing attribute `instrument` : value = bass
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Processing attribute `lastName` : value = McMahon
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.582 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:38.583 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.583 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 112
+[DEBUG] 2020-02-17 06:59:38.583 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.583 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = professional
+[DEBUG] 2020-02-17 06:59:38.583 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.583 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 28
+[DEBUG] 2020-02-17 06:59:38.583 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.583 [main] TwoPhaseLoad - Processing attribute `username` : value = splish_splash
+[DEBUG] 2020-02-17 06:59:38.583 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.583 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#5]
+[DEBUG] 2020-02-17 06:59:38.583 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 06:59:38.711 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.instrument=:param0
+[DEBUG] 2020-02-17 06:59:38.714 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from stalterclouse.elspeth.entity.User as generatedAlias0 where generatedAlias0.instrument=:param0
+[DEBUG] 2020-02-17 06:59:38.719 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2020-02-17 06:59:38.720 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[IDENT] Node: 'stalterclouse'
+    |  |     |  |  |  \-[IDENT] Node: 'elspeth'
+    |  |     |  |  \-[IDENT] Node: 'entity'
+    |  |     |  \-[IDENT] Node: 'User'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'instrument'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+[DEBUG] 2020-02-17 06:59:38.724 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2020-02-17 06:59:38.725 [main] FromElement - FromClause{level=1} : stalterclouse.elspeth.entity.User (generatedAlias0) -> user0_
+[DEBUG] 2020-02-17 06:59:38.726 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2020-02-17 06:59:38.726 [main] FromReferenceNode - Resolved : generatedAlias0 -> user0_.id
+[DEBUG] 2020-02-17 06:59:38.726 [main] DotNode - getDataType() : instrument -> org.hibernate.type.StringType@5173200b
+[DEBUG] 2020-02-17 06:59:38.726 [main] FromReferenceNode - Resolved : generatedAlias0.instrument -> user0_.instrument
+[DEBUG] 2020-02-17 06:59:38.726 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2020-02-17 06:59:38.726 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} user0_.id ) ( FromClause{level=1} users user0_ ) ( where ( = ( user0_.instrument user0_.id instrument ) ? ) ) )
+[DEBUG] 2020-02-17 06:59:38.727 [main] JoinProcessor - Using FROM fragment [users user0_]
+[DEBUG] 2020-02-17 06:59:38.727 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2020-02-17 06:59:38.727 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (users)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'user0_.id as id1_0_' {alias=generatedAlias0, className=stalterclouse.elspeth.entity.User, tableAlias=user0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'user0_.birth_date as birth_da2_0_, user0_.first_name as first_na3_0_, user0_.instrument as instrume4_0_, user0_.last_name as last_nam5_0_, user0_.password as password6_0_, user0_.practice_counter as practice7_0_, user0_.skill_level as skill_le8_0_, user0_.studio_size as studio_s9_0_, user0_.username as usernam10_0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[user0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'users user0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=users,tableAlias=user0_,origin=null,columns={,className=stalterclouse.elspeth.entity.User}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
           +-[DOT] DotNode: 'user0_.instrument' {propertyName=instrument,dereferenceType=PRIMITIVE,getPropertyPath=instrument,path=generatedAlias0.instrument,tableAlias=user0_,className=stalterclouse.elspeth.entity.User,classAlias=generatedAlias0}
           |  +-[ALIAS_REF] IdentNode: 'user0_.id' {alias=generatedAlias0, className=stalterclouse.elspeth.entity.User, tableAlias=user0_}
           |  \-[IDENT] IdentNode: 'instrument' {originalText=instrument}
-          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@53667cbe}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@5173200b}
 
-[DEBUG] 2020-02-17 06:43:49.349 [main] ErrorTracker - throwQueryException() : no errors
-[DEBUG] 2020-02-17 06:43:49.355 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from stalterclouse.elspeth.entity.User as generatedAlias0 where generatedAlias0.instrument like :param0
-[DEBUG] 2020-02-17 06:43:49.355 [main] QueryTranslatorImpl - SQL: select user0_.id as id1_0_, user0_.birth_date as birth_da2_0_, user0_.first_name as first_na3_0_, user0_.instrument as instrume4_0_, user0_.last_name as last_nam5_0_, user0_.password as password6_0_, user0_.practice_counter as practice7_0_, user0_.skill_level as skill_le8_0_, user0_.studio_size as studio_s9_0_, user0_.username as usernam10_0_ from users user0_ where user0_.instrument like ?
-[DEBUG] 2020-02-17 06:43:49.356 [main] ErrorTracker - throwQueryException() : no errors
-[DEBUG] 2020-02-17 06:43:49.389 [main] SQL - select user0_.id as id1_0_, user0_.birth_date as birth_da2_0_, user0_.first_name as first_na3_0_, user0_.instrument as instrume4_0_, user0_.last_name as last_nam5_0_, user0_.password as password6_0_, user0_.practice_counter as practice7_0_, user0_.skill_level as skill_le8_0_, user0_.studio_size as studio_s9_0_, user0_.username as usernam10_0_ from users user0_ where user0_.instrument like ?
-[DEBUG] 2020-02-17 06:43:49.434 [main] Loader - Result set row: 0
-[DEBUG] 2020-02-17 06:43:49.437 [main] Loader - Result row: EntityKey[stalterclouse.elspeth.entity.User#4]
-[DEBUG] 2020-02-17 06:43:49.445 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#4]
-[DEBUG] 2020-02-17 06:43:49.446 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 2002-06-04
-[DEBUG] 2020-02-17 06:43:49.446 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
-[DEBUG] 2020-02-17 06:43:49.446 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Louise
-[DEBUG] 2020-02-17 06:43:49.446 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
-[DEBUG] 2020-02-17 06:43:49.446 [main] TwoPhaseLoad - Processing attribute `instrument` : value = flugelhorn
-[DEBUG] 2020-02-17 06:43:49.446 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
-[DEBUG] 2020-02-17 06:43:49.446 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Janak
-[DEBUG] 2020-02-17 06:43:49.446 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
-[DEBUG] 2020-02-17 06:43:49.446 [main] TwoPhaseLoad - Processing attribute `password` : value = password
-[DEBUG] 2020-02-17 06:43:49.446 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
-[DEBUG] 2020-02-17 06:43:49.446 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 44
-[DEBUG] 2020-02-17 06:43:49.446 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
-[DEBUG] 2020-02-17 06:43:49.446 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = advanced
-[DEBUG] 2020-02-17 06:43:49.446 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
-[DEBUG] 2020-02-17 06:43:49.446 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 1
-[DEBUG] 2020-02-17 06:43:49.446 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
-[DEBUG] 2020-02-17 06:43:49.446 [main] TwoPhaseLoad - Processing attribute `username` : value = GeezLouise
-[DEBUG] 2020-02-17 06:43:49.446 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
-[DEBUG] 2020-02-17 06:43:49.447 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#4]
-[DEBUG] 2020-02-17 06:43:49.450 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 06:59:38.728 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2020-02-17 06:59:38.728 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from stalterclouse.elspeth.entity.User as generatedAlias0 where generatedAlias0.instrument=:param0
+[DEBUG] 2020-02-17 06:59:38.728 [main] QueryTranslatorImpl - SQL: select user0_.id as id1_0_, user0_.birth_date as birth_da2_0_, user0_.first_name as first_na3_0_, user0_.instrument as instrume4_0_, user0_.last_name as last_nam5_0_, user0_.password as password6_0_, user0_.practice_counter as practice7_0_, user0_.skill_level as skill_le8_0_, user0_.studio_size as studio_s9_0_, user0_.username as usernam10_0_ from users user0_ where user0_.instrument=?
+[DEBUG] 2020-02-17 06:59:38.728 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2020-02-17 06:59:38.729 [main] SQL - select user0_.id as id1_0_, user0_.birth_date as birth_da2_0_, user0_.first_name as first_na3_0_, user0_.instrument as instrume4_0_, user0_.last_name as last_nam5_0_, user0_.password as password6_0_, user0_.practice_counter as practice7_0_, user0_.skill_level as skill_le8_0_, user0_.studio_size as studio_s9_0_, user0_.username as usernam10_0_ from users user0_ where user0_.instrument=?
+[DEBUG] 2020-02-17 06:59:38.736 [main] Loader - Result set row: 0
+[DEBUG] 2020-02-17 06:59:38.736 [main] Loader - Result row: EntityKey[stalterclouse.elspeth.entity.User#4]
+[DEBUG] 2020-02-17 06:59:38.738 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#4]
+[DEBUG] 2020-02-17 06:59:38.738 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 2002-06-04
+[DEBUG] 2020-02-17 06:59:38.738 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.738 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Louise
+[DEBUG] 2020-02-17 06:59:38.738 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.738 [main] TwoPhaseLoad - Processing attribute `instrument` : value = flugelhorn
+[DEBUG] 2020-02-17 06:59:38.738 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.738 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Janak
+[DEBUG] 2020-02-17 06:59:38.738 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.738 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:38.738 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.738 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 44
+[DEBUG] 2020-02-17 06:59:38.738 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.739 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = advanced
+[DEBUG] 2020-02-17 06:59:38.739 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.739 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 1
+[DEBUG] 2020-02-17 06:59:38.739 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.739 [main] TwoPhaseLoad - Processing attribute `username` : value = GeezLouise
+[DEBUG] 2020-02-17 06:59:38.739 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.739 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#4]
+[DEBUG] 2020-02-17 06:59:38.740 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 06:59:38.816 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0 where generatedAlias0.username like :param0
+[DEBUG] 2020-02-17 06:59:38.816 [main] SQL - select user0_.id as id1_0_, user0_.birth_date as birth_da2_0_, user0_.first_name as first_na3_0_, user0_.instrument as instrume4_0_, user0_.last_name as last_nam5_0_, user0_.password as password6_0_, user0_.practice_counter as practice7_0_, user0_.skill_level as skill_le8_0_, user0_.studio_size as studio_s9_0_, user0_.username as usernam10_0_ from users user0_ where user0_.username like ?
+[DEBUG] 2020-02-17 06:59:38.827 [main] Loader - Result set row: 0
+[DEBUG] 2020-02-17 06:59:38.828 [main] Loader - Result row: EntityKey[stalterclouse.elspeth.entity.User#2]
+[DEBUG] 2020-02-17 06:59:38.829 [main] Loader - Result set row: 1
+[DEBUG] 2020-02-17 06:59:38.829 [main] Loader - Result row: EntityKey[stalterclouse.elspeth.entity.User#3]
+[DEBUG] 2020-02-17 06:59:38.830 [main] Loader - Result set row: 2
+[DEBUG] 2020-02-17 06:59:38.831 [main] Loader - Result row: EntityKey[stalterclouse.elspeth.entity.User#4]
+[DEBUG] 2020-02-17 06:59:38.831 [main] Loader - Result set row: 3
+[DEBUG] 2020-02-17 06:59:38.832 [main] Loader - Result row: EntityKey[stalterclouse.elspeth.entity.User#5]
+[DEBUG] 2020-02-17 06:59:38.832 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#2]
+[DEBUG] 2020-02-17 06:59:38.832 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 2004-01-12
+[DEBUG] 2020-02-17 06:59:38.832 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.832 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Jonathan
+[DEBUG] 2020-02-17 06:59:38.832 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.832 [main] TwoPhaseLoad - Processing attribute `instrument` : value = viola
+[DEBUG] 2020-02-17 06:59:38.832 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.833 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Dunlop
+[DEBUG] 2020-02-17 06:59:38.833 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.833 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:38.833 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.833 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 45
+[DEBUG] 2020-02-17 06:59:38.833 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.833 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = intermediate
+[DEBUG] 2020-02-17 06:59:38.833 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.833 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 2
+[DEBUG] 2020-02-17 06:59:38.833 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.833 [main] TwoPhaseLoad - Processing attribute `username` : value = madBratsche
+[DEBUG] 2020-02-17 06:59:38.833 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.833 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#2]
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#3]
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 1989-12-12
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Elspeth
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Processing attribute `instrument` : value = violin
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Processing attribute `lastName` : value = StalterClouse
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 28
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = professional
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 18
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Processing attribute `username` : value = sheepAntler
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#3]
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#4]
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 2002-06-04
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Louise
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.834 [main] TwoPhaseLoad - Processing attribute `instrument` : value = flugelhorn
+[DEBUG] 2020-02-17 06:59:38.835 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.835 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Janak
+[DEBUG] 2020-02-17 06:59:38.835 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.835 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:38.835 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.835 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 44
+[DEBUG] 2020-02-17 06:59:38.835 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.835 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = advanced
+[DEBUG] 2020-02-17 06:59:38.835 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.835 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 1
+[DEBUG] 2020-02-17 06:59:38.835 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.836 [main] TwoPhaseLoad - Processing attribute `username` : value = GeezLouise
+[DEBUG] 2020-02-17 06:59:38.843 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.846 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#4]
+[DEBUG] 2020-02-17 06:59:38.846 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#5]
+[DEBUG] 2020-02-17 06:59:38.846 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 1986-10-02
+[DEBUG] 2020-02-17 06:59:38.846 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.846 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Mickey
+[DEBUG] 2020-02-17 06:59:38.846 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.846 [main] TwoPhaseLoad - Processing attribute `instrument` : value = bass
+[DEBUG] 2020-02-17 06:59:38.846 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.846 [main] TwoPhaseLoad - Processing attribute `lastName` : value = McMahon
+[DEBUG] 2020-02-17 06:59:38.846 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.847 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:38.847 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.847 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 112
+[DEBUG] 2020-02-17 06:59:38.847 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.847 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = professional
+[DEBUG] 2020-02-17 06:59:38.847 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.847 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 28
+[DEBUG] 2020-02-17 06:59:38.847 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.847 [main] TwoPhaseLoad - Processing attribute `username` : value = splish_splash
+[DEBUG] 2020-02-17 06:59:38.847 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.847 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#5]
+[DEBUG] 2020-02-17 06:59:38.849 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 06:59:38.908 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from User as generatedAlias0
+[DEBUG] 2020-02-17 06:59:38.909 [main] SQL - select user0_.id as id1_0_, user0_.birth_date as birth_da2_0_, user0_.first_name as first_na3_0_, user0_.instrument as instrume4_0_, user0_.last_name as last_nam5_0_, user0_.password as password6_0_, user0_.practice_counter as practice7_0_, user0_.skill_level as skill_le8_0_, user0_.studio_size as studio_s9_0_, user0_.username as usernam10_0_ from users user0_
+[DEBUG] 2020-02-17 06:59:38.912 [main] Loader - Result set row: 0
+[DEBUG] 2020-02-17 06:59:38.912 [main] Loader - Result row: EntityKey[stalterclouse.elspeth.entity.User#1]
+[DEBUG] 2020-02-17 06:59:38.912 [main] Loader - Result set row: 1
+[DEBUG] 2020-02-17 06:59:38.913 [main] Loader - Result row: EntityKey[stalterclouse.elspeth.entity.User#2]
+[DEBUG] 2020-02-17 06:59:38.913 [main] Loader - Result set row: 2
+[DEBUG] 2020-02-17 06:59:38.913 [main] Loader - Result row: EntityKey[stalterclouse.elspeth.entity.User#3]
+[DEBUG] 2020-02-17 06:59:38.914 [main] Loader - Result set row: 3
+[DEBUG] 2020-02-17 06:59:38.914 [main] Loader - Result row: EntityKey[stalterclouse.elspeth.entity.User#4]
+[DEBUG] 2020-02-17 06:59:38.914 [main] Loader - Result set row: 4
+[DEBUG] 2020-02-17 06:59:38.914 [main] Loader - Result row: EntityKey[stalterclouse.elspeth.entity.User#5]
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#1]
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 2009-09-09
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Elaine
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Processing attribute `instrument` : value = violin
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Markowitz
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 12
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = beginner
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 8
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Processing attribute `username` : value = fluffybunny
+[DEBUG] 2020-02-17 06:59:38.915 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#1]
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#2]
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 2004-01-12
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Jonathan
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Processing attribute `instrument` : value = viola
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Dunlop
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 45
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = intermediate
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 2
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Processing attribute `username` : value = madBratsche
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#2]
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#3]
+[DEBUG] 2020-02-17 06:59:38.916 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 1989-12-12
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Elspeth
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Processing attribute `instrument` : value = violin
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Processing attribute `lastName` : value = StalterClouse
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 28
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = professional
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 18
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Processing attribute `username` : value = sheepAntler
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#3]
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#4]
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 2002-06-04
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Louise
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Processing attribute `instrument` : value = flugelhorn
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Janak
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 44
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = advanced
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 1
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Processing attribute `username` : value = GeezLouise
+[DEBUG] 2020-02-17 06:59:38.917 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.918 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#4]
+[DEBUG] 2020-02-17 06:59:38.918 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#5]
+[DEBUG] 2020-02-17 06:59:38.918 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 1986-10-02
+[DEBUG] 2020-02-17 06:59:38.918 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.918 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Mickey
+[DEBUG] 2020-02-17 06:59:38.918 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.918 [main] TwoPhaseLoad - Processing attribute `instrument` : value = bass
+[DEBUG] 2020-02-17 06:59:38.918 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.918 [main] TwoPhaseLoad - Processing attribute `lastName` : value = McMahon
+[DEBUG] 2020-02-17 06:59:38.918 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.918 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:38.918 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.919 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 112
+[DEBUG] 2020-02-17 06:59:38.921 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.923 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = professional
+[DEBUG] 2020-02-17 06:59:38.923 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.923 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 28
+[DEBUG] 2020-02-17 06:59:38.924 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.924 [main] TwoPhaseLoad - Processing attribute `username` : value = splish_splash
+[DEBUG] 2020-02-17 06:59:38.924 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.924 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#5]
+[DEBUG] 2020-02-17 06:59:38.924 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 06:59:38.978 [main] SQL - select user0_.id as id1_0_0_, user0_.birth_date as birth_da2_0_0_, user0_.first_name as first_na3_0_0_, user0_.instrument as instrume4_0_0_, user0_.last_name as last_nam5_0_0_, user0_.password as password6_0_0_, user0_.practice_counter as practice7_0_0_, user0_.skill_level as skill_le8_0_0_, user0_.studio_size as studio_s9_0_0_, user0_.username as usernam10_0_0_ from users user0_ where user0_.id=?
+[DEBUG] 2020-02-17 06:59:38.980 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2020-02-17 06:59:38.981 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2020-02-17 06:59:38.981 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#4]
+[DEBUG] 2020-02-17 06:59:38.981 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 2002-06-04
+[DEBUG] 2020-02-17 06:59:38.981 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.981 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Louise
+[DEBUG] 2020-02-17 06:59:38.981 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.981 [main] TwoPhaseLoad - Processing attribute `instrument` : value = flugelhorn
+[DEBUG] 2020-02-17 06:59:38.981 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.981 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Janak
+[DEBUG] 2020-02-17 06:59:38.981 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.981 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:38.981 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.983 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 44
+[DEBUG] 2020-02-17 06:59:38.983 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.983 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = advanced
+[DEBUG] 2020-02-17 06:59:38.983 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.983 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 1
+[DEBUG] 2020-02-17 06:59:38.983 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.983 [main] TwoPhaseLoad - Processing attribute `username` : value = GeezLouise
+[DEBUG] 2020-02-17 06:59:38.983 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:38.983 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#4]
+[DEBUG] 2020-02-17 06:59:38.984 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-02-17 06:59:38.984 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : stalterclouse.elspeth.entity.User#4
+[DEBUG] 2020-02-17 06:59:38.985 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 06:59:39.045 [main] SQL - select user0_.id as id1_0_0_, user0_.birth_date as birth_da2_0_0_, user0_.first_name as first_na3_0_0_, user0_.instrument as instrume4_0_0_, user0_.last_name as last_nam5_0_0_, user0_.password as password6_0_0_, user0_.practice_counter as practice7_0_0_, user0_.skill_level as skill_le8_0_0_, user0_.studio_size as studio_s9_0_0_, user0_.username as usernam10_0_0_ from users user0_ where user0_.id=?
+[DEBUG] 2020-02-17 06:59:39.048 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2020-02-17 06:59:39.048 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2020-02-17 06:59:39.050 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#4]
+[DEBUG] 2020-02-17 06:59:39.050 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 2002-06-04
+[DEBUG] 2020-02-17 06:59:39.051 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.051 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Louise
+[DEBUG] 2020-02-17 06:59:39.051 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.051 [main] TwoPhaseLoad - Processing attribute `instrument` : value = flugelhorn
+[DEBUG] 2020-02-17 06:59:39.051 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.051 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Janak
+[DEBUG] 2020-02-17 06:59:39.051 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.051 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:39.051 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.051 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 44
+[DEBUG] 2020-02-17 06:59:39.051 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.051 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = advanced
+[DEBUG] 2020-02-17 06:59:39.051 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.051 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 1
+[DEBUG] 2020-02-17 06:59:39.051 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.051 [main] TwoPhaseLoad - Processing attribute `username` : value = GeezLouise
+[DEBUG] 2020-02-17 06:59:39.051 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.051 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#4]
+[DEBUG] 2020-02-17 06:59:39.052 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-02-17 06:59:39.052 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : stalterclouse.elspeth.entity.User#4
+[DEBUG] 2020-02-17 06:59:39.052 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 06:59:39.055 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2020-02-17 06:59:39.057 [main] TransactionImpl - begin
+[DEBUG] 2020-02-17 06:59:39.059 [main] TransactionImpl - committing
+[DEBUG] 2020-02-17 06:59:39.059 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2020-02-17 06:59:39.060 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2020-02-17 06:59:39.061 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+[DEBUG] 2020-02-17 06:59:39.061 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2020-02-17 06:59:39.061 [main] EntityPrinter - Listing entities:
+[DEBUG] 2020-02-17 06:59:39.061 [main] EntityPrinter - stalterclouse.elspeth.entity.User{firstName=Louise, lastName=Davis, password=password, practiceCounter=44, instrument=flugelhorn, id=4, birthDate=2002-06-04, skillLevel=advanced, studioSize=1, username=GeezLouise}
+[DEBUG] 2020-02-17 06:59:39.062 [main] SQL - update users set birth_date=?, first_name=?, instrument=?, last_name=?, password=?, practice_counter=?, skill_level=?, studio_size=?, username=? where id=?
+[DEBUG] 2020-02-17 06:59:39.073 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 06:59:39.075 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 06:59:39.075 [main] SQL - select user0_.id as id1_0_0_, user0_.birth_date as birth_da2_0_0_, user0_.first_name as first_na3_0_0_, user0_.instrument as instrume4_0_0_, user0_.last_name as last_nam5_0_0_, user0_.password as password6_0_0_, user0_.practice_counter as practice7_0_0_, user0_.skill_level as skill_le8_0_0_, user0_.studio_size as studio_s9_0_0_, user0_.username as usernam10_0_0_ from users user0_ where user0_.id=?
+[DEBUG] 2020-02-17 06:59:39.077 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2020-02-17 06:59:39.077 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2020-02-17 06:59:39.078 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#4]
+[DEBUG] 2020-02-17 06:59:39.078 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 2002-06-04
+[DEBUG] 2020-02-17 06:59:39.078 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.078 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Louise
+[DEBUG] 2020-02-17 06:59:39.078 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.078 [main] TwoPhaseLoad - Processing attribute `instrument` : value = flugelhorn
+[DEBUG] 2020-02-17 06:59:39.078 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.078 [main] TwoPhaseLoad - Processing attribute `lastName` : value = Davis
+[DEBUG] 2020-02-17 06:59:39.078 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.079 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:39.079 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.079 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 44
+[DEBUG] 2020-02-17 06:59:39.079 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.079 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = advanced
+[DEBUG] 2020-02-17 06:59:39.079 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.079 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 1
+[DEBUG] 2020-02-17 06:59:39.079 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.079 [main] TwoPhaseLoad - Processing attribute `username` : value = GeezLouise
+[DEBUG] 2020-02-17 06:59:39.079 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.079 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#4]
+[DEBUG] 2020-02-17 06:59:39.079 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-02-17 06:59:39.079 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : stalterclouse.elspeth.entity.User#4
+[DEBUG] 2020-02-17 06:59:39.079 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 06:59:39.138 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2020-02-17 06:59:39.139 [main] TransactionImpl - begin
+[DEBUG] 2020-02-17 06:59:39.148 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2020-02-17 06:59:39.149 [main] SQL - insert into users (birth_date, first_name, instrument, last_name, password, practice_counter, skill_level, studio_size, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2020-02-17 06:59:39.177 [main] IdentifierGeneratorHelper - Natively generated identity: 13
+[DEBUG] 2020-02-17 06:59:39.177 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-02-17 06:59:39.179 [main] TransactionImpl - committing
+[DEBUG] 2020-02-17 06:59:39.179 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2020-02-17 06:59:39.179 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2020-02-17 06:59:39.179 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2020-02-17 06:59:39.179 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2020-02-17 06:59:39.179 [main] EntityPrinter - Listing entities:
+[DEBUG] 2020-02-17 06:59:39.179 [main] EntityPrinter - stalterclouse.elspeth.entity.User{firstName=Brad, lastName=News, password=password, practiceCounter=42, instrument=percussion, id=13, birthDate=1998-01-01, skillLevel=beginner, studioSize=0, username=brandNew}
+[DEBUG] 2020-02-17 06:59:39.186 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 06:59:39.187 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-02-17 06:59:39.188 [main] SQL - select user0_.id as id1_0_0_, user0_.birth_date as birth_da2_0_0_, user0_.first_name as first_na3_0_0_, user0_.instrument as instrume4_0_0_, user0_.last_name as last_nam5_0_0_, user0_.password as password6_0_0_, user0_.practice_counter as practice7_0_0_, user0_.skill_level as skill_le8_0_0_, user0_.studio_size as studio_s9_0_0_, user0_.username as usernam10_0_0_ from users user0_ where user0_.id=?
+[DEBUG] 2020-02-17 06:59:39.191 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2020-02-17 06:59:39.191 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Resolving attributes for [stalterclouse.elspeth.entity.User#13]
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Processing attribute `birthDate` : value = 1998-01-01
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Attribute (`birthDate`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Processing attribute `firstName` : value = Brad
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Attribute (`firstName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Processing attribute `instrument` : value = percussion
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Attribute (`instrument`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Processing attribute `lastName` : value = News
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Attribute (`lastName`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Processing attribute `password` : value = password
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Processing attribute `practiceCounter` : value = 42
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Attribute (`practiceCounter`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Processing attribute `skillLevel` : value = beginner
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Attribute (`skillLevel`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Processing attribute `studioSize` : value = 0
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Attribute (`studioSize`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Processing attribute `username` : value = brandNew
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-02-17 06:59:39.192 [main] TwoPhaseLoad - Done materializing entity [stalterclouse.elspeth.entity.User#13]
+[DEBUG] 2020-02-17 06:59:39.192 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-02-17 06:59:39.192 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : stalterclouse.elspeth.entity.User#13
+[DEBUG] 2020-02-17 06:59:39.193 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
