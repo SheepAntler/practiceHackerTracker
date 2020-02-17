@@ -7,6 +7,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
 /**
  * Represents a User
@@ -47,4 +48,14 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
+
+    /**
+     * Calculates a user's age based on their date of birth
+     *
+     * @return the user's age
+     */
+    public int getAge() {
+        return (int) ChronoUnit.YEARS.between(birthDate, LocalDate.now());
+    }
+
 }
