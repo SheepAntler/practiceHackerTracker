@@ -17,21 +17,21 @@
    - [x] teacher log view
    - [x] anything else you can think of 
 - [x] Complete User Flow document 
-- [ ] Create a databse design
+- [x] Create a databse design
 - [x] Create practiceHacker databse 
 - [x] Build a user table
 - [x] Build a user_roles table
 
 ### Week 4 - CHECKPOINT 1
 
-- [ ] Finish DB design 
-- [ ] Create the User entity class (annotate for hibernate) 
-- [ ] Create User DAO 
-- [ ] Create test database 
-- [ ] Create User DAO unit tests
-- [ ] Set up logging
+- [x] Finish DB design 
+- [x] Create the User entity class (annotate for hibernate) 
+- [x] Create User DAO 
+- [x] Create test database 
+- [x] Create User DAO unit tests
+- [x] Set up logging
 - [ ] Get ready for Week 5 peer review! (design & code)
-- [ ] DON'T BE SCARED! 
+- [x] DON'T BE SCARED! 
 
 ### Week 5
 
