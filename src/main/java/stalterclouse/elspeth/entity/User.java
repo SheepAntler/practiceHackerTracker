@@ -32,6 +32,9 @@ public class User {
     @Column(name = "last_name")
     private String lastName;
 
+    @Column(name = "email")
+    private String email;
+
     @Column(name = "instrument")
     private String instrument;
 
@@ -52,11 +55,12 @@ public class User {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
-    public User(String username, String password, String firstName, String lastName, String instrument, String skillLevel, int practiceCounter, LocalDate birthDate, int studioSize) {
+    public User(String username, String password, String firstName, String lastName, String email, String instrument, String skillLevel, int practiceCounter, LocalDate birthDate, int studioSize) {
         this.username = username;
         this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.email = email;
         this.instrument = instrument;
         this.skillLevel = skillLevel;
         this.practiceCounter = practiceCounter;
