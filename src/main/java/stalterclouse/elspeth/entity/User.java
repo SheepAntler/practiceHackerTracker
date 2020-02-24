@@ -1,13 +1,14 @@
 package stalterclouse.elspeth.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.NaturalId;
 
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Represents a User
@@ -20,7 +21,13 @@ import java.time.temporal.ChronoUnit;
 @Entity(name = "User")
 @Table(name = "users")
 public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator(name = "native", strategy = "native")
+    private int id;
+
     @Column(name = "username")
+    @NaturalId
     private String username;
 
     @Column(name = "password")
@@ -50,10 +57,16 @@ public class User {
     @Column(name = "studio_size")
     private int studioSize;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
-    @GenericGenerator(name = "native", strategy = "native")
-    private int id;
+//    @ToString.Exclude
+//    @EqualsAndHashCode.Exclude
+//    @ManyToOne
+//    private Role role;
+
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<PracticeLog> practiceLogs = new HashSet<>();
+
 
     public User(String username, String password, String firstName, String lastName, String email, String instrument, String skillLevel, int practiceCounter, LocalDate birthDate, int studioSize) {
         this.username = username;
@@ -75,6 +88,26 @@ public class User {
      */
     public int getAge() {
         return (int) ChronoUnit.YEARS.between(birthDate, LocalDate.now());
+    }
+
+    /**
+     * Add practice log.
+     *
+     * @param log the log
+     */
+    public void addPracticeLog(PracticeLog log) {
+        practiceLogs.add(log);
+        log.setUser(this);
+    }
+
+    /**
+     * Remove practice log.
+     *
+     * @param log the log
+     */
+    public void removePracticeLog(PracticeLog log) {
+        practiceLogs.remove(log);
+        log.setUser(null);
     }
 
 }

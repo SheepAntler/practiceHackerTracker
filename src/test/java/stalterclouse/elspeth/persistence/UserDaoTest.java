@@ -1,17 +1,20 @@
 package stalterclouse.elspeth.persistence;
 
+import stalterclouse.elspeth.entity.PracticeLog;
 import stalterclouse.elspeth.entity.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import stalterclouse.elspeth.utilities.Database;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class UserDaoTest {
 
-    UserDao dao;
+    GenericDao genericDao;
 
     /**
      * Creating the DAO
@@ -19,9 +22,9 @@ class UserDaoTest {
     @BeforeEach
     void setUp() {
 
-        dao = new UserDao();
+        genericDao = new GenericDao(User.class);
 
-        stalterclouse.elspeth.utilities.Database database = stalterclouse.elspeth.utilities.Database.getInstance();
+        Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
 
     }
@@ -31,17 +34,8 @@ class UserDaoTest {
      */
     @Test
     void returnAllUsersSuccess() {
-        List<User> users = dao.returnAllUsers();
+        List<User> users = genericDao.getAllEntities();
         assertEquals(5, users.size());
-    }
-
-    /**
-     * Verifies gets users by username successfully.
-     */
-    @Test
-    void findUsersByUsernameSuccess() {
-        List<User> users = dao.findUsersByUsername("f");
-        assertEquals(1, users.size());
     }
 
     /**
@@ -49,7 +43,7 @@ class UserDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        User retrievedUser = dao.getById(4);
+        User retrievedUser = (User)genericDao.getById(4);
         assertEquals(4, retrievedUser.getId());
         assertEquals("GeezLouise", retrievedUser.getUsername());
         assertEquals("password", retrievedUser.getPassword());
@@ -69,10 +63,37 @@ class UserDaoTest {
     void insertSuccess() {
 
         User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", "percussion", "beginner", 42, LocalDate.parse("1998-01-01"), 0);
-        int id = dao.insert(newUser);
+        int id = genericDao.insert(newUser);
         assertNotEquals(0,id);
-        User insertedUser = dao.getById(id);
+        User insertedUser = (User)genericDao.getById(id);
         assertEquals(newUser, insertedUser);
+    }
+
+    /**
+     * Verifies successful insert of a user
+     */
+    @Test
+    void insertWithLogSuccess() {
+
+        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", "percussion", "beginner", 42, LocalDate.parse("1998-01-01"), 0);
+
+        // Log data
+        LocalDate practiceDate = LocalDate.of(2020, 2, 14);
+        LocalDateTime start = practiceDate.atTime(1, 50, 00);
+        LocalDateTime end = practiceDate.atTime(2, 50, 00);
+        String activities = "Tra La La!";
+        String notes = "Do be do be do.";
+        String teacher_comments = "Yahoo!";
+
+        PracticeLog log = new PracticeLog(newUser, practiceDate, start, end, activities, notes, teacher_comments);
+
+        newUser.addPracticeLog(log);
+
+        int id = genericDao.insert(newUser);
+        assertNotEquals(0,id);
+        User insertedUser = (User)genericDao.getById(id);
+        assertEquals(newUser, insertedUser);
+        assertEquals(1, insertedUser.getPracticeLogs().size());
     }
 
     /**
@@ -80,17 +101,8 @@ class UserDaoTest {
      */
     @Test
     void deleteSuccess() {
-        dao.delete(dao.getById(3));
-        assertNull(dao.getById(3));
-    }
-
-    /**
-     * Verify successful retrieval of all users
-     */
-    @Test
-    void getAllSuccess() {
-        List<User> users = dao.getAll();
-        assertEquals(5, users.size());
+        genericDao.delete(genericDao.getById(3));
+        assertNull(genericDao.getById(3));
     }
 
     /**
@@ -98,7 +110,7 @@ class UserDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<User> users = dao.getByPropertyEqual("instrument", "flugelhorn");
+        List<User> users = genericDao.getByPropertyEqual("instrument", "flugelhorn");
         assertEquals(1, users.size());
         assertEquals(4, users.get(0).getId());
     }
@@ -108,7 +120,7 @@ class UserDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<User> users = dao.getByPropertyLike("username", "s");
+        List<User> users = genericDao.getByPropertyLike("username", "s");
         assertEquals(4, users.size());
     }
 
@@ -118,10 +130,10 @@ class UserDaoTest {
     @Test
     void updateSuccess() {
         String newLastName = "Davis";
-        User userToUpdate = dao.getById(4);
+        User userToUpdate = (User)genericDao.getById(4);
         userToUpdate.setLastName(newLastName);
-        dao.saveOrUpdate(userToUpdate);
-        User retrievedUser = dao.getById(4);
+        genericDao.saveOrUpdate(userToUpdate);
+        User retrievedUser = (User)genericDao.getById(4);
         assertEquals(newLastName, retrievedUser.getLastName());
     }
 }
