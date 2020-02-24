@@ -19,8 +19,8 @@ This got me thinking: there are loads of "personal trainer" apps out there--reco
 count your calories, measure your water intake, etc--and all of them share really meaningful attributes 
 that make tracking a personal habit-building journey simpler. 
 
-There should be an app like that for musicians. An app to hold you accountable to a practice schedule 
-you commit to. An app where you can keep all of your practice ideas in one handy place. An app 
+There are a couple apps like that for musicians, too--to hold you accountable to a practice schedule 
+you commit to. An app where you can keep all of your practice ideas in one handy place. And here's the bit the DOESN'T exist yet: an app 
 with which teachers can share practice ideas with students, and with which students can share 
 progress with teachers. 
 
