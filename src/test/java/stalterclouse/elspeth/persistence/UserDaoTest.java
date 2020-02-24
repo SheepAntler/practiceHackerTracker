@@ -105,7 +105,7 @@ class UserDaoTest {
 
         User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", "percussion", "beginner", 42, LocalDate.parse("1998-01-01"), 0);
 
-        // Log data
+        // Practice Hack data
         String skillLevel = "advanced";
         String practiceHack = "Just, like, get it out of the case, dude.";
 
@@ -117,7 +117,7 @@ class UserDaoTest {
         assertNotEquals(0,id);
         User insertedUser = (User)genericDao.getById(id);
         assertEquals(newUser, insertedUser);
-        assertEquals(1, insertedUser.getPracticeLogs().size());
+        assertEquals(1, insertedUser.getPracticeHacks().size());
     }
 
     /**
