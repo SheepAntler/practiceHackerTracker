@@ -1,5 +1,6 @@
 package stalterclouse.elspeth.persistence;
 
+import stalterclouse.elspeth.entity.PracticeHack;
 import stalterclouse.elspeth.entity.PracticeLog;
 import stalterclouse.elspeth.entity.User;
 import org.junit.jupiter.api.BeforeEach;
@@ -70,7 +71,7 @@ class UserDaoTest {
     }
 
     /**
-     * Verifies successful insert of a user
+     * Verifies successful insert of a user with a practice log entry
      */
     @Test
     void insertWithLogSuccess() {
@@ -88,6 +89,29 @@ class UserDaoTest {
         PracticeLog log = new PracticeLog(newUser, practiceDate, start, end, activities, notes, teacher_comments);
 
         newUser.addPracticeLog(log);
+
+        int id = genericDao.insert(newUser);
+        assertNotEquals(0,id);
+        User insertedUser = (User)genericDao.getById(id);
+        assertEquals(newUser, insertedUser);
+        assertEquals(1, insertedUser.getPracticeLogs().size());
+    }
+
+    /**
+     * Verifies successful insert of a user with a practice hack entry
+     */
+    @Test
+    void insertWithHackSuccess() {
+
+        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", "percussion", "beginner", 42, LocalDate.parse("1998-01-01"), 0);
+
+        // Log data
+        String skillLevel = "advanced";
+        String practiceHack = "Just, like, get it out of the case, dude.";
+
+        PracticeHack entry = new PracticeHack(newUser, skillLevel, practiceHack);
+
+        newUser.addPracticeHack(entry);
 
         int id = genericDao.insert(newUser);
         assertNotEquals(0,id);

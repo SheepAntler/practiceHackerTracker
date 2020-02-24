@@ -67,6 +67,10 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<PracticeLog> practiceLogs = new HashSet<>();
 
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<PracticeHack> practiceHacks = new HashSet<>();
 
     public User(String username, String password, String firstName, String lastName, String email, String instrument, String skillLevel, int practiceCounter, LocalDate birthDate, int studioSize) {
         this.username = username;
@@ -108,6 +112,26 @@ public class User {
     public void removePracticeLog(PracticeLog log) {
         practiceLogs.remove(log);
         log.setUser(null);
+    }
+
+    /**
+     * Add practice hack.
+     *
+     * @param practiceHack the practice hack
+     */
+    public void addPracticeHack(PracticeHack practiceHack) {
+        practiceHacks.add(practiceHack);
+        practiceHack.setUser(this);
+    }
+
+    /**
+     * Remove practice hack.
+     *
+     * @param practiceHack the practice hack
+     */
+    public void removePracticeHack(PracticeHack practiceHack) {
+        practiceHacks.remove(practiceHack);
+        practiceHack.setUser(null);
     }
 
 }
