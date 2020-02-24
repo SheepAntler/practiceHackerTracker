@@ -62,7 +62,16 @@ IDEALLY, each unit test should perform ONE TASK. In your current ListTest class 
 2/8/2020
 
 ### Wireframes 
-I wasn't sure whether finishing up my wireframes before my other design documents were done was a good idea, but now that I've gotten through them, I'm incredibly glad I chose to complete them when I did. The whole process really got me thinking about my MVP--something about dragging all those rectangles around on webpage after webpage really helped me draw a better-defined line in the sand between what I _know_ I'm going to be able to complete (and how I would go about completing it) and what my reach items are going to be. I'm going to make a markdown table that outlines my MVP items and my reach items right after I'm done with this reflection, while it's all still fresh in my mind.  
+I wasn't sure whether finishing up my wireframes before my other design documents were done was a good idea, but now that I've gotten through them, I'm incredibly glad I chose to complete them when I did. The whole process really got me thinking about my MVP--something about dragging all those rectangles around on webpage after webpage really helped me draw a better-defined line in the sand between what I _know_ I'm going to be able to complete (and how I would go about completing it) and what my reach items are going to be. I'm going to make a markdown table that outlines my MVP items and my reach items right after I'm done with this reflection, while it's all still fresh in my mind. 
+
+## Date
+
+### Entity Relationships 
+BLOCKER TIME. I'm bamboozled. In my application, there are two roles: "teacher" and "not teacher". Many users can have each role, but each user can only have one role per account. That's totally a One-To-Many relationship--however, here's where the wheels pop off for old Elspeth: 
+1. Why do I need IDs for my roles if there are only 2 of them? 
+2. If the foreign key is on the "one" side (in my case, the *roles* side), then how do I annotate that? I did a BUNCH of research on this, and tried something out that ultimately didn't work. I _have_ picked up that this makes it a Unidirectional One-To-Many relationship instead of a Bidirectional one (which is the sort we've been discussing), but I'm unclear on how to mark out the difference in my Hibernate annotations correctly--especially since some folks online seem to be VERY disparaging when it comes to unidirectional one-to-many relationships. I feel harshly judged by a lot of Stack Overflow users, to be honest. 
+
+Also, one other question: I know that we're using the username field in both Users and Roles for authentication; however, I'm confused about how that ties in to the One-To-Many relationship. Are we required to use the username field as our foreign key in the roles table? Or can we use ID like the demo/exercise 5? 
 
 
 
