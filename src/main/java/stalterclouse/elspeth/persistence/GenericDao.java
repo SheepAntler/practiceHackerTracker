@@ -99,7 +99,7 @@ public class GenericDao<T> {
      * @param value value of the property to search for
      * @return list of entities meeting the criteria search
      */
-    public List<T> getByPropertyEqual(String propertyName, String value) {
+    public List<T> getByPropertyEqual(String propertyName, Object value) {
         Session session = getSession();
 
         log.debug("Searching for order with " + propertyName + " = " + value);

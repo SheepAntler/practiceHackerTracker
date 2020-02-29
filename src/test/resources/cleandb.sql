@@ -18,3 +18,10 @@ INSERT INTO practice_hacks VALUES (1,3,'intermediate','cello','play scales for 2
                                   (3,1,'beginner','viola','practice making 5 slow bow hands in a row'),
                                   (4,2,'beginner','trumpet','i honestly have no idea what trumpet players practice'),
                                   (5,5,'advanced','general','use a metronome');
+
+delete from studios;
+INSERT INTO studios VALUES (1,4),
+                           (2,5),
+                           (3,1),
+                           (4,1),
+                           (5,2);

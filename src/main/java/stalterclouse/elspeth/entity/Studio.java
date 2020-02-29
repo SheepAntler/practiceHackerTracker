@@ -29,6 +29,4 @@ public class Studio {
     public Studio(User teacher) {
         this.teacher = teacher;
     }
-
-
 }
