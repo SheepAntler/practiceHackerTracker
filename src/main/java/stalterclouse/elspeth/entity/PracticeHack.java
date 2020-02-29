@@ -24,6 +24,9 @@ public class PracticeHack {
     @Column(name = "skill_level")
     private String skillLevel;
 
+    @Column(name = "instrument")
+    private String instrument;
+
     @Column(name = "text_body")
     private String practiceHack;
 
@@ -32,9 +35,10 @@ public class PracticeHack {
     @ManyToOne
     private User user;
 
-    public PracticeHack(User user, String skillLevel, String practiceHack) {
+    public PracticeHack(User user, String skillLevel, String instrument, String practiceHack) {
         this.user = user;
         this.skillLevel = skillLevel;
+        this.instrument = instrument;
         this.practiceHack = practiceHack;
     }
 }

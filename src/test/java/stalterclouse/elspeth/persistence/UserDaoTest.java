@@ -2,6 +2,7 @@ package stalterclouse.elspeth.persistence;
 
 import stalterclouse.elspeth.entity.PracticeHack;
 import stalterclouse.elspeth.entity.PracticeLog;
+import stalterclouse.elspeth.entity.Studio;
 import stalterclouse.elspeth.entity.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -44,17 +45,11 @@ class UserDaoTest {
      */
     @Test
     void getByIdSuccess() {
+        LocalDate birthDate = LocalDate.of(2002, 06, 04);
+        User expectedUser = new User("GeezLouise", "password", "Louise", "Janak", "yesitiscalledaflugelhorn@gmail.com", "flugelhorn", "advanced", 44, birthDate, 1);
+        expectedUser.setId(4);
         User retrievedUser = (User)genericDao.getById(4);
-        assertEquals(4, retrievedUser.getId());
-        assertEquals("GeezLouise", retrievedUser.getUsername());
-        assertEquals("password", retrievedUser.getPassword());
-        assertEquals("Louise", retrievedUser.getFirstName());
-        assertEquals("Janak", retrievedUser.getLastName());
-        assertEquals("flugelhorn", retrievedUser.getInstrument());
-        assertEquals("advanced", retrievedUser.getSkillLevel());
-        assertEquals(44, retrievedUser.getPracticeCounter());
-        assertEquals("2002-06-04", (retrievedUser.getBirthDate()).toString());
-        assertEquals(1, retrievedUser.getStudioSize());
+        assertEquals(expectedUser, retrievedUser);
     }
 
     /**
@@ -78,7 +73,7 @@ class UserDaoTest {
 
         User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", "percussion", "beginner", 42, LocalDate.parse("1998-01-01"), 0);
 
-        // Log data
+        // Practice Log data
         LocalDate practiceDate = LocalDate.of(2020, 2, 14);
         LocalDateTime start = practiceDate.atTime(1, 50, 00);
         LocalDateTime end = practiceDate.atTime(2, 50, 00);
@@ -107,9 +102,10 @@ class UserDaoTest {
 
         // Practice Hack data
         String skillLevel = "advanced";
+        String instrument = "cello";
         String practiceHack = "Just, like, get it out of the case, dude.";
 
-        PracticeHack entry = new PracticeHack(newUser, skillLevel, practiceHack);
+        PracticeHack entry = new PracticeHack(newUser, skillLevel, instrument, practiceHack);
 
         newUser.addPracticeHack(entry);
 
@@ -119,6 +115,26 @@ class UserDaoTest {
         assertEquals(newUser, insertedUser);
         assertEquals(1, insertedUser.getPracticeHacks().size());
     }
+
+    /**
+     * Verifies successful insert of a user with an associated studio
+     */
+    @Test
+    void insertWithStudioSuccess() {
+        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", "percussion", "beginner", 42, LocalDate.parse("1998-01-01"), 0);
+
+        Studio studio = new Studio(newUser);
+
+        newUser.addStudio(studio);
+
+        int id = genericDao.insert(newUser);
+        assertNotEquals(0,id);
+        User insertedUser = (User)genericDao.getById(id);
+        assertEquals(newUser, insertedUser);
+        assertEquals(1, insertedUser.getStudios().size());
+
+    }
+
 
     /**
      * Verify successful delete of user

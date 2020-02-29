@@ -57,19 +57,16 @@ class PracticeHackDaoTest {
         // Log data
         GenericDao genericUser = new GenericDao(User.class);
         User user = (User)genericUser.getById(5);
-        LocalDate practiceDate = LocalDate.of(2020, 2, 14);
-        LocalDateTime start = practiceDate.atTime(1, 50, 00);
-        LocalDateTime end = practiceDate.atTime(2, 50, 00);
-        String activities = "Tra La La!";
-        String notes = "Do be do be do.";
-        String teacher_comments = "Yahoo!";
+        String skillLevel = "intermediate";
+        String instrument = "viola";
+        String practiceHack = "Unpack, you hack!";
 
-        PracticeLog newLog = new PracticeLog(user, practiceDate, start, end, activities, notes, teacher_comments);
+        PracticeHack newHack = new PracticeHack(user, skillLevel, instrument, practiceHack);
 
-        int id = genericDao.insert(newLog);
+        int id = genericDao.insert(newHack);
         assertNotEquals(0,id);
-        PracticeLog insertedLog = (PracticeLog)genericDao.getById(id);
-        assertEquals(newLog, insertedLog);
+        PracticeHack insertedHack = (PracticeHack)genericDao.getById(id);
+        assertEquals(newHack, insertedHack);
     }
 
     /**
@@ -86,10 +83,9 @@ class PracticeHackDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        LocalDate date = LocalDate.of(2019, 12, 25);
-        List<PracticeLog> logs = genericDao.getByPropertyEqual("notes", "Nat's Knapsack Strap Snapped");
-        assertEquals(1, logs.size());
-        assertEquals(2, logs.get(0).getId());
+        List<PracticeHack> hacks = genericDao.getByPropertyEqual("skillLevel", "intermediate");
+        assertEquals(1, hacks.size());
+        assertEquals(1, hacks.get(0).getId());
     }
 
     /**
@@ -97,8 +93,8 @@ class PracticeHackDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<PracticeLog> logs = genericDao.getByPropertyLike("activities", "scales");
-        assertEquals(4, logs.size());
+        List<PracticeHack> hacks = genericDao.getByPropertyLike("instrument", "viol");
+        assertEquals(2, hacks.size());
     }
 
     /**
@@ -106,11 +102,11 @@ class PracticeHackDaoTest {
      */
     @Test
     void updateSuccess() {
-        String newActivities = "I ate cake";
-        PracticeLog logToUpdate = (PracticeLog)genericDao.getById(4);
-        logToUpdate.setActivities(newActivities);
-        genericDao.saveOrUpdate(logToUpdate);
-        PracticeLog retrievedLog = (PracticeLog)genericDao.getById(4);
-        assertEquals(newActivities, retrievedLog.getActivities());
+        String newHack = "play arpeggios for 20 minutes";
+        PracticeHack hackToUpdate = (PracticeHack)genericDao.getById(1);
+        hackToUpdate.setPracticeHack(newHack);
+        genericDao.saveOrUpdate(hackToUpdate);
+        PracticeHack retrievedHack = (PracticeHack)genericDao.getById(1);
+        assertEquals(newHack, retrievedHack.getPracticeHack());
     }
 }

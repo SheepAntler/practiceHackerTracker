@@ -8,6 +8,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -72,6 +73,11 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<PracticeHack> practiceHacks = new HashSet<>();
 
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    @OneToMany(mappedBy = "teacher", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Studio> studios = new HashSet<>();
+
     public User(String username, String password, String firstName, String lastName, String email, String instrument, String skillLevel, int practiceCounter, LocalDate birthDate, int studioSize) {
         this.username = username;
         this.password = password;
@@ -132,6 +138,26 @@ public class User {
     public void removePracticeHack(PracticeHack practiceHack) {
         practiceHacks.remove(practiceHack);
         practiceHack.setUser(null);
+    }
+
+    /**
+     * Add studio.
+     *
+     * @param studio the studio
+     */
+    public void addStudio(Studio studio) {
+        studios.add(studio);
+        studio.setTeacher(this);
+    }
+
+    /**
+     * Remove studio.
+     *
+     * @param studio the studio
+     */
+    public void removeStudio(Studio studio) {
+        studios.remove(studio);
+        studio.setTeacher(null);
     }
 
 }
