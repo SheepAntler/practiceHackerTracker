@@ -25,3 +25,10 @@ INSERT INTO studios VALUES (1,4,'trumpet'),
                            (3,1,'violin'),
                            (4,1,'viola'),
                            (5,2,'concertina');
+
+delete from studio_students;
+INSERT INTO studio_students VALUES (1,5),
+                                   (2,4),
+                                   (3,3),
+                                   (4,4),
+                                   (5,5);

@@ -75,6 +75,16 @@ public class User {
     @OneToMany(mappedBy = "teacher", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Studio> studios = new HashSet<>();
 
+//    @ToString.Exclude
+//    @EqualsAndHashCode.Exclude
+//    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+//    private Set<StudioStudent> studioStudents = new HashSet<>();
+
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    @ManyToMany(fetch = FetchType.EAGER, mappedBy = "studentsInStudio")
+    private Set<Studio> studioStudents = new HashSet<>();
+
     public User(String username, String password, String firstName, String lastName, String email, String instrument, String skillLevel, int practiceCounter, LocalDate birthDate) {
         this.username = username;
         this.password = password;
@@ -155,5 +165,25 @@ public class User {
         studios.remove(studio);
         studio.setTeacher(null);
     }
+
+//    /**
+//     * Add studio to student.
+//     *
+//     * @param studioStudent the student in the studio
+//     */
+//    public void addStudioStudent(StudioStudent studioStudent) {
+//        studioStudents.add(studioStudent);
+//        studioStudent.setStudent(this);
+//    }
+//
+//    /**
+//     * Remove studio from student.
+//     *
+//     * @param studioStudent the student in the studio
+//     */
+//    public void removeStudioStudent(StudioStudent studioStudent) {
+//        studioStudents.remove(studioStudent);
+//        studioStudent.setStudent(null);
+//    }
 
 }

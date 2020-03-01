@@ -21,7 +21,7 @@
         <mapping class="stalterclouse.elspeth.entity.PracticeLog"/>
         <mapping class="stalterclouse.elspeth.entity.PracticeHack"/>
         <mapping class="stalterclouse.elspeth.entity.Studio"/>
-
+<!--        <mapping class="stalterclouse.elspeth.entity.StudioStudent"/>-->
 
     </session-factory>
 </hibernate-configuration>

@@ -1,9 +1,6 @@
 package stalterclouse.elspeth.persistence;
 
-import stalterclouse.elspeth.entity.PracticeHack;
-import stalterclouse.elspeth.entity.PracticeLog;
-import stalterclouse.elspeth.entity.Studio;
-import stalterclouse.elspeth.entity.User;
+import stalterclouse.elspeth.entity.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import stalterclouse.elspeth.utilities.Database;
@@ -122,7 +119,6 @@ class UserDaoTest {
     @Test
     void insertWithStudioSuccess() {
         User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", "percussion", "beginner", 42, LocalDate.parse("1998-01-01"));
-
         Studio studio = new Studio(newUser, "oboe");
 
         newUser.addStudio(studio);
@@ -134,7 +130,6 @@ class UserDaoTest {
         assertEquals(1, insertedUser.getStudios().size());
 
     }
-
 
     /**
      * Verify successful delete of user
