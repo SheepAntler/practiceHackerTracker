@@ -55,9 +55,6 @@ public class User {
     @Column(name = "birth_date")
     private LocalDate birthDate;
 
-    @Column(name = "studio_size")
-    private int studioSize;
-
 //    @ToString.Exclude
 //    @EqualsAndHashCode.Exclude
 //    @ManyToOne
@@ -78,7 +75,7 @@ public class User {
     @OneToMany(mappedBy = "teacher", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Studio> studios = new HashSet<>();
 
-    public User(String username, String password, String firstName, String lastName, String email, String instrument, String skillLevel, int practiceCounter, LocalDate birthDate, int studioSize) {
+    public User(String username, String password, String firstName, String lastName, String email, String instrument, String skillLevel, int practiceCounter, LocalDate birthDate) {
         this.username = username;
         this.password = password;
         this.firstName = firstName;
@@ -88,7 +85,6 @@ public class User {
         this.skillLevel = skillLevel;
         this.practiceCounter = practiceCounter;
         this.birthDate = birthDate;
-        this.studioSize = studioSize;
     }
 
     /**

@@ -26,7 +26,12 @@ public class Studio {
     @ManyToOne
     private User teacher;
 
-    public Studio(User teacher) {
+    @Column(name = "instrument")
+    private String instrument;
+
+    public Studio(User teacher, String instrument) {
+
         this.teacher = teacher;
+        this.instrument = instrument;
     }
 }

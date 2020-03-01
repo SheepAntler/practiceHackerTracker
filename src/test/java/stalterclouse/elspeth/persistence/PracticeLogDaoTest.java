@@ -85,7 +85,6 @@ class PracticeLogDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        LocalDate date = LocalDate.of(2019, 12, 25);
         List<PracticeLog> logs = genericDao.getByPropertyEqual("notes", "Nat's Knapsack Strap Snapped");
         assertEquals(1, logs.size());
         assertEquals(2, logs.get(0).getId());

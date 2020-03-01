@@ -58,7 +58,7 @@ class StudioDaoTest {
         GenericDao genericUser = new GenericDao(User.class);
         User user = (User) genericUser.getById(5);
 
-        Studio newStudio = new Studio(user);
+        Studio newStudio = new Studio(user, "flute");
 
         int id = genericDao.insert(newStudio);
         assertNotEquals(0, id);
@@ -83,6 +83,15 @@ class StudioDaoTest {
         List<Studio> studios = genericDao.getByPropertyEqual("teacher", 5);
         assertEquals(1, studios.size());
         assertEquals(2, studios.get(0).getId());
+    }
+
+    /**
+     * Verify successful get by property (approximate match)
+     */
+    @Test
+    void getByPropertyLikeSuccess() {
+        List<Studio> studios = genericDao.getByPropertyLike("instrument", "viol");
+        assertEquals(2, studios.size());
     }
 
     /**

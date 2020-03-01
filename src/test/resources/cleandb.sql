@@ -1,9 +1,9 @@
 delete from users;
-INSERT INTO users VALUES (1,'fluffybunny','password','Elaine','Markowitz','emarkowitz@gmail.com', 'violin', 'beginner', '12', '2009-09-09', '8'),
-                         (2,'madBratsche','password','Jonathan','Dunlop', 'madbratsche@gmail.com', 'viola', 'intermediate', '45', '2004-01-12', '2'),
-                         (3,'sheepAntler','password','Elspeth','StalterClouse', 'sheepantler@gmail.com', 'violin', 'professional', '28', '1989-12-12', '18'),
-                         (4,'GeezLouise','password','Louise','Janak', 'yesitiscalledaflugelhorn@gmail.com', 'flugelhorn', 'advanced', '44', '2002-06-04', '1'),
-                         (5,'splish_splash','password','Mickey','McMahon', 'mickmick@gmail.com', 'bass', 'professional', '112', '1986-10-02', '28');
+INSERT INTO users VALUES (1,'fluffybunny','password','Elaine','Markowitz','emarkowitz@gmail.com', 'violin', 'beginner', '12', '2009-09-09'),
+                         (2,'madBratsche','password','Jonathan','Dunlop', 'madbratsche@gmail.com', 'viola', 'intermediate', '45', '2004-01-12'),
+                         (3,'sheepAntler','password','Elspeth','StalterClouse', 'sheepantler@gmail.com', 'violin', 'professional', '28', '1989-12-12'),
+                         (4,'GeezLouise','password','Louise','Janak', 'yesitiscalledaflugelhorn@gmail.com', 'flugelhorn', 'advanced', '44', '2002-06-04'),
+                         (5,'splish_splash','password','Mickey','McMahon', 'mickmick@gmail.com', 'bass', 'professional', '112', '1986-10-02');
 
 delete from practice_logs;
 INSERT INTO practice_logs VALUES (1,1,'2020-02-24','2020-02-24 09:10:11','2020-02-24 10:10:11','scales, arpeggios, concerto','test','test'),
@@ -20,8 +20,8 @@ INSERT INTO practice_hacks VALUES (1,3,'intermediate','cello','play scales for 2
                                   (5,5,'advanced','general','use a metronome');
 
 delete from studios;
-INSERT INTO studios VALUES (1,4),
-                           (2,5),
-                           (3,1),
-                           (4,1),
-                           (5,2);
+INSERT INTO studios VALUES (1,4,'trumpet'),
+                           (2,5,'trombone'),
+                           (3,1,'violin'),
+                           (4,1,'viola'),
+                           (5,2,'concertina');
