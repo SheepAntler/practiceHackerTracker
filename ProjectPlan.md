@@ -62,7 +62,7 @@
 
 - [ ] index JSP
 - [ ] teacher search JSP
-- [ ] 
+- [ ] music search JSP FOR SURE!!!!!!!!!!!!!!!
 - [ ] Create database in AWS
 - [ ] Deploy to AWS (Woohoo!)
 - [ ] Set up local authentication 
