@@ -70,7 +70,7 @@ Let's make it a little easier, eh?
 * [User Stories](DesignDocuments/userStories.md)
 * [Screen Design](DesignDocuments/wireframes)
 * [Application Flow](DesignDocuments/applicationFlow.md)
-* [Database Design](DesignDocuments/databaseDiagram.png)
+* [Database Design](DesignDocuments/databaseDesign.png)
 
 ### [Project Plan](ProjectPlan.md)
 
