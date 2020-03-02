@@ -30,5 +30,6 @@ delete from studio_students;
 INSERT INTO studio_students VALUES (1,5),
                                    (2,4),
                                    (3,3),
-                                   (4,4),
-                                   (5,5);
+                                   (4,3),
+                                   (5,5),
+                                   (5,1);

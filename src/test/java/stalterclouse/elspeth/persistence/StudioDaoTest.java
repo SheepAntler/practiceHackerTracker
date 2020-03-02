@@ -67,6 +67,16 @@ class StudioDaoTest {
     }
 
     /**
+     * Verifies that the User/Studio bridging table is working correctly
+     */
+    @Test
+    void testStudioStudentsConnection() {
+        Studio studio = (Studio)genericDao.getById(5);
+
+        assertEquals(2, studio.getStudentsInStudio().size());
+    }
+
+    /**
      * Verify successful delete of user
      */
     @Test

@@ -83,7 +83,7 @@ public class User {
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     @ManyToMany(fetch = FetchType.EAGER, mappedBy = "studentsInStudio")
-    private Set<Studio> studioStudents = new HashSet<>();
+    private Set<Studio> studiosOfStudent = new HashSet<>();
 
     public User(String username, String password, String firstName, String lastName, String email, String instrument, String skillLevel, int practiceCounter, LocalDate birthDate) {
         this.username = username;
