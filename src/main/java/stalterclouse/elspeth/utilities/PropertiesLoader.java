@@ -1,5 +1,8 @@
 package stalterclouse.elspeth.utilities;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.IOException;
 import java.util.Properties;
 
@@ -17,16 +20,15 @@ public interface PropertiesLoader {
      * @throws Exception if there is a more general error
      */
     default Properties loadProperties(String propertiesFilePath) throws Exception {
+        final Logger logger = LogManager.getLogger(this.getClass());
         Properties properties = new Properties();
         try {
             properties.load(this.getClass().getResourceAsStream(propertiesFilePath));
         } catch (IOException ioException) {
-            System.out.println("Oh dear. It seems we couldn't read that file.");
-            ioException.printStackTrace();
+            logger.error("Oh dear. It seems we couldn't read that filePath.", ioException);
             throw ioException;
         } catch (Exception exception) {
-            System.out.println("Blast! General pillishness has caused an error!");
-            exception.printStackTrace();
+            logger.error("Blast! General Pillishness has caused an error!", exception);
             throw exception;
         }
         return properties;

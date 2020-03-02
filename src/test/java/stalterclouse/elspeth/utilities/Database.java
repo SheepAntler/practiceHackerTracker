@@ -1,5 +1,6 @@
 package stalterclouse.elspeth.utilities;
 
+import lombok.extern.log4j.Log4j2;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -18,10 +19,9 @@ import java.util.Properties;
  * @author pwaite
  * @author Alex M - Fall 2019 - added multi-line sql capability
  */
-
+@Log4j2
 public class Database implements PropertiesLoader {
 
-    private final Logger logger = LogManager.getLogger(this.getClass());
     // create an object of the class Database
     private static Database instance = new Database();
 
@@ -34,7 +34,7 @@ public class Database implements PropertiesLoader {
         try {
             properties = loadProperties("/database.properties");
         } catch (Exception e) {
-            logger.error("You've got Property Problems! ", e);
+            log.error("You've got Property Problems! ", e);
         }
 
     }
@@ -82,7 +82,7 @@ public class Database implements PropertiesLoader {
             try {
                 connection.close();
             } catch (SQLException e) {
-                System.out.println("Cannot close connection" + e);
+                log.error("Cannot close database connection" + e);
             }
         }
 
@@ -118,9 +118,9 @@ public class Database implements PropertiesLoader {
             }
 
         } catch (SQLException se) {
-            logger.error(se);
+            log.error("We've got a SQL exception, folks!", se);
         } catch (Exception e) {
-            logger.error(e);
+            log.error("You've got some general SQL problems", e);
         } finally {
             disconnect();
         }
