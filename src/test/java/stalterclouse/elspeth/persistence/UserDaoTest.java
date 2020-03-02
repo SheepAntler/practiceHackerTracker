@@ -132,16 +132,6 @@ class UserDaoTest {
     }
 
     /**
-     * Verifies that the User/Studio bridging table is working correctly
-     */
-    @Test
-    void testStudioStudentsConnection() {
-        User student = (User)genericDao.getById(3);
-
-        assertEquals(2, student.getStudiosOfStudent().size());
-    }
-
-    /**
      * Verify successful delete of user
      */
     @Test
@@ -181,4 +171,33 @@ class UserDaoTest {
         User retrievedUser = (User)genericDao.getById(4);
         assertEquals(newLastName, retrievedUser.getLastName());
     }
+
+    /**
+     * Verifies that the User/Studio bridging table is working correctly
+     */
+    @Test
+    void testStudioStudentsConnection() {
+        User student = (User)genericDao.getById(3);
+
+        assertEquals(2, student.getStudiosOfStudent().size());
+    }
+
+    /**
+     * Verifies that the User/Role relationship is established correctly
+     */
+    @Test
+    void testUserRoleRetrieval() {
+        User studentUser = (User)genericDao.getById(1);
+        User teacherUser = (User)genericDao.getById(2);
+        User practiceHackerUser = (User)genericDao.getById(3);
+
+        Role student = studentUser.getRole();
+        Role teacher = teacherUser.getRole();
+        Role practiceHacker = practiceHackerUser.getRole();
+
+        assertEquals("student", student.getRole());
+        assertEquals("teacher", teacher.getRole());
+        assertEquals("practiceHacker", practiceHacker.getRole());
+    }
+
 }

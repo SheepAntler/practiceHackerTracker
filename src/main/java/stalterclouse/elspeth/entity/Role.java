@@ -20,26 +20,31 @@ import java.util.Set;
 @Entity(name = "Roles")
 @Table(name = "user_roles")
 public class Role {
-    @Column(name = "role_name")
-    private String role;
-
-    @ToString.Exclude
-    @EqualsAndHashCode.Exclude
-    @OneToMany//(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    @JoinColumn(name="username")
-    private Set<User> users = new HashSet<>();
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
+
+    // This OneToOne relationship is brought to you by a Baeldung tutorial at https://www.baeldung.com/jpa-one-to-one
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
+    private User user;
+
+    @Column(name = "username")
+    private String username;
+
+    @Column(name = "role_name")
+    private String role;
 
     /**
      * Instantiates a new Role.
      *
      * @param role the role
      */
-    public Role(String role) {
+    public Role(String username, String role) {
+        this.username = username;
         this.role = role;
     }
 }

@@ -33,3 +33,9 @@ INSERT INTO studio_students VALUES (1,5),
                                    (4,3),
                                    (5,5),
                                    (5,1);
+
+delete from user_roles;
+INSERT INTO user_roles VALUES (1,1,'fluffybunny','student'),
+                              (2,3,'sheepAntler','practiceHacker'),
+                              (3,5,'splish_splash','practiceHacker'),
+                              (4,2,'madBratsche','teacher');

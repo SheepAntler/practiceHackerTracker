@@ -31,6 +31,7 @@ public class Studio {
     @Column(name = "instrument")
     private String instrument;
 
+    // This ManyToMany relationship is brought to you by this Mkyong tutorial: https://mkyong.com/hibernate/hibernate-many-to-many-relationship-example-annotation/
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
@@ -39,34 +40,9 @@ public class Studio {
             inverseJoinColumns = { @JoinColumn(name = "student_id", nullable = false, updatable = false) })
     private Set<User> studentsInStudio = new HashSet<>();
 
-//    @ToString.Exclude
-//    @EqualsAndHashCode.Exclude
-//    @OneToMany(mappedBy = "studio", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-//    private Set<StudioStudent> studioStudents = new HashSet<>();
-
     public Studio(User teacher, String instrument) {
 
         this.teacher = teacher;
         this.instrument = instrument;
     }
-//
-//    /**
-//     * Add student to studio.
-//     *
-//     * @param studioStudent the student in the studio
-//     */
-//    public void addStudioToStudent(StudioStudent studioStudent) {
-//        studioStudents.add(studioStudent);
-//        studioStudent.setStudio(this);
-//    }
-//
-//    /**
-//     * Remove student from studio.
-//     *
-//     * @param studioStudent the student in the studio
-//     */
-//    public void removeStudioFromStudent(StudioStudent studioStudent) {
-//        studioStudents.remove(studioStudent);
-//        studioStudent.setStudio(null);
-//    }
 }

@@ -55,10 +55,11 @@ public class User {
     @Column(name = "birth_date")
     private LocalDate birthDate;
 
-//    @ToString.Exclude
-//    @EqualsAndHashCode.Exclude
-//    @ManyToOne
-//    private Role role;
+    // This OneToOne relationship is brought to you by a Baeldung tutorial at https://www.baeldung.com/jpa-one-to-one
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    @OneToOne(mappedBy = "user")
+    private Role role;
 
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
@@ -75,11 +76,7 @@ public class User {
     @OneToMany(mappedBy = "teacher", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Studio> studios = new HashSet<>();
 
-//    @ToString.Exclude
-//    @EqualsAndHashCode.Exclude
-//    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-//    private Set<StudioStudent> studioStudents = new HashSet<>();
-
+    // This ManyToMany relationship is brought to you by this Mkyong tutorial: https://mkyong.com/hibernate/hibernate-many-to-many-relationship-example-annotation/
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     @ManyToMany(fetch = FetchType.EAGER, mappedBy = "studentsInStudio")
@@ -165,25 +162,5 @@ public class User {
         studios.remove(studio);
         studio.setTeacher(null);
     }
-
-//    /**
-//     * Add studio to student.
-//     *
-//     * @param studioStudent the student in the studio
-//     */
-//    public void addStudioStudent(StudioStudent studioStudent) {
-//        studioStudents.add(studioStudent);
-//        studioStudent.setStudent(this);
-//    }
-//
-//    /**
-//     * Remove studio from student.
-//     *
-//     * @param studioStudent the student in the studio
-//     */
-//    public void removeStudioStudent(StudioStudent studioStudent) {
-//        studioStudents.remove(studioStudent);
-//        studioStudent.setStudent(null);
-//    }
 
 }
