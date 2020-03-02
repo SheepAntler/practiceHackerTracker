@@ -30,41 +30,44 @@
 - [x] Create test database 
 - [x] Create User DAO unit tests
 - [x] Set up logging
-- [ ] Get ready for Week 5 peer review! (design & code)
+- [x] Get ready for Week 5 peer review! (design & code)
 - [x] DON'T BE SCARED! 
 
 ### Week 5
 
 - [ ] Create JSP template for all pages 
-- [ ] Create Role table 
-- [ ] Create Role entity class (annotate for hibernate)
-- [ ] Create Role DAO
-- [ ] Create Role DAO unit tests 
+- [x] Create Role table 
+- [x] Create Role entity class (annotate for hibernate)
+- [x] Implement Generic DAO
+- [x] Create DAO unit tests for User and PracticeLog classes
 - [ ] Add a JSP to display user and role (view profile?) 
 - [ ] Add a JSP to add a user (create account)
 
 ### Week 6
 
-- [ ] CHECK THIS BOX IF YOU BELIEVE IN YOURSELF. 
-- [ ] Create database on AWS
-- [ ] Deploy to AWS (WOOHOO!)
-- [ ] Create Practice Log table 
-- [ ] Begin creating Studio table (for teacher accounts)
-- [ ] Begin creating Studio and Practice Log entities 
-- [ ] Refactor DAOs into a generic DAO 
+- [x] CHECK THIS BOX IF YOU BELIEVE IN YOURSELF. 
+- [ ] Create sample data in database
+- [x] Create Practice Log table 
+- [x] Begin creating Studio table (for teacher accounts)
+- [x] Begin creating Studio and Practice Hack entities 
+- [x] Fix Role class/roles table
+- [x] Complete implementation/testing of the Practice Log and Studio tables
+- [x] Complete implementation/testing the Practice Log and Studio entities
 - [ ] Add update/delete functionality in JSP for user and role 
 - [ ] Build the Sheet Music search JSP
 - [ ] Build the Practice Log add/update/delete JSPs for teachers (comments) and practice hackers (logs)
-- [ ] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created.
+- [x] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created.
 
 ### Week 7 - CHECKPOINT 2
 
+- [ ] index JSP
+- [ ] teacher search JSP
+- [ ] 
+- [ ] Create database in AWS
+- [ ] Deploy to AWS (Woohoo!)
 - [ ] Set up local authentication 
 - [ ] Set up AWS authentication 
-- [ ] Continue to implement and test the Practice Log and Studio tables
-- [ ] Continue to implement and test the Practice Log and Studio entities
-- [ ] Add the Practice Hacks table 
-- [ ] Add the Practice Hacks DAO 
+- [x] Add the Practice Hacks table 
 - [ ] Make any/all Checkpoint 2 changes 
 
 ### Week 8
