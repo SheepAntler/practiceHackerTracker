@@ -43,7 +43,7 @@ class UserDaoTest {
     @Test
     void getByIdSuccess() {
         LocalDate birthDate = LocalDate.of(2002, 06, 04);
-        User expectedUser = new User("GeezLouise", "password", "Louise", "Janak", "yesitiscalledaflugelhorn@gmail.com", "flugelhorn", "advanced", 44, birthDate);
+        User expectedUser = new User("GeezLouise", "password", "Louise", "Janak", "yesitiscalledaflugelhorn@gmail.com", "advanced", 44, birthDate, "Madison", "WI", 53703);
         expectedUser.setId(4);
         User retrievedUser = (User)genericDao.getById(4);
         assertEquals(expectedUser, retrievedUser);
@@ -55,7 +55,7 @@ class UserDaoTest {
     @Test
     void insertSuccess() {
 
-        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", "percussion", "beginner", 42, LocalDate.parse("1998-01-01"));
+        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", "beginner", 42, LocalDate.parse("1998-01-01"), "Portland", "OR", 97035);
         int id = genericDao.insert(newUser);
         assertNotEquals(0,id);
         User insertedUser = (User)genericDao.getById(id);
@@ -68,7 +68,7 @@ class UserDaoTest {
     @Test
     void insertWithLogSuccess() {
 
-        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", "percussion", "beginner", 42, LocalDate.parse("1998-01-01"));
+        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", "beginner", 42, LocalDate.parse("1998-01-01"), "Portland", "OR", 97035);
 
         // Practice Log data
         LocalDate practiceDate = LocalDate.of(2020, 2, 14);
@@ -95,7 +95,7 @@ class UserDaoTest {
     @Test
     void insertWithHackSuccess() {
 
-        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", "percussion", "beginner", 42, LocalDate.parse("1998-01-01"));
+        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", "beginner", 42, LocalDate.parse("1998-01-01"), "Portland", "OR", 97035);
 
         // Practice Hack data
         String skillLevel = "advanced";
@@ -118,7 +118,7 @@ class UserDaoTest {
      */
     @Test
     void insertWithStudioSuccess() {
-        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", "percussion", "beginner", 42, LocalDate.parse("1998-01-01"));
+        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", "beginner", 42, LocalDate.parse("1998-01-01"), "Portland", "OR", 97035);
         Studio studio = new Studio(newUser, "oboe");
 
         newUser.addStudio(studio);
@@ -130,6 +130,25 @@ class UserDaoTest {
         assertEquals(1, insertedUser.getStudios().size());
 
     }
+
+    /**
+     * Verifies successful insert of a user with an associated studio
+     */
+    @Test
+    void insertWithInstrumentSuccess() {
+        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", "beginner", 42, LocalDate.parse("1998-01-01"), "Portland", "OR", 97035);
+        Instrument banjo = new Instrument(newUser, "banjo");
+
+        newUser.addInstrument(banjo);
+
+        int id = genericDao.insert(newUser);
+        assertNotEquals(0,id);
+        User insertedUser = (User)genericDao.getById(id);
+        assertEquals(newUser, insertedUser);
+        assertEquals(1, insertedUser.getInstruments().size());
+
+    }
+
 
     /**
      * Verify successful delete of user
@@ -145,7 +164,7 @@ class UserDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<User> users = genericDao.getByPropertyEqual("instrument", "flugelhorn");
+        List<User> users = genericDao.getByPropertyEqual("email", "yesitiscalledaflugelhorn@gmail.com");
         assertEquals(1, users.size());
         assertEquals(4, users.get(0).getId());
     }

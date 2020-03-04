@@ -17,7 +17,7 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Log4j2
-@Entity(name = "Roles")
+@Entity(name = "Role")
 @Table(name = "user_roles")
 public class Role {
     @Id

@@ -43,9 +43,6 @@ public class User {
     @Column(name = "email")
     private String email;
 
-    @Column(name = "instrument")
-    private String instrument;
-
     @Column(name = "skill_level")
     private String skillLevel;
 
@@ -54,6 +51,15 @@ public class User {
 
     @Column(name = "birth_date")
     private LocalDate birthDate;
+
+    @Column(name = "city")
+    private String city;
+
+    @Column(name = "state")
+    private String state;
+
+    @Column(name = "zip")
+    private int zipCode;
 
     // This OneToOne relationship is brought to you by a Baeldung tutorial at https://www.baeldung.com/jpa-one-to-one
     @ToString.Exclude
@@ -76,22 +82,29 @@ public class User {
     @OneToMany(mappedBy = "teacher", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Studio> studios = new HashSet<>();
 
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Instrument> instruments = new HashSet<>();
+
     // This ManyToMany relationship is brought to you by this Mkyong tutorial: https://mkyong.com/hibernate/hibernate-many-to-many-relationship-example-annotation/
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     @ManyToMany(fetch = FetchType.EAGER, mappedBy = "studentsInStudio")
     private Set<Studio> studiosOfStudent = new HashSet<>();
 
-    public User(String username, String password, String firstName, String lastName, String email, String instrument, String skillLevel, int practiceCounter, LocalDate birthDate) {
+    public User(String username, String password, String firstName, String lastName, String email, String skillLevel, int practiceCounter, LocalDate birthDate, String city, String state, int zipCode) {
         this.username = username;
         this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.instrument = instrument;
         this.skillLevel = skillLevel;
         this.practiceCounter = practiceCounter;
         this.birthDate = birthDate;
+        this.city = city;
+        this.state = state;
+        this.zipCode = zipCode;
     }
 
     /**
@@ -142,6 +155,27 @@ public class User {
         practiceHacks.remove(practiceHack);
         practiceHack.setUser(null);
     }
+
+    /**
+     * Add instrument.
+     *
+     * @param instrument the instrument
+     */
+    public void addInstrument(Instrument instrument) {
+        instruments.add(instrument);
+        instrument.setUser(this);
+    }
+
+    /**
+     * Remove instrument.
+     *
+     * @param instrument the instrument
+     */
+    public void removeInstrument(Instrument instrument) {
+        instruments.remove(instrument);
+        instrument.setUser(null);
+    }
+
 
     /**
      * Add studio.
