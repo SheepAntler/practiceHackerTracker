@@ -1,9 +1,9 @@
 delete from users;
-INSERT INTO users VALUES (1,'fluffybunny','password','Elaine','Markowitz','emarkowitz@gmail.com','12','2009-09-09','Portland','OR',12345),
-                         (2,'madBratsche','password','Jonathan','Dunlop','madbratsche@gmail.com','45','2004-01-12','Cleveland','OH',12345),
-                         (3,'sheepAntler','password','Elspeth','StalterClouse','sheepantler@gmail.com','28','1989-12-12','Chicago','IL',54321),
-                         (4,'GeezLouise','password','Louise','Janak','yesitiscalledaflugelhorn@gmail.com','44','2002-06-04','Madison','WI',53703),
-                         (5,'splish_splash','password','Mickey','McMahon','mickmick@gmail.com','112','1986-10-02','Bangor','ME',53421);
+INSERT INTO users VALUES (1,'fluffybunny','password','Elaine','Markowitz','emarkowitz@gmail.com',12,'2009-09-09','Portland','OR',12345),
+                         (2,'madBratsche','password','Jonathan','Dunlop','madbratsche@gmail.com',45,'2004-01-12','Cleveland','OH',12345),
+                         (3,'sheepAntler','password','Elspeth','StalterClouse','sheepantler@gmail.com',28,'1989-12-12','Chicago','IL',54321),
+                         (4,'GeezLouise','password','Louise','Janak','yesitiscalledaflugelhorn@gmail.com',44,'2002-06-04','Madison','WI',53703),
+                         (5,'splish_splash','password','Mickey','McMahon','mickmick@gmail.com',112,'1986-10-02','Bangor','ME',53421);
 
 delete from practice_logs;
 INSERT INTO practice_logs VALUES (1,1,'2020-02-24','2020-02-24 09:10:11','2020-02-24 10:10:11','scales, arpeggios, concerto','test','test'),
