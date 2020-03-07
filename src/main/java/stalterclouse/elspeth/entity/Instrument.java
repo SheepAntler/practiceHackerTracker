@@ -23,20 +23,28 @@ public class Instrument {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
+//    @ToString.Exclude
+//    @EqualsAndHashCode.Exclude
+//    @ManyToOne
+//    private User user;
+
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
-    @ManyToOne
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
 
     @Column(name = "instrument")
     private String instrument;
 
-    public Instrument(User user, String instrument) {
+    @Column(name = "skill_level")
+    private String skillLevel;
+
+    public Instrument(User user, String instrument, String skillLevel) {
 
         this.user = user;
         this.instrument = instrument;
+        this.skillLevel = skillLevel;
     }
-
-
 
 }

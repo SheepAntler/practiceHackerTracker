@@ -861,3 +861,5 @@ java.sql.SQLException: Column count doesn't match value count at row 1
 [DEBUG] 2020-03-04 16:53:39.401 [main] GenericDao - Searching for order with instrument = flugelhorn
 [DEBUG] 2020-03-04 16:53:39.721 [main] GenericDao - Searching for order with username = s
 [DEBUG] 2020-03-04 16:54:50.797 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[DEBUG] 2020-03-07 16:28:10.123 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[DEBUG] 2020-03-07 16:28:10.813 [main] GenericDao - Searching for order with username = s

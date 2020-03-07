@@ -43,9 +43,6 @@ public class User {
     @Column(name = "email")
     private String email;
 
-    @Column(name = "skill_level")
-    private String skillLevel;
-
     @Column(name = "practice_counter")
     private int practiceCounter;
 
@@ -82,10 +79,15 @@ public class User {
     @OneToMany(mappedBy = "teacher", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Studio> studios = new HashSet<>();
 
+//    @ToString.Exclude
+//    @EqualsAndHashCode.Exclude
+//    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+//    private Set<Instrument> instruments = new HashSet<>();
+
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Instrument> instruments = new HashSet<>();
+    @OneToOne(mappedBy = "user")
+    private Instrument instrument;
 
     // This ManyToMany relationship is brought to you by this Mkyong tutorial: https://mkyong.com/hibernate/hibernate-many-to-many-relationship-example-annotation/
     @ToString.Exclude
@@ -93,13 +95,12 @@ public class User {
     @ManyToMany(fetch = FetchType.EAGER, mappedBy = "studentsInStudio")
     private Set<Studio> studiosOfStudent = new HashSet<>();
 
-    public User(String username, String password, String firstName, String lastName, String email, String skillLevel, int practiceCounter, LocalDate birthDate, String city, String state, int zipCode) {
+    public User(String username, String password, String firstName, String lastName, String email, int practiceCounter, LocalDate birthDate, String city, String state, int zipCode) {
         this.username = username;
         this.password = password;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.skillLevel = skillLevel;
         this.practiceCounter = practiceCounter;
         this.birthDate = birthDate;
         this.city = city;
@@ -156,25 +157,25 @@ public class User {
         practiceHack.setUser(null);
     }
 
-    /**
-     * Add instrument.
-     *
-     * @param instrument the instrument
-     */
-    public void addInstrument(Instrument instrument) {
-        instruments.add(instrument);
-        instrument.setUser(this);
-    }
-
-    /**
-     * Remove instrument.
-     *
-     * @param instrument the instrument
-     */
-    public void removeInstrument(Instrument instrument) {
-        instruments.remove(instrument);
-        instrument.setUser(null);
-    }
+//    /**
+//     * Add instrument.
+//     *
+//     * @param instrument the instrument
+//     */
+//    public void addInstrument(Instrument instrument) {
+//        instruments.add(instrument);
+//        instrument.setUser(this);
+//    }
+//
+//    /**
+//     * Remove instrument.
+//     *
+//     * @param instrument the instrument
+//     */
+//    public void removeInstrument(Instrument instrument) {
+//        instruments.remove(instrument);
+//        instrument.setUser(null);
+//    }
 
 
     /**
