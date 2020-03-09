@@ -9,8 +9,8 @@
 <html>
 <body>
     <h1>Choose your Account Type:</h1>
-    <a href="login.jsp" class="btn btn-primary">Student Account</a>
-    <a href="login.jsp" class="btn btn-primary">Teacher Account</a>
-    <a href="login.jsp" class="btn btn-primary">Practice Hacker Account</a>
+    <a href="studentHome.jsp" class="btn btn-primary">Student Account</a>
+    <a href="teacherHome.jsp" class="btn btn-primary">Teacher Account</a>
+    <a href="practiceHackerHome.jsp" class="btn btn-primary">Practice Hacker Account</a>
 </body>
 </html>
