@@ -1,5 +1,8 @@
+<%@include file="templates/head.jsp"%>
+
 <html>
 <body>
-<h2>Hello World!</h2>
+<%@include file="templates/generalNavBar.jsp"%>
+<h2 class="container text-center">Well, Howdy! I'm the HOMEPAGE.</h2>
 </body>
 </html>
