@@ -1,9 +1,9 @@
 delete from users;
-INSERT INTO users VALUES (1,'fluffybunny','password','Elaine','Markowitz','emarkowitz@gmail.com',12,'2009-09-09','Portland','OR',12345),
-                         (2,'madBratsche','password','Jonathan','Dunlop','madbratsche@gmail.com',45,'2004-01-12','Cleveland','OH',12345),
-                         (3,'sheepAntler','password','Elspeth','StalterClouse','sheepantler@gmail.com',28,'1989-12-12','Chicago','IL',54321),
-                         (4,'GeezLouise','password','Louise','Janak','yesitiscalledaflugelhorn@gmail.com',44,'2002-06-04','Madison','WI',53703),
-                         (5,'splish_splash','password','Mickey','McMahon','mickmick@gmail.com',112,'1986-10-02','Bangor','ME',53421);
+INSERT INTO users VALUES (1,'fluffybunny','password','Elaine','Markowitz','emarkowitz@gmail.com',12,'2009-09-09','Portland','OR',12345,56),
+                         (2,'madBratsche','password','Jonathan','Dunlop','madbratsche@gmail.com',45,'2004-01-12','Cleveland','OH',12345,78),
+                         (3,'sheepAntler','password','Elspeth','StalterClouse','sheepantler@gmail.com',28,'1989-12-12','Chicago','IL',54321,20),
+                         (4,'GeezLouise','password','Louise','Janak','yesitiscalledaflugelhorn@gmail.com',44,'2002-06-04','Madison','WI',53703,12),
+                         (5,'splish_splash','password','Mickey','McMahon','mickmick@gmail.com',112,'1986-10-02','Bangor','ME',53421,45);
 
 delete from practice_logs;
 INSERT INTO practice_logs VALUES (1,1,'2020-02-24','2020-02-24 09:10:11','2020-02-24 10:10:11','scales, arpeggios, concerto','test','test'),
@@ -20,11 +20,11 @@ INSERT INTO practice_hacks VALUES (1,3,'intermediate','cello','play scales for 2
                                   (5,5,'advanced','general','use a metronome');
 
 delete from studios;
-INSERT INTO studios VALUES (1,4,'trumpet'),
-                           (2,5,'trombone'),
-                           (3,1,'violin'),
-                           (4,1,'viola'),
-                           (5,2,'concertina');
+INSERT INTO studios VALUES (1,4,'trumpet','Trumpet Topia','456 Bell Street','Portland','OR',44567),
+                           (2,5,'trombone',null,'1123 Trombone Ct.','Madison','WI',53711),
+                           (3,1,'violin','The Suzuki House','1004 Something Something Rd.','Stevens Point','WI',44980),
+                           (4,2,'viola',null,'421 Mohs Street','Boise','ID',66789),
+                           (5,1,'concertina','The Suzuki House','1004 Something Something Rd.','Stevens Point','WI',44980);
 
 delete from studio_students;
 INSERT INTO studio_students VALUES (1,5),

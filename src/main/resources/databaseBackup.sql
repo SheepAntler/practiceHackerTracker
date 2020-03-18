@@ -145,6 +145,11 @@ CREATE TABLE `studios` (
   `id` int NOT NULL AUTO_INCREMENT,
   `teacher_id` int NOT NULL,
   `instrument` varchar(35) DEFAULT NULL,
+  `organization_name` varchar(100) DEFAULT NULL,
+  `street_address` varchar(100) DEFAULT NULL,
+  `city` varchar(35) NOT NULL,
+  `state` varchar(2) NOT NULL,
+  `zip` int NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `studios_id_uindex` (`id`),
   KEY `studios_users_id_fk` (`teacher_id`),
@@ -158,7 +163,7 @@ CREATE TABLE `studios` (
 
 LOCK TABLES `studios` WRITE;
 /*!40000 ALTER TABLE `studios` DISABLE KEYS */;
-INSERT INTO `studios` VALUES (1,3,'Viola');
+INSERT INTO `studios` VALUES (1,3,'Viola','The Viola Foundation','123 ABC Street','Madison','WI',53715);
 /*!40000 ALTER TABLE `studios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -205,11 +210,12 @@ CREATE TABLE `users` (
   `first_name` varchar(45) NOT NULL,
   `last_name` varchar(45) NOT NULL,
   `email` varchar(60) DEFAULT NULL,
-  `practice_counter` int DEFAULT NULL,
+  `practice_counter` int DEFAULT '0',
   `birth_date` date DEFAULT NULL,
   `city` varchar(35) NOT NULL,
   `state` varchar(2) NOT NULL,
   `zip` int NOT NULL,
+  `longest_streak` int DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -221,7 +227,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'sheepAntler','password','Elspeth','Stalter','sheepantler@gmail.com',15,'1989-12-25','Madison','WI',53703),(2,'madBratsche','password','Jonathan','Dunlop','madbratsche@gmail.com',45,'2004-01-12','Madison','WI',53715),(3,'saveTheViola','password','Viola','Happenstance','violaViolist@gmail.com',102,'1990-01-12','Madison','WI',53711);
+INSERT INTO `users` VALUES (1,'sheepAntler','password','Elspeth','Stalter','sheepantler@gmail.com',15,'1989-12-25','Madison','WI',53703,100),(2,'madBratsche','password','Jonathan','Dunlop','madbratsche@gmail.com',45,'2004-01-12','Madison','WI',53715,56),(3,'saveTheViola','password','Viola','Happenstance','violaViolist@gmail.com',102,'1990-01-12','Madison','WI',53711,101);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -234,4 +240,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-03-07 17:24:13
+-- Dump completed on 2020-03-18 15:34:23

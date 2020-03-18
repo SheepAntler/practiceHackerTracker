@@ -31,6 +31,21 @@ public class Studio {
     @Column(name = "instrument")
     private String instrument;
 
+    @Column(name = "organization_name")
+    private String organizationName;
+
+    @Column(name = "street_address")
+    private String streetAddress;
+
+    @Column(name = "city")
+    private String city;
+
+    @Column(name = "state")
+    private String state;
+
+    @Column(name = "zip")
+    private int zipCode;
+
     // This ManyToMany relationship is brought to you by this Mkyong tutorial: https://mkyong.com/hibernate/hibernate-many-to-many-relationship-example-annotation/
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
@@ -40,9 +55,14 @@ public class Studio {
             inverseJoinColumns = { @JoinColumn(name = "student_id", nullable = false, updatable = false) })
     private Set<User> studentsInStudio = new HashSet<>();
 
-    public Studio(User teacher, String instrument) {
+    public Studio(User teacher, String instrument, String organizationName, String streetAddress, String city, String state, int zipCode) {
 
         this.teacher = teacher;
         this.instrument = instrument;
+        this.organizationName = organizationName;
+        this.streetAddress = streetAddress;
+        this.city = city;
+        this.state = state;
+        this.zipCode = zipCode;
     }
 }

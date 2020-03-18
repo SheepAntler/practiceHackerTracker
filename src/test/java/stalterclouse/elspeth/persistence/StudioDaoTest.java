@@ -58,7 +58,7 @@ class StudioDaoTest {
         GenericDao genericUser = new GenericDao(User.class);
         User user = (User) genericUser.getById(5);
 
-        Studio newStudio = new Studio(user, "flute");
+        Studio newStudio = new Studio(user, "flute", null, "2742 Jacque St.", "Iowa City", "IA", 52246);
 
         int id = genericDao.insert(newStudio);
         assertNotEquals(0, id);

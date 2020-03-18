@@ -43,7 +43,7 @@ class UserDaoTest {
     @Test
     void getByIdSuccess() {
         LocalDate birthDate = LocalDate.of(2002, 06, 04);
-        User expectedUser = new User("GeezLouise", "password", "Louise", "Janak", "yesitiscalledaflugelhorn@gmail.com", 44, birthDate, "Madison", "WI", 53703);
+        User expectedUser = new User("GeezLouise", "password", "Louise", "Janak", "yesitiscalledaflugelhorn@gmail.com", 44, birthDate, "Madison", "WI", 53703, 12);
         expectedUser.setId(4);
         User retrievedUser = (User)genericDao.getById(4);
         assertEquals(expectedUser, retrievedUser);
@@ -55,7 +55,7 @@ class UserDaoTest {
     @Test
     void insertSuccess() {
 
-        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", 42, LocalDate.parse("1998-01-01"), "Portland", "OR", 97035);
+        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", 42, LocalDate.parse("1998-01-01"), "Portland", "OR", 97035, 100);
         int id = genericDao.insert(newUser);
         assertNotEquals(0,id);
         User insertedUser = (User)genericDao.getById(id);
@@ -68,7 +68,7 @@ class UserDaoTest {
     @Test
     void insertWithLogSuccess() {
 
-        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", 42, LocalDate.parse("1998-01-01"), "Portland", "OR", 97035);
+        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", 42, LocalDate.parse("1998-01-01"), "Portland", "OR", 97035, 100);
 
         // Practice Log data
         LocalDate practiceDate = LocalDate.of(2020, 2, 14);
@@ -95,7 +95,7 @@ class UserDaoTest {
     @Test
     void insertWithHackSuccess() {
 
-        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", 42, LocalDate.parse("1998-01-01"), "Portland", "OR", 97035);
+        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", 42, LocalDate.parse("1998-01-01"), "Portland", "OR", 97035, 100);
 
         // Practice Hack data
         String skillLevel = "advanced";
@@ -118,8 +118,8 @@ class UserDaoTest {
      */
     @Test
     void insertWithStudioSuccess() {
-        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", 42, LocalDate.parse("1998-01-01"), "Portland", "OR", 97035);
-        Studio studio = new Studio(newUser, "oboe");
+        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", 42, LocalDate.parse("1998-01-01"), "Portland", "OR", 97035, 100);
+        Studio studio = new Studio(newUser, "oboe", "UW-Madison", "UW Street Address", "Madison", "WI", 53705);
 
         newUser.addStudio(studio);
 
@@ -136,7 +136,7 @@ class UserDaoTest {
      */
 //    @Test
 //    void insertWithInstrumentSuccess() {
-//        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", 42, LocalDate.parse("1998-01-01"), "Portland", "OR", 97035);
+//        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", 42, LocalDate.parse("1998-01-01"), "Portland", "OR", 97035, 100);
 //        Instrument banjo = new Instrument(newUser, "banjo", "beginner");
 //
 //        newUser.addInstrument(banjo);
@@ -192,13 +192,23 @@ class UserDaoTest {
     }
 
     /**
-     * Verifies that the User/Studio bridging table is working correctly
+     * Verifies that the User/Studio bridging table is working correctly for students
      */
     @Test
     void testStudioStudentsConnection() {
         User student = (User)genericDao.getById(3);
 
         assertEquals(2, student.getStudiosOfStudent().size());
+    }
+
+    /**
+     * Verifies that the User/Studio bridging table is working correctly for teachers
+     */
+    @Test
+    void testStudioConnection() {
+        User teacher = (User)genericDao.getById(1);
+
+        assertEquals(2, teacher.getStudios().size());
     }
 
     /**
@@ -231,6 +241,5 @@ class UserDaoTest {
         assertEquals("violin", userInstrument.getInstrument());
         assertEquals("professional", userInstrument.getSkillLevel());
     }
-
 
 }

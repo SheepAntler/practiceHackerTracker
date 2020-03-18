@@ -58,6 +58,9 @@ public class User {
     @Column(name = "zip")
     private int zipCode;
 
+    @Column(name = "longest_streak")
+    private int longestStreak;
+
     // This OneToOne relationship is brought to you by a Baeldung tutorial at https://www.baeldung.com/jpa-one-to-one
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
@@ -95,7 +98,7 @@ public class User {
     @ManyToMany(fetch = FetchType.EAGER, mappedBy = "studentsInStudio")
     private Set<Studio> studiosOfStudent = new HashSet<>();
 
-    public User(String username, String password, String firstName, String lastName, String email, int practiceCounter, LocalDate birthDate, String city, String state, int zipCode) {
+    public User(String username, String password, String firstName, String lastName, String email, int practiceCounter, LocalDate birthDate, String city, String state, int zipCode, int longestStreak) {
         this.username = username;
         this.password = password;
         this.firstName = firstName;
@@ -106,6 +109,7 @@ public class User {
         this.city = city;
         this.state = state;
         this.zipCode = zipCode;
+        this.longestStreak = longestStreak;
     }
 
     /**
