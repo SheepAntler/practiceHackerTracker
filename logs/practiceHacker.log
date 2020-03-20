@@ -3296,3 +3296,11 @@ Caused by: com.mysql.cj.exceptions.WrongArgumentException: No timezone mapping e
 [DEBUG] 2020-03-20 14:58:45.480 [main] GenericDao - Searching for order with username = s
 [DEBUG] 2020-03-20 14:58:46.213 [main] GenericDao - Searching for order with skillLevel = intermediate
 [DEBUG] 2020-03-20 14:58:46.292 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-20 16:24:09.764 [main] GenericDao - Searching for order with teacher = 5
+[DEBUG] 2020-03-20 16:24:10.103 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-20 16:24:11.469 [main] GenericDao - Searching for order with notes = Nat's Knapsack Strap Snapped
+[DEBUG] 2020-03-20 16:24:11.585 [main] GenericDao - Searching for order with activities = scales
+[DEBUG] 2020-03-20 16:24:12.624 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[DEBUG] 2020-03-20 16:24:12.826 [main] GenericDao - Searching for order with username = s
+[DEBUG] 2020-03-20 16:24:13.557 [main] GenericDao - Searching for order with skillLevel = intermediate
+[DEBUG] 2020-03-20 16:24:13.664 [main] GenericDao - Searching for order with instrument = viol
