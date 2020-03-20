@@ -17,25 +17,25 @@
                 <a class="nav-link" href="index.jsp">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About Practice Tracking</a>
+                <a class="nav-link" href="aboutTracking.jsp">About Practice Tracking</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About Practice Hacks</a>
+                <a class="nav-link" href="aboutHacks.jsp">About Practice Hacks</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Account Types
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Teacher</a>
+                    <a class="dropdown-item" href="teacherAccounts.jsp">Teacher</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Student</a>
+                    <a class="dropdown-item" href="studentAccounts.jsp">Student</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Practice Hacker</a>
+                    <a class="dropdown-item" href="practiceHackerAccounts.jsp">Practice Hacker</a>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="faq.jsp">FAQ</a>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">

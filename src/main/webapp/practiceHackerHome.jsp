@@ -9,7 +9,7 @@
 
 <html>
 <body>
-<%@include file="templates/generalNavBar.jsp"%>
+<%@include file="templates/practiceHackerNavBar.jsp"%>
 <h2 class="container text-center">You must be NEITHER a student NOR a teacher.</h2>
 </body>
 </html>
