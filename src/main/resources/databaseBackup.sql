@@ -31,7 +31,7 @@ CREATE TABLE `instruments` (
   UNIQUE KEY `instruments_id_uindex` (`id`),
   KEY `instruments_users_id_fk` (`user_id`),
   CONSTRAINT `instruments_users_id_fk` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `instruments` (
 
 LOCK TABLES `instruments` WRITE;
 /*!40000 ALTER TABLE `instruments` DISABLE KEYS */;
-INSERT INTO `instruments` VALUES (1,1,'violin','professional'),(2,2,'viola','advanced'),(3,3,'viola','professional');
+INSERT INTO `instruments` VALUES (1,1,'violin','professional'),(2,2,'viola','advanced'),(3,3,'viola','professional'),(4,4,'viola','advanced'),(5,5,'viola','pre-professional'),(6,6,'viola','beginner');
 /*!40000 ALTER TABLE `instruments` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -61,7 +61,7 @@ CREATE TABLE `practice_hacks` (
   UNIQUE KEY `practice_hacks_id_uindex` (`id`),
   KEY `practice_hacks_users_id_fk` (`user_id`),
   CONSTRAINT `practice_hacks_users_id_fk` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -70,7 +70,7 @@ CREATE TABLE `practice_hacks` (
 
 LOCK TABLES `practice_hacks` WRITE;
 /*!40000 ALTER TABLE `practice_hacks` DISABLE KEYS */;
-INSERT INTO `practice_hacks` VALUES (1,3,'Advanced','Viola','Only practice in 50-minute hours. Giving yourself breaks keeps your mind fresh!');
+INSERT INTO `practice_hacks` VALUES (1,3,'Advanced','viola','Only practice in 50-minute hours. Giving yourself breaks keeps your mind fresh!'),(2,3,'Beginner','viola','Make 5 slow bow hands in a row for three days in a row. Time yourself--are you getting faster?'),(3,3,'Pre-Professional','viola','To prep for your college auditions, practice performing your audition materials in unfamiliar rooms as frequently as possible. Preparing yourself psychologically is just as important as woodshedding difficult passages.');
 /*!40000 ALTER TABLE `practice_hacks` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -130,7 +130,7 @@ CREATE TABLE `studio_students` (
 
 LOCK TABLES `studio_students` WRITE;
 /*!40000 ALTER TABLE `studio_students` DISABLE KEYS */;
-INSERT INTO `studio_students` VALUES (1,2);
+INSERT INTO `studio_students` VALUES (1,2),(1,4),(1,5),(1,6);
 /*!40000 ALTER TABLE `studio_students` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -183,7 +183,7 @@ CREATE TABLE `user_roles` (
   UNIQUE KEY `user_roles_id_uindex` (`id`),
   KEY `user_roles_users_id_fk` (`user_id`),
   CONSTRAINT `user_roles_users_id_fk` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -192,7 +192,7 @@ CREATE TABLE `user_roles` (
 
 LOCK TABLES `user_roles` WRITE;
 /*!40000 ALTER TABLE `user_roles` DISABLE KEYS */;
-INSERT INTO `user_roles` VALUES (1,1,'sheepAntler','practiceHacker'),(2,2,'madBratsche','student'),(3,3,'saveTheViola','teacher');
+INSERT INTO `user_roles` VALUES (1,1,'sheepAntler','practiceHacker'),(2,2,'madBratsche','student'),(3,3,'saveTheViola','teacher'),(4,4,'anaBanana','student'),(5,5,'philFrond','student');
 /*!40000 ALTER TABLE `user_roles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -212,13 +212,13 @@ CREATE TABLE `users` (
   `email` varchar(60) DEFAULT NULL,
   `practice_counter` int DEFAULT '0',
   `birth_date` date DEFAULT NULL,
-  `city` varchar(35) NOT NULL,
-  `state` varchar(2) NOT NULL,
-  `zip` int NOT NULL,
+  `city` varchar(35) DEFAULT NULL,
+  `state` varchar(2) DEFAULT NULL,
+  `zip` int DEFAULT NULL,
   `longest_streak` int DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -227,7 +227,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'sheepAntler','password','Elspeth','Stalter','sheepantler@gmail.com',15,'1989-12-25','Madison','WI',53703,100),(2,'madBratsche','password','Jonathan','Dunlop','madbratsche@gmail.com',45,'2004-01-12','Madison','WI',53715,56),(3,'saveTheViola','password','Viola','Happenstance','violaViolist@gmail.com',102,'1990-01-12','Madison','WI',53711,101);
+INSERT INTO `users` VALUES (1,'sheepAntler','password','Elspeth','Stalter','sheepantler@gmail.com',15,'1989-12-25','Madison','WI',53703,100),(2,'madBratsche','password','Jonathan','Dunlop','madbratsche@gmail.com',45,'2004-01-12','Madison','WI',53715,56),(3,'saveTheViola','password','Viola','Happenstance','violaViolist@gmail.com',102,'1990-01-12','Madison','WI',53711,101),(4,'anaBanana','password','Ana','Holmquist','anaBanana@yahoo.com',24,'2002-05-14','Madison','WI',53705,26),(5,'philFrond','password','Phillip','Frond','phil.frond@gmail.com',98,'2002-02-20','Madison','WI',53711,120),(6,'monsterTrucks4Ever','password','Millie','Marlowe','milliesmom@hotmail.com',0,'2011-10-24','Madison','WI',53703,0);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -240,4 +240,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-03-18 15:34:23
+-- Dump completed on 2020-03-20 15:01:24
