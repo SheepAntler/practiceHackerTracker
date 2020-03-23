@@ -44,6 +44,7 @@ public class GenericDao<T> {
     public <T>T getById(int id) {
         Session session = getSession();
         T entity = (T)session.get(type, id);
+        log.error("Could not get by id");
         session.close();
         return entity;
     }
@@ -58,6 +59,7 @@ public class GenericDao<T> {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
         id = (int)session.save(entity);
+        log.error("Could not insert");
         transaction.commit();
         session.close();
         return id;
@@ -71,6 +73,7 @@ public class GenericDao<T> {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
         session.delete(entity);
+        log.error("Could not delete");
         transaction.commit();
         session.close();
     }
@@ -87,6 +90,7 @@ public class GenericDao<T> {
         CriteriaQuery<T> query = builder.createQuery(type);
         Root<T> root = query.from(type);
         List<T> orders = session.createQuery(query).getResultList();
+        log.error("Could not getAllEntities");
         session.close();
         return orders;
     }
@@ -109,6 +113,8 @@ public class GenericDao<T> {
         Root<T> root = query.from(type);
         query.select(root).where(builder.equal(root.get(propertyName), value));
         List<T> orders = session.createQuery( query ).getResultList();
+
+        log.error("Could not getByPropertyEqual");
 
         session.close();
         return orders;
@@ -135,6 +141,9 @@ public class GenericDao<T> {
         query.where(builder.like(propertyPath, "%" + value + "%"));
 
         List<T> orders = session.createQuery(query).getResultList();
+
+        log.error("Could not getByPropertyLike");
+
         session.close();
         return orders;
     }
@@ -147,6 +156,7 @@ public class GenericDao<T> {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
         session.saveOrUpdate(entity);
+        log.error("Could not saveOrUpdate");
         transaction.commit();
         session.close();
     }

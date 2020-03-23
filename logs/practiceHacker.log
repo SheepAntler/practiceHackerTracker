@@ -3304,3 +3304,252 @@ Caused by: com.mysql.cj.exceptions.WrongArgumentException: No timezone mapping e
 [DEBUG] 2020-03-20 16:24:12.826 [main] GenericDao - Searching for order with username = s
 [DEBUG] 2020-03-20 16:24:13.557 [main] GenericDao - Searching for order with skillLevel = intermediate
 [DEBUG] 2020-03-20 16:24:13.664 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-23 16:34:07.148 [main] GenericDao - Searching for order with teacher = 5
+[DEBUG] 2020-03-23 16:34:07.556 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-23 16:34:09.044 [main] GenericDao - Searching for order with notes = Nat's Knapsack Strap Snapped
+[DEBUG] 2020-03-23 16:34:09.287 [main] GenericDao - Searching for order with activities = scales
+[DEBUG] 2020-03-23 16:34:10.614 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[DEBUG] 2020-03-23 16:34:10.984 [main] GenericDao - Searching for order with username = s
+[DEBUG] 2020-03-23 16:34:12.057 [main] GenericDao - Searching for order with skillLevel = intermediate
+[DEBUG] 2020-03-23 16:34:12.152 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-23 16:37:48.736 [main] GenericDao - Searching for order with teacher = 5
+[DEBUG] 2020-03-23 16:37:49.183 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-23 16:37:50.662 [main] GenericDao - Searching for order with notes = Nat's Knapsack Strap Snapped
+[DEBUG] 2020-03-23 16:37:50.822 [main] GenericDao - Searching for order with activities = scales
+[DEBUG] 2020-03-23 16:37:51.758 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[DEBUG] 2020-03-23 16:37:52.225 [main] GenericDao - Searching for order with username = s
+[DEBUG] 2020-03-23 16:37:53.527 [main] GenericDao - Searching for order with skillLevel = intermediate
+[DEBUG] 2020-03-23 16:37:53.673 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-23 17:07:45.607 [main] GenericDao - Searching for order with teacher = 5
+[DEBUG] 2020-03-23 17:07:45.947 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-23 17:07:47.343 [main] GenericDao - Searching for order with notes = Nat's Knapsack Strap Snapped
+[DEBUG] 2020-03-23 17:07:47.463 [main] GenericDao - Searching for order with activities = scales
+[DEBUG] 2020-03-23 17:07:48.603 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[DEBUG] 2020-03-23 17:07:48.856 [main] GenericDao - Searching for order with username = s
+[DEBUG] 2020-03-23 17:07:49.818 [main] GenericDao - Searching for order with skillLevel = intermediate
+[DEBUG] 2020-03-23 17:07:49.951 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-23 17:10:57.270 [main] GenericDao - Searching for order with teacher = 5
+[DEBUG] 2020-03-23 17:10:57.527 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-23 17:10:58.746 [main] GenericDao - Searching for order with notes = Nat's Knapsack Strap Snapped
+[DEBUG] 2020-03-23 17:10:58.847 [main] GenericDao - Searching for order with activities = scales
+[DEBUG] 2020-03-23 17:10:59.740 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[DEBUG] 2020-03-23 17:10:59.978 [main] GenericDao - Searching for order with username = s
+[DEBUG] 2020-03-23 17:11:00.803 [main] GenericDao - Searching for order with skillLevel = intermediate
+[DEBUG] 2020-03-23 17:11:00.890 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-23 17:15:58.891 [main] GenericDao - Searching for order with teacher = 5
+[DEBUG] 2020-03-23 17:15:59.267 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-23 17:16:00.561 [main] GenericDao - Searching for order with notes = Nat's Knapsack Strap Snapped
+[DEBUG] 2020-03-23 17:16:00.633 [main] GenericDao - Searching for order with activities = scales
+[DEBUG] 2020-03-23 17:16:01.579 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[DEBUG] 2020-03-23 17:16:01.840 [main] GenericDao - Searching for order with username = s
+[DEBUG] 2020-03-23 17:16:02.551 [main] GenericDao - Searching for order with skillLevel = intermediate
+[DEBUG] 2020-03-23 17:16:02.627 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-23 17:17:25.165 [main] GenericDao - Searching for order with teacher = 5
+[DEBUG] 2020-03-23 17:17:25.565 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-23 17:17:26.607 [main] GenericDao - Searching for order with notes = Nat's Knapsack Strap Snapped
+[DEBUG] 2020-03-23 17:17:26.762 [main] GenericDao - Searching for order with activities = scales
+[DEBUG] 2020-03-23 17:17:27.790 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[DEBUG] 2020-03-23 17:17:28.090 [main] GenericDao - Searching for order with username = s
+[DEBUG] 2020-03-23 17:17:28.950 [main] GenericDao - Searching for order with skillLevel = intermediate
+[DEBUG] 2020-03-23 17:17:29.047 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-23 17:19:39.681 [main] GenericDao - Searching for order with teacher = 5
+[DEBUG] 2020-03-23 17:19:40.297 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-23 17:19:41.705 [main] GenericDao - Searching for order with notes = Nat's Knapsack Strap Snapped
+[DEBUG] 2020-03-23 17:19:41.823 [main] GenericDao - Searching for order with activities = scales
+[DEBUG] 2020-03-23 17:19:43.419 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[DEBUG] 2020-03-23 17:19:43.816 [main] GenericDao - Searching for order with username = s
+[DEBUG] 2020-03-23 17:19:45.206 [main] GenericDao - Searching for order with skillLevel = intermediate
+[DEBUG] 2020-03-23 17:19:45.434 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-23 17:22:14.914 [main] GenericDao - Searching for order with teacher = 5
+[DEBUG] 2020-03-23 17:22:15.197 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-23 17:22:16.373 [main] GenericDao - Searching for order with notes = Nat's Knapsack Strap Snapped
+[DEBUG] 2020-03-23 17:22:16.501 [main] GenericDao - Searching for order with activities = scales
+[DEBUG] 2020-03-23 17:22:17.294 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[DEBUG] 2020-03-23 17:22:17.517 [main] GenericDao - Searching for order with username = s
+[DEBUG] 2020-03-23 17:22:18.249 [main] GenericDao - Searching for order with skillLevel = intermediate
+[DEBUG] 2020-03-23 17:22:18.326 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-03-23 17:34:26.391 [main] GenericDao - Searching for order with teacher = 5
+[DEBUG] 2020-03-23 17:34:26.634 [main] GenericDao - Searching for order with instrument = viol
+[INFO ] 2020-03-23 17:34:26.847 [main] GenericDao - Getting all entities...
+[DEBUG] 2020-03-23 17:34:27.809 [main] GenericDao - Searching for order with notes = Nat's Knapsack Strap Snapped
+[DEBUG] 2020-03-23 17:34:27.895 [main] GenericDao - Searching for order with activities = scales
+[INFO ] 2020-03-23 17:34:27.998 [main] GenericDao - Getting all entities...
+[DEBUG] 2020-03-23 17:34:29.033 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[DEBUG] 2020-03-23 17:34:29.502 [main] GenericDao - Searching for order with username = s
+[INFO ] 2020-03-23 17:34:29.658 [main] GenericDao - Getting all entities...
+[DEBUG] 2020-03-23 17:34:30.384 [main] GenericDao - Searching for order with skillLevel = intermediate
+[DEBUG] 2020-03-23 17:34:30.475 [main] GenericDao - Searching for order with instrument = viol
+[INFO ] 2020-03-23 17:34:30.583 [main] GenericDao - Getting all entities...
+[DEBUG] 2020-03-23 17:39:02.444 [main] GenericDao - Searching for order with teacher = 5
+[DEBUG] 2020-03-23 17:39:02.765 [main] GenericDao - Searching for order with instrument = viol
+[INFO ] 2020-03-23 17:39:02.970 [main] GenericDao - Getting all entities...
+[DEBUG] 2020-03-23 17:39:04.012 [main] GenericDao - Searching for order with notes = Nat's Knapsack Strap Snapped
+[DEBUG] 2020-03-23 17:39:04.081 [main] GenericDao - Searching for order with activities = scales
+[INFO ] 2020-03-23 17:39:04.199 [main] GenericDao - Getting all entities...
+[DEBUG] 2020-03-23 17:39:05.020 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[DEBUG] 2020-03-23 17:39:05.231 [main] GenericDao - Searching for order with username = s
+[INFO ] 2020-03-23 17:39:05.353 [main] GenericDao - Getting all entities...
+[DEBUG] 2020-03-23 17:39:06.020 [main] GenericDao - Searching for order with skillLevel = intermediate
+[DEBUG] 2020-03-23 17:39:06.092 [main] GenericDao - Searching for order with instrument = viol
+[INFO ] 2020-03-23 17:39:06.194 [main] GenericDao - Getting all entities...
+[DEBUG] 2020-03-23 17:42:03.678 [main] GenericDao - Searching for order with teacher = 5
+[DEBUG] 2020-03-23 17:42:04.018 [main] GenericDao - Searching for order with instrument = viol
+[INFO ] 2020-03-23 17:42:04.277 [main] GenericDao - Getting all entities...
+[DEBUG] 2020-03-23 17:42:05.062 [main] GenericDao - Searching for order with notes = Nat's Knapsack Strap Snapped
+[DEBUG] 2020-03-23 17:42:05.144 [main] GenericDao - Searching for order with activities = scales
+[INFO ] 2020-03-23 17:42:05.248 [main] GenericDao - Getting all entities...
+[DEBUG] 2020-03-23 17:42:05.966 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[DEBUG] 2020-03-23 17:42:06.171 [main] GenericDao - Searching for order with username = s
+[INFO ] 2020-03-23 17:42:06.266 [main] GenericDao - Getting all entities...
+[DEBUG] 2020-03-23 17:42:06.966 [main] GenericDao - Searching for order with skillLevel = intermediate
+[DEBUG] 2020-03-23 17:42:07.041 [main] GenericDao - Searching for order with instrument = viol
+[INFO ] 2020-03-23 17:42:07.145 [main] GenericDao - Getting all entities...
+[INFO ] 2020-03-23 17:43:28.113 [http-nio-8080-exec-9] GenericDao - Getting all entities...
+[ERROR] 2020-03-23 17:50:06.287 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:06.301 [main] GenericDao - Could not delete
+[ERROR] 2020-03-23 17:50:06.348 [main] GenericDao - Could not get by id
+[DEBUG] 2020-03-23 17:50:06.433 [main] GenericDao - Searching for order with teacher = 5
+[ERROR] 2020-03-23 17:50:06.722 [main] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-03-23 17:50:06.803 [main] GenericDao - Searching for order with instrument = viol
+[ERROR] 2020-03-23 17:50:06.868 [main] GenericDao - Could not getByPropertyLike
+[ERROR] 2020-03-23 17:50:06.954 [main] GenericDao - Could not getAllEntities
+[ERROR] 2020-03-23 17:50:07.065 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:07.201 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:07.358 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:07.440 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:07.445 [main] GenericDao - Could not saveOrUpdate
+[ERROR] 2020-03-23 17:50:07.541 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:07.642 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:07.651 [main] GenericDao - Could not insert
+[ERROR] 2020-03-23 17:50:07.706 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:07.869 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:07.871 [main] GenericDao - Could not delete
+[ERROR] 2020-03-23 17:50:07.883 [main] GenericDao - Could not get by id
+[DEBUG] 2020-03-23 17:50:07.930 [main] GenericDao - Searching for order with notes = Nat's Knapsack Strap Snapped
+[ERROR] 2020-03-23 17:50:08.005 [main] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-03-23 17:50:08.053 [main] GenericDao - Searching for order with activities = scales
+[ERROR] 2020-03-23 17:50:08.109 [main] GenericDao - Could not getByPropertyLike
+[ERROR] 2020-03-23 17:50:08.230 [main] GenericDao - Could not getAllEntities
+[ERROR] 2020-03-23 17:50:08.343 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:08.424 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:08.425 [main] GenericDao - Could not saveOrUpdate
+[ERROR] 2020-03-23 17:50:08.472 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:08.544 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:08.547 [main] GenericDao - Could not insert
+[ERROR] 2020-03-23 17:50:08.579 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:08.714 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:08.715 [main] GenericDao - Could not delete
+[ERROR] 2020-03-23 17:50:08.726 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:08.861 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:08.919 [main] GenericDao - Could not insert
+[ERROR] 2020-03-23 17:50:08.927 [main] GenericDao - Could not get by id
+[DEBUG] 2020-03-23 17:50:08.969 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[ERROR] 2020-03-23 17:50:09.006 [main] GenericDao - Could not getByPropertyEqual
+[ERROR] 2020-03-23 17:50:09.067 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:09.094 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:09.133 [main] GenericDao - Could not get by id
+[DEBUG] 2020-03-23 17:50:09.166 [main] GenericDao - Searching for order with username = s
+[ERROR] 2020-03-23 17:50:09.191 [main] GenericDao - Could not getByPropertyLike
+[ERROR] 2020-03-23 17:50:09.253 [main] GenericDao - Could not getAllEntities
+[ERROR] 2020-03-23 17:50:09.343 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:09.437 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:09.510 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:09.586 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:09.590 [main] GenericDao - Could not saveOrUpdate
+[ERROR] 2020-03-23 17:50:09.625 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:09.668 [main] GenericDao - Could not insert
+[ERROR] 2020-03-23 17:50:09.685 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:09.721 [main] GenericDao - Could not insert
+[ERROR] 2020-03-23 17:50:09.731 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:09.763 [main] GenericDao - Could not insert
+[ERROR] 2020-03-23 17:50:09.771 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:09.875 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:09.876 [main] GenericDao - Could not delete
+[ERROR] 2020-03-23 17:50:09.887 [main] GenericDao - Could not get by id
+[DEBUG] 2020-03-23 17:50:09.927 [main] GenericDao - Searching for order with skillLevel = intermediate
+[ERROR] 2020-03-23 17:50:09.967 [main] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-03-23 17:50:10.010 [main] GenericDao - Searching for order with instrument = viol
+[ERROR] 2020-03-23 17:50:10.047 [main] GenericDao - Could not getByPropertyLike
+[ERROR] 2020-03-23 17:50:10.119 [main] GenericDao - Could not getAllEntities
+[ERROR] 2020-03-23 17:50:10.183 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:10.241 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:10.245 [main] GenericDao - Could not saveOrUpdate
+[ERROR] 2020-03-23 17:50:10.289 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:10.356 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:50:10.359 [main] GenericDao - Could not insert
+[ERROR] 2020-03-23 17:50:10.383 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:51:32.018 [http-nio-8080-exec-1] GenericDao - Could not getAllEntities
+[ERROR] 2020-03-23 17:52:43.344 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:43.366 [main] GenericDao - Could not delete
+[ERROR] 2020-03-23 17:52:43.412 [main] GenericDao - Could not get by id
+[DEBUG] 2020-03-23 17:52:43.498 [main] GenericDao - Searching for order with teacher = 5
+[ERROR] 2020-03-23 17:52:43.785 [main] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-03-23 17:52:43.877 [main] GenericDao - Searching for order with instrument = viol
+[ERROR] 2020-03-23 17:52:44.001 [main] GenericDao - Could not getByPropertyLike
+[ERROR] 2020-03-23 17:52:44.187 [main] GenericDao - Could not getAllEntities
+[ERROR] 2020-03-23 17:52:44.287 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:44.428 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:44.545 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:44.591 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:44.594 [main] GenericDao - Could not saveOrUpdate
+[ERROR] 2020-03-23 17:52:44.665 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:44.765 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:44.778 [main] GenericDao - Could not insert
+[ERROR] 2020-03-23 17:52:44.836 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:44.987 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:44.989 [main] GenericDao - Could not delete
+[ERROR] 2020-03-23 17:52:45.001 [main] GenericDao - Could not get by id
+[DEBUG] 2020-03-23 17:52:45.075 [main] GenericDao - Searching for order with notes = Nat's Knapsack Strap Snapped
+[ERROR] 2020-03-23 17:52:45.162 [main] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-03-23 17:52:45.215 [main] GenericDao - Searching for order with activities = scales
+[ERROR] 2020-03-23 17:52:45.249 [main] GenericDao - Could not getByPropertyLike
+[ERROR] 2020-03-23 17:52:45.354 [main] GenericDao - Could not getAllEntities
+[ERROR] 2020-03-23 17:52:45.456 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:45.543 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:45.544 [main] GenericDao - Could not saveOrUpdate
+[ERROR] 2020-03-23 17:52:45.593 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:45.675 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:45.691 [main] GenericDao - Could not insert
+[ERROR] 2020-03-23 17:52:45.722 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:45.815 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:45.816 [main] GenericDao - Could not delete
+[ERROR] 2020-03-23 17:52:45.830 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:45.931 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:45.982 [main] GenericDao - Could not insert
+[ERROR] 2020-03-23 17:52:45.996 [main] GenericDao - Could not get by id
+[DEBUG] 2020-03-23 17:52:46.032 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[ERROR] 2020-03-23 17:52:46.073 [main] GenericDao - Could not getByPropertyEqual
+[ERROR] 2020-03-23 17:52:46.148 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:46.180 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:46.248 [main] GenericDao - Could not get by id
+[DEBUG] 2020-03-23 17:52:46.291 [main] GenericDao - Searching for order with username = s
+[ERROR] 2020-03-23 17:52:46.325 [main] GenericDao - Could not getByPropertyLike
+[ERROR] 2020-03-23 17:52:46.403 [main] GenericDao - Could not getAllEntities
+[ERROR] 2020-03-23 17:52:46.500 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:46.567 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:46.629 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:46.704 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:46.708 [main] GenericDao - Could not saveOrUpdate
+[ERROR] 2020-03-23 17:52:46.754 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:46.807 [main] GenericDao - Could not insert
+[ERROR] 2020-03-23 17:52:46.829 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:46.872 [main] GenericDao - Could not insert
+[ERROR] 2020-03-23 17:52:46.884 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:46.929 [main] GenericDao - Could not insert
+[ERROR] 2020-03-23 17:52:46.939 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:47.044 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:47.045 [main] GenericDao - Could not delete
+[ERROR] 2020-03-23 17:52:47.054 [main] GenericDao - Could not get by id
+[DEBUG] 2020-03-23 17:52:47.099 [main] GenericDao - Searching for order with skillLevel = intermediate
+[ERROR] 2020-03-23 17:52:47.143 [main] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-03-23 17:52:47.192 [main] GenericDao - Searching for order with instrument = viol
+[ERROR] 2020-03-23 17:52:47.239 [main] GenericDao - Could not getByPropertyLike
+[ERROR] 2020-03-23 17:52:47.339 [main] GenericDao - Could not getAllEntities
+[ERROR] 2020-03-23 17:52:47.447 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:47.503 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:47.504 [main] GenericDao - Could not saveOrUpdate
+[ERROR] 2020-03-23 17:52:47.530 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:47.594 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 17:52:47.596 [main] GenericDao - Could not insert
+[ERROR] 2020-03-23 17:52:47.621 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-23 18:02:56.104 [http-nio-8080-exec-9] GenericDao - Could not getAllEntities

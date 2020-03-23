@@ -45,7 +45,7 @@
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="profile.jsp">Profile</a>
+                <a class="nav-link" href="viewProfile">Profile</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Log Out</a>
