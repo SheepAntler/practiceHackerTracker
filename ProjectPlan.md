@@ -35,18 +35,18 @@
 
 ### Week 5
 
-- [ ] Create JSP template for all pages 
+- [x] Create JSP template for all pages 
 - [x] Create Role table 
 - [x] Create Role entity class (annotate for hibernate)
 - [x] Implement Generic DAO
 - [x] Create DAO unit tests for User and PracticeLog classes
-- [ ] Add a JSP to display user and role (view profile?) 
+- [x] Add a JSP to display user and role (view profile?) 
 - [ ] Add a JSP to add a user (create account)
 
 ### Week 6
 
 - [x] CHECK THIS BOX IF YOU BELIEVE IN YOURSELF. 
-- [ ] Create sample data in database
+- [x] Create sample data in database
 - [x] Create Practice Log table 
 - [x] Begin creating Studio table (for teacher accounts)
 - [x] Begin creating Studio and Practice Hack entities 
@@ -54,8 +54,6 @@
 - [x] Complete implementation/testing of the Practice Log and Studio tables
 - [x] Complete implementation/testing the Practice Log and Studio entities
 - [ ] Add update/delete functionality in JSP for user and role 
-- [ ] Build the Sheet Music search JSP
-- [ ] Build the Practice Log add/update/delete JSPs for teachers (comments) and practice hackers (logs)
 - [x] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created.
 
 ### Week 7 - CHECKPOINT 2
@@ -63,12 +61,12 @@
 - [ ] index JSP
 - [ ] teacher search JSP
 - [ ] music search JSP FOR SURE!!!!!!!!!!!!!!!
-- [ ] Create database in AWS
-- [ ] Deploy to AWS (Woohoo!)
-- [ ] Set up local authentication 
-- [ ] Set up AWS authentication 
+- [x] Create database in AWS
+- [x] Deploy to AWS (Woohoo!)
+- [x] Set up local authentication 
+- [x] Set up AWS authentication 
 - [x] Add the Practice Hacks table 
-- [ ] Make any/all Checkpoint 2 changes 
+- [x] Make any/all Checkpoint 2 changes 
 
 ### Week 8
 
@@ -77,13 +75,13 @@
 - [ ] Build the Practice Hacks entity 
 - [ ] Build the Practice Hacks CRUD JSPs
 - [ ] Build the CRUD JSPs for "My Studio"
-- [ ] Get ready for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented.
-- [ ] CHECK THIS BOX IF YOU GOT THIS.
+- [x] Get ready for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented.
+- [x] CHECK THIS BOX IF YOU GOT THIS.
 
 ### Week 9 - CHECKPOINT 3
 
-- [ ] Potentially add YouTube as another integrated service? 
-- [ ] Make any/all Checkpoint 3 changes 
+- [ ] Make any/all Checkpoint 3 changes
+- [ ] Make your JSPs BEAUTIFUL
 - [ ] Start reviewing your code...
    - [ ] Javadoc
    - [ ] Code coverage in tests
