@@ -3,7 +3,7 @@ package stalterclouse.elspeth.persistence;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.log4j.Log4j2;
-import stalterclouse.elspeth.entity.ImslpResponse;
+import stalterclouse.elspeth.entity.imslp.ImslpResponse;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
@@ -16,11 +16,11 @@ public class ImslpDao {
     /**
      * Returns the ImslpResponse object
      */
-    ImslpResponse getJsonMember0() {
+    ImslpResponse getJsonData() {
         Client client = ClientBuilder.newClient();
         // TODO read in URI from a properties file!
         WebTarget target =
-                client.target("https://swapi.co/api/planets/1");
+                client.target("https://imslp.org/imslpscripts/API.ISCR.php?account=worklist/disclaimer=accepted/sort=id/type=1/start=1383/limit=1/retformat=json");
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
 
         ObjectMapper mapper = new ObjectMapper();

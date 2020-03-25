@@ -2,7 +2,7 @@ package stalterclouse.elspeth.persistence;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import stalterclouse.elspeth.entity.ComposersItem;
+import stalterclouse.elspeth.entity.openopus.ComposersItem;
 
 import static org.junit.jupiter.api.Assertions.*;
 

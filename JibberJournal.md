@@ -65,6 +65,8 @@ IDEALLY, each unit test should perform ONE TASK. In your current ListTest class 
 I wasn't sure whether finishing up my wireframes before my other design documents were done was a good idea, but now that I've gotten through them, I'm incredibly glad I chose to complete them when I did. The whole process really got me thinking about my MVP--something about dragging all those rectangles around on webpage after webpage really helped me draw a better-defined line in the sand between what I _know_ I'm going to be able to complete (and how I would go about completing it) and what my reach items are going to be. I'm going to make a markdown table that outlines my MVP items and my reach items right after I'm done with this reflection, while it's all still fresh in my mind. 
 
 ## Date
+*UPDATE 3/24/2020: This issue is resolved.
+No particular date--this is an ongoing issue.
 
 ### Entity Relationships 
 BLOCKER TIME. I'm bamboozled. In my application, there are two roles: "teacher" and "not teacher". Many users can have each role, but each user can only have one role per account. That's totally a One-To-Many relationship--however, here's where the wheels pop off for old Elspeth: 
@@ -73,7 +75,11 @@ BLOCKER TIME. I'm bamboozled. In my application, there are two roles: "teacher" 
 
 Also, one other question: I know that we're using the username field in both Users and Roles for authentication; however, I'm confused about how that ties in to the One-To-Many relationship. Are we required to use the username field as our foreign key in the roles table? Or can we use ID like the demo/exercise 5? 
 
+## Date
+3/24/2020
 
+### JSON response objects 
+So, I had a lot of trouble with my JSON object responses this past weekend. Now that I've worked through it after reviewing some examples that Paula kindly put together for me, however, I've realized that I needn't have been so befuddled. I've been thinking and thinking about where the disconnect was--I think it was a combination of giving my POJOs and variables relatively stupid/confusing names which, I suppose, was a result of me not really thinking critically about the class structure roboPojo generated for me and thereby not fully grasping how to work inwards from the outside of a layered JSON object to get what I want. Sometimes, that meant a long chain of get methods, and that's the mental leap I wasn't making on Sunday. I feel kind of silly, honestly, but I also have been thinking about the JSON objects I've seen so far in my education, and while the objects I just processed aren't exactly *complex*, they are a bit more involved on the back end than JSON objects I've seen so far which return straightforward, humdrum JSON objects. I think this has led me to believe that JSON responses are something they often aren't and I'm going to carry that forward with me from here on out.
 
 
    

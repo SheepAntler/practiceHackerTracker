@@ -71,7 +71,7 @@
 ### Week 8
 
 (Hardcore Teacher account week--lots of CRUD)
-- [ ] Integration with IMSLP API
+- [x] Integration with IMSLP API
 - [ ] Build the Practice Hacks entity 
 - [ ] Build the Practice Hacks CRUD JSPs
 - [ ] Build the CRUD JSPs for "My Studio"
