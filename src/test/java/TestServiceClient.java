@@ -1,9 +1,5 @@
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
-import stalterclouse.elspeth.entity.Composer;
-import stalterclouse.elspeth.entity.ComposersItem;
-import stalterclouse.elspeth.entity.Request;
-import stalterclouse.elspeth.entity.Status;
 
 import javax.ws.rs.client.*;
 import javax.ws.rs.core.MediaType;
@@ -47,7 +43,7 @@ public class TestServiceClient {
 //                imslpClient.target("https://imslp.org/imslpscripts/API.ISCR.php?account=worklist/disclaimer=accepted/sort=id/type=1/start=1382/limit=1/retformat=json");
 //        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 //        String imslpResponse = imslpTarget.request(MediaType.APPLICATION_JSON).get(String.class);
-//        //String expectedResponse = "{\"0\":{\"id\":\"Category:Bach, Johann Sebastian\",\"type\":\"1\",\"parent\":\"\",\"intvals\":[],\"permlink\":\"https:\\/\\/imslp.org\\/wiki\\/Category:Bach,_Johann_Sebastian\"},\"metadata\":{\"start\":1382,\"limit\":1,\"sortby\":\"id\",\"sortdirection\":\"ASC\",\"moreresultsavailable\":true,\"timestamp\":" + timestamp.getTime() + ",\"apiversion\":10}}";
-//        //assertEquals(expectedResponse, imslpResponse);
+        //String expectedResponse = "{\"0\":{\"id\":\"Category:Bach, Johann Sebastian\",\"type\":\"1\",\"parent\":\"\",\"intvals\":[],\"permlink\":\"https:\\/\\/imslp.org\\/wiki\\/Category:Bach,_Johann_Sebastian\"},\"metadata\":{\"start\":1382,\"limit\":1,\"sortby\":\"id\",\"sortdirection\":\"ASC\",\"moreresultsavailable\":true,\"timestamp\":" + timestamp.getTime() + ",\"apiversion\":10}}";
+        //assertEquals(expectedResponse, imslpResponse);
 //    }
 }

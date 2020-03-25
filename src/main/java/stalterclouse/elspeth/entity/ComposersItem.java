@@ -1,13 +1,43 @@
 package stalterclouse.elspeth.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.util.Objects;
+
 public class ComposersItem{
+
+	@JsonProperty("complete_name")
 	private String completeName;
+
+	@JsonProperty("death")
 	private String death;
+
+	@JsonProperty("name")
 	private String name;
+
+	@JsonProperty("birth")
 	private String birth;
+
+	@JsonProperty("epoch")
 	private String epoch;
+
+	@JsonProperty("id")
 	private String id;
+
+	@JsonProperty("portrait")
 	private String portrait;
+
+	public ComposersItem() {
+	}
+
+	public ComposersItem(String completeName, String death, String name, String birth, String epoch, String id) {
+		this.completeName = completeName;
+		this.death = death;
+		this.name = name;
+		this.birth = birth;
+		this.epoch = epoch;
+		this.id = id;
+	}
 
 	public void setCompleteName(String completeName){
 		this.completeName = completeName;
@@ -78,4 +108,23 @@ public class ComposersItem{
 			",portrait = '" + portrait + '\'' + 
 			"}";
 		}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		ComposersItem that = (ComposersItem) o;
+		return Objects.equals(completeName, that.completeName) &&
+				Objects.equals(death, that.death) &&
+				Objects.equals(name, that.name) &&
+				Objects.equals(birth, that.birth) &&
+				Objects.equals(epoch, that.epoch) &&
+				Objects.equals(id, that.id) &&
+				Objects.equals(portrait, that.portrait);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(completeName, death, name, birth, epoch, id, portrait);
+	}
 }

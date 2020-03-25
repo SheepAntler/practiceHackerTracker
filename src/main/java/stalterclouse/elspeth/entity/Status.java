@@ -1,12 +1,25 @@
 package stalterclouse.elspeth.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Status{
 
+	@JsonProperty("success")
 	private String success;
+
+	@JsonProperty("source")
 	private String source;
+
+	@JsonProperty("api")
 	private String api;
+
+	@JsonProperty("rows")
 	private int rows;
+
+	@JsonProperty("processingtime")
 	private double processingtime;
+
+	@JsonProperty("version")
 	private String version;
 
 	public void setSuccess(String success){

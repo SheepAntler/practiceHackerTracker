@@ -1,7 +1,13 @@
 package stalterclouse.elspeth.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Request{
+
+	@JsonProperty("item")
 	private String item;
+
+	@JsonProperty("type")
 	private String type;
 
 	public void setItem(String item){
