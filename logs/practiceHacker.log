@@ -3800,3 +3800,55 @@ Caused by: com.mysql.cj.exceptions.WrongArgumentException: No timezone mapping e
 [ERROR] 2020-03-25 01:11:06.631 [main] GenericDao - Could not get by id
 [ERROR] 2020-03-25 01:11:06.711 [main] GenericDao - Could not insert
 [ERROR] 2020-03-25 01:11:06.745 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-25 02:03:00.291 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-25 02:03:00.314 [main] GenericDao - Could not delete
+[ERROR] 2020-03-25 02:03:00.346 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-25 02:03:00.560 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-25 02:03:00.703 [main] GenericDao - Could not insert
+[ERROR] 2020-03-25 02:03:00.727 [main] GenericDao - Could not get by id
+[DEBUG] 2020-03-25 02:03:00.849 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[ERROR] 2020-03-25 02:03:01.060 [main] GenericDao - Could not getByPropertyEqual
+[ERROR] 2020-03-25 02:03:01.239 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-25 02:03:01.342 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-25 02:03:01.451 [main] GenericDao - Could not get by id
+[DEBUG] 2020-03-25 02:03:01.544 [main] GenericDao - Searching for order with username = s
+[ERROR] 2020-03-25 02:03:01.663 [main] GenericDao - Could not getByPropertyLike
+[ERROR] 2020-03-25 02:03:01.834 [main] GenericDao - Could not getAllEntities
+[ERROR] 2020-03-25 02:03:01.968 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-25 02:03:02.104 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-25 02:03:02.234 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-25 02:03:02.355 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-25 02:03:02.357 [main] GenericDao - Could not saveOrUpdate
+[ERROR] 2020-03-25 02:03:02.402 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-25 02:03:02.514 [main] GenericDao - Could not insert
+[ERROR] 2020-03-25 02:03:02.531 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-25 02:03:02.660 [main] GenericDao - Could not insert
+[ERROR] 2020-03-25 02:03:02.673 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-25 02:03:02.743 [main] GenericDao - Could not insert
+[ERROR] 2020-03-25 02:03:02.768 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-28 16:00:21.878 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-28 16:00:21.893 [main] GenericDao - Could not delete
+[ERROR] 2020-03-28 16:00:21.921 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-28 16:00:22.137 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-28 16:00:22.298 [main] GenericDao - Could not insert
+[ERROR] 2020-03-28 16:00:22.320 [main] GenericDao - Could not get by id
+[DEBUG] 2020-03-28 16:00:22.422 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[ERROR] 2020-03-28 16:00:22.731 [main] GenericDao - Could not getByPropertyEqual
+[ERROR] 2020-03-28 16:00:22.913 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-28 16:00:23.026 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-28 16:00:23.118 [main] GenericDao - Could not get by id
+[DEBUG] 2020-03-28 16:00:23.198 [main] GenericDao - Searching for order with username = s
+[ERROR] 2020-03-28 16:00:23.285 [main] GenericDao - Could not getByPropertyLike
+[ERROR] 2020-03-28 16:00:23.386 [main] GenericDao - Could not getAllEntities
+[ERROR] 2020-03-28 16:00:23.518 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-28 16:00:23.625 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-28 16:00:23.716 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-28 16:00:23.810 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-28 16:00:23.812 [main] GenericDao - Could not saveOrUpdate
+[ERROR] 2020-03-28 16:00:23.867 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-28 16:00:23.925 [main] GenericDao - Could not insert
+[ERROR] 2020-03-28 16:00:23.937 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-28 16:00:23.998 [main] GenericDao - Could not insert
+[ERROR] 2020-03-28 16:00:24.013 [main] GenericDao - Could not get by id
+[ERROR] 2020-03-28 16:00:24.145 [main] GenericDao - Could not insert
+[ERROR] 2020-03-28 16:00:24.158 [main] GenericDao - Could not get by id
