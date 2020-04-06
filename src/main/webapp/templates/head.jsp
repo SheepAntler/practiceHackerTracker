@@ -25,6 +25,6 @@
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
     <script type="text/javascript" charset="utf-8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="master.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/master.css">
 </head>
 

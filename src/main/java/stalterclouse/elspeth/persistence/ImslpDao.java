@@ -20,7 +20,7 @@ public class ImslpDao {
         Client client = ClientBuilder.newClient();
         // TODO read in URI from a properties file!
         WebTarget target =
-                client.target("https://imslp.org/imslpscripts/API.ISCR.php?account=worklist/disclaimer=accepted/sort=id/type=1/start=1383/limit=1/retformat=json");
+                client.target("https://imslp.org/imslpscripts/API.ISCR.php?account=worklist/disclaimer=accepted/sort=id/type=1/start=1387/limit=1/retformat=json");
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
 
         ObjectMapper mapper = new ObjectMapper();
