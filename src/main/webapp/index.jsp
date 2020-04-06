@@ -4,10 +4,10 @@
 <body>
     <%@include file="templates/generalNavBar.jsp"%>
     <div class="container text-center" id="homepageBox">
-        <h1>Practice Hacker</h1>
-        <div class="row">
-            <a class="btn btn-dark col-5" href="login.jsp">Sign In</a>
-            <a class="btn btn-dark col-5" href="signUp.jsp">Register</a>
+        <h1 class="mainHeading">Practice{Hacker}</h1>
+        <div class="row buttonContainer">
+            <a class="btn btn-dark col-4 button" href="login.jsp">Sign In</a>
+            <a class="btn btn-dark col-4 button" href="signUp.jsp">Register</a>
         </div>
     </div>
 </body>
