@@ -13,13 +13,13 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.jsp">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/index.jsp' ? ' active' : ''}">
+                <a class="nav-link" href="index.jsp">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/aboutTracking.jsp' ? ' active' : ''}">
                 <a class="nav-link" href="aboutTracking.jsp">About Practice Tracking</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/aboutHacks.jsp' ? ' active' : ''}">
                 <a class="nav-link" href="aboutHacks.jsp">About Practice Hacks</a>
             </li>
             <li class="nav-item dropdown">
@@ -34,15 +34,15 @@
                     <a class="dropdown-item" href="practiceHackerAccounts.jsp">Practice Hacker</a>
                 </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/faq.jsp' ? ' active' : ''}">
                 <a class="nav-link" href="faq.jsp">FAQ</a>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/account.jsp' ? ' active' : ''}">
                 <a class="nav-link" href="account.jsp">Log In</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/signUp.jsp' ? ' active' : ''}">
                 <a class="nav-link" href="signUp.jsp">Sign Up</a>
             </li>
         </ul>

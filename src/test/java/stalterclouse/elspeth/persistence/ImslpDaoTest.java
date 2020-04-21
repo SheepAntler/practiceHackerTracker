@@ -17,7 +17,7 @@ public class ImslpDaoTest {
 
     @Test
     void getComposerCategoryLinkSuccess() {
-        JsonMember0 expectedComposerCategoryLink = new JsonMember0("Category:Bach, Johann Sebastian", "https://imslp.org/wiki/Category:Bach,_Johann_Sebastian");
+        JsonMember0 expectedComposerCategoryLink = new JsonMember0("Category:Bach, Johann Nicolaus", "https://imslp.org/wiki/Category:Bach,_Johann_Nicolaus");
         JsonMember0 returnedComposerCategoryLink = new JsonMember0(dao.getJsonData().getJsonMember0().getId(), dao.getJsonData().getJsonMember0().getPermlink());
 
         assertEquals(expectedComposerCategoryLink, returnedComposerCategoryLink);
