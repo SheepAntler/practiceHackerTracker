@@ -1,37 +1,38 @@
 /* general */
-html, body {
-    margin: 0;
-    height: 100%;
-}
+/*html, body {*/
+/*    margin: 0;*/
+/*    height: 100vh;*/
+/*}*/
 
 body {
     background-image: url("piano1.jpg");
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-size: cover;
     /*font-family: 'Charm', cursive;*/
     /*font-family: 'Kavivanar', cursive;*/
     /*font-family: 'Caveat', cursive;*/
     font-family: 'Poiret One', cursive;
     /*font-family: 'Pompiere', cursive;*/
-    position: relative;
+    /*position: relative;*/
 }
 
 /* navigation */
 nav {
     color: aliceblue;
     font-weight: bold;
-}
-
-.active > a
-{
-    color: red;
+    margin-bottom: 2em;
 }
 
 /* headings */
 .mainHeading {
     font-size: 5em;
     font-weight: bold;
-    margin-bottom: 1em;
+    margin: 1em;
+    text-shadow: 1px 2px 3px black;
+}
+
+.subHeading {
+    font-weight: bold;
     text-shadow: 1px 2px 3px black;
 }
 
@@ -43,11 +44,44 @@ nav {
     margin-right: auto;
 }
 
+/* text boxes */
+.textBox {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2em;
+    box-shadow: 2px 3px 4px black;
+    color: white;
+    margin: auto;
+    padding: 2em;
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 /* forms */
 
 
 /* tables */
 
+
+/* accordions */
+.accordionLink {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    transition-duration: .3s;
+    transition-property: all;
+}
+
+.accordionLink:hover, .btn-link:focus {
+    color: antiquewhite;
+    text-shadow: 1px 2px 2px black;
+}
 
 /* index */
 #homepageBox {
@@ -62,5 +96,6 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 
 

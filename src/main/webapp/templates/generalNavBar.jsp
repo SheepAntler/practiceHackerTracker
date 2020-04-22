@@ -16,33 +16,21 @@
             <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/index.jsp' ? ' active' : ''}">
                 <a class="nav-link" href="index.jsp">Home</a>
             </li>
-            <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/aboutTracking.jsp' ? ' active' : ''}">
-                <a class="nav-link" href="aboutTracking.jsp">About Practice Tracking</a>
+            <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/about.jsp' ? ' active' : ''}">
+                <a class="nav-link" href="about.jsp">About Us</a>
             </li>
-            <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/aboutHacks.jsp' ? ' active' : ''}">
-                <a class="nav-link" href="aboutHacks.jsp">About Practice Hacks</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Account Types
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="teacherAccounts.jsp">Teacher</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="studentAccounts.jsp">Student</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="practiceHackerAccounts.jsp">Practice Hacker</a>
-                </div>
+            <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/accountTypes.jsp' ? ' active' : ''}">
+                <a class="nav-link" href="accountTypes.jsp">Account Types</a>
             </li>
             <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/faq.jsp' ? ' active' : ''}">
                 <a class="nav-link" href="faq.jsp">FAQ</a>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/account.jsp' ? ' active' : ''}">
+            <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/account.jsp' || '/practiceHackerTracker/account.jsp' ? ' active' : ''}">
                 <a class="nav-link" href="account.jsp">Log In</a>
             </li>
-            <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/signUp.jsp' ? ' active' : ''}">
+            <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/signUp.jsp' || '/practiceHackerTracker/signUp.jsp' ? ' active' : ''}">
                 <a class="nav-link" href="signUp.jsp">Sign Up</a>
             </li>
         </ul>

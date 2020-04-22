@@ -13,8 +13,8 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="practiceHackerHome.jsp">Practice Hacker Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/practiceHackerHome.jsp' ? ' active' : ''}">
+                <a class="nav-link" href="practiceHackerHome.jsp">Practice Hacker Home</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -26,15 +26,15 @@
                     <a class="dropdown-item" href="logWriter.jsp">Log Writer</a>
                 </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/viewHacks.jsp' ? ' active' : ''}">
                 <a class="nav-link" href="viewHacks.jsp">Practice Hacks</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/imslpSearch.jsp' ? ' active' : ''}">
                 <a class="nav-link" href="imslpSearch.jsp">Music Search</a>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/viewProfile.jsp' ? ' active' : ''}">
                 <a class="nav-link" href="viewProfile">Profile</a>
             </li>
             <li class="nav-item">
