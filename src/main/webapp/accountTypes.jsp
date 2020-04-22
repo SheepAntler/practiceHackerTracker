@@ -6,7 +6,7 @@
     <div class="container textBox">
         <h1 class="mainHeading text-center">Account Types</h1>
         <h2 class="text-center">whether you're a teacher, student, or seasoned pro, we've got you covered</h2>
-
+        <hr />
         <p class="text-center">All three of our available account types have similar functionality, but it differs just enough to count.
         Check out what we've got, and find the best fit for you.</p>
 
