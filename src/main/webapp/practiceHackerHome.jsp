@@ -10,7 +10,8 @@
 <html>
 <body>
 <%@include file="templates/practiceHackerNavBar.jsp"%>
-<h2 class="container text-center">You must be NEITHER a student NOR a teacher.</h2>
-</body>
+    <div class="container textBox">
+        <h1 class="mainHeading text-center">You must be ONE OF THE OTHERS.</h1>
+    </div></body>
 </html>
 

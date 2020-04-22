@@ -10,7 +10,9 @@
 <html>
 <body>
 <%@include file="templates/teacherNavBar.jsp"%>
-<h2 class="container text-center">You must be a TEACHER.</h2>
+    <div class="container textBox">
+        <h1 class="mainHeading text-center">You must be a TEACHER.</h1>
+    </div>
 </body>
 </html>
 

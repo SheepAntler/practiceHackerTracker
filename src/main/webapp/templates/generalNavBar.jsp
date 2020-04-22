@@ -31,7 +31,7 @@
                 <a class="nav-link" href="account.jsp">Log In</a>
             </li>
             <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/signUp.jsp' || '/practiceHackerTracker/signUp.jsp' ? ' active' : ''}">
-                <a class="nav-link" href="signUp.jsp">Sign Up</a>
+                <a class="nav-link" href="signUp.jsp">Register</a>
             </li>
         </ul>
     </div>

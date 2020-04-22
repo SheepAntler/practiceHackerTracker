@@ -22,18 +22,7 @@
                 <div id="teacherInfo" class="collapse show" aria-labelledby="forTeachers" data-parent="#accountTypes">
                     <div class="card-body">
                         <p>//TODO add a brief description</p>
-                        <p>//TODO add a table with the things a teacher can do</p>
-                        <p>//TODO add a brief description</p>
-                        <p>//TODO add a table with the things a teacher can do</p>
-                        <p>//TODO add a brief description</p>
-                        <p>//TODO add a table with the things a teacher can do</p>
-                        <p>//TODO add a brief description</p>
-                        <p>//TODO add a table with the things a teacher can do</p>
-                        <p>//TODO add a brief description</p>
-                        <p>//TODO add a table with the things a teacher can do</p>
-                        <p>//TODO add a brief description</p>
-                        <p>//TODO add a table with the things a teacher can do</p>
-
+                        <p>//TODO add a table listing teacher features</p>
                     </div>
                 </div>
             </div>
@@ -48,7 +37,7 @@
                 <div id="studentInfo" class="collapse" aria-labelledby="forStudents" data-parent="#accountTypes">
                     <div class="card-body">
                         <p>//TODO add a brief description</p>
-                        <p>//TODO add a table with the things a student can do</p>
+                        <p>//TODO add a table listing student features</p>
                     </div>
                 </div>
             </div>
@@ -63,7 +52,7 @@
                 <div id="otherInfo" class="collapse" aria-labelledby="forOthers" data-parent="#accountTypes">
                     <div class="card-body">
                         <p>//TODO add a brief description</p>
-                        <p>//TODO add a table with the things a practiceHacker can do</p>
+                        <p>//TODO add a table listing practiceHacker features</p>
                     </div>
                 </div>
             </div>

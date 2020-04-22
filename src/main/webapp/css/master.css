@@ -13,7 +13,12 @@ body {
     /*font-family: 'Caveat', cursive;*/
     font-family: 'Poiret One', cursive;
     /*font-family: 'Pompiere', cursive;*/
+    font-weight: bold;
     /*position: relative;*/
+}
+
+hr {
+    border-top: 2px double white;
 }
 
 /* navigation */
@@ -27,13 +32,19 @@ nav {
 .mainHeading {
     font-size: 5em;
     font-weight: bold;
-    margin: 1em;
+    /*margin: 1em;*/
     text-shadow: 1px 2px 3px black;
 }
 
 .subHeading {
+    font-size: 2em;
     font-weight: bold;
     text-shadow: 1px 2px 3px black;
+}
+
+.minorHeading {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 /* buttons */
@@ -46,16 +57,13 @@ nav {
 
 /* text boxes */
 .textBox {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 2em;
     box-shadow: 2px 3px 4px black;
     color: white;
     margin: auto;
+    margin-bottom: 2em;
     padding: 2em;
-    /*position: absolute;*/
-    /*top: 50%;*/
-    /*left: 50%;*/
-    /*transform: translate(-50%, -50%);*/
 }
 
 p {
@@ -64,10 +72,28 @@ p {
 }
 
 /* forms */
+.formBox {
+    width: 50%;
+}
 
+label {
+    font-size: 1.5em;
+    font-weight: bold
+}
+
+.form-text, .text-muted {
+    color: aliceblue !important;
+    font-size: 1em;
+}
+
+.loginTd {
+    color: white;
+}
 
 /* tables */
-
+td {
+    color: black;
+}
 
 /* accordions */
 .accordionLink {
@@ -84,17 +110,15 @@ p {
 }
 
 /* index */
-#homepageBox {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 2em;
-    box-shadow: 2px 3px 4px black;
-    color: white;
-    margin: auto;
-    padding: 2em;
+.homepageBox {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.indexHeading {
+    margin-bottom: 2em;
 }
 
 

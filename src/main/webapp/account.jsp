@@ -8,9 +8,12 @@
 <%@include file="templates/head.jsp"%>
 <html>
 <body>
-    <h1>Choose your Account Type:</h1>
-    <a href="studentHome.jsp" class="btn btn-primary">Student Account</a>
-    <a href="teacherHome.jsp" class="btn btn-primary">Teacher Account</a>
-    <a href="practiceHackerHome.jsp" class="btn btn-primary">Practice Hacker Account</a>
+<%@include file="templates/generalNavBar.jsp"%>
+    <div class="container textBox">
+        <h1 class="mainHeading">Log in as a:</h1>
+        <a href="studentHome.jsp" class="btn btn-dark">Student</a>
+        <a href="teacherHome.jsp" class="btn btn-dark">Teacher</a>
+        <a href="practiceHackerHome.jsp" class="btn btn-dark">Practice Hacker</a>
+    </div>
 </body>
 </html>

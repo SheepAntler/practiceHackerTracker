@@ -5510,3 +5510,9 @@ Caused by: com.mysql.cj.exceptions.WrongArgumentException: No timezone mapping e
 [ERROR] 2020-04-21 15:29:14.210 [main] GenericDao - Could not get by id
 [ERROR] 2020-04-21 15:29:14.213 [main] GenericDao - Could not insert
 [ERROR] 2020-04-21 15:29:14.245 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-22 13:51:53.019 [http-nio-8080-exec-135] GenericDao - Could not getAllEntities
+[ERROR] 2020-04-22 13:56:35.176 [http-nio-8080-exec-140] GenericDao - Could not getAllEntities
+[ERROR] 2020-04-22 13:58:36.110 [http-nio-8080-exec-147] GenericDao - Could not getAllEntities
+[ERROR] 2020-04-22 13:58:56.469 [http-nio-8080-exec-138] GenericDao - Could not getAllEntities
+[ERROR] 2020-04-22 14:12:20.969 [http-nio-8080-exec-8] GenericDao - Could not getAllEntities
+[ERROR] 2020-04-22 14:17:08.248 [http-nio-8080-exec-2] GenericDao - Could not getAllEntities
