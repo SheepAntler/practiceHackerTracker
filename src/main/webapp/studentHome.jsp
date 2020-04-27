@@ -11,7 +11,7 @@
 <body>
 <%@include file="templates/studentNavBar.jsp"%>
     <div class="container textBox">
-        <h1 class="mainHeading text-center">You must be a STUDENT.</h1>
+        <h1 class="mainHeading text-center">Hi, ${pageContext.request.getRemoteUser()}! You must be a STUDENT.</h1>
     </div>
 </body>
 </html>

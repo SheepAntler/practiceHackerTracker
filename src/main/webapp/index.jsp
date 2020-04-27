@@ -6,7 +6,7 @@
         <h1 class="mainHeading indexHeading">Practice{Hacker}</h1>
         <div class="row buttonContainer">
             <a class="btn btn-dark col-4 button" href="login.jsp">Log In</a>
-            <a class="btn btn-dark col-4 button" href="signUp.jsp">Register</a>
+            <a class="btn btn-dark col-4 button" href="account.jsp">Register</a>
         </div>
     </div>
 </body>
