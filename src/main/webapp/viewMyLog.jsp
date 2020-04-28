@@ -2,7 +2,7 @@
 
 <html>
 <body>
-<%@include file="templates/generalNavBar.jsp"%>
+<%@include file="templates/navbar.jsp"%>
 <h2 class="container text-center">My Logs</h2>
 
 </body>

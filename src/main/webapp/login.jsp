@@ -12,7 +12,7 @@
 <%--    <title>Login</title>--%>
 <%--</head>--%>
 <body>
-<%@include file="templates/generalNavBar.jsp"%>
+<%@include file="templates/navbar.jsp"%>
     <div class="container textBox formBox">
         <h1 class="mainHeading">Log In</h1>
         <FORM ACTION="j_security_check" METHOD="POST">

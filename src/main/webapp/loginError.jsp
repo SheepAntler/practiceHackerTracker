@@ -12,5 +12,7 @@
 </head>
 <body>
     Ruh-roh! Looks like your login failed. Please try again!
+    <%-- TODO make this error message BEAUTIFUL! --%>
+    <%-- TODO make error messages for 404, 500, and 501--see your FreewayForecasts example --%>
 </body>
 </html>

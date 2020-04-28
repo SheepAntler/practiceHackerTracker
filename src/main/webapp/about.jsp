@@ -2,7 +2,7 @@
 
 <html>
 <body>
-<%@include file="templates/generalNavBar.jsp"%>
+<%@include file="templates/navbar.jsp"%>
     <div class="container textBox">
         <h1 class="mainHeading">What's all this about?</h1>
         <hr />

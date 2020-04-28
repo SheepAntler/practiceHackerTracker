@@ -2,7 +2,7 @@
 
 <html>
 <body>
-<%@include file="templates/generalNavBar.jsp"%>
+<%@include file="templates/navbar.jsp"%>
     <div class="container textBox">
         <h1 class="mainHeading text-center">Account Types</h1>
         <h2 class="text-center">whether you're a teacher, student, or seasoned pro, we've got you covered</h2>

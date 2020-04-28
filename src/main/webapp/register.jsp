@@ -2,7 +2,7 @@
 
 <html>
 <body>
-<%@include file="templates/generalNavBar.jsp"%>
+<%@include file="templates/navbar.jsp"%>
     <div class="container textBox formBox">
         <h1 class="text-center mainHeading">Create an Account</h1>
         <form>

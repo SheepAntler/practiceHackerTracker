@@ -2,7 +2,7 @@
 
 <html>
 <body>
-<%@include file="templates/teacherNavBar.jsp"%>
+<%@include file="templates/navbar.jsp"%>
 <h2 class="container text-center">Add Comments</h2>
 
 </body>
