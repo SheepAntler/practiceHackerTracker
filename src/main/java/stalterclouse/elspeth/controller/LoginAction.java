@@ -5,32 +5,33 @@ import stalterclouse.elspeth.persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.annotation.*;
 import java.io.IOException;
 
 /**
- * A simple servlet to welcome the user.
- * If the user performs a search, they are taken to a results page.
+ * Logs in the user and gets their dashboard display data.
  *
  * @author Elspeth Stalter-Clouse
  */
 
 @WebServlet(
-        urlPatterns = {"/viewProfile"}
+        urlPatterns = {"/login"}
 )
-
-public class DisplayUserData extends HttpServlet {
+public class LoginAction extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        GenericDao dao = new GenericDao(User.class);
+        GenericDao userDao = new GenericDao(User.class);
 
-        req.setAttribute("users", dao.getAllEntities());
+        //TODO get data to display for students and practiceHackers
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/profile.jsp");
+
+        //TODO get data to display for teachers
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
         dispatcher.forward(req, resp);
 
     }

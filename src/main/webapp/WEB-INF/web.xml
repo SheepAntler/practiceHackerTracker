@@ -13,38 +13,52 @@
     </form-login-config>
   </login-config>
 
-  <!-- Protect the Student portion of the website. -->
+  <!-- Authorize the user login -->
   <security-constraint>
     <web-resource-collection>
-      <web-resource-name>studentHome</web-resource-name>
-      <url-pattern>/studentHome.jsp</url-pattern>
+      <web-resource-name>Login</web-resource-name>
+      <url-pattern>/login</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>student</role-name>
-    </auth-constraint>
-  </security-constraint>
-
-  <!-- Protect the Teacher portion of the website. -->
-  <security-constraint>
-    <web-resource-collection>
-      <web-resource-name>teacherHome</web-resource-name>
-      <url-pattern>/teacherHome.jsp</url-pattern>
-    </web-resource-collection>
-    <auth-constraint>
       <role-name>teacher</role-name>
-    </auth-constraint>
-  </security-constraint>
-
-  <!-- Protect the Practice Hacker portion of the website. -->
-  <security-constraint>
-    <web-resource-collection>
-      <web-resource-name>practiceHackerHome</web-resource-name>
-      <url-pattern>/practiceHackerHome.jsp</url-pattern>
-    </web-resource-collection>
-    <auth-constraint>
       <role-name>practiceHacker</role-name>
     </auth-constraint>
   </security-constraint>
+
+
+  <!-- Protect the Student portion of the website. -->
+<!--  <security-constraint>-->
+<!--    <web-resource-collection>-->
+<!--      <web-resource-name>studentHome</web-resource-name>-->
+<!--      <url-pattern>/studentHome.jsp</url-pattern>-->
+<!--    </web-resource-collection>-->
+<!--    <auth-constraint>-->
+<!--      <role-name>student</role-name>-->
+<!--    </auth-constraint>-->
+<!--  </security-constraint>-->
+
+  <!-- Protect the Teacher portion of the website. -->
+<!--  <security-constraint>-->
+<!--    <web-resource-collection>-->
+<!--      <web-resource-name>teacherHome</web-resource-name>-->
+<!--      <url-pattern>/teacherHome.jsp</url-pattern>-->
+<!--    </web-resource-collection>-->
+<!--    <auth-constraint>-->
+<!--      <role-name>teacher</role-name>-->
+<!--    </auth-constraint>-->
+<!--  </security-constraint>-->
+
+  <!-- Protect the Practice Hacker portion of the website. -->
+<!--  <security-constraint>-->
+<!--    <web-resource-collection>-->
+<!--      <web-resource-name>practiceHackerHome</web-resource-name>-->
+<!--      <url-pattern>/practiceHackerHome.jsp</url-pattern>-->
+<!--    </web-resource-collection>-->
+<!--    <auth-constraint>-->
+<!--      <role-name>practiceHacker</role-name>-->
+<!--    </auth-constraint>-->
+<!--  </security-constraint>-->
 
   <!-- All Security Role Names -->
   <security-role>

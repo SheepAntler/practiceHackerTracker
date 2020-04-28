@@ -28,7 +28,7 @@
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/account.jsp' || '/practiceHackerTracker/account.jsp' ? ' active' : ''}">
-                <a class="nav-link" href="account.jsp">Log In</a>
+                <a class="nav-link" href="login">Log In</a>
             </li>
             <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/signUp.jsp' || '/practiceHackerTracker/signUp.jsp' ? ' active' : ''}">
                 <a class="nav-link" href="signUp.jsp">Register</a>
