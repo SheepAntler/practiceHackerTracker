@@ -41,7 +41,7 @@
 - [x] Implement Generic DAO
 - [x] Create DAO unit tests for User and PracticeLog classes
 - [x] Add a JSP to display user and role (view profile?) 
-- [ ] Add a JSP to add a user (create account)
+- [x] Add a JSP to add a user (create account)
 
 ### Week 6
 
@@ -58,9 +58,9 @@
 
 ### Week 7 - CHECKPOINT 2
 
-- [ ] index JSP
+- [x] index JSP
 - [ ] teacher search JSP
-- [ ] music search JSP FOR SURE!!!!!!!!!!!!!!!
+- [ ] YouTube Video Search
 - [x] Create database in AWS
 - [x] Deploy to AWS (Woohoo!)
 - [x] Set up local authentication 
@@ -72,7 +72,7 @@
 
 (Hardcore Teacher account week--lots of CRUD)
 - [x] Integration with IMSLP API
-- [ ] Build the Practice Hacks entity 
+- [x] Build the Practice Hacks entity 
 - [ ] Build the Practice Hacks CRUD JSPs
 - [ ] Build the CRUD JSPs for "My Studio"
 - [x] Get ready for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented.
@@ -80,8 +80,8 @@
 
 ### Week 9 - CHECKPOINT 3
 
-- [ ] Make any/all Checkpoint 3 changes
-- [ ] Make your JSPs BEAUTIFUL
+- [x] Make any/all Checkpoint 3 changes
+- [x] Make your JSPs BEAUTIFUL
 - [ ] Start reviewing your code...
    - [ ] Javadoc
    - [ ] Code coverage in tests
@@ -111,12 +111,13 @@
 - [ ] Continue working through TODOs 
 - [ ] Prepare for week 13 peer code reviews
 - [ ] Code quality check
+- [ ] IMSLP might not work out right now...try YouTube?!?!?
 
 ### Week 14
  
 - [ ] Create final presentation
 - [ ] PRACTICE FINAL PRESENTATION
-- [ ] CHECK THIS BOX IF YOU ARE JAZZED ABOUT HOW AWESOME YOUR JSPs MUST CERTAINLY LOOK AT THIS POINT.
+- [x] CHECK THIS BOX IF YOU ARE JAZZED ABOUT HOW AWESOME YOUR JSPs MUST CERTAINLY LOOK AT THIS POINT.
 
 ### Week 15
 
