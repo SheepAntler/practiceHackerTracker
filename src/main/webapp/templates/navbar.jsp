@@ -40,7 +40,7 @@
                             <a class="dropdown-item" href="logWriter.jsp">Log Writer</a>
                         </div>
                     </li>
-                    <c:if test="${pageContext.request.isUserInRole('student')} || ${pageContext.request.isUserInRole('practiceHacker')}">
+                    <c:if test="${pageContext.request.isUserInRole('student') || pageContext.request.isUserInRole('practiceHacker')}">
                         <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/viewHacks.jsp' ? ' active' : ''}">
                             <a class="nav-link" href="viewHacks.jsp">Practice Hacks</a>
                         </li>

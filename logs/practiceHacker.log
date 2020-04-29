@@ -5531,3 +5531,13 @@ Caused by: com.mysql.cj.exceptions.WrongArgumentException: No timezone mapping e
 [ERROR] 2020-04-28 19:43:36.567 [http-nio-8080-exec-21] GenericDao - Could not getByPropertyEqual
 [DEBUG] 2020-04-28 19:56:47.828 [http-nio-8080-exec-9] GenericDao - Searching for order with username = madBratsche
 [ERROR] 2020-04-28 19:56:48.348 [http-nio-8080-exec-9] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-04-29 12:14:19.028 [http-nio-8080-exec-7] GenericDao - Searching for order with username = madBratsche
+[ERROR] 2020-04-29 12:14:19.714 [http-nio-8080-exec-7] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-04-29 12:19:14.413 [http-nio-8080-exec-10] GenericDao - Searching for order with username = madBratsche
+[ERROR] 2020-04-29 12:19:14.795 [http-nio-8080-exec-10] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-04-29 12:29:43.080 [http-nio-8080-exec-16] GenericDao - Searching for order with username = madBratsche
+[ERROR] 2020-04-29 12:29:43.391 [http-nio-8080-exec-16] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-04-29 12:33:14.695 [http-nio-8080-exec-5] GenericDao - Searching for order with username = madBratsche
+[ERROR] 2020-04-29 12:33:15.203 [http-nio-8080-exec-5] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-04-29 12:37:48.980 [http-nio-8080-exec-8] GenericDao - Searching for order with username = madBratsche
+[ERROR] 2020-04-29 12:37:49.358 [http-nio-8080-exec-8] GenericDao - Could not getByPropertyEqual
