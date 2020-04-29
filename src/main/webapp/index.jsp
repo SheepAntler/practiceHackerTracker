@@ -6,12 +6,16 @@
 
     <c:choose>
         <c:when test="${pageContext.request.isUserInRole('student') || pageContext.request.isUserInRole('practiceHacker')}">
-            <h1 class="mainHeading">Welcome Back, ${pageContext.request.getRemoteUser()}!</h1>
-            <h2 class="subHeading">You've practiced ${user.practiceCounter} days in a row!</h2>
-            <h2 class="subHeading">Your longest streak is ${user.longestStreak} days.</h2>
+            <div class="container textBox">
+                <h1 class="mainHeading">Welcome Back, ${pageContext.request.getRemoteUser()}!</h1>
+                <h2 class="subHeading">You've practiced ${user.practiceCounter} days in a row!</h2>
+                <h2 class="subHeading">Your longest streak is ${user.longestStreak} days.</h2>
+            </div>
         </c:when>
         <c:when test="${pageContext.request.isUserInRole('teacher')}">
-            <h1>This will ultimately be the teacher's studio leaderboard!</h1>
+            <div class="container textBox">
+                <h1>This will ultimately be the teacher's studio leaderboard!</h1>
+            </div>
         </c:when>
         <c:otherwise>
             <div class="container text-center textBox homepageBox">

@@ -25,8 +25,13 @@
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
     <script type="text/javascript" charset="utf-8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
 
+    <!-- This is for the CKEditor text editor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script>
+
+    <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Charm:wght@400;700&family=Kavivanar&family=Poiret+One&family=Pompiere&display=swap" rel="stylesheet">
 
+    <!-- Custom styles -->
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/master.css">
 </head>
 

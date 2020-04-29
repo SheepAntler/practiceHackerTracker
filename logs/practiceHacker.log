@@ -5541,3 +5541,9 @@ Caused by: com.mysql.cj.exceptions.WrongArgumentException: No timezone mapping e
 [ERROR] 2020-04-29 12:33:15.203 [http-nio-8080-exec-5] GenericDao - Could not getByPropertyEqual
 [DEBUG] 2020-04-29 12:37:48.980 [http-nio-8080-exec-8] GenericDao - Searching for order with username = madBratsche
 [ERROR] 2020-04-29 12:37:49.358 [http-nio-8080-exec-8] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-04-29 13:28:47.686 [http-nio-8080-exec-17] GenericDao - Searching for order with username = madBratsche
+[ERROR] 2020-04-29 13:28:48.079 [http-nio-8080-exec-17] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-04-29 14:04:54.583 [http-nio-8080-exec-33] GenericDao - Searching for order with username = madBratsche
+[ERROR] 2020-04-29 14:04:54.944 [http-nio-8080-exec-33] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-04-29 14:24:41.975 [http-nio-8080-exec-59] GenericDao - Searching for order with username = madBratsche
+[ERROR] 2020-04-29 14:24:42.268 [http-nio-8080-exec-59] GenericDao - Could not getByPropertyEqual
