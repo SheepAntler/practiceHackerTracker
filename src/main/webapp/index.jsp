@@ -14,7 +14,11 @@
         </c:when>
         <c:when test="${pageContext.request.isUserInRole('teacher')}">
             <div class="container textBox">
-                <h1>This will ultimately be the teacher's studio leaderboard!</h1>
+                <div class="textBox">
+                    <c:forEach var="studio" items="${studios}">
+                        <p>${studio.studentsInStudio}</p>
+                    </c:forEach>
+                </div>
             </div>
         </c:when>
         <c:otherwise>

@@ -5638,3 +5638,7 @@ Caused by: com.mysql.cj.exceptions.WrongArgumentException: No timezone mapping e
 [ERROR] 2020-04-30 15:41:40.771 [main] GenericDao - Could not get by id
 [ERROR] 2020-04-30 15:41:40.782 [main] GenericDao - Could not insert
 [ERROR] 2020-04-30 15:41:40.841 [main] GenericDao - Could not get by id
+[DEBUG] 2020-04-30 15:58:04.056 [http-nio-8080-exec-7] GenericDao - Searching for order with username = saveTheViola
+[ERROR] 2020-04-30 15:58:04.581 [http-nio-8080-exec-7] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-04-30 16:08:11.288 [http-nio-8080-exec-25] GenericDao - Searching for order with username = saveTheViola
+[ERROR] 2020-04-30 16:08:11.696 [http-nio-8080-exec-25] GenericDao - Could not getByPropertyEqual
