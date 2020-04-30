@@ -95,7 +95,7 @@
                             <option value="beginner">Beginner</option>
                             <option value="intermediate">Intermediate</option>
                             <option value="advanced">Advanced</option>
-                            <option value="preProfessional">Pre-Professional</option>
+                            <option value="preProfessional">Collegiate/Pre-Professional</option>
                         </select>
                     </div>
                     <div class="form-group col-sm-4">

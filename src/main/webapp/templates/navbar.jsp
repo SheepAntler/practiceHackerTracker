@@ -91,7 +91,7 @@
                 </c:when>
                 <c:otherwise>
                     <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/account.jsp' || '/practiceHackerTracker/account.jsp' ? ' active' : ''}">
-                        <a class="nav-link" href="login">Log In</a>
+                        <a class="nav-link" href="dashboard">Log In</a>
                     </li>
                     <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/register.jsp' || '/practiceHackerTracker/register.jsp' ? ' active' : ''}">
                         <a class="nav-link" href="register.jsp">Register</a>

@@ -22,7 +22,7 @@ import java.io.IOException;
         urlPatterns = {"/viewProfile"}
 )
 
-public class DisplayUserData extends HttpServlet {
+public class UserDataDisplay extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 

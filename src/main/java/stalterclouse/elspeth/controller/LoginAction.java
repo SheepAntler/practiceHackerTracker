@@ -18,9 +18,8 @@ import java.util.List;
  *
  * @author Elspeth Stalter-Clouse
  */
-
 @WebServlet(
-        urlPatterns = {"/login"}
+        urlPatterns = {"/dashboard"}
 )
 public class LoginAction extends HttpServlet {
     @Override

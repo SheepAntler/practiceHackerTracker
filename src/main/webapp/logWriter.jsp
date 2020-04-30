@@ -1,4 +1,4 @@
-<%-- This date stuff is courtesy of TutorialsPoint --%>
+<%-- This date output code is courtesy of TutorialsPoint --%>
 <%@ page import = "java.io.*,java.util.*" %>
 <%@ page import = "javax.servlet.*,java.text.*" %>
 <%@include file="templates/head.jsp"%>
@@ -14,8 +14,8 @@
                     new SimpleDateFormat ("E MM.dd.yyyy");
             out.print( "<h3 class=\"minorHeading text-center\">" + ft.format(dNow) + "</h3>");
         %>
+        <hr />
         <form>
-            <hr />
             <div class="row">
                 <div class="form-group col-sm-6">
                     <label for="startTime">Start Time: </label>
@@ -31,11 +31,12 @@
                 <input type="text" class="form-control" id="activities" name="activities" required>
             </div>
             <div class="form-group">
-                <label for="editor"></label>
+                <label for="editor">Notes: </label>
                 <textarea id="editor" name="notes"></textarea>
             </div>
             <br><br>
-            <button type="submit" class="btn btn-dark">Save Log</button>
+            <button type="submit" class="btn btn-secondary">Save Log</button>
+            <button type="reset" class="btn btn-dark">Start Over</button>
         </form>
     </div>
     <script>
