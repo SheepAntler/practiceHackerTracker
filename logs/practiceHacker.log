@@ -5553,3 +5553,88 @@ Caused by: com.mysql.cj.exceptions.WrongArgumentException: No timezone mapping e
 [ERROR] 2020-04-29 16:49:16.592 [http-nio-8080-exec-15] GenericDao - Could not getByPropertyEqual
 [DEBUG] 2020-04-29 18:50:10.837 [http-nio-8080-exec-32] GenericDao - Searching for order with username = saveTheViola
 [ERROR] 2020-04-29 18:50:11.365 [http-nio-8080-exec-32] GenericDao - Could not getByPropertyEqual
+[ERROR] 2020-04-30 14:23:16.725 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 14:28:10.488 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 14:29:21.567 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 14:29:55.285 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 14:32:41.807 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 14:51:05.589 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:08:49.541 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:26:00.854 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:39:35.383 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:39:56.219 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:40:43.348 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:40:43.366 [main] GenericDao - Could not delete
+[ERROR] 2020-04-30 15:40:43.401 [main] GenericDao - Could not get by id
+[DEBUG] 2020-04-30 15:40:43.614 [main] GenericDao - Searching for order with notes = Nat's Knapsack Strap Snapped
+[ERROR] 2020-04-30 15:40:43.867 [main] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-04-30 15:40:43.979 [main] GenericDao - Searching for order with activities = scales
+[ERROR] 2020-04-30 15:40:44.053 [main] GenericDao - Could not getByPropertyLike
+[ERROR] 2020-04-30 15:40:44.198 [main] GenericDao - Could not getAllEntities
+[ERROR] 2020-04-30 15:40:44.398 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:40:44.566 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:40:44.568 [main] GenericDao - Could not saveOrUpdate
+[ERROR] 2020-04-30 15:40:44.669 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:40:44.809 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:40:44.825 [main] GenericDao - Could not insert
+[ERROR] 2020-04-30 15:40:44.895 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:06.245 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:06.261 [main] GenericDao - Could not delete
+[ERROR] 2020-04-30 15:41:06.310 [main] GenericDao - Could not get by id
+[DEBUG] 2020-04-30 15:41:06.423 [main] GenericDao - Searching for order with teacher = 5
+[ERROR] 2020-04-30 15:41:06.678 [main] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-04-30 15:41:06.793 [main] GenericDao - Searching for order with instrument = viol
+[ERROR] 2020-04-30 15:41:06.856 [main] GenericDao - Could not getByPropertyLike
+[ERROR] 2020-04-30 15:41:06.994 [main] GenericDao - Could not getAllEntities
+[ERROR] 2020-04-30 15:41:07.126 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:07.256 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:07.402 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:07.450 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:07.452 [main] GenericDao - Could not saveOrUpdate
+[ERROR] 2020-04-30 15:41:07.512 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:07.621 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:07.724 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:07.733 [main] GenericDao - Could not insert
+[ERROR] 2020-04-30 15:41:07.797 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:07.879 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:22.967 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:22.984 [main] GenericDao - Could not delete
+[ERROR] 2020-04-30 15:41:23.018 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:23.170 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:23.271 [main] GenericDao - Could not insert
+[ERROR] 2020-04-30 15:41:23.285 [main] GenericDao - Could not get by id
+[DEBUG] 2020-04-30 15:41:23.362 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[ERROR] 2020-04-30 15:41:23.553 [main] GenericDao - Could not getByPropertyEqual
+[ERROR] 2020-04-30 15:41:23.724 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:23.796 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:23.884 [main] GenericDao - Could not get by id
+[DEBUG] 2020-04-30 15:41:24.030 [main] GenericDao - Searching for order with username = s
+[ERROR] 2020-04-30 15:41:24.145 [main] GenericDao - Could not getByPropertyLike
+[ERROR] 2020-04-30 15:41:24.377 [main] GenericDao - Could not getAllEntities
+[ERROR] 2020-04-30 15:41:24.537 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:24.697 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:24.817 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:24.930 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:24.932 [main] GenericDao - Could not saveOrUpdate
+[ERROR] 2020-04-30 15:41:24.980 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:25.053 [main] GenericDao - Could not insert
+[ERROR] 2020-04-30 15:41:25.062 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:25.136 [main] GenericDao - Could not insert
+[ERROR] 2020-04-30 15:41:25.153 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:25.228 [main] GenericDao - Could not insert
+[ERROR] 2020-04-30 15:41:25.243 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:39.465 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:39.478 [main] GenericDao - Could not delete
+[ERROR] 2020-04-30 15:41:39.496 [main] GenericDao - Could not get by id
+[DEBUG] 2020-04-30 15:41:39.578 [main] GenericDao - Searching for order with skillLevel = intermediate
+[ERROR] 2020-04-30 15:41:39.813 [main] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-04-30 15:41:39.914 [main] GenericDao - Searching for order with instrument = viol
+[ERROR] 2020-04-30 15:41:40.007 [main] GenericDao - Could not getByPropertyLike
+[ERROR] 2020-04-30 15:41:40.197 [main] GenericDao - Could not getAllEntities
+[ERROR] 2020-04-30 15:41:40.399 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:40.552 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:40.555 [main] GenericDao - Could not saveOrUpdate
+[ERROR] 2020-04-30 15:41:40.622 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:40.771 [main] GenericDao - Could not get by id
+[ERROR] 2020-04-30 15:41:40.782 [main] GenericDao - Could not insert
+[ERROR] 2020-04-30 15:41:40.841 [main] GenericDao - Could not get by id

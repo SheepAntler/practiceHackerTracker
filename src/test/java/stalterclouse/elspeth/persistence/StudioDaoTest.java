@@ -9,6 +9,7 @@ import stalterclouse.elspeth.utilities.Database;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -116,6 +117,40 @@ class StudioDaoTest {
         Studio studio = (Studio)genericDao.getById(5);
 
         assertEquals(2, studio.getStudentsInStudio().size());
+    }
+
+    /**
+     * Verifies that I can get a student's teacher ID
+     * ArrayList conversion assistance from https://beginnersbook.com/2014/08/convert-hashset-to-a-list-arraylist/
+     */
+    @Test
+    void testStudentTeacherConnection() {
+        GenericDao genericUser = new GenericDao(User.class);
+        User student = (User)genericUser.getById(1);
+
+        List<Studio> studioArrayList = new ArrayList<Studio>(student.getStudiosOfStudent());
+        Studio studio = studioArrayList.get(0);
+        User teacher = studio.getTeacher();
+
+        assertEquals(1, teacher.getId());
+
+    }
+
+    /**
+     * Verifies that I can get a teacher's students' practice counts
+     */
+    @Test
+    void testStudentPracticeCounters() {
+        GenericDao genericTeacher = new GenericDao(User.class);
+        User teacher = (User)genericTeacher.getById(1);
+
+        List<Studio> studioArrayList = new ArrayList<Studio>(teacher.getStudios());
+        Studio studio = studioArrayList.get(0);
+        List<User> studentsInStudio = new ArrayList<User>(studio.getStudentsInStudio());
+
+        User firstStudent = studentsInStudio.get(0);
+
+        assertEquals(28, firstStudent.getPracticeCounter());
     }
 
 }

@@ -8,7 +8,9 @@ import stalterclouse.elspeth.utilities.Database;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -88,6 +90,14 @@ class PracticeLogDaoTest {
         List<PracticeLog> logs = genericDao.getByPropertyEqual("notes", "Nat's Knapsack Strap Snapped");
         assertEquals(1, logs.size());
         assertEquals(2, logs.get(0).getId());
+    }
+
+    /**
+     * Verify succesful retrieval of students' practice logs
+     */
+    @Test
+    void getLogsOfStudents() {
+
     }
 
     /**
