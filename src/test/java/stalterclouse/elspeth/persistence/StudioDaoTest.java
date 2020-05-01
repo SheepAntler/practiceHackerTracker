@@ -153,4 +153,12 @@ class StudioDaoTest {
         assertEquals(28, firstStudent.getPracticeCounter());
     }
 
+    /**
+     * Verifies that I can get a Map of teacher's studios and the students in them
+     */
+    @Test
+    void testStudentStudioMap() {
+
+    }
+
 }

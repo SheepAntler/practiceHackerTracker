@@ -1,5 +1,6 @@
 package stalterclouse.elspeth.controller;
 
+import lombok.extern.log4j.Log4j2;
 import stalterclouse.elspeth.entity.Studio;
 import stalterclouse.elspeth.entity.User;
 import stalterclouse.elspeth.persistence.GenericDao;
@@ -13,7 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Logs in the user and gets their dashboard display data.
@@ -23,6 +26,7 @@ import java.util.List;
 @WebServlet(
         urlPatterns = {"/dashboard"}
 )
+@Log4j2
 public class LoginAction extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -31,15 +35,25 @@ public class LoginAction extends HttpServlet {
         HttpSession session = req.getSession();
         String currentUser = req.getRemoteUser();
 
-        //TODO get data to display for students and practiceHackers
         List<User> user = userDao.getByPropertyEqual("username", currentUser);
 
         session.setAttribute("user", user.get(0));
+        session.setAttribute("userId", user.get(0).getId());
 
-        //TODO get data to display for teachers
         if (user.get(0).getRole().getRole().equals("teacher")) {
+            log.debug(user.get(0).getStudios());
             List<Studio> studios = new ArrayList<Studio>(user.get(0).getStudios());
-            session.setAttribute("studios", studios);
+//            session.setAttribute("studios", studios);
+            log.debug("About to make the map");
+            Map<String, ArrayList<User>> studioStudents = new HashMap<String, ArrayList<User>>();
+            for (Studio studio : studios) {
+                String studioName = studio.getInstrument() + " Studio at " + studio.getOrganizationName();
+                log.debug(studioName);
+                ArrayList<User> students = new ArrayList<User>(studio.getStudentsInStudio());
+                studioStudents.put(studioName, students);
+            }
+
+            session.setAttribute("studios", studioStudents);
         }
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");

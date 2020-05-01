@@ -5642,3 +5642,87 @@ Caused by: com.mysql.cj.exceptions.WrongArgumentException: No timezone mapping e
 [ERROR] 2020-04-30 15:58:04.581 [http-nio-8080-exec-7] GenericDao - Could not getByPropertyEqual
 [DEBUG] 2020-04-30 16:08:11.288 [http-nio-8080-exec-25] GenericDao - Searching for order with username = saveTheViola
 [ERROR] 2020-04-30 16:08:11.696 [http-nio-8080-exec-25] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-05-01 11:48:51.931 [http-nio-8080-exec-8] GenericDao - Searching for order with username = saveTheViola
+[ERROR] 2020-05-01 11:48:52.438 [http-nio-8080-exec-8] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-05-01 11:50:25.156 [http-nio-8080-exec-11] GenericDao - Searching for order with username = saveTheViola
+[ERROR] 2020-05-01 11:50:25.578 [http-nio-8080-exec-11] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-05-01 12:01:49.846 [http-nio-8080-exec-18] GenericDao - Searching for order with username = saveTheViola
+[ERROR] 2020-05-01 12:01:50.241 [http-nio-8080-exec-18] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-05-01 12:13:26.145 [http-nio-8080-exec-2] GenericDao - Searching for order with username = saveTheViola
+[ERROR] 2020-05-01 12:13:26.796 [http-nio-8080-exec-2] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-05-01 12:13:26.801 [http-nio-8080-exec-2] LoginAction - About to make the map
+[DEBUG] 2020-05-01 12:13:26.802 [http-nio-8080-exec-2] LoginAction - Viola Studio: The Viola Foundation
+[ERROR] 2020-05-01 12:20:11.013 [main] GenericDao - Could not get by id
+[ERROR] 2020-05-01 12:20:11.040 [main] GenericDao - Could not delete
+[ERROR] 2020-05-01 12:20:11.136 [main] GenericDao - Could not get by id
+[ERROR] 2020-05-01 12:20:11.444 [main] GenericDao - Could not get by id
+[ERROR] 2020-05-01 12:20:11.648 [main] GenericDao - Could not insert
+[ERROR] 2020-05-01 12:20:11.694 [main] GenericDao - Could not get by id
+[DEBUG] 2020-05-01 12:20:11.815 [main] GenericDao - Searching for order with email = yesitiscalledaflugelhorn@gmail.com
+[ERROR] 2020-05-01 12:20:12.181 [main] GenericDao - Could not getByPropertyEqual
+[ERROR] 2020-05-01 12:20:12.358 [main] GenericDao - Could not get by id
+[ERROR] 2020-05-01 12:20:12.429 [main] GenericDao - Could not get by id
+[ERROR] 2020-05-01 12:20:12.541 [main] GenericDao - Could not get by id
+[DEBUG] 2020-05-01 12:20:12.638 [main] GenericDao - Searching for order with username = s
+[ERROR] 2020-05-01 12:20:12.736 [main] GenericDao - Could not getByPropertyLike
+[ERROR] 2020-05-01 12:20:12.898 [main] GenericDao - Could not getAllEntities
+[ERROR] 2020-05-01 12:20:13.120 [main] GenericDao - Could not get by id
+[ERROR] 2020-05-01 12:20:13.270 [main] GenericDao - Could not get by id
+[ERROR] 2020-05-01 12:20:13.419 [main] GenericDao - Could not get by id
+[ERROR] 2020-05-01 12:20:13.570 [main] GenericDao - Could not get by id
+[ERROR] 2020-05-01 12:20:13.573 [main] GenericDao - Could not saveOrUpdate
+[ERROR] 2020-05-01 12:20:13.664 [main] GenericDao - Could not get by id
+[ERROR] 2020-05-01 12:20:13.774 [main] GenericDao - Could not insert
+[ERROR] 2020-05-01 12:20:13.792 [main] GenericDao - Could not get by id
+[ERROR] 2020-05-01 12:20:13.886 [main] GenericDao - Could not insert
+[ERROR] 2020-05-01 12:20:13.904 [main] GenericDao - Could not get by id
+[ERROR] 2020-05-01 12:20:14.027 [main] GenericDao - Could not insert
+[ERROR] 2020-05-01 12:20:14.046 [main] GenericDao - Could not get by id
+[DEBUG] 2020-05-01 12:26:08.751 [http-nio-8080-exec-5] GenericDao - Searching for order with username = saveTheViola
+[ERROR] 2020-05-01 12:26:09.355 [http-nio-8080-exec-5] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-05-01 12:26:09.360 [http-nio-8080-exec-5] LoginAction - About to make the map
+
+[DEBUG] 2020-05-01 12:46:26.216 [http-nio-8080-exec-5] GenericDao - Searching for order with username = saveTheViola
+[ERROR] 2020-05-01 12:46:26.720 [http-nio-8080-exec-5] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-05-01 12:46:26.725 [http-nio-8080-exec-5] LoginAction - [Studio(id=1, instrument=Viola, organizationName=The Viola Foundation, streetAddress=123 ABC Street, city=Madison, state=WI, zipCode=53715)]
+[DEBUG] 2020-05-01 12:46:26.738 [http-nio-8080-exec-5] LoginAction - About to make the map
+[DEBUG] 2020-05-01 12:48:14.438 [http-nio-8080-exec-2] GenericDao - Searching for order with username = saveTheViola
+[ERROR] 2020-05-01 12:48:14.785 [http-nio-8080-exec-2] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-05-01 12:48:14.789 [http-nio-8080-exec-2] LoginAction - [Studio(id=1, instrument=Viola, organizationName=The Viola Foundation, streetAddress=123 ABC Street, city=Madison, state=WI, zipCode=53715)]
+[DEBUG] 2020-05-01 12:48:14.790 [http-nio-8080-exec-2] LoginAction - About to make the map
+[DEBUG] 2020-05-01 12:53:52.202 [http-nio-8080-exec-4] LoginAction - Is THIS the problem?!?
+[DEBUG] 2020-05-01 12:53:56.549 [http-nio-8080-exec-4] GenericDao - Searching for order with username = saveTheViola
+[ERROR] 2020-05-01 12:53:56.991 [http-nio-8080-exec-4] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-05-01 12:53:57.027 [http-nio-8080-exec-4] LoginAction - [Studio(id=1, instrument=Viola, organizationName=The Viola Foundation, streetAddress=123 ABC Street, city=Madison, state=WI, zipCode=53715)]
+[DEBUG] 2020-05-01 12:53:57.056 [http-nio-8080-exec-4] LoginAction - About to make the map
+[DEBUG] 2020-05-01 12:54:30.561 [http-nio-8080-exec-3] LoginAction - Is THIS the problem?!?
+[DEBUG] 2020-05-01 12:54:30.562 [http-nio-8080-exec-3] GenericDao - Searching for order with username = sheepAntler
+[ERROR] 2020-05-01 12:54:30.600 [http-nio-8080-exec-3] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-05-01 12:57:47.452 [http-nio-8080-exec-8] LoginAction - Is THIS the problem?!?
+[DEBUG] 2020-05-01 12:57:47.454 [http-nio-8080-exec-8] GenericDao - Searching for order with username = madBratsche
+[ERROR] 2020-05-01 12:57:47.543 [http-nio-8080-exec-8] GenericDao - Could not getByPropertyEqual
+[ERROR] 2020-05-01 13:00:27.962 [http-nio-8080-exec-3] LoginAction - Is THIS the problem?!?
+[DEBUG] 2020-05-01 13:00:32.381 [http-nio-8080-exec-3] GenericDao - Searching for entity with username = madBratsche
+[ERROR] 2020-05-01 13:00:33.134 [http-nio-8080-exec-3] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-05-01 13:05:20.133 [http-nio-8080-exec-9] GenericDao - Searching for entity with username = madBratsche
+[ERROR] 2020-05-01 13:05:20.564 [http-nio-8080-exec-9] GenericDao - Could not getByPropertyEqual
+[DEBUG] 2020-05-01 13:17:37.534 [http-nio-8080-exec-19] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-01 13:17:38.081 [http-nio-8080-exec-19] LoginAction - [Studio(id=1, instrument=Viola, organizationName=The Viola Foundation, streetAddress=123 ABC Street, city=Madison, state=WI, zipCode=53715)]
+[DEBUG] 2020-05-01 13:17:38.096 [http-nio-8080-exec-19] LoginAction - About to make the map
+[DEBUG] 2020-05-01 13:17:38.098 [http-nio-8080-exec-19] LoginAction - Viola Studio at The Viola Foundation
+[DEBUG] 2020-05-01 13:17:38.098 [http-nio-8080-exec-19] LoginAction - Millie
+[DEBUG] 2020-05-01 13:17:38.098 [http-nio-8080-exec-19] LoginAction - Ana
+[DEBUG] 2020-05-01 13:17:38.098 [http-nio-8080-exec-19] LoginAction - Jonathan
+[DEBUG] 2020-05-01 13:17:38.098 [http-nio-8080-exec-19] LoginAction - Phillip
+[DEBUG] 2020-05-01 13:27:39.905 [http-nio-8080-exec-3] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-01 13:27:40.507 [http-nio-8080-exec-3] LoginAction - [Studio(id=1, instrument=Viola, organizationName=The Viola Foundation, streetAddress=123 ABC Street, city=Madison, state=WI, zipCode=53715)]
+[DEBUG] 2020-05-01 13:27:40.521 [http-nio-8080-exec-3] LoginAction - About to make the map
+[DEBUG] 2020-05-01 13:27:40.522 [http-nio-8080-exec-3] LoginAction - Viola Studio at The Viola Foundation
+[DEBUG] 2020-05-01 14:29:25.759 [http-nio-8080-exec-6] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-01 14:29:26.328 [http-nio-8080-exec-6] LoginAction - [Studio(id=1, instrument=Viola, organizationName=The Viola Foundation, streetAddress=123 ABC Street, city=Madison, state=WI, zipCode=53715)]
+[DEBUG] 2020-05-01 14:29:26.361 [http-nio-8080-exec-6] LoginAction - About to make the map
+[DEBUG] 2020-05-01 14:29:26.362 [http-nio-8080-exec-6] LoginAction - Viola Studio at The Viola Foundation
+[DEBUG] 2020-05-01 14:31:48.766 [http-nio-8080-exec-3] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-01 14:31:49.095 [http-nio-8080-exec-3] LoginAction - [Studio(id=1, instrument=Viola, organizationName=The Viola Foundation, streetAddress=123 ABC Street, city=Madison, state=WI, zipCode=53715)]
+[DEBUG] 2020-05-01 14:31:49.099 [http-nio-8080-exec-3] LoginAction - About to make the map
+[DEBUG] 2020-05-01 14:31:49.100 [http-nio-8080-exec-3] LoginAction - Viola Studio at The Viola Foundation

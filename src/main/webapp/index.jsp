@@ -14,11 +14,12 @@
         </c:when>
         <c:when test="${pageContext.request.isUserInRole('teacher')}">
             <div class="container textBox">
-                <div class="textBox">
-                    <c:forEach var="studio" items="${studios}">
-                        <p>${studio.studentsInStudio}</p>
+                <c:forEach var="studio" items="${studios}">
+                    <h1 class="mainHeading text-center">${studio.key}</h1>
+                    <c:forEach var="student" items="${studio.value}">
+                        <p>${student.firstName} ${student.lastName}: Current Counter = ${student.practiceCounter} & Longest Streak = ${student.longestStreak}</p>
                     </c:forEach>
-                </div>
+                </c:forEach>
             </div>
         </c:when>
         <c:otherwise>

@@ -43,7 +43,7 @@ public class GenericDao<T> {
     public <T>T getById(int id) {
         Session session = getSession();
         T entity = (T)session.get(type, id);
-        log.error("Could not get by id");
+        //log.error("Could not get by id");
         session.close();
         return entity;
     }
@@ -58,7 +58,7 @@ public class GenericDao<T> {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
         id = (int)session.save(entity);
-        log.error("Could not insert");
+        //log.error("Could not insert");
         transaction.commit();
         session.close();
         return id;
@@ -72,7 +72,7 @@ public class GenericDao<T> {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
         session.delete(entity);
-        log.error("Could not delete");
+        //log.error("Could not delete");
         transaction.commit();
         session.close();
     }
@@ -89,7 +89,7 @@ public class GenericDao<T> {
         CriteriaQuery<T> query = builder.createQuery(type);
         Root<T> root = query.from(type);
         List<T> orders = session.createQuery(query).getResultList();
-        log.error("Could not getAllEntities");
+        //log.error("Could not getAllEntities");
         session.close();
         return orders;
     }
@@ -105,7 +105,7 @@ public class GenericDao<T> {
     public List<T> getByPropertyEqual(String propertyName, Object value) {
         Session session = getSession();
 
-        log.debug("Searching for order with " + propertyName + " = " + value);
+        log.debug("Searching for entity with " + propertyName + " = " + value);
 
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<T> query = builder.createQuery(type);
@@ -113,7 +113,7 @@ public class GenericDao<T> {
         query.select(root).where(builder.equal(root.get(propertyName), value));
         List<T> orders = session.createQuery( query ).getResultList();
 
-        log.error("Could not getByPropertyEqual");
+        //log.error("Could not getByPropertyEqual");
 
         session.close();
         return orders;
@@ -163,7 +163,7 @@ public class GenericDao<T> {
 
         List<T> orders = session.createQuery(query).getResultList();
 
-        log.error("Could not getByPropertyLike");
+        //log.error("Could not getByPropertyLike");
 
         session.close();
         return orders;
@@ -177,7 +177,7 @@ public class GenericDao<T> {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
         session.saveOrUpdate(entity);
-        log.error("Could not saveOrUpdate");
+        //log.error("Could not saveOrUpdate");
         transaction.commit();
         session.close();
     }
