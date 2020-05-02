@@ -11,6 +11,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -151,5 +152,39 @@ class StudioDaoTest {
         User firstStudent = studentsInStudio.get(0);
 
         assertEquals(28, firstStudent.getPracticeCounter());
+    }
+
+    /**
+     * Verifies that I can add a student to a studio
+     */
+    @Test
+    void testAddStudent() {
+        GenericDao genericUser = new GenericDao(User.class);
+        User user = (User) genericUser.getById(5);
+
+        Studio additionalStudio = (Studio)genericDao.getById(4);
+
+        Set<Studio> studentStudios = user.getStudiosOfStudent();
+
+        studentStudios.add(additionalStudio);
+
+        assertEquals(3, studentStudios.size());
+    }
+
+    /**
+     * Verifies that I can remove a student from a studio
+     */
+    @Test
+    void testRemoveStudent() {
+       GenericDao genericUser = new GenericDao(User.class);
+       User user = (User) genericUser.getById(5);
+
+       Studio quitStudio = (Studio)genericDao.getById(5);
+
+       Set<Studio> studentStudios = user.getStudiosOfStudent();
+
+       studentStudios.remove(quitStudio);
+
+       assertEquals(1, studentStudios.size());
     }
 }
