@@ -157,8 +157,8 @@ class StudioDaoTest {
      * Verifies that I can get a Map of teacher's studios and the students in them
      */
     @Test
-    void testStudentStudioMap() {
-
+    void testStudioSearchByTwoProperties() {
+        //TODO write a test to get a studio by state and instrument
     }
 
 }

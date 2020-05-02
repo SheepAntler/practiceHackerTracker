@@ -67,9 +67,11 @@ public class User {
     @OneToOne(mappedBy = "user")
     private Role role;
 
+    // Use of the OrderBy annotation was brought to my attention here: https://thoughts-on-java.org/ordering-vs-sorting-hibernate-use/
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OrderBy("practice_date desc")
     private Set<PracticeLog> practiceLogs = new HashSet<>();
 
     @ToString.Exclude

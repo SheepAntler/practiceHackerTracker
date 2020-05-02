@@ -5726,3 +5726,43 @@ Caused by: com.mysql.cj.exceptions.WrongArgumentException: No timezone mapping e
 [DEBUG] 2020-05-01 14:31:49.095 [http-nio-8080-exec-3] LoginAction - [Studio(id=1, instrument=Viola, organizationName=The Viola Foundation, streetAddress=123 ABC Street, city=Madison, state=WI, zipCode=53715)]
 [DEBUG] 2020-05-01 14:31:49.099 [http-nio-8080-exec-3] LoginAction - About to make the map
 [DEBUG] 2020-05-01 14:31:49.100 [http-nio-8080-exec-3] LoginAction - Viola Studio at The Viola Foundation
+[DEBUG] 2020-05-01 22:59:31.090 [http-nio-8080-exec-6] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-01 22:59:31.568 [http-nio-8080-exec-6] LoginAction - [Studio(id=1, instrument=Viola, organizationName=The Viola Foundation, streetAddress=123 ABC Street, city=Madison, state=WI, zipCode=53715)]
+[DEBUG] 2020-05-01 22:59:31.597 [http-nio-8080-exec-6] LoginAction - About to make the map
+[DEBUG] 2020-05-01 22:59:31.598 [http-nio-8080-exec-6] LoginAction - Viola Studio at The Viola Foundation
+[DEBUG] 2020-05-01 23:32:14.232 [http-nio-8080-exec-7] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-01 23:49:37.368 [http-nio-8080-exec-15] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-02 00:37:20.523 [http-nio-8080-exec-29] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-02 00:37:20.641 [http-nio-8080-exec-29] LoginAction - [Studio(id=1, instrument=Viola, organizationName=The Viola Foundation, streetAddress=123 ABC Street, city=Madison, state=WI, zipCode=53715)]
+[DEBUG] 2020-05-02 00:37:20.658 [http-nio-8080-exec-29] LoginAction - About to make the map
+[DEBUG] 2020-05-02 00:37:20.659 [http-nio-8080-exec-29] LoginAction - Viola Studio at The Viola Foundation
+[DEBUG] 2020-05-02 01:35:48.168 [http-nio-8080-exec-24] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-02 01:35:48.493 [http-nio-8080-exec-24] LoginAction - [Studio(id=1, instrument=Viola, organizationName=The Viola Foundation, streetAddress=123 ABC Street, city=Madison, state=WI, zipCode=53715)]
+[DEBUG] 2020-05-02 01:35:48.504 [http-nio-8080-exec-24] LoginAction - About to make the map
+[DEBUG] 2020-05-02 01:35:48.507 [http-nio-8080-exec-24] LoginAction - Viola Studio at The Viola Foundation
+[DEBUG] 2020-05-02 02:19:31.588 [http-nio-8080-exec-4] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-02 02:19:32.042 [http-nio-8080-exec-4] LoginAction - [Studio(id=1, instrument=Viola, organizationName=The Viola Foundation, streetAddress=123 ABC Street, city=Madison, state=WI, zipCode=53715)]
+[DEBUG] 2020-05-02 02:19:32.063 [http-nio-8080-exec-4] LoginAction - About to make the map
+[DEBUG] 2020-05-02 02:19:32.064 [http-nio-8080-exec-4] LoginAction - Viola Studio at The Viola Foundation
+[DEBUG] 2020-05-02 02:22:26.423 [http-nio-8080-exec-6] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-02 02:22:26.928 [http-nio-8080-exec-6] LoginAction - [Studio(id=1, instrument=Viola, organizationName=The Viola Foundation, streetAddress=123 ABC Street, city=Madison, state=WI, zipCode=53715)]
+[DEBUG] 2020-05-02 02:22:26.929 [http-nio-8080-exec-6] LoginAction - About to make the map
+[DEBUG] 2020-05-02 02:22:26.929 [http-nio-8080-exec-6] LoginAction - Viola Studio at The Viola Foundation
+[DEBUG] 2020-05-02 02:53:37.854 [http-nio-8080-exec-18] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-02 02:53:58.056 [http-nio-8080-exec-15] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-02 02:57:36.084 [http-nio-8080-exec-4] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-02 02:57:36.517 [http-nio-8080-exec-4] LoginAction - [Studio(id=1, instrument=Viola, organizationName=The Viola Foundation, streetAddress=123 ABC Street, city=Madison, state=WI, zipCode=53715)]
+[DEBUG] 2020-05-02 02:57:36.544 [http-nio-8080-exec-4] LoginAction - About to make the map
+[DEBUG] 2020-05-02 02:57:36.544 [http-nio-8080-exec-4] LoginAction - Viola Studio at The Viola Foundation
+[DEBUG] 2020-05-02 02:59:26.537 [http-nio-8080-exec-7] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-02 02:59:26.870 [http-nio-8080-exec-7] LoginAction - [Studio(id=1, instrument=Viola, organizationName=The Viola Foundation, streetAddress=123 ABC Street, city=Madison, state=WI, zipCode=53715)]
+[DEBUG] 2020-05-02 02:59:26.874 [http-nio-8080-exec-7] LoginAction - About to make the map
+[DEBUG] 2020-05-02 02:59:26.875 [http-nio-8080-exec-7] LoginAction - Viola Studio at The Viola Foundation
+[DEBUG] 2020-05-02 02:59:34.268 [http-nio-8080-exec-5] GenericDao - Searching for entity with username = philFrond
+[DEBUG] 2020-05-02 03:03:33.166 [http-nio-8080-exec-19] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-02 03:03:33.536 [http-nio-8080-exec-19] LoginAction - [Studio(id=1, instrument=Viola, organizationName=The Viola Foundation, streetAddress=123 ABC Street, city=Madison, state=WI, zipCode=53715)]
+[DEBUG] 2020-05-02 03:03:33.537 [http-nio-8080-exec-19] LoginAction - About to make the map
+[DEBUG] 2020-05-02 03:03:33.538 [http-nio-8080-exec-19] LoginAction - Viola Studio at The Viola Foundation
+[DEBUG] 2020-05-02 03:03:46.485 [http-nio-8080-exec-11] GenericDao - Searching for entity with username = philFrond
+[DEBUG] 2020-05-02 03:03:52.799 [http-nio-8080-exec-23] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-02 03:04:04.515 [http-nio-8080-exec-14] GenericDao - Searching for entity with username = madBratsche

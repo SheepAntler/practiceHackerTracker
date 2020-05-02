@@ -50,6 +50,7 @@ public class Studio {
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OrderBy("practice_counter desc")
     @JoinTable(name = "studio_students",
             joinColumns = { @JoinColumn(name = "studio_id", nullable = false, updatable = false) },
             inverseJoinColumns = { @JoinColumn(name = "student_id", nullable = false, updatable = false) })
