@@ -5766,3 +5766,7 @@ Caused by: com.mysql.cj.exceptions.WrongArgumentException: No timezone mapping e
 [DEBUG] 2020-05-02 03:03:46.485 [http-nio-8080-exec-11] GenericDao - Searching for entity with username = philFrond
 [DEBUG] 2020-05-02 03:03:52.799 [http-nio-8080-exec-23] GenericDao - Searching for entity with username = madBratsche
 [DEBUG] 2020-05-02 03:04:04.515 [http-nio-8080-exec-14] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-02 15:40:04.449 [main] GenericDao - Searching for entity with skillLevel = intermediate
+[DEBUG] 2020-05-02 15:40:04.788 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-05-02 15:42:05.611 [main] GenericDao - Searching for entity with teacher = 5
+[DEBUG] 2020-05-02 15:42:05.900 [main] GenericDao - Searching for order with instrument = viol

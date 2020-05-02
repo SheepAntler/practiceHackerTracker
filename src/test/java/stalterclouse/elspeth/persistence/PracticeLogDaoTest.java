@@ -93,14 +93,6 @@ class PracticeLogDaoTest {
     }
 
     /**
-     * Verify succesful retrieval of students' practice logs
-     */
-    @Test
-    void getLogsOfStudents() {
-
-    }
-
-    /**
      * Verify successful get by property (like match)
      */
     @Test
@@ -121,4 +113,5 @@ class PracticeLogDaoTest {
         PracticeLog retrievedLog = (PracticeLog)genericDao.getById(4);
         assertEquals(newActivities, retrievedLog.getActivities());
     }
+
 }

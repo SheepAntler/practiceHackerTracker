@@ -17,7 +17,8 @@ INSERT INTO practice_hacks VALUES (1,3,'intermediate','cello','play scales for 2
                                   (2,3,'advanced','violin','play scales for 60 minutes'),
                                   (3,1,'beginner','viola','practice making 5 slow bow hands in a row'),
                                   (4,2,'beginner','trumpet','i honestly have no idea what trumpet players practice'),
-                                  (5,5,'advanced','general','use a metronome');
+                                  (5,5,'advanced','general','use a metronome'),
+                                  (6,3,'beginner','violin','do a violin workout: description of a violin workout');
 
 delete from studios;
 INSERT INTO studios VALUES (1,4,'trumpet','Trumpet Topia','456 Bell Street','Portland','OR',44567),

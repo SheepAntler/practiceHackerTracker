@@ -9,7 +9,9 @@ import stalterclouse.elspeth.utilities.Database;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -34,9 +36,9 @@ class PracticeHackDaoTest {
      * Verifies gets all users successfully.
      */
     @Test
-    void returnAllLogsSuccess() {
+    void returnAllHacksSuccess() {
         List<PracticeHack> hacks = genericDao.getAllEntities();
-        assertEquals(5, hacks.size());
+        assertEquals(6, hacks.size());
     }
 
     /**
@@ -94,7 +96,7 @@ class PracticeHackDaoTest {
     @Test
     void getByPropertyLikeSuccess() {
         List<PracticeHack> hacks = genericDao.getByPropertyLike("instrument", "viol");
-        assertEquals(2, hacks.size());
+        assertEquals(3, hacks.size());
     }
 
     /**
@@ -108,5 +110,20 @@ class PracticeHackDaoTest {
         genericDao.saveOrUpdate(hackToUpdate);
         PracticeHack retrievedHack = (PracticeHack)genericDao.getById(1);
         assertEquals(newHack, retrievedHack.getPracticeHack());
+    }
+
+    /**
+     * Verifies that I can get practice hacks by instrument AND skill level
+     */
+    @Test
+    void getHacksByTwoProperties() {
+        Map<String, String> propertyMap = new HashMap<String, String>();
+        propertyMap.put("instrument", "violin");
+        propertyMap.put("skillLevel", "beginner");
+
+        List<PracticeHack> hacksForBeginnerViolinists = genericDao.getByPropertiesEqual(propertyMap);
+
+        assertEquals(1, hacksForBeginnerViolinists.size());
+
     }
 }
