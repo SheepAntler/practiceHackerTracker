@@ -41,14 +41,14 @@ public class LoginAction extends HttpServlet {
         session.setAttribute("userId", user.get(0).getId());
 
         if (user.get(0).getRole().getRole().equals("teacher")) {
-            log.debug(user.get(0).getStudios());
+//            log.debug(user.get(0).getStudios());
             List<Studio> studios = new ArrayList<Studio>(user.get(0).getStudios());
 //            session.setAttribute("studios", studios);
-            log.debug("About to make the map");
+//            log.debug("About to make the map");
             Map<String, ArrayList<User>> studioStudents = new HashMap<String, ArrayList<User>>();
             for (Studio studio : studios) {
                 String studioName = studio.getInstrument() + " Studio at " + studio.getOrganizationName();
-                log.debug(studioName);
+//                log.debug(studioName);
                 ArrayList<User> students = new ArrayList<User>(studio.getStudentsInStudio());
                 studioStudents.put(studioName, students);
             }

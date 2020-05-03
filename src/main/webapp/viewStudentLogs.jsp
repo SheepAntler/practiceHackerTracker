@@ -20,15 +20,18 @@
             <button type="submit" class="btn btn-secondary">View Student's Log</button>
         </form>
     </div>
-    <c:if test="${logAcquired == true}">
-        <h2 class="subHeading">${studentLog.firstName} ${studentLog.lastName}'s Log</h2>
-        <c:forEach var="log" items="${studentLog.practiceLogs}">
-            <p>${log.practiceDate}</p>
-            <p>Calculated Duration</p>
-            <p>${log.activities}</p>
-            <p>${log.notes}</p>
-            <%-- TODO generate a column that links to comments form IF the comments field is null --%>
-        </c:forEach>
+    <c:if test="${logAcquired != null}">
+        <div class="container textBox">
+            <h2 class="subHeading">${studentLog.firstName} ${studentLog.lastName}'s Log</h2>
+            <c:forEach var="log" items="${studentLog.practiceLogs}">
+                <p>${log.practiceDate}</p>
+                <p>Calculated Duration</p>
+                <p>${log.activities}</p>
+                <p>${log.notes}</p>
+                <%-- TODO generate a column that links to comments form IF the comments field is null --%>
+            </c:forEach>
     </c:if>
+    <c:remove var="logAcquired" scope="session" />
+    </div>
 </body>
 </html>

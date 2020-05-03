@@ -1,4 +1,4 @@
 package stalterclouse.elspeth.controller;
 
-public class WriteHack {
+public class WritePracticeHack {
 }

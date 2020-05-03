@@ -41,8 +41,8 @@
                         </div>
                     </li>
                     <c:if test="${pageContext.request.isUserInRole('student') || pageContext.request.isUserInRole('practiceHacker')}">
-                        <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/viewHacks.jsp' ? ' active' : ''}">
-                            <a class="nav-link" href="viewHacks.jsp">Practice Hacks</a>
+                        <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/viewPracticeHacks.jsp' ? ' active' : ''}">
+                            <a class="nav-link" href="practiceHacks">Practice Hacks</a>
                         </li>
                     </c:if>
                     <c:if test="${pageContext.request.isUserInRole('teacher')}">
@@ -51,9 +51,9 @@
                                 Practice Hacks
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                                <a class="dropdown-item" href="hackWriter.jsp">Hack Writer</a>
+                                <a class="dropdown-item" href="practiceHackWriter.jsp">Hack Writer</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="viewHacks.jsp">View Hacks</a>
+                                <a class="dropdown-item" href="viewPracticeHacks.jsp">View Hacks</a>
                             </div>
                         </li>
                     </c:if>
