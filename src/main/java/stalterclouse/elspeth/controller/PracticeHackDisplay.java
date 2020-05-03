@@ -36,13 +36,14 @@ public class PracticeHackDisplay extends HttpServlet {
         HttpSession session = req.getSession();
         User currentUser = (User)session.getAttribute("user");
 
-        if (currentUser.getRole().getRole().equals("student") || currentUser.getRole().getRole().equals("practiceHacker")) {
+        if (currentUser.getRole().getRole().equals("practiceHacker")) {
             Map<String, String> propertyMap = new HashMap<String, String>();
             propertyMap.put("instrument", currentUser.getInstrument().getInstrument());
             propertyMap.put("skillLevel", currentUser.getInstrument().getSkillLevel());
             List<PracticeHack> practiceHacks = practiceHackDao.getByPropertiesEqual(propertyMap);
             session.setAttribute("practiceHacks", practiceHacks);
-            log.debug(practiceHacks);
+        } else if (currentUser.getRole().equals("student")) {
+            //TODO process the form inputs
         } else if (currentUser.getRole().equals("teacher")) {
             //TODO process the form inputs
         }

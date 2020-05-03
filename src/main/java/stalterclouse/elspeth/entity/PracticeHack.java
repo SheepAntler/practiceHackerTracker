@@ -22,9 +22,11 @@ public class PracticeHack {
     private int id;
 
     @Column(name = "skill_level")
+    @OrderBy
     private String skillLevel;
 
     @Column(name = "instrument")
+    @OrderBy
     private String instrument;
 
     @Column(name = "text_body")
@@ -33,6 +35,7 @@ public class PracticeHack {
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     @ManyToOne
+    @OrderBy
     private User user;
 
     public PracticeHack(User user, String skillLevel, String instrument, String practiceHack) {

@@ -42,7 +42,12 @@
                     </li>
                     <c:if test="${pageContext.request.isUserInRole('student') || pageContext.request.isUserInRole('practiceHacker')}">
                         <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/viewPracticeHacks.jsp' ? ' active' : ''}">
-                            <a class="nav-link" href="practiceHacks">Practice Hacks</a>
+                            <c:if test="${pageContext.request.isUserInRole('practiceHacker')}">
+                                <a class="nav-link" href="practiceHacks">Practice Hacks</a>
+                            </c:if>
+                            <c:if test="${pageContext.request.isUserInRole('student')}">
+                                <a class="nav-link" href="viewPracticeHacks.jsp">View Hacks</a>
+                            </c:if>
                         </li>
                     </c:if>
                     <c:if test="${pageContext.request.isUserInRole('teacher')}">

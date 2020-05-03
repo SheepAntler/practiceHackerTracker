@@ -86,7 +86,7 @@
                 <hr />
                 <div class="row">
                     <div class="form-group col-sm-4">
-                        <label for="studentInstrument">Instrument: </label>
+                        <label for="studentInstrument">Primary Instrument: </label>
                         <input type="text" class="form-control" id="studentInstrument" name="studentInstrument" required>
                     </div>
                     <div class="form-group col-sm-4">
@@ -129,7 +129,7 @@
                 <hr />
                 <div class="row">
                     <div class="form-group col-sm-6">
-                        <label for="instrument">Instrument: </label>
+                        <label for="instrument">Primary Instrument: </label>
                         <input type="text" class="form-control col-sm-6" id="instrument" name="instrument" required>
                     </div>
                     <div class="form-group col-sm-6">
