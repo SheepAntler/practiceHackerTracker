@@ -22,7 +22,6 @@ public class PracticeHack {
     private int id;
 
     @Column(name = "skill_level")
-    @OrderBy
     private String skillLevel;
 
     @Column(name = "instrument")
@@ -35,7 +34,6 @@ public class PracticeHack {
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     @ManyToOne
-    @OrderBy
     private User user;
 
     public PracticeHack(User user, String skillLevel, String instrument, String practiceHack) {

@@ -32,3 +32,30 @@
 [DEBUG] 2020-05-03 01:58:06.063 [http-nio-8080-exec-64] GenericDao - Searching for entity with username = madBratsche
 [DEBUG] 2020-05-03 01:58:08.481 [http-nio-8080-exec-65] PracticeHackDisplay - [PracticeHack(id=1, skillLevel=Advanced, instrument=viola, practiceHack=Only practice in 50-minute hours. Giving yourself breaks keeps your mind fresh!)]
 [DEBUG] 2020-05-03 01:58:32.941 [http-nio-8080-exec-67] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-04 12:20:45.039 [main] GenericDao - Searching for entity with skillLevel = intermediate
+[DEBUG] 2020-05-04 12:20:45.282 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-05-04 12:22:39.330 [main] GenericDao - Searching for entity with skillLevel = intermediate
+[DEBUG] 2020-05-04 12:22:39.718 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-05-04 12:52:39.783 [http-nio-8080-exec-7] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-04 12:58:11.055 [http-nio-8080-exec-10] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-04 12:59:07.008 [http-nio-8080-exec-4] GenericDao - Searching for entity with user = User(id=3, username=saveTheViola, password=password, firstName=Viola, lastName=Happenstance, email=violaViolist@gmail.com, practiceCounter=102, birthDate=1990-01-12, city=Madison, state=WI, zipCode=53711, longestStreak=101)
+[DEBUG] 2020-05-04 13:02:46.030 [http-nio-8080-exec-4] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-04 13:09:29.254 [http-nio-8080-exec-6] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-04 13:09:48.292 [http-nio-8080-exec-15] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-04 13:10:02.892 [http-nio-8080-exec-12] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-04 13:10:17.695 [http-nio-8080-exec-16] GenericDao - Searching for entity with user = User(id=3, username=saveTheViola, password=password, firstName=Viola, lastName=Happenstance, email=violaViolist@gmail.com, practiceCounter=102, birthDate=1990-01-12, city=Madison, state=WI, zipCode=53711, longestStreak=101)
+[DEBUG] 2020-05-04 13:26:08.834 [http-nio-8080-exec-17] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-04 13:26:23.094 [http-nio-8080-exec-24] GenericDao - Searching for entity with user = User(id=3, username=saveTheViola, password=password, firstName=Viola, lastName=Happenstance, email=violaViolist@gmail.com, practiceCounter=102, birthDate=1990-01-12, city=Madison, state=WI, zipCode=53711, longestStreak=101)
+[DEBUG] 2020-05-04 13:26:29.589 [http-nio-8080-exec-25] GenericDao - Searching for entity with user = User(id=3, username=saveTheViola, password=password, firstName=Viola, lastName=Happenstance, email=violaViolist@gmail.com, practiceCounter=102, birthDate=1990-01-12, city=Madison, state=WI, zipCode=53711, longestStreak=101)
+[DEBUG] 2020-05-04 13:26:42.342 [http-nio-8080-exec-28] GenericDao - Searching for entity with user = User(id=3, username=saveTheViola, password=password, firstName=Viola, lastName=Happenstance, email=violaViolist@gmail.com, practiceCounter=102, birthDate=1990-01-12, city=Madison, state=WI, zipCode=53711, longestStreak=101)
+[DEBUG] 2020-05-04 13:59:03.022 [http-nio-8080-exec-4] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-04 13:59:22.372 [http-nio-8080-exec-9] GenericDao - Searching for entity with user = User(id=3, username=saveTheViola, password=password, firstName=Viola, lastName=Happenstance, email=violaViolist@gmail.com, practiceCounter=102, birthDate=1990-01-12, city=Madison, state=WI, zipCode=53711, longestStreak=101)
+[DEBUG] 2020-05-04 14:02:47.584 [http-nio-8080-exec-9] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-04 14:03:06.408 [http-nio-8080-exec-3] GenericDao - Searching for entity with user = User(id=3, username=saveTheViola, password=password, firstName=Viola, lastName=Happenstance, email=violaViolist@gmail.com, practiceCounter=102, birthDate=1990-01-12, city=Madison, state=WI, zipCode=53711, longestStreak=101)
+[DEBUG] 2020-05-04 14:05:38.501 [http-nio-8080-exec-12] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-04 14:05:48.773 [http-nio-8080-exec-13] GenericDao - Searching for entity with user = User(id=3, username=saveTheViola, password=password, firstName=Viola, lastName=Happenstance, email=violaViolist@gmail.com, practiceCounter=102, birthDate=1990-01-12, city=Madison, state=WI, zipCode=53711, longestStreak=101)
+[DEBUG] 2020-05-04 14:13:14.427 [http-nio-8080-exec-24] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-04 14:13:22.801 [http-nio-8080-exec-35] GenericDao - Searching for entity with user = User(id=3, username=saveTheViola, password=password, firstName=Viola, lastName=Happenstance, email=violaViolist@gmail.com, practiceCounter=102, birthDate=1990-01-12, city=Madison, state=WI, zipCode=53711, longestStreak=101)
+[DEBUG] 2020-05-04 14:13:27.889 [http-nio-8080-exec-39] GenericDao - Searching for entity with user = User(id=3, username=saveTheViola, password=password, firstName=Viola, lastName=Happenstance, email=violaViolist@gmail.com, practiceCounter=102, birthDate=1990-01-12, city=Madison, state=WI, zipCode=53711, longestStreak=101)
+[DEBUG] 2020-05-04 14:25:39.988 [http-nio-8080-exec-41] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-04 14:25:48.836 [http-nio-8080-exec-44] GenericDao - Searching for entity with user = User(id=3, username=saveTheViola, password=password, firstName=Viola, lastName=Happenstance, email=violaViolist@gmail.com, practiceCounter=102, birthDate=1990-01-12, city=Madison, state=WI, zipCode=53711, longestStreak=101)

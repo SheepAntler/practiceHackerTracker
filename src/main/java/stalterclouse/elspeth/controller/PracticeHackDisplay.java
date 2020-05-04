@@ -2,6 +2,7 @@ package stalterclouse.elspeth.controller;
 
 import lombok.extern.log4j.Log4j2;
 import stalterclouse.elspeth.entity.PracticeHack;
+import stalterclouse.elspeth.entity.Studio;
 import stalterclouse.elspeth.entity.User;
 import stalterclouse.elspeth.persistence.GenericDao;
 
@@ -36,16 +37,50 @@ public class PracticeHackDisplay extends HttpServlet {
         HttpSession session = req.getSession();
         User currentUser = (User)session.getAttribute("user");
 
+        Map<String, Object> propertyMap = new HashMap<String, Object>();
+        propertyMap.put("instrument", currentUser.getInstrument().getInstrument());
+        propertyMap.put("skillLevel", currentUser.getInstrument().getSkillLevel());
+        List<PracticeHack> personalPracticeHacks = practiceHackDao.getByPropertiesEqual(propertyMap);
+
         if (currentUser.getRole().getRole().equals("practiceHacker")) {
-            Map<String, String> propertyMap = new HashMap<String, String>();
-            propertyMap.put("instrument", currentUser.getInstrument().getInstrument());
-            propertyMap.put("skillLevel", currentUser.getInstrument().getSkillLevel());
-            List<PracticeHack> practiceHacks = practiceHackDao.getByPropertiesEqual(propertyMap);
-            session.setAttribute("practiceHacks", practiceHacks);
-        } else if (currentUser.getRole().equals("student")) {
-            //TODO process the form inputs
-        } else if (currentUser.getRole().equals("teacher")) {
-            //TODO process the form inputs
+            session.setAttribute("personalPracticeHacks", personalPracticeHacks);
+        }
+        else if (currentUser.getRole().getRole().equals("student")) {
+            List<Studio> studioArrayList = new ArrayList<Studio>(currentUser.getStudiosOfStudent());
+            Studio studio = studioArrayList.get(0);
+            User teacher = studio.getTeacher();
+            propertyMap.put("user", teacher);
+            List<PracticeHack> practiceHacksFromTeacher = practiceHackDao.getByPropertiesEqual(propertyMap);
+            session.setAttribute("practiceHacksFromTeacher", practiceHacksFromTeacher);
+        } else if (currentUser.getRole().getRole().equals("teacher")) {
+            String requestedHackView = req.getParameter("practiceHackView");
+
+            if (requestedHackView.equals("allHacks")) {
+                if (session.getAttribute("myPracticeHacks") != null) {
+                    session.setAttribute("myPracticeHacks", null);
+                } else if (session.getAttribute("personalPracticeHacks") != null) {
+                    session.setAttribute("personalPracticeHacks", null);
+                }
+                List<PracticeHack> allPracticeHacks = practiceHackDao.getAllEntities();
+                session.setAttribute("allPracticeHacks", allPracticeHacks);
+            } else if (requestedHackView.equals("authorMode")) {
+                if (session.getAttribute("allPracticeHacks") != null) {
+                    session.setAttribute("allPracticeHacks", null);
+                } else if (session.getAttribute("personalPracticeHacks") != null) {
+                    session.setAttribute("personalPracticeHacks", null);
+                }
+                List<PracticeHack> myPracticeHacks = practiceHackDao.getByPropertyEqual("user", currentUser);
+                session.setAttribute("myPracticeHacks", myPracticeHacks);
+            } else if (requestedHackView.equals("practiceMode")) {
+                if (session.getAttribute("allPracticeHacks") != null) {
+                    session.setAttribute("allPracticeHacks", null);
+                } else if (session.getAttribute("myPracticeHacks") != null) {
+                    session.setAttribute("myPracticeHacks", null);
+                }
+                session.setAttribute("personalPracticeHacks", personalPracticeHacks);
+            }
+
+            session.setAttribute("practiceHackViewSelected", true);
         }
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/viewPracticeHacks.jsp");
