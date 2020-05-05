@@ -39,3 +39,6 @@
 [DEBUG] 2020-05-04 23:28:01.594 [http-nio-8080-exec-95] GenericDao - Searching for entity with username = madBratsche
 [DEBUG] 2020-05-04 23:30:57.769 [http-nio-8080-exec-100] GenericDao - Searching for entity with username = madBratsche
 [DEBUG] 2020-05-04 23:31:06.661 [http-nio-8080-exec-104] GenericDao - Searching for entity with instrument = viola
+[DEBUG] 2020-05-04 23:37:58.447 [http-nio-8080-exec-110] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-04 23:38:05.951 [http-nio-8080-exec-118] GenericDao - Searching for entity with instrument = viola
+[DEBUG] 2020-05-04 23:38:10.029 [http-nio-8080-exec-115] GenericDao - Searching for entity with instrument = viola

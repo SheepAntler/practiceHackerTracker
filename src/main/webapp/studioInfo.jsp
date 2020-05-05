@@ -38,7 +38,7 @@
                             <form action="joinStudio">
                                 <select name="studioOption" id="studioOption" class="form-control" required>
                                     <c:forEach var="studio" items="${availableStudios}">
-                                        <option value="${studio.id}">${studio.user.firstName} ${studio.user.lastName}'s Studio</option>
+                                        <option value="${studio.id}">${studio.teacher.firstName} ${studio.teacher.lastName}'s Studio</option>
                                     </c:forEach>
                                 </select>
                                 <button type="submit" class="btn btn-secondary">Join Studio</button>
