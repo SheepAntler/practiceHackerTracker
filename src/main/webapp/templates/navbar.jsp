@@ -14,7 +14,7 @@
             <c:choose>
                 <c:when test="${pageContext.request.getRemoteUser() != null}">
                     <c:if test="${pageContext.request.isUserInRole('student')}">
-                        <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/viewStudioInfo.jsp' ? ' active' : ''}">
+                        <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/studioInfo' ? ' active' : ''}">
                             <a class="nav-link" href="studioInfo">My Studio</a>
                         </li>
                     </c:if>

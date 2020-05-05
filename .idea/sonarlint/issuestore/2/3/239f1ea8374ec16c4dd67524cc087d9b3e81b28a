@@ -1,0 +1,16 @@
+
+F
+java:S3740ˆ"/Provide the parametrized type for this generic.(¡ëŸ×
+N
+java:S1854Z"8Remove this useless assignment to local variable "root".(áÚƒ»
+u
+java:S2293‡"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ë¡àþüÿÿÿÿ
+?
+java:S1481Z")Remove this unused "root" local variable.(áÚƒ»
+Q	java:S125."<This block of commented-out lines of code should be removed.(žÎ“Á
+Q	java:S125="<This block of commented-out lines of code should be removed.(±„Ëë
+Q	java:S125K"<This block of commented-out lines of code should be removed.(çÖŒ
+Q	java:S125\"<This block of commented-out lines of code should be removed.(»ØàÊ
+V	java:S125t"<This block of commented-out lines of code should be removed.(™ÈÂúÿÿÿÿ
+Q	java:S125¦"<This block of commented-out lines of code should be removed.(Ä•—
+R	java:S125´"<This block of commented-out lines of code should be removed.(í¯‹¥

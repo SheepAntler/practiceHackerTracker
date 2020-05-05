@@ -1,11 +1,21 @@
 package stalterclouse.elspeth.controller;
 
+import stalterclouse.elspeth.entity.Studio;
+import stalterclouse.elspeth.entity.User;
+import stalterclouse.elspeth.persistence.GenericDao;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Allows the User to search for a studio to join.
@@ -18,6 +28,34 @@ import java.io.IOException;
 public class StudioSearchAction extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        HttpSession session = req.getSession();
+        GenericDao studioDao = new GenericDao(Studio.class);
+        User currentUser = (User)session.getAttribute("user");
+        Map<String, String> propertyMap = new HashMap<String, String>();
+        List<Studio> availableStudios = null;
         String searchParameter = req.getParameter("searchParameter");
+        String userInstrument = currentUser.getInstrument().getInstrument();
+        String userState = currentUser.getState();
+        String userCity = currentUser.getCity();
+
+        if (searchParameter.equals("allStudios")) {
+            availableStudios = new ArrayList<Studio>(studioDao.getByPropertyEqual("instrument", userInstrument));
+        } else if (searchParameter.equals("state")) {
+            propertyMap.put("instrument", userInstrument);
+            propertyMap.put("state", userState);
+            availableStudios = new ArrayList<Studio>(studioDao.getByPropertiesEqual(propertyMap));
+        } else if (searchParameter.equals("city")) {
+            propertyMap.put("instrument", userInstrument);
+            propertyMap.put("state", userState);
+            propertyMap.put("city", userCity);
+            availableStudios = new ArrayList<Studio>(studioDao.getByPropertiesEqual(propertyMap));
+        }
+
+        session.setAttribute("availableStudios", availableStudios);
+        session.setAttribute("studiosFound", true);
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/studioInfo.jsp");
+        dispatcher.forward(req, resp);
     }
 }

@@ -71,6 +71,10 @@ p {
     font-weight: bold;
 }
 
+#hiddenDiv {
+    display: none;
+}
+
 /* forms */
 .formBox {
     width: 50%;
