@@ -42,3 +42,14 @@
 [DEBUG] 2020-05-04 23:37:58.447 [http-nio-8080-exec-110] GenericDao - Searching for entity with username = madBratsche
 [DEBUG] 2020-05-04 23:38:05.951 [http-nio-8080-exec-118] GenericDao - Searching for entity with instrument = viola
 [DEBUG] 2020-05-04 23:38:10.029 [http-nio-8080-exec-115] GenericDao - Searching for entity with instrument = viola
+[DEBUG] 2020-05-05 11:26:26.158 [http-nio-8080-exec-7] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-05 11:26:44.267 [http-nio-8080-exec-2] JoinStudioAction - Studio(id=1, instrument=Viola, organizationName=The Viola Foundation, streetAddress=123 ABC Street, city=Madison, state=WI, zipCode=53715)
+[DEBUG] 2020-05-05 11:30:11.129 [http-nio-8080-exec-1] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-05 11:30:21.300 [http-nio-8080-exec-12] JoinStudioAction - class java.lang.String
+[DEBUG] 2020-05-05 11:37:29.106 [http-nio-8080-exec-21] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-05 11:38:21.949 [http-nio-8080-exec-30] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-05 11:38:46.760 [http-nio-8080-exec-31] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-05 11:43:39.121 [http-nio-8080-exec-26] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-05 11:45:18.480 [http-nio-8080-exec-39] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-05 11:46:08.158 [http-nio-8080-exec-35] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-05 11:46:48.520 [http-nio-8080-exec-40] GenericDao - Searching for entity with user = User(id=3, username=saveTheViola, password=password, firstName=Viola, lastName=Happenstance, email=violaViolist@gmail.com, practiceCounter=102, birthDate=1990-01-12, city=Madison, state=WI, zipCode=53711, longestStreak=101)

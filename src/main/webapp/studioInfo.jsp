@@ -38,7 +38,7 @@
                             <form action="joinStudio">
                                 <select name="studioOption" id="studioOption" class="form-control" required>
                                     <c:forEach var="studio" items="${availableStudios}">
-                                        <option value="${studio.id}">${studio.teacher.firstName} ${studio.teacher.lastName}'s Studio</option>
+                                        <option value="${studio.id}">${studio.teacher.firstName} ${studio.teacher.lastName}'s Studio at ${studio.organizationName}</option>
                                     </c:forEach>
                                 </select>
                                 <button type="submit" class="btn btn-secondary">Join Studio</button>
@@ -54,17 +54,6 @@
             </c:otherwise>
         </c:choose>
     </div>
-
-<%--<script>--%>
-<%--    const revealHiddenDiv = () => {--%>
-<%--        let hiddenDiv = document.getElementById("hiddenDiv");--%>
-<%--        if (hiddenDiv.style.display === "none") {--%>
-<%--            hiddenDiv.style.display = "block";--%>
-<%--        } else {--%>
-<%--            hiddenDiv.style.display = "none";--%>
-<%--        }--%>
-<%--    };--%>
-<%--</script>--%>
     <script src="js/revealDiv.js"></script>
 </body>
 </html>

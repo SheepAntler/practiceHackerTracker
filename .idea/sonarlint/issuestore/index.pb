@@ -48,3 +48,15 @@ N
 src/main/webapp/studioInfo.jsp,1/1/11fef5af1d91df2b2579fa8b0b7a25d2ea78b5dc
 v
 Fsrc/main/java/stalterclouse/elspeth/controller/StudioSearchAction.java,4/c/4c58c8f73950c86a63a20eb02786edc1e190a3c3
+v
+Fsrc/main/java/stalterclouse/elspeth/controller/WriteCommentAction.java,9/5/955ff5f8cc8da3c09a9a7e250440a4cd98810a3f
+T
+$src/main/webapp/js/responsiveForm.js,6/e/6e44f53a9eee6f655175e577efb7152a39579cf5
+R
+"src/main/webapp/templates/head.jsp,2/0/207d6107ae65ebfe1cd6fb70a112aa0ed741045b
+O
+src/main/webapp/js/revealDiv.js,3/0/30be0820bb5ae455d3507b68da42dcb92b1919d2
+G
+logs/practiceHacker.log,7/2/7277f9085972cfb033e0a475f11779b055768374
+u
+Esrc/main/java/stalterclouse/elspeth/controller/LeaveStudioAction.java,b/2/b28aedcf548510b6f9a5737cc3e11da087ec2966
