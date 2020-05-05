@@ -35,14 +35,15 @@ public class LoginAction extends HttpServlet {
         HttpSession session = req.getSession();
         String currentUser = req.getRemoteUser();
 
-        List<User> user = userDao.getByPropertyEqual("username", currentUser);
+//        List<User> user = userDao.getByPropertyEqual("username", currentUser);
+        User user = (User)userDao.getByPropertyEqual("username", currentUser).get(0);
 
-        session.setAttribute("user", user.get(0));
-        session.setAttribute("userId", user.get(0).getId());
+        session.setAttribute("user", user);
+        session.setAttribute("userId", user.getId());
 
-        if (user.get(0).getRole().getRole().equals("teacher")) {
+        if (user.getRole().getRole().equals("teacher")) {
 //            log.debug(user.get(0).getStudios());
-            List<Studio> studios = new ArrayList<Studio>(user.get(0).getStudios());
+            List<Studio> studios = new ArrayList<Studio>(user.getStudios());
 //            session.setAttribute("studios", studios);
 //            log.debug("About to make the map");
             Map<String, ArrayList<User>> studioStudents = new HashMap<String, ArrayList<User>>();

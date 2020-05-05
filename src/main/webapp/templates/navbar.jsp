@@ -14,15 +14,8 @@
             <c:choose>
                 <c:when test="${pageContext.request.getRemoteUser() != null}">
                     <c:if test="${pageContext.request.isUserInRole('student')}">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                My Studios
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                <a class="dropdown-item" href="studioInfo.jsp">My Studio Info</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="studioSearch.jsp">Join a Studio</a>
-                            </div>
+                        <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/viewStudioInfo.jsp' ? ' active' : ''}">
+                            <a class="nav-link" href="studioInfo">My Studio</a>
                         </li>
                     </c:if>
                     <c:if test="${pageContext.request.isUserInRole('teacher')}">

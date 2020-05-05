@@ -164,11 +164,16 @@ class StudioDaoTest {
 
         Studio additionalStudio = (Studio)genericDao.getById(4);
 
-        Set<Studio> studentStudios = user.getStudiosOfStudent();
+        Set<User> studioStudents = additionalStudio.getStudentsInStudio();
 
-        studentStudios.add(additionalStudio);
+        studioStudents.add(user);
 
-        assertEquals(3, studentStudios.size());
+        genericDao.saveOrUpdate(additionalStudio);
+
+        User updatedUser = (User) genericUser.getById(5);
+        Set<Studio> updatedStudios = updatedUser.getStudiosOfStudent();
+
+        assertEquals(3, updatedStudios.size());
     }
 
     /**
@@ -181,10 +186,14 @@ class StudioDaoTest {
 
        Studio quitStudio = (Studio)genericDao.getById(5);
 
-       Set<Studio> studentStudios = user.getStudiosOfStudent();
+       Set<User> studioStudents = quitStudio.getStudentsInStudio();
 
-       studentStudios.remove(quitStudio);
+       studioStudents.remove(user);
+       genericDao.saveOrUpdate(quitStudio);
 
-       assertEquals(1, studentStudios.size());
+       User updatedUser = (User) genericUser.getById(5);
+       Set<Studio> updatedStudioSet = updatedUser.getStudiosOfStudent();
+
+       assertEquals(1, updatedStudioSet.size());
     }
 }

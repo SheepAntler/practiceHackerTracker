@@ -11,7 +11,6 @@
                 <div class="form-group col-sm-6">
                     <label for="studentSkillLevel">This practice hack is for: </label>
                     <select name="studentSkillLevel" class="form-control" id="studentSkillLevel" required>
-                        <option value="general"></option>
                         <option value="beginner">Beginners</option>
                         <option value="intermediate">Intermediates</option>
                         <option value="advanced">Advanced Students</option>
@@ -29,6 +28,7 @@
             <div class="form-group">
                 <label for="editor">Practice Hack: </label>
                 <textarea id="editor" name="notes"></textarea>
+                <%-- TODO In edit mode: output the current practice hack text between the textarea tags! --%>
             </div>
             <br><br>
             <button type="submit" class="btn btn-secondary">Save Log</button>

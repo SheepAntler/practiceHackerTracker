@@ -94,6 +94,10 @@ label {
     color: white;
 }
 
+textarea {
+    color: black;
+}
+
 /* tables */
 td {
     color: black;
