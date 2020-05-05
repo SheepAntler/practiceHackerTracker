@@ -36,7 +36,7 @@ class StudioDaoTest {
      * Verifies gets all users successfully.
      */
     @Test
-    void returnAllLogsSuccess() {
+    void returnAllStudiosSuccess() {
         List<Studio> studios = genericDao.getAllEntities();
         assertEquals(5, studios.size());
     }
@@ -69,7 +69,7 @@ class StudioDaoTest {
     }
 
     /**
-     * Verify successful delete of user
+     * Verify successful delete of studio
      */
     @Test
     void deleteSuccess() {
@@ -195,5 +195,18 @@ class StudioDaoTest {
        Set<Studio> updatedStudioSet = updatedUser.getStudiosOfStudent();
 
        assertEquals(1, updatedStudioSet.size());
+    }
+
+    /**
+     * Verifies that I can delete an entire studio.
+     */
+    @Test
+    void testDeleteStudio() {
+        Studio closingStudio = (Studio)genericDao.getById(5);
+        genericDao.delete(closingStudio);
+
+//        GenericDao userDao = new GenericDao(User.class);
+//        userDao.delete(userDao.getById(1));
+
     }
 }

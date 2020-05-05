@@ -12,13 +12,13 @@
                 <p>${studentStudio.organizationName}</p>
                 <p>${studentStudio.streetAddress}</p>
                 <p>${studentStudio.city}, ${studentStudio.state} ${studentStudio.zipCode}</p>
-                <button class="btn btn-secondary" onClick="revealHiddenDiv()">Leave this Studio</button>
+                <button class="hideShow btn btn-secondary">Leave this Studio</button>
                 <div class="container" id="hiddenDiv">
                     <p>We're sorry to see you go; are you <i>certain</i> you wish to leave this studio?</p>
                     <form action="leaveStudio">
                         <button type="submit" class="btn btn-secondary">Yes, I'm sure</button>
                     </form>
-                    <button class="btn btn-dark" onClick="revealHiddenDiv()">No; I'd like to stay</button>
+                    <button class="hideShow btn btn-dark">No; I'd like to stay</button>
                 </div>
             </c:when>
             <c:otherwise>
