@@ -47,11 +47,21 @@ public class PracticeHackDisplay extends HttpServlet {
         }
         else if (currentUser.getRole().getRole().equals("student")) {
             List<Studio> studioArrayList = new ArrayList<Studio>(currentUser.getStudiosOfStudent());
-            Studio studio = studioArrayList.get(0);
-            User teacher = studio.getTeacher();
-            propertyMap.put("user", teacher);
-            List<PracticeHack> practiceHacksFromTeacher = practiceHackDao.getByPropertiesEqual(propertyMap);
-            session.setAttribute("practiceHacksFromTeacher", practiceHacksFromTeacher);
+            if (!studioArrayList.isEmpty()) {
+                Studio studio = studioArrayList.get(0);
+                User teacher = studio.getTeacher();
+                propertyMap.put("user", teacher);
+                List<PracticeHack> practiceHacksFromTeacher = practiceHackDao.getByPropertiesEqual(propertyMap);
+                session.setAttribute("practiceHacksFromTeacher", practiceHacksFromTeacher);
+            } else if (studioArrayList.isEmpty() && session.getAttribute("studentStudio") != null) {
+                Studio newStudio = (Studio)session.getAttribute("studentStudio");
+                User teacher = newStudio.getTeacher();
+                propertyMap.put("user", teacher);
+                List<PracticeHack> practiceHacksFromTeacher = practiceHackDao.getByPropertiesEqual(propertyMap);
+                session.setAttribute("practiceHacksFromTeacher", practiceHacksFromTeacher);
+            } else {
+                session.setAttribute("personalPracticeHacks", personalPracticeHacks);
+            }
         } else if (currentUser.getRole().getRole().equals("teacher")) {
             String requestedHackView = req.getParameter("practiceHackView");
 

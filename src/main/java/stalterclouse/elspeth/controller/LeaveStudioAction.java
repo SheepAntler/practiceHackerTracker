@@ -38,6 +38,7 @@ public class LeaveStudioAction extends HttpServlet {
         studioDao.saveOrUpdate(studioToQuit);
 
         session.removeAttribute("studentStudio");
+        session.setAttribute("practiceHacksFromTeacher", null);
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("studioInfo.jsp");
         dispatcher.forward(req, resp);

@@ -32,7 +32,7 @@
                     <h2 class="subHeading text-center">Looks like your teacher hasn't added any Practice Hacks yet. Here are some other teachers' ideas in the meantime!</h2>
                     <h2 class="subHeading text-center">Tips, Tricks, and Ideas for ${user.instrument.skillLevel} ${user.instrument.instrument} Players</h2>
                     <c:forEach var="practiceHack" items="${personalPracticeHacks}">
-                        <p>Author: ${practiceHack.user.firstName} ${practiceHack.user.lastName}</p>
+                        <p>Author: ${practiceHack.user.firstName} ${practiceHack.user.lastName} from ${practiceHack.user.city}, ${practiceHack.user.state}</p>
                         <p>${practiceHack.practiceHack}</p>
                     </c:forEach>
                 </c:when>
