@@ -63,3 +63,20 @@
 [DEBUG] 2020-05-06 14:09:57.316 [http-nio-8080-exec-47] GenericDao - Searching for entity with user = 1
 [DEBUG] 2020-05-06 14:09:57.391 [http-nio-8080-exec-47] WriteLogAction - [PracticeLog(id=1, practiceDate=2020-03-04, startTime=2020-03-04T01:01:01, endTime=2020-03-04T20:20:20, activities=Ein Heldenleben, notes=I practiced some difficult runs slowly with a friend, and also drilled some shifts., teacherComments=null), PracticeLog(id=2, practiceDate=2020-03-05, startTime=2020-03-05T01:01:01, endTime=2020-03-05T20:20:20, activities=Ein Heldenleben, notes=I attempted to play the piece through with a recording. We have clearly got a long way to go, but the choreography is coming along nicely..., teacherComments=null)]
 [DEBUG] 2020-05-06 14:09:57.392 [http-nio-8080-exec-47] WriteLogAction - 2020-03-05
+[DEBUG] 2020-05-06 14:13:44.414 [http-nio-8080-exec-47] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-06 14:14:05.569 [http-nio-8080-exec-56] WriteLogAction - 2020-05-06T13:30 2020-05-06T13:32
+[DEBUG] 2020-05-06 14:14:05.570 [http-nio-8080-exec-56] GenericDao - Searching for entity with user = 1
+[DEBUG] 2020-05-06 14:14:05.621 [http-nio-8080-exec-56] WriteLogAction - [PracticeLog(id=1, practiceDate=2020-03-04, startTime=2020-03-04T01:01:01, endTime=2020-03-04T20:20:20, activities=Ein Heldenleben, notes=I practiced some difficult runs slowly with a friend, and also drilled some shifts., teacherComments=null), PracticeLog(id=2, practiceDate=2020-03-05, startTime=2020-03-05T01:01:01, endTime=2020-03-05T20:20:20, activities=Ein Heldenleben, notes=I attempted to play the piece through with a recording. We have clearly got a long way to go, but the choreography is coming along nicely..., teacherComments=null)]
+[DEBUG] 2020-05-06 14:14:05.623 [http-nio-8080-exec-56] WriteLogAction - 2020-03-05
+[DEBUG] 2020-05-06 14:20:23.802 [http-nio-8080-exec-6] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-06 14:20:49.477 [http-nio-8080-exec-1] WriteLogAction - 2020-05-06T13:30 2020-05-06T14:00
+[DEBUG] 2020-05-06 14:20:49.478 [http-nio-8080-exec-1] GenericDao - Searching for entity with user = 1
+[DEBUG] 2020-05-06 14:20:49.520 [http-nio-8080-exec-1] WriteLogAction - [PracticeLog(id=1, practiceDate=2020-03-04, startTime=2020-03-04T01:01:01, endTime=2020-03-04T20:20:20, activities=Ein Heldenleben, notes=I practiced some difficult runs slowly with a friend, and also drilled some shifts., teacherComments=null), PracticeLog(id=2, practiceDate=2020-03-05, startTime=2020-03-05T01:01:01, endTime=2020-03-05T20:20:20, activities=Ein Heldenleben, notes=I attempted to play the piece through with a recording. We have clearly got a long way to go, but the choreography is coming along nicely..., teacherComments=null)]
+[DEBUG] 2020-05-06 14:20:49.550 [http-nio-8080-exec-1] WriteLogAction - 2020-03-05
+[DEBUG] 2020-05-06 14:20:49.551 [http-nio-8080-exec-1] WriteLogAction - -62
+[DEBUG] 2020-05-06 14:22:49.407 [http-nio-8080-exec-8] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-06 14:23:14.552 [http-nio-8080-exec-6] WriteLogAction - 2020-05-06T13:03 2020-05-06T13:05
+[DEBUG] 2020-05-06 14:23:14.554 [http-nio-8080-exec-6] GenericDao - Searching for entity with user = 1
+[DEBUG] 2020-05-06 14:23:14.625 [http-nio-8080-exec-6] WriteLogAction - [PracticeLog(id=1, practiceDate=2020-03-04, startTime=2020-03-04T01:01:01, endTime=2020-03-04T20:20:20, activities=Ein Heldenleben, notes=I practiced some difficult runs slowly with a friend, and also drilled some shifts., teacherComments=null), PracticeLog(id=2, practiceDate=2020-03-05, startTime=2020-03-05T01:01:01, endTime=2020-03-05T20:20:20, activities=Ein Heldenleben, notes=I attempted to play the piece through with a recording. We have clearly got a long way to go, but the choreography is coming along nicely..., teacherComments=null)]
+[DEBUG] 2020-05-06 14:23:14.628 [http-nio-8080-exec-6] WriteLogAction - 2020-03-05
+[DEBUG] 2020-05-06 14:23:14.629 [http-nio-8080-exec-6] WriteLogAction - 62

@@ -60,14 +60,33 @@ public class WriteLogAction extends HttpServlet {
         LocalDate lastPracticeDate = currentUserLogs.get(currentUserLogs.size() - 1).getPracticeDate();
         log.debug(lastPracticeDate);
 
-        // find the difference between the two dates
-        int timeSinceLastPractice = (int) ChronoUnit.HOURS.between(practiceDate, lastPracticeDate);
-        log.debug(timeSinceLastPractice);
+        // If the user isn't logging two sessions in the same day...
+        if (practiceDate != lastPracticeDate) {
+            // calculate the difference between the two dates
+            int daysSinceLastPractice = (int) ChronoUnit.DAYS.between(lastPracticeDate, practiceDate);
+            log.debug(daysSinceLastPractice);
+            // if the timeSinceLastPractice date is greater than 1 day, reset practice counter and update user
+            if (daysSinceLastPractice > 1) {
+                currentUser.setPracticeCounter(0);
+                log.debug(currentUser.getPracticeCounter());
+            } else {
+                // otherwise, increment practice counter
+                int currentCounter = currentUser.getPracticeCounter();
+                int incrementedCounter = currentCounter + 1;
+                log.debug(incrementedCounter);
+                // if that counter is greater than the longest streak, update the longest streak!
+                if (incrementedCounter > currentUser.getLongestStreak()) {
+                    currentUser.setLongestStreak(incrementedCounter);
+                }
 
-        //TODO If it's been more than 24 hours since the last log (user.practiceLogs.get(0)--you MIGHT have convert this to an ArrayList first)
-        // reset the practice counter to 0
+                currentUser.setPracticeCounter(incrementedCounter);
 
-        //TODO If it hasn't been more than 24 hours, reset the practice counter to practice counter + 1
+            }
+            // update the user with all these changes
+            userDao.saveOrUpdate(currentUser);
+            log.debug(userDao.getById(currentUser.getId()));
+
+        }
 
         //TODO save the log
 
