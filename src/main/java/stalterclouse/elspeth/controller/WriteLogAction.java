@@ -43,6 +43,7 @@ public class WriteLogAction extends HttpServlet {
 
         // Create a new log with the form inputs
         LocalDate practiceDate = LocalDate.now();
+        log.debug(practiceDate);
         String startTime = practiceDate.toString() + " " + req.getParameter("startTime");
         String endTime = practiceDate.toString() + " " + req.getParameter("endTime");
         LocalDateTime startDateTime = LocalDateTime.parse(startTime, formatter);
@@ -52,7 +53,7 @@ public class WriteLogAction extends HttpServlet {
 
         log.debug( startDateTime + " " + endDateTime);
 
-        PracticeLog newLog = new PracticeLog(currentUser, practiceDate, startDateTime, endDateTime, activities, notes, "");
+        PracticeLog newLog = new PracticeLog(currentUser, practiceDate, startDateTime, endDateTime, activities, notes, null);
 
         // Get the last date the user entered
         List<PracticeLog> currentUserLogs = new ArrayList<PracticeLog>(logDao.getByPropertyEqual("user", currentUser.getId()));
@@ -61,6 +62,8 @@ public class WriteLogAction extends HttpServlet {
         log.debug(lastPracticeDate);
 
         // If the user isn't logging two sessions in the same day...
+        log.debug("new practice date: {}", practiceDate);
+        log.debug("last practice date: {}", lastPracticeDate);
         if (practiceDate != lastPracticeDate) {
             // calculate the difference between the two dates
             int daysSinceLastPractice = (int) ChronoUnit.DAYS.between(lastPracticeDate, practiceDate);
@@ -85,12 +88,10 @@ public class WriteLogAction extends HttpServlet {
             // update the user with all these changes
             userDao.saveOrUpdate(currentUser);
             log.debug(userDao.getById(currentUser.getId()));
-
         }
 
-        //TODO save the log
-
-        //TODO update the user
+        // save the log
+        //logDao.insert(newLog);
 
         resp.sendRedirect(req.getContextPath() + "/logWriter.jsp");
     }
