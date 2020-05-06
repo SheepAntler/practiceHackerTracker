@@ -18,3 +18,7 @@
 [DEBUG] 2020-05-05 23:56:28.625 [http-nio-8080-exec-30] GenericDao - Searching for entity with username = saveTheViola
 [DEBUG] 2020-05-05 23:58:34.420 [http-nio-8080-exec-45] GenericDao - Searching for entity with username = saveTheViola
 [DEBUG] 2020-05-06 00:01:10.858 [http-nio-8080-exec-61] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-06 00:15:18.000 [http-nio-8080-exec-70] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-06 00:15:37.486 [http-nio-8080-exec-76] CloseStudioAction - 2
+[DEBUG] 2020-05-06 00:15:52.440 [http-nio-8080-exec-64] CloseStudioAction - 5
+[DEBUG] 2020-05-06 00:16:01.183 [http-nio-8080-exec-79] GenericDao - Searching for entity with username = saveTheViola

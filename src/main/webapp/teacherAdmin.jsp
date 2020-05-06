@@ -57,10 +57,10 @@
                         <option value="${studio.id}">${studio.instrument} Studio at ${studio.organizationName}</option>
                     </c:forEach>
                 </select>
-                <p class="text-danger">Are you certain you want to close this studio? This action cannot be undone.</p>
-                <button type="submit" class="btn btn-secondary">Yes; close this studio</button>
+                <p class="text-warning">Are you certain you want to close this studio? This action cannot be undone.</p>
+                <button type="submit" class="btn btn-danger">Yes; close this studio</button>
             </form>
-            <button class="showHideDelete btn btn-dark">No; I'd like to keep this studio open</button>
+            <button class="showHideDelete btn btn-secondary">No; I'd like to keep this studio open</button>
         </div>
     </div>
     <script src="js/revealDiv.js"></script>
