@@ -98,7 +98,7 @@ label {
     color: white;
 }
 
-textarea {
+.ck.ck-editor__main>.ck-editor__editable {
     color: black;
 }
 

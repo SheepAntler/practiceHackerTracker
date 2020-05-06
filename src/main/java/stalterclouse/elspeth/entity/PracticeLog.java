@@ -7,6 +7,7 @@ import stalterclouse.elspeth.entity.User;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 
 /**
  * Represents a practice log entry
@@ -56,4 +57,15 @@ public class PracticeLog {
         this.notes = notes;
         this.teacherComments = teacherComments;
     }
+
+    /**
+     * Calculates the practice duration in minutes
+     *
+     * @return the practice duration
+     */
+    public int getPracticeDuration() {
+
+        return (int) ChronoUnit.MINUTES.between(startTime, endTime);
+    }
+
 }

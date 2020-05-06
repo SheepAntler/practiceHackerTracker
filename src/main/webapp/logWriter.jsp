@@ -15,7 +15,7 @@
             out.print( "<h3 class=\"minorHeading text-center\">" + ft.format(dNow) + "</h3>");
         %>
         <hr />
-        <form>
+        <form action="writeLog">
             <div class="row">
                 <div class="form-group col-sm-6">
                     <label for="startTime">Start Time: </label>
