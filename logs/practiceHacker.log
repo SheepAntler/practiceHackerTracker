@@ -180,3 +180,159 @@
 [DEBUG] 2020-05-06 16:01:33.102 [http-nio-8080-exec-48] WriteLogAction - 59
 [DEBUG] 2020-05-06 16:01:33.208 [http-nio-8080-exec-48] WriteLogAction - User(id=2, username=madBratsche, password=password, firstName=Jonathan, lastName=Dunlop, email=madbratsche@gmail.com, practiceCounter=59, birthDate=2004-01-12, city=Madison, state=WI, zipCode=53715, longestStreak=59)
 [DEBUG] 2020-05-06 16:01:35.143 [http-nio-8080-exec-45] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 16:09:10.971 [http-nio-8080-exec-52] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 16:09:47.928 [http-nio-8080-exec-51] WriteLogAction - generated date: 2020-05-06
+[DEBUG] 2020-05-06 16:09:47.930 [http-nio-8080-exec-51] WriteLogAction - 2020-05-06T13:30 2020-05-06T14:10
+[DEBUG] 2020-05-06 16:09:47.930 [http-nio-8080-exec-51] WriteLogAction - log to insert: PracticeLog(id=0, practiceDate=2020-05-06, startTime=2020-05-06T13:30, endTime=2020-05-06T14:10, activities=Unaccompanied Bach, notes=<p>Fa la la</p>, teacherComments=null)
+[DEBUG] 2020-05-06 16:09:47.932 [http-nio-8080-exec-51] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 16:09:48.037 [http-nio-8080-exec-51] WriteLogAction - [PracticeLog(id=3, practiceDate=2020-03-05, startTime=2020-03-05T01:01:01, endTime=2020-03-05T20:20:20, activities=Scales, Arpeggios, and Walton, notes=I practiced two 50-minute hours today. The first was spent playing scales and arpeggio sets, while the second was entirely devoted to the Walton concerto. I did a run-through of the first movement in preparation for my upcoming concerto competition, and I feel that I am rushing through difficult passages. Tomorrow, I will do some metronome work and continuously remind myself that I have more time than I think I do!, teacherComments=null), PracticeLog(id=4, practiceDate=2020-05-05, startTime=2020-05-05T02:01:01, endTime=2020-05-05T03:01:01, activities=Orchestra Music, notes=I worked on excerpts for a good long while today, just to keep my chops up. , teacherComments=null)]
+[DEBUG] 2020-05-06 16:09:48.037 [http-nio-8080-exec-51] WriteLogAction - 2020-05-05
+[DEBUG] 2020-05-06 16:09:48.037 [http-nio-8080-exec-51] WriteLogAction - new practice date: 2020-05-06
+[DEBUG] 2020-05-06 16:09:48.037 [http-nio-8080-exec-51] WriteLogAction - last practice date: 2020-05-05
+[DEBUG] 2020-05-06 16:09:48.037 [http-nio-8080-exec-51] WriteLogAction - 1
+[DEBUG] 2020-05-06 16:09:48.037 [http-nio-8080-exec-51] WriteLogAction - 60
+[DEBUG] 2020-05-06 16:09:48.240 [http-nio-8080-exec-51] WriteLogAction - User(id=2, username=madBratsche, password=password, firstName=Jonathan, lastName=Dunlop, email=madbratsche@gmail.com, practiceCounter=60, birthDate=2004-01-12, city=Madison, state=WI, zipCode=53715, longestStreak=60)
+[DEBUG] 2020-05-06 16:15:51.242 [http-nio-8080-exec-64] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 16:16:17.918 [http-nio-8080-exec-67] WriteLogAction - generated date: 2020-05-06
+[DEBUG] 2020-05-06 16:16:17.919 [http-nio-8080-exec-67] WriteLogAction - 2020-05-06T14:00 2020-05-06T16:00
+[DEBUG] 2020-05-06 16:16:17.919 [http-nio-8080-exec-67] WriteLogAction - log to insert: PracticeLog(id=0, practiceDate=2020-05-06, startTime=2020-05-06T14:00, endTime=2020-05-06T16:00, activities=Unaccompanied Bach, notes=<p>test</p>, teacherComments=null)
+[DEBUG] 2020-05-06 16:16:17.922 [http-nio-8080-exec-67] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 16:16:18.006 [http-nio-8080-exec-67] WriteLogAction - [PracticeLog(id=3, practiceDate=2020-03-05, startTime=2020-03-05T01:01:01, endTime=2020-03-05T20:20:20, activities=Scales, Arpeggios, and Walton, notes=I practiced two 50-minute hours today. The first was spent playing scales and arpeggio sets, while the second was entirely devoted to the Walton concerto. I did a run-through of the first movement in preparation for my upcoming concerto competition, and I feel that I am rushing through difficult passages. Tomorrow, I will do some metronome work and continuously remind myself that I have more time than I think I do!, teacherComments=null), PracticeLog(id=4, practiceDate=2020-05-05, startTime=2020-05-05T02:01:01, endTime=2020-05-05T03:01:01, activities=Orchestra Music, notes=I worked on excerpts for a good long while today, just to keep my chops up. , teacherComments=null)]
+[DEBUG] 2020-05-06 16:16:18.006 [http-nio-8080-exec-67] WriteLogAction - last practice date before processing: {}
+[DEBUG] 2020-05-06 16:16:18.006 [http-nio-8080-exec-67] WriteLogAction - 2020-05-05
+[DEBUG] 2020-05-06 16:16:18.006 [http-nio-8080-exec-67] WriteLogAction - new practice date: 2020-05-06
+[DEBUG] 2020-05-06 16:16:18.006 [http-nio-8080-exec-67] WriteLogAction - last practice date: 2020-05-05
+[DEBUG] 2020-05-06 16:16:18.007 [http-nio-8080-exec-67] WriteLogAction - 61
+[DEBUG] 2020-05-06 16:16:18.129 [http-nio-8080-exec-67] WriteLogAction - User(id=2, username=madBratsche, password=password, firstName=Jonathan, lastName=Dunlop, email=madbratsche@gmail.com, practiceCounter=61, birthDate=2004-01-12, city=Madison, state=WI, zipCode=53715, longestStreak=61)
+[DEBUG] 2020-05-06 16:16:18.130 [http-nio-8080-exec-67] WriteLogAction - last practice date after processing: 2020-05-05
+[DEBUG] 2020-05-06 16:25:43.268 [http-nio-8080-exec-83] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 16:26:10.490 [http-nio-8080-exec-70] WriteLogAction - generated date: 2020-05-06
+[DEBUG] 2020-05-06 16:26:10.491 [http-nio-8080-exec-70] WriteLogAction - log to insert: PracticeLog(id=0, practiceDate=2020-05-06, startTime=2020-05-06T16:00, endTime=2020-05-06T17:00, activities=Unaccompanied Bach, notes=<p>fdsafsf</p>, teacherComments=null)
+[DEBUG] 2020-05-06 16:26:10.492 [http-nio-8080-exec-70] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 16:26:10.570 [http-nio-8080-exec-70] WriteLogAction - [PracticeLog(id=3, practiceDate=2020-03-05, startTime=2020-03-05T01:01:01, endTime=2020-03-05T20:20:20, activities=Scales, Arpeggios, and Walton, notes=I practiced two 50-minute hours today. The first was spent playing scales and arpeggio sets, while the second was entirely devoted to the Walton concerto. I did a run-through of the first movement in preparation for my upcoming concerto competition, and I feel that I am rushing through difficult passages. Tomorrow, I will do some metronome work and continuously remind myself that I have more time than I think I do!, teacherComments=null), PracticeLog(id=4, practiceDate=2020-05-04, startTime=2020-05-05T02:01:01, endTime=2020-05-05T03:01:01, activities=Orchestra Music, notes=I worked on excerpts for a good long while today, just to keep my chops up. , teacherComments=null), PracticeLog(id=8, practiceDate=2020-05-06, startTime=2020-05-06T02:01:01, endTime=2020-05-06T03:02:02, activities=Excerpts, notes=I worked on excerpts...again., teacherComments=null)]
+[DEBUG] 2020-05-06 16:26:10.570 [http-nio-8080-exec-70] WriteLogAction - last practice date before processing: 2020-05-06
+[DEBUG] 2020-05-06 16:26:10.570 [http-nio-8080-exec-70] WriteLogAction - 2020-05-06
+[DEBUG] 2020-05-06 16:26:10.570 [http-nio-8080-exec-70] WriteLogAction - new practice date: 2020-05-06
+[DEBUG] 2020-05-06 16:26:10.570 [http-nio-8080-exec-70] WriteLogAction - last practice date: 2020-05-06
+[DEBUG] 2020-05-06 16:26:10.570 [http-nio-8080-exec-70] WriteLogAction - 62
+[DEBUG] 2020-05-06 16:26:10.702 [http-nio-8080-exec-70] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 16:26:10.763 [http-nio-8080-exec-70] WriteLogAction - last practice date after processing: 2020-05-05
+[DEBUG] 2020-05-06 16:30:12.737 [http-nio-8080-exec-87] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 16:31:21.135 [http-nio-8080-exec-100] WriteLogAction - generated date: 2020-05-06
+[DEBUG] 2020-05-06 16:31:21.136 [http-nio-8080-exec-100] WriteLogAction - log to insert: PracticeLog(id=0, practiceDate=2020-05-06, startTime=2020-05-06T14:30, endTime=2020-05-06T15:30, activities=Mozart, notes=<p>you heard me</p>, teacherComments=null)
+[DEBUG] 2020-05-06 16:31:21.137 [http-nio-8080-exec-100] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 16:31:21.246 [http-nio-8080-exec-100] WriteLogAction - [PracticeLog(id=3, practiceDate=2020-03-05, startTime=2020-03-05T01:01:01, endTime=2020-03-05T20:20:20, activities=Scales, Arpeggios, and Walton, notes=I practiced two 50-minute hours today. The first was spent playing scales and arpeggio sets, while the second was entirely devoted to the Walton concerto. I did a run-through of the first movement in preparation for my upcoming concerto competition, and I feel that I am rushing through difficult passages. Tomorrow, I will do some metronome work and continuously remind myself that I have more time than I think I do!, teacherComments=null), PracticeLog(id=4, practiceDate=2020-05-03, startTime=2020-05-05T02:01:01, endTime=2020-05-05T03:01:01, activities=Orchestra Music, notes=I worked on excerpts for a good long while today, just to keep my chops up. , teacherComments=null), PracticeLog(id=8, practiceDate=2020-05-05, startTime=2020-05-06T02:01:01, endTime=2020-05-06T03:02:02, activities=Excerpts, notes=I worked on excerpts...again., teacherComments=null), PracticeLog(id=9, practiceDate=2020-05-06, startTime=2020-05-06T16:00, endTime=2020-05-06T17:00, activities=Unaccompanied Bach, notes=<p>fdsafsf</p>, teacherComments=null)]
+[DEBUG] 2020-05-06 16:31:21.247 [http-nio-8080-exec-100] WriteLogAction - last practice date before processing: 2020-05-06
+[DEBUG] 2020-05-06 16:31:21.247 [http-nio-8080-exec-100] WriteLogAction - 2020-05-06
+[DEBUG] 2020-05-06 16:31:21.247 [http-nio-8080-exec-100] WriteLogAction - new practice date: 2020-05-06
+[DEBUG] 2020-05-06 16:31:21.247 [http-nio-8080-exec-100] WriteLogAction - last practice date: 2020-05-06
+[DEBUG] 2020-05-06 16:31:21.247 [http-nio-8080-exec-100] WriteLogAction - 63
+[DEBUG] 2020-05-06 16:31:21.306 [http-nio-8080-exec-100] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 16:31:21.374 [http-nio-8080-exec-100] WriteLogAction - last practice date after processing on line 88: 2020-05-06
+[DEBUG] 2020-05-06 16:36:11.366 [http-nio-8080-exec-100] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 16:36:49.647 [http-nio-8080-exec-101] WriteLogAction - generated date: 2020-05-06
+[DEBUG] 2020-05-06 16:36:49.650 [http-nio-8080-exec-101] WriteLogAction - log to insert: PracticeLog(id=0, practiceDate=2020-05-06, startTime=2020-05-06T13:00, endTime=2020-05-06T14:00, activities=Unaccompanied Bach, notes=<p>again again again</p>, teacherComments=null)
+[DEBUG] 2020-05-06 16:36:49.650 [http-nio-8080-exec-101] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 16:36:49.784 [http-nio-8080-exec-101] WriteLogAction - [PracticeLog(id=3, practiceDate=2020-03-05, startTime=2020-03-05T01:01:01, endTime=2020-03-05T20:20:20, activities=Scales, Arpeggios, and Walton, notes=I practiced two 50-minute hours today. The first was spent playing scales and arpeggio sets, while the second was entirely devoted to the Walton concerto. I did a run-through of the first movement in preparation for my upcoming concerto competition, and I feel that I am rushing through difficult passages. Tomorrow, I will do some metronome work and continuously remind myself that I have more time than I think I do!, teacherComments=null), PracticeLog(id=4, practiceDate=2020-05-05, startTime=2020-05-05T02:01:01, endTime=2020-05-05T03:01:01, activities=Orchestra Music, notes=I worked on excerpts for a good long while today, just to keep my chops up. , teacherComments=null)]
+[DEBUG] 2020-05-06 16:36:49.784 [http-nio-8080-exec-101] WriteLogAction - last practice date before processing: 2020-05-05
+[DEBUG] 2020-05-06 16:36:49.784 [http-nio-8080-exec-101] WriteLogAction - 2020-05-05
+[DEBUG] 2020-05-06 16:36:49.784 [http-nio-8080-exec-101] WriteLogAction - new practice date: 2020-05-06
+[DEBUG] 2020-05-06 16:36:49.784 [http-nio-8080-exec-101] WriteLogAction - last practice date: 2020-05-05
+[DEBUG] 2020-05-06 16:36:49.784 [http-nio-8080-exec-101] WriteLogAction - 64
+[DEBUG] 2020-05-06 16:36:49.863 [http-nio-8080-exec-101] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 16:36:49.936 [http-nio-8080-exec-101] WriteLogAction - last practice date after processing on line 88: 2020-05-05
+[DEBUG] 2020-05-06 16:43:03.866 [http-nio-8080-exec-113] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 16:43:34.411 [http-nio-8080-exec-119] WriteLogAction - generated date: 2020-05-06
+[DEBUG] 2020-05-06 16:43:34.412 [http-nio-8080-exec-119] WriteLogAction - log to insert: PracticeLog(id=0, practiceDate=2020-05-06, startTime=2020-05-06T12:00, endTime=2020-05-06T12:30, activities=scales, notes=<p>test</p>, teacherComments=null)
+[DEBUG] 2020-05-06 16:43:34.452 [http-nio-8080-exec-119] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 16:43:34.552 [http-nio-8080-exec-119] WriteLogAction - [PracticeLog(id=3, practiceDate=2020-03-05, startTime=2020-03-05T01:01:01, endTime=2020-03-05T20:20:20, activities=Scales, Arpeggios, and Walton, notes=I practiced two 50-minute hours today. The first was spent playing scales and arpeggio sets, while the second was entirely devoted to the Walton concerto. I did a run-through of the first movement in preparation for my upcoming concerto competition, and I feel that I am rushing through difficult passages. Tomorrow, I will do some metronome work and continuously remind myself that I have more time than I think I do!, teacherComments=null), PracticeLog(id=4, practiceDate=2020-05-05, startTime=2020-05-05T02:01:01, endTime=2020-05-05T03:01:01, activities=Orchestra Music, notes=I worked on excerpts for a good long while today, just to keep my chops up. , teacherComments=null), PracticeLog(id=13, practiceDate=2020-05-05, startTime=2020-05-06T12:00, endTime=2020-05-06T12:30, activities=scales, notes=<p>test</p>, teacherComments=null)]
+[DEBUG] 2020-05-06 16:43:34.552 [http-nio-8080-exec-119] WriteLogAction - last practice date before processing: 2020-05-05
+[DEBUG] 2020-05-06 16:43:34.552 [http-nio-8080-exec-119] WriteLogAction - 2020-05-05
+[DEBUG] 2020-05-06 16:43:34.553 [http-nio-8080-exec-119] WriteLogAction - new practice date: 2020-05-06
+[DEBUG] 2020-05-06 16:43:34.553 [http-nio-8080-exec-119] WriteLogAction - last practice date: 2020-05-05
+[DEBUG] 2020-05-06 16:43:34.553 [http-nio-8080-exec-119] WriteLogAction - 65
+[DEBUG] 2020-05-06 16:43:34.641 [http-nio-8080-exec-119] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 16:43:34.739 [http-nio-8080-exec-119] WriteLogAction - last practice date after processing on line 88: 2020-05-05
+[DEBUG] 2020-05-06 16:43:40.565 [http-nio-8080-exec-122] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 16:52:11.264 [http-nio-8080-exec-2] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 16:52:38.744 [http-nio-8080-exec-9] WriteLogAction - generated date: 2020-05-06
+[DEBUG] 2020-05-06 16:52:38.749 [http-nio-8080-exec-9] WriteLogAction - log to insert: PracticeLog(id=0, practiceDate=2020-05-06, startTime=2020-05-06T22:30, endTime=2020-05-06T22:31, activities=bach, notes=<p>lala</p>, teacherComments=null)
+[DEBUG] 2020-05-06 16:52:38.767 [http-nio-8080-exec-9] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 16:52:38.862 [http-nio-8080-exec-9] WriteLogAction - [PracticeLog(id=3, practiceDate=2020-03-05, startTime=2020-03-05T01:01:01, endTime=2020-03-05T20:20:20, activities=Scales, Arpeggios, and Walton, notes=I practiced two 50-minute hours today. The first was spent playing scales and arpeggio sets, while the second was entirely devoted to the Walton concerto. I did a run-through of the first movement in preparation for my upcoming concerto competition, and I feel that I am rushing through difficult passages. Tomorrow, I will do some metronome work and continuously remind myself that I have more time than I think I do!, teacherComments=null), PracticeLog(id=4, practiceDate=2020-05-04, startTime=2020-05-05T02:01:01, endTime=2020-05-05T03:01:01, activities=Orchestra Music, notes=I worked on excerpts for a good long while today, just to keep my chops up. , teacherComments=null)]
+[DEBUG] 2020-05-06 16:52:38.862 [http-nio-8080-exec-9] WriteLogAction - last practice date before processing: 2020-05-04
+[DEBUG] 2020-05-06 16:52:38.862 [http-nio-8080-exec-9] WriteLogAction - 2020-05-04
+[DEBUG] 2020-05-06 16:52:38.862 [http-nio-8080-exec-9] WriteLogAction - new practice date: 2020-05-06
+[DEBUG] 2020-05-06 16:52:38.862 [http-nio-8080-exec-9] WriteLogAction - last practice date: 2020-05-04
+[DEBUG] 2020-05-06 16:52:38.862 [http-nio-8080-exec-9] WriteLogAction - 0
+[DEBUG] 2020-05-06 16:52:48.027 [http-nio-8080-exec-1] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 16:54:31.599 [http-nio-8080-exec-6] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 16:57:19.035 [http-nio-8080-exec-11] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 16:57:47.499 [http-nio-8080-exec-13] WriteLogAction - generated date: 2020-05-06
+[DEBUG] 2020-05-06 16:57:47.500 [http-nio-8080-exec-13] WriteLogAction - log to insert: PracticeLog(id=0, practiceDate=2020-05-06, startTime=2020-05-06T12:30, endTime=2020-05-06T14:30, activities=Bach, notes=<p>hello</p>, teacherComments=null)
+[DEBUG] 2020-05-06 16:57:47.501 [http-nio-8080-exec-13] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 16:57:47.592 [http-nio-8080-exec-13] WriteLogAction - [PracticeLog(id=3, practiceDate=2020-03-05, startTime=2020-03-05T01:01:01, endTime=2020-03-05T20:20:20, activities=Scales, Arpeggios, and Walton, notes=I practiced two 50-minute hours today. The first was spent playing scales and arpeggio sets, while the second was entirely devoted to the Walton concerto. I did a run-through of the first movement in preparation for my upcoming concerto competition, and I feel that I am rushing through difficult passages. Tomorrow, I will do some metronome work and continuously remind myself that I have more time than I think I do!, teacherComments=null), PracticeLog(id=4, practiceDate=2020-05-03, startTime=2020-05-05T02:01:01, endTime=2020-05-05T03:01:01, activities=Orchestra Music, notes=I worked on excerpts for a good long while today, just to keep my chops up. , teacherComments=null), PracticeLog(id=14, practiceDate=2020-05-05, startTime=2020-05-06T22:30, endTime=2020-05-06T22:31, activities=bach, notes=<p>lala</p>, teacherComments=null)]
+[DEBUG] 2020-05-06 16:57:47.594 [http-nio-8080-exec-13] WriteLogAction - last practice date before processing: 2020-05-05
+[DEBUG] 2020-05-06 16:57:47.594 [http-nio-8080-exec-13] WriteLogAction - 2020-05-05
+[DEBUG] 2020-05-06 16:57:47.594 [http-nio-8080-exec-13] WriteLogAction - new practice date: 2020-05-06
+[DEBUG] 2020-05-06 16:57:47.594 [http-nio-8080-exec-13] WriteLogAction - last practice date: 2020-05-05
+[DEBUG] 2020-05-06 16:57:47.594 [http-nio-8080-exec-13] WriteLogAction - 1
+[DEBUG] 2020-05-06 16:57:47.682 [http-nio-8080-exec-13] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 16:57:47.745 [http-nio-8080-exec-13] WriteLogAction - last practice date after processing on line 88: 2020-05-05
+[DEBUG] 2020-05-06 16:57:49.897 [http-nio-8080-exec-14] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 17:08:25.054 [http-nio-8080-exec-26] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 17:08:52.345 [http-nio-8080-exec-30] WriteLogAction - generated date: 2020-05-06
+[DEBUG] 2020-05-06 17:08:52.346 [http-nio-8080-exec-30] WriteLogAction - log to insert: PracticeLog(id=0, practiceDate=2020-05-06, startTime=2020-05-06T14:30, endTime=2020-05-06T15:30, activities=lala, notes=<p>trala</p>, teacherComments=null)
+[DEBUG] 2020-05-06 17:08:52.348 [http-nio-8080-exec-30] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 17:08:52.436 [http-nio-8080-exec-30] WriteLogAction - [PracticeLog(id=3, practiceDate=2020-03-05, startTime=2020-03-05T01:01:01, endTime=2020-03-05T20:20:20, activities=Scales, Arpeggios, and Walton, notes=I practiced two 50-minute hours today. The first was spent playing scales and arpeggio sets, while the second was entirely devoted to the Walton concerto. I did a run-through of the first movement in preparation for my upcoming concerto competition, and I feel that I am rushing through difficult passages. Tomorrow, I will do some metronome work and continuously remind myself that I have more time than I think I do!, teacherComments=null), PracticeLog(id=15, practiceDate=2020-05-05, startTime=2020-05-06T12:30, endTime=2020-05-06T14:30, activities=Bach, notes=<p>hello</p>, teacherComments=null)]
+[DEBUG] 2020-05-06 17:08:52.436 [http-nio-8080-exec-30] WriteLogAction - last practice date before processing: 2020-05-05
+[DEBUG] 2020-05-06 17:08:52.436 [http-nio-8080-exec-30] WriteLogAction - 2020-05-05
+[DEBUG] 2020-05-06 17:08:52.436 [http-nio-8080-exec-30] WriteLogAction - new practice date: 2020-05-06
+[DEBUG] 2020-05-06 17:08:52.436 [http-nio-8080-exec-30] WriteLogAction - last practice date: 2020-05-05
+[DEBUG] 2020-05-06 17:08:52.436 [http-nio-8080-exec-30] WriteLogAction - 2
+[DEBUG] 2020-05-06 17:08:52.497 [http-nio-8080-exec-30] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 17:08:52.559 [http-nio-8080-exec-30] WriteLogAction - last practice date after processing on line 88: 2020-05-05
+[DEBUG] 2020-05-06 17:08:59.252 [http-nio-8080-exec-25] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 17:25:36.483 [main] GenericDao - Searching for entity with notes = Nat's Knapsack Strap Snapped
+[DEBUG] 2020-05-06 17:25:37.106 [main] GenericDao - Searching for order with activities = scales
+[DEBUG] 2020-05-06 17:31:50.950 [http-nio-8080-exec-6] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 17:32:23.979 [http-nio-8080-exec-1] WriteLogAction - generated date: 2020-05-06
+[DEBUG] 2020-05-06 17:32:23.987 [http-nio-8080-exec-1] WriteLogAction - log to insert: PracticeLog(id=0, practiceDate=2020-05-06, startTime=2020-05-06T12:00, endTime=2020-05-06T12:01, activities=Silly stuff, notes=<p>haha</p>, teacherComments=null)
+[DEBUG] 2020-05-06 17:32:24.011 [http-nio-8080-exec-1] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 17:32:24.036 [http-nio-8080-exec-1] WriteLogAction - []
+[DEBUG] 2020-05-06 17:38:42.617 [http-nio-8080-exec-4] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 17:39:06.268 [http-nio-8080-exec-13] WriteLogAction - generated date: 2020-05-06
+[DEBUG] 2020-05-06 17:39:06.270 [http-nio-8080-exec-13] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 17:40:46.363 [http-nio-8080-exec-16] WriteLogAction - generated date: 2020-05-06
+[DEBUG] 2020-05-06 17:40:46.364 [http-nio-8080-exec-16] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 17:40:46.455 [http-nio-8080-exec-16] WriteLogAction - 2
+[DEBUG] 2020-05-06 17:44:46.285 [http-nio-8080-exec-17] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 17:45:18.472 [http-nio-8080-exec-24] WriteLogAction - generated date: 2020-05-06
+[DEBUG] 2020-05-06 17:45:18.474 [http-nio-8080-exec-24] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 17:45:18.555 [http-nio-8080-exec-24] WriteLogAction - 2
+[DEBUG] 2020-05-06 17:59:29.445 [http-nio-8080-exec-25] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 18:02:11.018 [http-nio-8080-exec-41] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 18:04:42.062 [http-nio-8080-exec-45] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 18:05:01.219 [http-nio-8080-exec-57] WriteLogAction - generated date: 2020-05-06
+[DEBUG] 2020-05-06 18:05:01.221 [http-nio-8080-exec-57] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 18:07:22.557 [http-nio-8080-exec-57] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 18:07:40.381 [http-nio-8080-exec-64] WriteLogAction - generated date: 2020-05-06
+[DEBUG] 2020-05-06 18:07:40.382 [http-nio-8080-exec-64] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 18:10:38.437 [http-nio-8080-exec-76] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 18:11:08.345 [http-nio-8080-exec-78] WriteLogAction - generated date: 2020-05-06
+[DEBUG] 2020-05-06 18:11:08.348 [http-nio-8080-exec-78] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 18:11:08.427 [http-nio-8080-exec-78] WriteLogAction - 3
+[DEBUG] 2020-05-06 18:16:23.678 [http-nio-8080-exec-87] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 18:16:50.644 [http-nio-8080-exec-89] WriteLogAction - generated date: 2020-05-06
+[DEBUG] 2020-05-06 18:16:50.646 [http-nio-8080-exec-89] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 18:16:50.724 [http-nio-8080-exec-89] WriteLogAction - 4
+[DEBUG] 2020-05-06 18:19:35.808 [http-nio-8080-exec-88] WriteLogAction - generated date: 2020-05-06
+[DEBUG] 2020-05-06 18:19:35.809 [http-nio-8080-exec-88] GenericDao - Searching for entity with user = 2
+[DEBUG] 2020-05-06 18:19:35.921 [http-nio-8080-exec-88] WriteLogAction - 4
+[DEBUG] 2020-05-06 18:20:37.803 [http-nio-8080-exec-96] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 18:21:17.248 [http-nio-8080-exec-93] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 18:27:09.857 [http-nio-8080-exec-93] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 18:29:04.119 [http-nio-8080-exec-104] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 18:36:55.761 [http-nio-8080-exec-112] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 18:39:32.828 [http-nio-8080-exec-122] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 18:47:01.510 [http-nio-8080-exec-137] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-06 18:52:29.443 [http-nio-8080-exec-147] GenericDao - Searching for entity with username = madBratsche

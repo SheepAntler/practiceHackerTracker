@@ -43,7 +43,8 @@ public class WriteLogAction extends HttpServlet {
 
         // Create a new log with the form inputs
         LocalDate practiceDate = LocalDate.now();
-        log.debug(practiceDate);
+        LocalDateTime hailMaryInsertDate = LocalDateTime.now();
+        log.debug("generated date: {}", practiceDate);
         String startTime = practiceDate.toString() + " " + req.getParameter("startTime");
         String endTime = practiceDate.toString() + " " + req.getParameter("endTime");
         LocalDateTime startDateTime = LocalDateTime.parse(startTime, formatter);
@@ -51,47 +52,45 @@ public class WriteLogAction extends HttpServlet {
         String activities = req.getParameter("activities");
         String notes = req.getParameter("notes");
 
-        log.debug( startDateTime + " " + endDateTime);
-
-        PracticeLog newLog = new PracticeLog(currentUser, practiceDate, startDateTime, endDateTime, activities, notes, null);
+        PracticeLog newLog = new PracticeLog(currentUser, hailMaryInsertDate, startDateTime, endDateTime, activities, notes, null);
 
         // Get the last date the user entered
         List<PracticeLog> currentUserLogs = new ArrayList<PracticeLog>(logDao.getByPropertyEqual("user", currentUser.getId()));
-        log.debug(currentUserLogs);
-        LocalDate lastPracticeDate = currentUserLogs.get(currentUserLogs.size() - 1).getPracticeDate();
-        log.debug(lastPracticeDate);
 
-        // If the user isn't logging two sessions in the same day...
-        log.debug("new practice date: {}", practiceDate);
-        log.debug("last practice date: {}", lastPracticeDate);
-        if (practiceDate != lastPracticeDate) {
-            // calculate the difference between the two dates
-            int daysSinceLastPractice = (int) ChronoUnit.DAYS.between(lastPracticeDate, practiceDate);
-            log.debug(daysSinceLastPractice);
-            // if the timeSinceLastPractice date is greater than 1 day, reset practice counter and update user
-            if (daysSinceLastPractice > 1) {
-                currentUser.setPracticeCounter(0);
-                log.debug(currentUser.getPracticeCounter());
-            } else {
-                // otherwise, increment practice counter
-                int currentCounter = currentUser.getPracticeCounter();
-                int incrementedCounter = currentCounter + 1;
-                log.debug(incrementedCounter);
-                // if that counter is greater than the longest streak, update the longest streak!
-                if (incrementedCounter > currentUser.getLongestStreak()) {
-                    currentUser.setLongestStreak(incrementedCounter);
+        if (currentUserLogs.size() == 0) {
+            currentUser.setPracticeCounter(1);
+            currentUser.setLongestStreak(1);
+        } else {
+            LocalDateTime lastPracticeDate = currentUserLogs.get(currentUserLogs.size() - 1).getPracticeDate();
+
+            // If the user isn't logging two sessions in the same day...
+            if (hailMaryInsertDate != lastPracticeDate) {
+                // calculate the difference between the two dates
+                int daysSinceLastPractice = (int) ChronoUnit.DAYS.between(lastPracticeDate, hailMaryInsertDate);
+                // if the timeSinceLastPractice date is greater than 1 day, reset practice counter and update user
+                if (daysSinceLastPractice > 1) {
+                    currentUser.setPracticeCounter(0);
+                    log.debug(currentUser.getPracticeCounter());
+                } else {
+                    // otherwise, increment practice counter
+                    int currentCounter = currentUser.getPracticeCounter();
+                    int incrementedCounter = currentCounter + 1;
+                    log.debug(incrementedCounter);
+                    // if that counter is greater than the longest streak, update the longest streak!
+                    if (incrementedCounter > currentUser.getLongestStreak()) {
+                        currentUser.setLongestStreak(incrementedCounter);
+                    }
+
+                    currentUser.setPracticeCounter(incrementedCounter);
                 }
-
-                currentUser.setPracticeCounter(incrementedCounter);
-
+                // update the user with all these changes
+                //userDao.saveOrUpdate(currentUser);
             }
-            // update the user with all these changes
-            userDao.saveOrUpdate(currentUser);
-            log.debug(userDao.getById(currentUser.getId()));
         }
-
         // save the log
-        //logDao.insert(newLog);
+        logDao.insert(newLog);
+
+        userDao.saveOrUpdate(currentUser);
 
         resp.sendRedirect(req.getContextPath() + "/logWriter.jsp");
     }

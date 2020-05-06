@@ -26,7 +26,7 @@ public class PracticeLog {
     private int id;
 
     @Column(name = "practice_date")
-    private LocalDate practiceDate;
+    private LocalDateTime practiceDate;
 
     @Column(name = "start_time")
     private LocalDateTime startTime;
@@ -48,7 +48,7 @@ public class PracticeLog {
     @ManyToOne
     private User user;
 
-    public PracticeLog(User user, LocalDate practiceDate, LocalDateTime startTime, LocalDateTime endTime, String activities, String notes, String teacherComments) {
+    public PracticeLog(User user, LocalDateTime practiceDate, LocalDateTime startTime, LocalDateTime endTime, String activities, String notes, String teacherComments) {
         this.user = user;
         this.practiceDate = practiceDate;
         this.startTime = startTime;
