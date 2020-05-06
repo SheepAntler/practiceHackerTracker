@@ -41,17 +41,13 @@ public class CreateStudioAction extends HttpServlet {
         String studioState = req.getParameter("studioState");
         Integer studioZip = Integer.parseInt(req.getParameter("studioZip"));
 
+        // Create the new studio and insert it
         Studio newStudio = new Studio(currentUser, studioInstrument, studioName, studioAddress, studioCity, studioState, studioZip);
-
         studioDao.insert(newStudio);
 
         User updatedUser = (User)userDao.getById(storedUser.getId());
-
-        req.removeAttribute("user");
-        req.setAttribute("user", updatedUser);
-
-//        RequestDispatcher dispatcher = req.getRequestDispatcher("/teacherAdmin.jsp");
-//        dispatcher.forward(req, resp);
+        session.removeAttribute("user");
+        session.setAttribute("user", updatedUser);
 
         resp.sendRedirect(req.getContextPath() + "/teacherAdmin.jsp");
 

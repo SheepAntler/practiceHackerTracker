@@ -68,3 +68,7 @@ v
 Fsrc/main/java/stalterclouse/elspeth/controller/CreateStudioAction.java,f/d/fda1ef6d92def5fb518b1f1f534ee117046b39a0
 P
  src/main/webapp/teacherAdmin.jsp,5/d/5d8952694fb2b337a9ba1bb282274e692742f16f
+{
+Ksrc/main/java/stalterclouse/elspeth/controller/WritePracticeHackAction.java,c/6/c6d1a32829778280a7a38eaa9e117791c55aad9f
+I
+src/main/webapp/index.jsp,8/e/8e6d3b70c9f5b02570779b0441540d45eceb0ded

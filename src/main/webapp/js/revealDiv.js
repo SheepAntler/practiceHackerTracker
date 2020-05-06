@@ -7,6 +7,6 @@ $( ".showHideAdd" ).click(function() {
 });
 
 $( ".showHideDelete" ).click(function() {
-    $('#hiddenDelete').toggle();
+    $('.hiddenDelete').toggle();
 });
 
