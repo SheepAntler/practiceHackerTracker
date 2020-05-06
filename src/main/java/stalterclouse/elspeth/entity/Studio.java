@@ -49,7 +49,7 @@ public class Studio {
     // This ManyToMany relationship is brought to you by this Mkyong tutorial: https://mkyong.com/hibernate/hibernate-many-to-many-relationship-example-annotation/
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST) // Memo: I had to change this to PERSIST because deleting 1 user cascaded all the way around the circle and depleted most of my database
     @OrderBy("practice_counter desc")
     @JoinTable(name = "studio_students",
             joinColumns = { @JoinColumn(name = "studio_id", nullable = false, updatable = false) },

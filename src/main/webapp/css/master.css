@@ -71,7 +71,7 @@ p {
     font-weight: bold;
 }
 
-#hiddenDiv {
+#hiddenDiv, #hiddenAdd, #hiddenDelete {
     display: none;
 }
 

@@ -29,6 +29,11 @@
                 <label for="editor">Practice Hack: </label>
                 <textarea id="editor" name="notes"></textarea>
                 <%-- TODO In edit mode: output the current practice hack text between the textarea tags! --%>
+                <%-- TODO use the following commented-out code to help you select a particular hack to edit! --%>
+<%--                <form action="closeStudio">--%>
+<%--                    <input type="hidden" name="studioToClose" value="${studio.id}"/>--%>
+<%--                    <button type="submit">Close Studio</button>--%>
+<%--                </form>--%>
             </div>
             <br><br>
             <button type="submit" class="btn btn-secondary">Save Log</button>

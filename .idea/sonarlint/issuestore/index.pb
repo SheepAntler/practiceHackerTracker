@@ -60,3 +60,11 @@ G
 logs/practiceHacker.log,7/2/7277f9085972cfb033e0a475f11779b055768374
 u
 Esrc/main/java/stalterclouse/elspeth/controller/LeaveStudioAction.java,b/2/b28aedcf548510b6f9a5737cc3e11da087ec2966
+t
+Dsrc/main/java/stalterclouse/elspeth/controller/JoinStudioAction.java,e/e/ee481b5ff69bf3d9fdfe6a94cb868e67c4c136c8
+u
+Esrc/main/java/stalterclouse/elspeth/controller/CloseStudioAction.java,e/4/e4f2afdbae5f0561468e126162929faba3c66bc8
+v
+Fsrc/main/java/stalterclouse/elspeth/controller/CreateStudioAction.java,f/d/fda1ef6d92def5fb518b1f1f534ee117046b39a0
+P
+ src/main/webapp/teacherAdmin.jsp,5/d/5d8952694fb2b337a9ba1bb282274e692742f16f

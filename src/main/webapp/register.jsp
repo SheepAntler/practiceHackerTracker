@@ -53,11 +53,11 @@
                 <div class="row">
                     <div class="form-group col-sm-6">
                         <label for="studioInstrument">Instrument: </label>
-                        <input type="text" class="form-control" id="studioInstrument">
+                        <input type="text" class="form-control" id="studioInstrument" name="studioInstrument" required>
                     </div>
                     <div class="form-group col-sm-6">
-                        <label for="studioName">Studio Name: </label>
-                        <input type="text" class="form-control" id="studioName" name="studioName">
+                        <label for="studioName">Studio Organization: </label>
+                        <input type="text" class="form-control" id="studioName" name="studioName" required>
                     </div>
                 </div>
                 <div class="form-group">

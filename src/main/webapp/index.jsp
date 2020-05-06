@@ -15,10 +15,12 @@
         <c:when test="${pageContext.request.isUserInRole('teacher')}">
             <div class="container textBox">
                 <c:forEach var="studio" items="${studios}">
-                    <h1 class="mainHeading text-center">${studio.key}</h1>
-                    <c:forEach var="student" items="${studio.value}">
-                        <p>${student.firstName} ${student.lastName}: Current Counter = ${student.practiceCounter} & Longest Streak = ${student.longestStreak}</p>
-                    </c:forEach>
+                    <c:if test="${!empty studio.value && studio.value != null}">
+                        <h1 class="mainHeading text-center">${studio.key}</h1>
+                        <c:forEach var="student" items="${studio.value}">
+                            <p>${student.firstName} ${student.lastName}: Current Counter = ${student.practiceCounter} & Longest Streak = ${student.longestStreak}</p>
+                        </c:forEach>
+                    </c:if>
                 </c:forEach>
             </div>
         </c:when>

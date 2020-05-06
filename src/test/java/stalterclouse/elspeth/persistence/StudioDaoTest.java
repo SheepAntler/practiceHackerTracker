@@ -198,15 +198,17 @@ class StudioDaoTest {
     }
 
     /**
-     * Verifies that I can delete an entire studio.
+     * Verifies that I can delete an entire studio without destroying my database
      */
     @Test
     void testDeleteStudio() {
         Studio closingStudio = (Studio)genericDao.getById(5);
         genericDao.delete(closingStudio);
 
-//        GenericDao userDao = new GenericDao(User.class);
-//        userDao.delete(userDao.getById(1));
+        GenericDao userDao = new GenericDao(User.class);
+        userDao.delete(userDao.getById(1));
+
+        assertNull(userDao.getById(1));
 
     }
 }
