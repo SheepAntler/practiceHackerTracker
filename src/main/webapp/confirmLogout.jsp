@@ -1,16 +1,14 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: student
-  Date: 5/7/20
-  Time: 1:03 AM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@include file="templates/head.jsp"%>
 <html>
-<head>
-    <title>$Title$</title>
-</head>
 <body>
-$END$
+    <%@include file="templates/navbar.jsp"%>
+    <div class="container text-center textBox homepageBox">
+        <h1 class="mainHeading indexHeading">Are you sure you're ready to sign off?</h1>
+        <div class="row buttonContainer">
+            <a class="btn btn-secondary col-4 button" href="logout">Goodbye!</a>
+            <a class="btn btn-dark col-4 button" href="index.jsp">No; I'd like to stay.</a>
+        </div>
+    </div>
 </body>
 </html>
+

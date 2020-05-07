@@ -102,6 +102,11 @@ label {
     color: black;
 }
 
+.studioTitleOption {
+    background-color: #474a4a;
+    color: white;
+}
+
 /* tables */
 td {
     color: black;

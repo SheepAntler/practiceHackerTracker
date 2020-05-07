@@ -84,3 +84,21 @@ k
 ;src/main/java/stalterclouse/elspeth/entity/PracticeLog.java,4/d/4d1f93b39640e57cfea97523183e6789aa982d6e
 M
 src/main/webapp/viewMyLog.jsp,b/1/b1c15e505d1b494f2b3393b3aa002b25e5fc5b47
+L
+src/main/webapp/500Error.jsp,3/6/36bb03f3e4b2b2ad7c0724be0680a8f92166dc0a
+G
+src/main/webapp/faq.jsp,a/2/a20ad7988929981061b5fe8f5d70a76c17fc4175
+Q
+!src/main/webapp/confirmLogout.jsp,1/f/1f239d0b9d03c5e8ed421754aabfa6fbde3baa1f
+i
+9src/main/java/stalterclouse/elspeth/controller/Dates.java,9/b/9bd50941146473b838651c60946fe9f6c18508a0
+U
+%src/main/webapp/WEB-INF/functions.tld,1/9/1999c0bedfe0f533cfaae62ee9b818437b6f80f2
+L
+src/main/webapp/404Error.jsp,f/2/f24189eafdc1645ce8367cdff4c2f6481d7339a9
+N
+src/main/webapp/loginError.jsp,6/6/66fdb8fb865773418e3088a0291153432b3309e2
+L
+src/main/webapp/403Error.jsp,c/f/cf215cb83b1bee3343a03fca0193f40654e699d4
+O
+src/main/webapp/WEB-INF/web.xml,2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392

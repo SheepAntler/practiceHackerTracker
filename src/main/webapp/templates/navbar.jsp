@@ -82,7 +82,7 @@
                         </li>
                     </c:if>
                     <li class="nav-item">
-                        <a class="nav-link" href="logout">Log Out</a>
+                        <a class="nav-link" href="confirmLogout.jsp">Log Out</a>
                     </li>
                 </c:when>
                 <c:otherwise>

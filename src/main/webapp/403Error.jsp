@@ -1,16 +1,13 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: student
-  Date: 5/7/20
-  Time: 1:36 AM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+<%@include file="templates/head.jsp"%>
 
+<html>
+<body>
+<%@include file="templates/navbar.jsp"%>
+<div class="container textBox">
+    <h1 class="mainHeading text-center">Oh Dear...</h1>
+    <h2 class="subHeading text-center">We're so sorry; it seems you're not authorized to view this page!</h2>
+    <p class="text-center">You <i>can</i> <a href="dashboard">return to your dashboard</a>, though!</p>
+</div>
 </body>
 </html>
+

@@ -1,16 +1,15 @@
 
+i
+java:S1989b"SHandle the following exception that could be thrown by "sendRedirect": IOException.(ÍÏœÉ
 J
 java:S3740&"/Provide the parametrized type for this generic.(Ôİôöùÿÿÿÿ
 E
 java:S3740'"/Provide the parametrized type for this generic.(˜Ãî›
-]	java:S125W"<This block of commented-out lines of code should be removed.(£“ˆüÿÿÿÿ8ï©–â.
-{
-java:S2293:"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÕÔØüÿÿÿÿ8ÎÉüÚ.
 J
 java:S3740&"/Provide the parametrized type for this generic.(Ôİôöùÿÿÿÿ
+E
+java:S3740'"/Provide the parametrized type for this generic.(˜Ãî›
 `
-java:S1155<">Use isEmpty() to check whether the collection is empty or not.(¿İ´Îøÿÿÿÿ8Èÿà.
-E
-java:S3740'"/Provide the parametrized type for this generic.(˜Ãî›
-n
-java:S1989_"SHandle the following exception that could be thrown by "sendRedirect": IOException.(óÄåÔùÿÿÿÿ
+java:S1155;">Use isEmpty() to check whether the collection is empty or not.(¿İ´Îøÿÿÿÿ8Èÿà.
+{
+java:S22939"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÕÔØüÿÿÿÿ8ÎÉüÚ.

@@ -11,7 +11,7 @@
             <select name="studentsInStudio" class="form-control" id="studentsInStudio">
                 <option value="" disabled selected>Choose a Student...</option>
                 <c:forEach var="studio" items="${studios}">
-                    <option value="" disabled>${studio.key}</option>
+                    <option value="" class="studioTitleOption" disabled>${studio.key}</option>
                     <c:forEach var="student" items="${studio.value}">
                         <option value="${student.username}">${student.firstName} ${student.lastName}</option>
                     </c:forEach>

@@ -16,3 +16,6 @@
 [DEBUG] 2020-05-07 00:00:50.002 [http-nio-8080-exec-7] GenericDao - Searching for entity with user = User(id=3, username=saveTheViola, password=password, firstName=Viola, lastName=Happenstance, email=violaViolist@gmail.com, practiceCounter=102, birthDate=1990-01-12, city=Madison, state=WI, zipCode=53711, longestStreak=101)
 [DEBUG] 2020-05-07 00:50:13.619 [http-nio-8080-exec-27] GenericDao - Searching for entity with username = madBratsche
 [DEBUG] 2020-05-07 00:50:22.699 [http-nio-8080-exec-23] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-07 01:10:22.270 [http-nio-8080-exec-22] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 01:22:34.248 [http-nio-8080-exec-51] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-07 01:32:07.876 [http-nio-8080-exec-58] GenericDao - Searching for entity with username = madBratsche
