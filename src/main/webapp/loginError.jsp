@@ -1,18 +1,13 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: student
-  Date: 3/9/20
-  Time: 3:14 AM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@include file="templates/head.jsp"%>
+
 <html>
-<head>
-    <title>Login Failed</title>
-</head>
 <body>
-    Ruh-roh! Looks like your login failed. Please try again!
-    <%-- TODO make this error message BEAUTIFUL! --%>
-    <%-- TODO make error messages for 404, 500, and 501--see your FreewayForecasts example --%>
+    <%@include file="templates/navbar.jsp"%>
+    <div class="container textBox">
+        <h1 class="mainHeading text-center">Oh Dear...</h1>
+        <h2 class="subHeading text-center">We're so sorry; it seems you're not authorized to view this page!</h2>
+        <p class="text-center">If you think there's been a mistake, please <a href="dashboard">Try Again</a>!</p>
+    </div>
 </body>
 </html>
+

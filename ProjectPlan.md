@@ -53,14 +53,14 @@
 - [x] Fix Role class/roles table
 - [x] Complete implementation/testing of the Practice Log and Studio tables
 - [x] Complete implementation/testing the Practice Log and Studio entities
-- [ ] Add update/delete functionality in JSP for user and role 
+- [x] Add update/delete functionality in JSP for user and role 
 - [x] Prepare for Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J is implemented (no System.out.printlns), class design and any other diagrams you plan to use have been created.
 
 ### Week 7 - CHECKPOINT 2
 
 - [x] index JSP
-- [ ] teacher search JSP
-- [ ] YouTube Video Search
+- [x] studio search JSP
+- [ ] YouTube Video Search?!?
 - [x] Create database in AWS
 - [x] Deploy to AWS (Woohoo!)
 - [x] Set up local authentication 
@@ -73,8 +73,8 @@
 (Hardcore Teacher account week--lots of CRUD)
 - [x] Integration with IMSLP API
 - [x] Build the Practice Hacks entity 
-- [ ] Build the Practice Hacks CRUD JSPs
-- [ ] Build the CRUD JSPs for "My Studio"
+- [x] Build the Practice Hacks CRUD JSPs
+- [x] Build the CRUD JSPs for "My Studio"
 - [x] Get ready for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented.
 - [x] CHECK THIS BOX IF YOU GOT THIS.
 
@@ -86,18 +86,18 @@
    - [ ] Javadoc
    - [ ] Code coverage in tests
    - [ ] Clean things up! 
-- [ ] Review rubric - am I on target?
+- [x] Review rubric - am I on target?
 
 ### Week 10
 
-- [ ] Search result pagination 
-- [ ] Limit Log results as specified by user (if you haven't already) 
+- [ ] Process Search Results (*Note: Things got complicated with API Integration; I'm rethinking it quite a bit here) 
+- [x] Limit Student Log results as specified by user (if you haven't already) 
 - [ ] Unit test API integration(s)
 
 ### Week 11 - Team Project Work Week 
 
-- [ ] Begin "finishing touches" amidst team project work (IF you have time to spare)
-- [ ] Put TODOs in your code! Prepare for the final push!
+- [x] Begin "finishing touches" amidst team project work (IF you have time to spare)
+- [x] Put TODOs in your code! Prepare for the final push!
 - [ ] Review Rubric - am I STILL on target?
 
 ### Week 12 - Team Project Due 
