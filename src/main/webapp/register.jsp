@@ -1,11 +1,11 @@
 <%@include file="templates/head.jsp"%>
-
+<%-- TODO add a little RegEx to this form --%>
 <html>
 <body>
 <%@include file="templates/navbar.jsp"%>
     <div class="container textBox formBox">
         <h1 class="text-center mainHeading">Create an Account</h1>
-        <form>
+        <form action="createAccount">
             <hr />
             <h3 class="minorHeading text-center">A Little Basic Info...</h3>
             <hr />
@@ -16,11 +16,12 @@
             <div class="row">
                 <div class="form-group col-sm-6">
                     <label for="password">Password: </label>
-                    <input type="text" class="form-control" id="password" name="password" required>
+                    <input type="password" class="form-control" id="password" name="password" required onkeyup="checkPasswords();">
                 </div>
                 <div class="form-group col-sm-6">
-                    <label for="repeatPassword">Retype Password: </label>
-                    <input type="text" class="form-control" id="repeatPassword" name="repeatPassword" required>
+                    <label for="confirmPassword">Confirm Password: </label>
+                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required onkeyup="checkPasswords();">
+                    <span id="message"></span>
                 </div>
             </div>
             <div class="form-group">
@@ -155,10 +156,12 @@
                 </div>
             </div>
             <br><br>
-            <button type="submit" class="btn btn-dark">Create My Account</button>
+            <button type="submit" class="btn btn-secondary">Create My Account</button>
+            <button type="reset" class="btn btn-dark">Start Over</button>
         </form>
     </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/responsiveForm.js"></script>
+<script src="js/passwordCheck.js"></script>
 </body>
 </html>
