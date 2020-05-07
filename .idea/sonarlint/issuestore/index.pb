@@ -72,3 +72,15 @@ P
 Ksrc/main/java/stalterclouse/elspeth/controller/WritePracticeHackAction.java,c/6/c6d1a32829778280a7a38eaa9e117791c55aad9f
 I
 src/main/webapp/index.jsp,8/e/8e6d3b70c9f5b02570779b0441540d45eceb0ded
+M
+src/main/webapp/logWriter.jsp,7/8/78fdb79fe85cb15cca7c4564c1a3ea9cc4130cb0
+w
+Gsrc/test/java/stalterclouse/elspeth/persistence/PracticeLogDaoTest.java,e/0/e025c17a4dbfb162fa4e09250740b7e5295a0444
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+r
+Bsrc/main/java/stalterclouse/elspeth/controller/WriteLogAction.java,2/c/2ca24ffa740b8db7d2466ebc7f3877c992b99b20
+k
+;src/main/java/stalterclouse/elspeth/entity/PracticeLog.java,4/d/4d1f93b39640e57cfea97523183e6789aa982d6e
+M
+src/main/webapp/viewMyLog.jsp,b/1/b1c15e505d1b494f2b3393b3aa002b25e5fc5b47

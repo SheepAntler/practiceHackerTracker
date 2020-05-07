@@ -42,17 +42,16 @@ public class WriteLogAction extends HttpServlet {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 
         // Create a new log with the form inputs
-        LocalDate practiceDate = LocalDate.now();
-        LocalDateTime hailMaryInsertDate = LocalDateTime.now();
-        log.debug("generated date: {}", practiceDate);
-        String startTime = practiceDate.toString() + " " + req.getParameter("startTime");
-        String endTime = practiceDate.toString() + " " + req.getParameter("endTime");
+        LocalDate simplePracticeDate = LocalDate.now();
+        LocalDateTime practiceDate = LocalDateTime.now();
+        String startTime = simplePracticeDate.toString() + " " + req.getParameter("startTime");
+        String endTime = simplePracticeDate.toString() + " " + req.getParameter("endTime");
         LocalDateTime startDateTime = LocalDateTime.parse(startTime, formatter);
         LocalDateTime endDateTime = LocalDateTime.parse(endTime, formatter);
         String activities = req.getParameter("activities");
         String notes = req.getParameter("notes");
 
-        PracticeLog newLog = new PracticeLog(currentUser, hailMaryInsertDate, startDateTime, endDateTime, activities, notes, null);
+        PracticeLog newLog = new PracticeLog(currentUser, practiceDate, startDateTime, endDateTime, activities, notes, null);
 
         // Get the last date the user entered
         List<PracticeLog> currentUserLogs = new ArrayList<PracticeLog>(logDao.getByPropertyEqual("user", currentUser.getId()));
@@ -64,9 +63,9 @@ public class WriteLogAction extends HttpServlet {
             LocalDateTime lastPracticeDate = currentUserLogs.get(currentUserLogs.size() - 1).getPracticeDate();
 
             // If the user isn't logging two sessions in the same day...
-            if (hailMaryInsertDate != lastPracticeDate) {
+            if (practiceDate != lastPracticeDate) {
                 // calculate the difference between the two dates
-                int daysSinceLastPractice = (int) ChronoUnit.DAYS.between(lastPracticeDate, hailMaryInsertDate);
+                int daysSinceLastPractice = (int) ChronoUnit.DAYS.between(lastPracticeDate, practiceDate);
                 // if the timeSinceLastPractice date is greater than 1 day, reset practice counter and update user
                 if (daysSinceLastPractice > 1) {
                     currentUser.setPracticeCounter(0);
@@ -89,9 +88,15 @@ public class WriteLogAction extends HttpServlet {
         }
         // save the log
         logDao.insert(newLog);
-
+        // update the user with whatever changes might have been made
         userDao.saveOrUpdate(currentUser);
 
-        resp.sendRedirect(req.getContextPath() + "/logWriter.jsp");
+        // update the user in the session
+        User updatedUser = (User)userDao.getById(currentUser.getId());
+
+        session.removeAttribute("user");
+        session.setAttribute("user", updatedUser);
+
+        resp.sendRedirect(req.getContextPath() + "/viewMyLog.jsp");
     }
 }

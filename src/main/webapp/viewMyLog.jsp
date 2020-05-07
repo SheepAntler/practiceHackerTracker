@@ -7,7 +7,7 @@
 
         <c:forEach var="log" items="${user.practiceLogs}">
             <p>${log.practiceDate}</p>
-            <p>Calculated Duration</p>
+            <p>${log.practiceDuration} minutes</p>
             <p>${log.activities}</p>
             <p>${log.notes}</p>
         </c:forEach>
