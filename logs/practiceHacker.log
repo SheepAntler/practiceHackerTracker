@@ -19,3 +19,38 @@
 [DEBUG] 2020-05-07 01:10:22.270 [http-nio-8080-exec-22] GenericDao - Searching for entity with username = sheepAntler
 [DEBUG] 2020-05-07 01:22:34.248 [http-nio-8080-exec-51] GenericDao - Searching for entity with username = saveTheViola
 [DEBUG] 2020-05-07 01:32:07.876 [http-nio-8080-exec-58] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-07 12:35:58.473 [http-nio-8080-exec-7] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 12:36:38.219 [http-nio-8080-exec-2] GenericDao - Searching for entity with user = 1
+[DEBUG] 2020-05-07 12:36:38.258 [http-nio-8080-exec-2] WriteLogAction - 0
+[DEBUG] 2020-05-07 12:36:45.343 [http-nio-8080-exec-3] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 12:36:52.362 [http-nio-8080-exec-5] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 12:37:07.701 [http-nio-8080-exec-2] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 12:39:28.870 [http-nio-8080-exec-6] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 12:39:57.134 [http-nio-8080-exec-12] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 12:41:36.468 [http-nio-8080-exec-15] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 12:42:55.264 [http-nio-8080-exec-28] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 12:53:53.712 [http-nio-8080-exec-33] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 12:55:51.757 [http-nio-8080-exec-45] GenericDao - Searching for entity with user = 1
+[DEBUG] 2020-05-07 12:55:51.781 [http-nio-8080-exec-45] WriteLogAction - finding last practice date: 2020-05-06T12:36:38
+[DEBUG] 2020-05-07 12:55:51.781 [http-nio-8080-exec-45] WriteLogAction - last practice date is NOT the same as current practice date!
+[DEBUG] 2020-05-07 12:55:51.781 [http-nio-8080-exec-45] WriteLogAction - calculating days since last practice: 1
+[DEBUG] 2020-05-07 12:55:51.782 [http-nio-8080-exec-45] WriteLogAction - last practice was yesterday--awesome!
+[DEBUG] 2020-05-07 12:55:51.782 [http-nio-8080-exec-45] WriteLogAction - user counter was incremented to: 1
+[DEBUG] 2020-05-07 12:55:51.827 [http-nio-8080-exec-45] WriteLogAction - user before update: User(id=1, username=sheepAntler, password=password, firstName=Elspeth, lastName=Stalter, email=sheepantler@gmail.com, practiceCounter=1, birthDate=1989-12-25, city=Madison, state=WI, zipCode=53703, longestStreak=100)
+[DEBUG] 2020-05-07 12:55:51.936 [http-nio-8080-exec-45] WriteLogAction - user after update: User(id=1, username=sheepAntler, password=password, firstName=Elspeth, lastName=Stalter, email=sheepantler@gmail.com, practiceCounter=1, birthDate=1989-12-25, city=Madison, state=WI, zipCode=53703, longestStreak=100)
+[DEBUG] 2020-05-07 12:55:55.975 [http-nio-8080-exec-47] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 13:12:30.935 [http-nio-8080-exec-53] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 13:44:48.514 [http-nio-8080-exec-52] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 13:51:23.665 [http-nio-8080-exec-70] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 13:53:00.565 [http-nio-8080-exec-80] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 13:55:29.383 [http-nio-8080-exec-89] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 13:56:59.445 [http-nio-8080-exec-2] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 14:00:29.094 [http-nio-8080-exec-10] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 14:02:46.095 [http-nio-8080-exec-13] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 14:04:10.998 [http-nio-8080-exec-15] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 14:07:20.040 [http-nio-8080-exec-4] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 14:08:43.797 [http-nio-8080-exec-9] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 14:16:10.373 [http-nio-8080-exec-20] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 14:19:11.791 [http-nio-8080-exec-23] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 14:21:53.862 [http-nio-8080-exec-37] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-07 14:49:07.484 [http-nio-8080-exec-55] GenericDao - Searching for entity with username = sheepAntler

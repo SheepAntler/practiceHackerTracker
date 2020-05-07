@@ -1,42 +1,110 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@include file="templates/head.jsp"%>
 
-<script type="text/javascript" class="init">
-    $(document).ready( function () {
-        $('#userTable').DataTable();
-    } );
-</script>
-
 <html>
 <body>
-<%@include file="templates/navbar.jsp"%>
-<div class="container textBox">
-    <h1 class="mainHeading text-center">My Profile</h1>
-    <div class="container-fluid">
-        <table id="userTable" class="display" cellspacing="0" width="100%">
-            <thead>
-                <th>User ID</th>
-                <th>Username</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Instrument</th>
-                <th>Role</th>
-            </thead>
-            <tbody>
-            <c:forEach var="user" items="${users}">
-                <tr>
-                    <td>${user.id}</td>
-                    <td>${user.username}</td>
-                    <td>${user.firstName}</td>
-                    <td>${user.lastName}</td>
-                    <td>${user.instrument.instrument}</td>
-                    <td>${user.role.role}</td>
-                </tr>
-            </c:forEach>
-            </tbody>
-        </table>
+    <%@include file="templates/navbar.jsp"%>
+    <div class="container textBox">
+        <h1 class="mainHeading text-center">My Profile</h1>
+        <div class="accordion" id="profileViewer">
+            <div class="card bg-dark text-light">
+                <div class="card-header" id="viewProfile">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link accordionLink" type="button" data-toggle="collapse" data-target="#teacherInfo" aria-expanded="true" aria-controls="teacherInfo">
+                            View Profile
+                        </button>
+                    </h2>
+                </div>
+                <div id="teacherInfo" class="collapse show" aria-labelledby="viewProfile" data-parent="#profileViewer">
+                    <div class="card-body">
+                        <table class="table table-striped table-dark">
+                            <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Username</th>
+                                <th scope="col">Instrument</th>
+                                <th scope="col">Skill Level</th>
+                                <th scope="col">Email Address</th>
+                                <th scope="col">Address</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="text-light"><i>${user.firstName} ${user.lastName}</i></td>
+                                <td class="text-light"><i>${user.username}</i></td>
+                                <td class="text-light"><i>${user.instrument.instrument}</i></td>
+                                <td class="text-light"><i>${user.instrument.skillLevel}</i></td>
+                                <td class="text-light"><i>${user.email}</i></td>
+                                <td class="text-light"><i>${user.city}, ${user.state} ${user.zipCode}</i></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark text-light">
+                <div class="card-header" id="editProfile">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed accordionLink" type="button" data-toggle="collapse" data-target="#studentInfo" aria-expanded="false" aria-controls="studentInfo">
+                            Edit Profile
+                        </button>
+                    </h2>
+                </div>
+                <div id="studentInfo" class="collapse" aria-labelledby="editProfile" data-parent="#profileViewer">
+                    <div class="card-body">
+                        <form action="editProfile">
+                            <div class="form-group col-sm-4">
+                                <label for="skillLevel">Update Skill Level</label>
+                                <select name="skillLevel" class="form-control" id="skillLevel">
+                                    <option value="beginner">Beginner</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                    <option value="preProfessional">Collegiate/Pre-Professional</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="city">Update City: </label>
+                                <input type="text" class="form-control" id="city" name="city" value="${user.city}">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="state">Update State: </label>
+                                <input type="text" class="form-control" id="state" name="state" value="${user.state}">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="zip">Update Zip Code: </label>
+                                <input type="text" class="form-control" id="zip" name="zip" value="${user.zipCode}">
+                            </div>
+                            <button type="submit" class="btn btn-secondary">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark text-light">
+                <div class="card-header" id="deleteProfile">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed accordionLink text-danger" type="button" data-toggle="collapse" data-target="#otherInfo" aria-expanded="false" aria-controls="otherInfo">
+                            Delete Profile
+                        </button>
+                    </h2>
+                </div>
+                <div id="otherInfo" class="collapse" aria-labelledby="deleteProfile" data-parent="#profileViewer">
+                    <div class="card-body">
+                        <c:choose>
+                            <c:when test="${pageContext.request.isUserInRole('teacher')}">
+                                <p class="text-center text-warning">Once you delete your account, you will lose all of your logs, students, and studios.</p>
+                            </c:when>
+                            <c:when test="${pageContext.request.isUserInRole('student')}">
+                                <p class="text-center text-warning">Once you delete your account, you will lose all of your logs and studios.</p>
+                            </c:when>
+                            <c:when test="${pageContext.request.isUserInRole('practiceHacker')}">
+                                <p class="text-center text-warning">Once you delete your account, you will lose all of your logs.</p>
+                            </c:when>
+                        </c:choose>
+                        <a class="btn btn-danger" href="confirmDelete.jsp">I understand; but I'd like to continue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-
 </body>
 </html>

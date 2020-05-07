@@ -74,7 +74,7 @@
             <c:choose>
                 <c:when test="${pageContext.request.getRemoteUser() != null}">
                     <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/viewProfile.jsp' ? ' active' : ''}">
-                        <a class="nav-link" href="viewProfile">${user.username}'s Profile</a>
+                        <a class="nav-link" href="profile.jsp">${user.username}'s Profile</a>
                     </li>
                     <c:if test="${pageContext.request.isUserInRole('teacher')}">
                         <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/teacherAdmin.jsp' ? ' active' : ''}">

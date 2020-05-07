@@ -103,10 +103,6 @@
                         <input type="date" class="form-control" id="birthDate" name="birthDate" required>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="studentAddress">Street Address: </label>
-                    <input type="text" class="form-control" id="studentAddress" name="studentAddress" required>
-                </div>
                 <div class="row">
                     <div class="form-group col-sm-6">
                         <label for="studentCity">City: </label>
@@ -142,10 +138,6 @@
                             <option value="professional">Professional</option>
                         </select>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="address">Street Address: </label>
-                    <input type="text" class="form-control" id="address" name="address" required>
                 </div>
                 <div class="row">
                     <div class="form-group col-sm-6">

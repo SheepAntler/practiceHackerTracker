@@ -57,24 +57,29 @@ public class WriteLogAction extends HttpServlet {
         List<PracticeLog> currentUserLogs = new ArrayList<PracticeLog>(logDao.getByPropertyEqual("user", currentUser.getId()));
 
         if (currentUserLogs.size() == 0) {
+            log.debug("starting user log for the first time");
             currentUser.setPracticeCounter(1);
             currentUser.setLongestStreak(1);
         } else {
             LocalDateTime lastPracticeDate = currentUserLogs.get(currentUserLogs.size() - 1).getPracticeDate();
-
+            log.debug("finding last practice date: {}", lastPracticeDate);
             // If the user isn't logging two sessions in the same day...
             if (practiceDate != lastPracticeDate) {
+                log.debug("last practice date is NOT the same as current practice date!");
                 // calculate the difference between the two dates
                 int daysSinceLastPractice = (int) ChronoUnit.DAYS.between(lastPracticeDate, practiceDate);
+                log.debug("calculating days since last practice: {}", daysSinceLastPractice);
                 // if the timeSinceLastPractice date is greater than 1 day, reset practice counter and update user
                 if (daysSinceLastPractice > 1) {
+                    log.debug("it's been more than 1 day...");
                     currentUser.setPracticeCounter(0);
-                    log.debug(currentUser.getPracticeCounter());
+                    log.debug("resetting currentUser counter to: {}", currentUser.getPracticeCounter());
                 } else {
                     // otherwise, increment practice counter
+                    log.debug("last practice was yesterday--awesome!");
                     int currentCounter = currentUser.getPracticeCounter();
                     int incrementedCounter = currentCounter + 1;
-                    log.debug(incrementedCounter);
+                    log.debug("user counter was incremented to: {}", incrementedCounter);
                     // if that counter is greater than the longest streak, update the longest streak!
                     if (incrementedCounter > currentUser.getLongestStreak()) {
                         currentUser.setLongestStreak(incrementedCounter);
@@ -87,10 +92,12 @@ public class WriteLogAction extends HttpServlet {
         // save the log
         logDao.insert(newLog);
         // update the user with whatever changes might have been made
+        log.debug("user before update: {}", currentUser);
         userDao.saveOrUpdate(currentUser);
 
         // update the user in the session
         User updatedUser = (User)userDao.getById(currentUser.getId());
+        log.debug("user after update: {}", updatedUser);
 
         session.removeAttribute("user");
         session.setAttribute("user", updatedUser);

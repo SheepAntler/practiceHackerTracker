@@ -236,17 +236,17 @@
   </security-role>
 
   <!-- Error Handling -->
-  <error-page>
-    <error-code>403</error-code>
-    <location>/403Error.jsp</location>
-  </error-page>
-  <error-page>
-    <error-code>404</error-code>
-    <location>/404Error.jsp</location>
-  </error-page>
-  <error-page>
-    <error-code>500</error-code>
-    <location>/500Error.jsp</location>
-  </error-page>
+<!--  <error-page>-->
+<!--    <error-code>403</error-code>-->
+<!--    <location>/403Error.jsp</location>-->
+<!--  </error-page>-->
+<!--  <error-page>-->
+<!--    <error-code>404</error-code>-->
+<!--    <location>/404Error.jsp</location>-->
+<!--  </error-page>-->
+<!--  <error-page>-->
+<!--    <error-code>500</error-code>-->
+<!--    <location>/500Error.jsp</location>-->
+<!--  </error-page>-->
 
 </web-app>
