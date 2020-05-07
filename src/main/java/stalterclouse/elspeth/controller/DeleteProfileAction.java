@@ -1,12 +1,16 @@
 package stalterclouse.elspeth.controller;
 
 import lombok.extern.log4j.Log4j2;
+import stalterclouse.elspeth.entity.User;
+import stalterclouse.elspeth.persistence.GenericDao;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
@@ -21,6 +25,16 @@ import java.io.IOException;
 public class DeleteProfileAction extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        HttpSession session = req.getSession();
+        User currentUser = (User)session.getAttribute("user");
+        GenericDao userDao = new GenericDao(User.class);
+
+        session.removeAttribute("user");
+        userDao.delete(currentUser);
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/goodbye.jsp");
+        dispatcher.forward(req, resp);
 
     }
 }
