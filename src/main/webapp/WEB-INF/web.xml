@@ -13,10 +13,10 @@
     </form-login-config>
   </login-config>
 
-  <!-- Authorize the user login -->
+  <!-- Authorize the initial user login -->
   <security-constraint>
     <web-resource-collection>
-      <web-resource-name>Login</web-resource-name>
+      <web-resource-name>LoginAction</web-resource-name>
       <url-pattern>/dashboard</url-pattern>
     </web-resource-collection>
     <auth-constraint>
@@ -26,39 +26,201 @@
     </auth-constraint>
   </security-constraint>
 
+  <!-- Protect the Servlets! -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>CloseStudioAction</web-resource-name>
+      <url-pattern>/closeStudio</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>teacher</role-name>
+    </auth-constraint>
+  </security-constraint>
 
-  <!-- Protect the Student portion of the website. -->
-<!--  <security-constraint>-->
-<!--    <web-resource-collection>-->
-<!--      <web-resource-name>studentHome</web-resource-name>-->
-<!--      <url-pattern>/studentHome.jsp</url-pattern>-->
-<!--    </web-resource-collection>-->
-<!--    <auth-constraint>-->
-<!--      <role-name>student</role-name>-->
-<!--    </auth-constraint>-->
-<!--  </security-constraint>-->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>CreateStudioAction</web-resource-name>
+      <url-pattern>/createStudio</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>teacher</role-name>
+    </auth-constraint>
+  </security-constraint>
 
-  <!-- Protect the Teacher portion of the website. -->
-<!--  <security-constraint>-->
-<!--    <web-resource-collection>-->
-<!--      <web-resource-name>teacherHome</web-resource-name>-->
-<!--      <url-pattern>/teacherHome.jsp</url-pattern>-->
-<!--    </web-resource-collection>-->
-<!--    <auth-constraint>-->
-<!--      <role-name>teacher</role-name>-->
-<!--    </auth-constraint>-->
-<!--  </security-constraint>-->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>JoinStudioAction</web-resource-name>
+      <url-pattern>/joinStudio</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+    </auth-constraint>
+  </security-constraint>
 
-  <!-- Protect the Practice Hacker portion of the website. -->
-<!--  <security-constraint>-->
-<!--    <web-resource-collection>-->
-<!--      <web-resource-name>practiceHackerHome</web-resource-name>-->
-<!--      <url-pattern>/practiceHackerHome.jsp</url-pattern>-->
-<!--    </web-resource-collection>-->
-<!--    <auth-constraint>-->
-<!--      <role-name>practiceHacker</role-name>-->
-<!--    </auth-constraint>-->
-<!--  </security-constraint>-->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>LeaveStudioAction</web-resource-name>
+      <url-pattern>/leaveStudio</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>PracticeHackDisplay</web-resource-name>
+      <url-pattern>/practiceHacks</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+      <role-name>teacher</role-name>
+      <role-name>practiceHacker</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>StudentLogDisplay</web-resource-name>
+      <url-pattern>/viewStudentLogs</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>teacher</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>StudioInfoDisplay</web-resource-name>
+      <url-pattern>/studioInfo</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>StudioSearchAction</web-resource-name>
+      <url-pattern>/studioSearch</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>UserDataDisplay</web-resource-name>
+      <url-pattern>/viewProfile</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+      <role-name>teacher</role-name>
+      <role-name>practiceHacker</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>WriteLogAction</web-resource-name>
+      <url-pattern>/writeLog</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+      <role-name>teacher</role-name>
+      <role-name>practiceHacker</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <!-- Protect the JSPs! -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>logWriter</web-resource-name>
+      <url-pattern>/logWriter.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+      <role-name>teacher</role-name>
+      <role-name>practiceHacker</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>practiceHackWriter</web-resource-name>
+      <url-pattern>/practiceHackWriter.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>teacher</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>profile</web-resource-name>
+      <url-pattern>/profile.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+      <role-name>teacher</role-name>
+      <role-name>practiceHacker</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>studioInfo</web-resource-name>
+      <url-pattern>/studioInfo.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>teacherAdmin</web-resource-name>
+      <url-pattern>/teacherAdmin.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>teacher</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>viewMyLog</web-resource-name>
+      <url-pattern>/viewMyLog.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+      <role-name>teacher</role-name>
+      <role-name>practiceHacker</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>viewPracticeHacks</web-resource-name>
+      <url-pattern>/viewPracticeHacks.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+      <role-name>teacher</role-name>
+      <role-name>practiceHacker</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>viewStudentLogs</web-resource-name>
+      <url-pattern>/viewStudentLogs.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>teacher</role-name>
+    </auth-constraint>
+  </security-constraint>
 
   <!-- All Security Role Names -->
   <security-role>

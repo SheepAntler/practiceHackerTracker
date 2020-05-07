@@ -82,8 +82,6 @@ public class WriteLogAction extends HttpServlet {
 
                     currentUser.setPracticeCounter(incrementedCounter);
                 }
-                // update the user with all these changes
-                //userDao.saveOrUpdate(currentUser);
             }
         }
         // save the log
