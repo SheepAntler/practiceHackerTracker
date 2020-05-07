@@ -49,6 +49,30 @@
 
   <security-constraint>
     <web-resource-collection>
+      <web-resource-name>DeleteProfileAction</web-resource-name>
+      <url-pattern>/deleteAccount</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+      <role-name>teacher</role-name>
+      <role-name>practiceHacker</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>EditProfileAction</web-resource-name>
+      <url-pattern>/editProfile</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+      <role-name>teacher</role-name>
+      <role-name>practiceHacker</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
       <web-resource-name>JoinStudioAction</web-resource-name>
       <url-pattern>/joinStudio</url-pattern>
     </web-resource-collection>
@@ -64,6 +88,18 @@
     </web-resource-collection>
     <auth-constraint>
       <role-name>student</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Logout</web-resource-name>
+      <url-pattern>/logout</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+      <role-name>teacher</role-name>
+      <role-name>practiceHacker</role-name>
     </auth-constraint>
   </security-constraint>
 
@@ -133,7 +169,41 @@
     </auth-constraint>
   </security-constraint>
 
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>WritePracticeHack</web-resource-name>
+      <url-pattern>/writePracticeHack</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>teacher</role-name>
+    </auth-constraint>
+  </security-constraint>
+
   <!-- Protect the JSPs! -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>confirmDelete</web-resource-name>
+      <url-pattern>/confirmDelete.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+      <role-name>teacher</role-name>
+      <role-name>practiceHacker</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>confirmLogout</web-resource-name>
+      <url-pattern>/confirmLogout.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+      <role-name>teacher</role-name>
+      <role-name>practiceHacker</role-name>
+    </auth-constraint>
+  </security-constraint>
+
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>logWriter</web-resource-name>

@@ -60,7 +60,12 @@
                                     <option value="intermediate">Intermediate</option>
                                     <option value="advanced">Advanced</option>
                                     <option value="preProfessional">Collegiate/Pre-Professional</option>
+                                    <option value="professional">Professional</option>
                                 </select>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="email">Update Email: </label>
+                                <input type="text" class="form-control" id="email" name="email" value="${user.email}">
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="city">Update City: </label>
@@ -91,7 +96,8 @@
                     <div class="card-body">
                         <c:choose>
                             <c:when test="${pageContext.request.isUserInRole('teacher')}">
-                                <p class="text-center text-warning">Once you delete your account, you will lose all of your logs, students, and studios.</p>
+                                <p class="text-center text-warning">Once you delete your account, you will lose all of your logs, students, and studios, and all
+                                        of the practice hacks you have written will be taken down.</p>
                             </c:when>
                             <c:when test="${pageContext.request.isUserInRole('student')}">
                                 <p class="text-center text-warning">Once you delete your account, you will lose all of your logs and studios.</p>

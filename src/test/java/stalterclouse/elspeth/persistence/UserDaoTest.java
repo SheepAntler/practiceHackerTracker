@@ -243,4 +243,19 @@ class UserDaoTest {
         assertEquals("professional", userInstrument.getSkillLevel());
     }
 
+    /**
+     * Verifies that updating a user can update the user's instrument
+     */
+    @Test
+    void testUpdateUserInstrument() {
+        User testUser = (User)genericDao.getById(5);
+
+        testUser.getInstrument().setSkillLevel("beginner");
+
+        genericDao.saveOrUpdate(testUser);
+
+        assertEquals("beginner", testUser.getInstrument().getSkillLevel());
+
+    }
+
 }
