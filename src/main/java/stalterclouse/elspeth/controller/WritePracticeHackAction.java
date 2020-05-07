@@ -39,6 +39,5 @@ public class WritePracticeHackAction extends HttpServlet {
 
         resp.sendRedirect(req.getContextPath() + "/viewPracticeHacks.jsp");
 
-
     }
 }

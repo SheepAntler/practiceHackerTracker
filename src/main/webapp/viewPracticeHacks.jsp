@@ -68,8 +68,19 @@
                 <c:if test="${myPracticeHacks != null}">
                     <c:choose>
                         <c:when test="${!empty myPracticeHacks}">
-                            <p>These will have "edit" and "delete" buttons next to them</p>
-                            <p>${myPracticeHacks}</p>
+<%--                            <p>These will have "edit" and "delete" buttons next to them</p>--%>
+<%--                            <p>${myPracticeHacks}</p>--%>
+                            <c:forEach var="practiceHack" items="${myPracticeHacks}">
+                                <h3 class="minorHeading">${practiceHack.instrument}: ${practiceHack.skillLevel}</h3>
+                                <p>${practiceHack.practiceHack}</p>
+                                <form action="getPracticeHack">
+                                    <input type="hidden" name="practiceHackToEdit" value="${practiceHack.id}">
+                                    <button type="submit" class="btn btn-secondary">Edit</button>
+                                </form>
+                                <form action="deletePracticeHack">
+                                    <button type="submit" class="btn btn-dark">Delete</button>
+                                </form>
+                            </c:forEach>
                         </c:when>
                         <c:otherwise>
                             <p>You haven't written any practice hacks yet. Would you like to <a href="practiceHackWriter.jsp">create one</a>?</p>
