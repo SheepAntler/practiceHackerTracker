@@ -49,6 +49,16 @@
 
   <security-constraint>
     <web-resource-collection>
+      <web-resource-name>DeletePracticeHack</web-resource-name>
+      <url-pattern>/deletePracticeHack</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>teacher</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
       <web-resource-name>DeleteProfileAction</web-resource-name>
       <url-pattern>/deleteAccount</url-pattern>
     </web-resource-collection>
@@ -112,6 +122,16 @@
       <role-name>student</role-name>
       <role-name>teacher</role-name>
       <role-name>practiceHacker</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>RetrievePracticeHack</web-resource-name>
+      <url-pattern>/getPracticeHack</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>teacher</role-name>
     </auth-constraint>
   </security-constraint>
 
@@ -196,6 +216,18 @@
     <web-resource-collection>
       <web-resource-name>confirmLogout</web-resource-name>
       <url-pattern>/confirmLogout.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+      <role-name>teacher</role-name>
+      <role-name>practiceHacker</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>goodbye</web-resource-name>
+      <url-pattern>/goodbye.jsp</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>student</role-name>
