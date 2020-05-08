@@ -27,6 +27,7 @@ public class WritePracticeHackAction extends HttpServlet {
         HttpSession session = req.getSession();
         User currentUser = (User)session.getAttribute("user");
         GenericDao practiceHackDao = new GenericDao(PracticeHack.class);
+        GenericDao userDao = new GenericDao(User.class);
 
         // Get the practice hack data from the form
         String skillLevel = req.getParameter("skillLevel");
@@ -36,6 +37,11 @@ public class WritePracticeHackAction extends HttpServlet {
         // Create the new practice hack and save it
         PracticeHack newPracticeHack = new PracticeHack(currentUser, skillLevel, instrument, practiceHack);
         practiceHackDao.insert(newPracticeHack);
+
+        // Reset the updated user into the session for "author"
+        User updatedUser = (User)userDao.getById(currentUser.getId());
+
+        session.setAttribute("user", updatedUser);
 
         resp.sendRedirect(req.getContextPath() + "/viewPracticeHacks.jsp");
 

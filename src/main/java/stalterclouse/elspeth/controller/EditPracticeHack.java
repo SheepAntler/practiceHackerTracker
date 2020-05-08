@@ -2,6 +2,7 @@ package stalterclouse.elspeth.controller;
 
 import lombok.extern.log4j.Log4j2;
 import stalterclouse.elspeth.entity.PracticeHack;
+import stalterclouse.elspeth.entity.User;
 import stalterclouse.elspeth.persistence.GenericDao;
 
 import javax.servlet.ServletException;
@@ -28,6 +29,7 @@ public class EditPracticeHack extends HttpServlet {
         HttpSession session = req.getSession();
         PracticeHack practiceHackToEdit = (PracticeHack)session.getAttribute("practiceHackToEdit");
         GenericDao practiceHackDao = new GenericDao(PracticeHack.class);
+        GenericDao userDao = new GenericDao(User.class);
 
         // Get whatever updates the user might have made
         String skillLevel = req.getParameter("skillLevel");
@@ -44,6 +46,12 @@ public class EditPracticeHack extends HttpServlet {
 
         // Clear the editable practice hack from the session
         session.removeAttribute("practiceHackToEdit");
+
+        // Reset the updated user into the session for "author"
+        User currentUser = (User)session.getAttribute("user");
+        User updatedUser = (User)userDao.getById(currentUser.getId());
+
+        session.setAttribute("user", updatedUser);
 
         resp.sendRedirect(req.getContextPath() + "/viewPracticeHacks.jsp");
     }

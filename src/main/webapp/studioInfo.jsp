@@ -14,9 +14,9 @@
                 <p>${studentStudio.city}, ${studentStudio.state} ${studentStudio.zipCode}</p>
                 <button class="hideShow btn btn-secondary">Leave this Studio</button>
                 <div class="container" id="hiddenDiv">
-                    <p>We're sorry to see you go; are you <i>certain</i> you wish to leave this studio?</p>
+                    <p class="text-danger text-center">We're sorry to see you go; are you <i>certain</i> you wish to leave this studio?</p>
                     <form action="leaveStudio">
-                        <button type="submit" class="btn btn-secondary">Yes, I'm sure</button>
+                        <button type="submit" class="btn btn-danger">Yes, I'm sure</button>
                     </form>
                     <button class="hideShow btn btn-dark">No; I'd like to stay</button>
                 </div>

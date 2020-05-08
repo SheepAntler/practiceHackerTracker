@@ -19,11 +19,11 @@
                 <div class="form-group col-sm-6">
                     <label for="skillLevel">This practice hack is for: </label>
                     <select name="skillLevel" class="form-control" id="skillLevel" required>
-                        <option value="beginner">Beginners</option>
-                        <option value="intermediate">Intermediates</option>
-                        <option value="advanced">Advanced Students</option>
-                        <option value="preProfessional">Collegiate Students/Pre-Professionals</option>
-                        <option value="professional">Professionals</option>
+                        <option value="Beginner">Beginners</option>
+                        <option value="Intermediate">Intermediates</option>
+                        <option value="Advanced">Advanced Students</option>
+                        <option value="Pre-Professional">Collegiate Students/Pre-Professionals</option>
+                        <option value="Professional">Professionals</option>
                     </select>
                 </div>
                 <div class="form-group col-sm-6">
@@ -41,6 +41,7 @@
             <c:choose>
                 <c:when test="${practiceHackToEdit != null}">
                     <button type="submit" class="btn btn-secondary">Update Practice Hack</button>
+                    <a class="btn btn-dark" href="viewPracticeHacks.jsp">Back</a>
                 </c:when>
                 <c:otherwise>
                     <button type="submit" class="btn btn-secondary">Save Practice Hack</button>

@@ -78,7 +78,9 @@
                                     <button type="submit" class="btn btn-secondary">Edit</button>
                                 </form>
                                 <form action="deletePracticeHack">
-                                    <button type="submit" class="btn btn-dark">Delete</button>
+                                    <input type="hidden" name="practiceHackToDelete" value="${practiceHack.id}">
+                                    <button type="submit" class="btn btn-danger">Delete*</button>
+                                    <small class="text-danger">*Think carefully before deleting; this action cannot be undone.</small>
                                 </form>
                             </c:forEach>
                         </c:when>
@@ -102,5 +104,6 @@
             <c:remove var="practiceHackViewSelected" scope="session" />
         </c:if>
     </div>
+    <script src="js/revealDiv.js"></script>
 </body>
 </html>
