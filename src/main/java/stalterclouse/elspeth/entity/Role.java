@@ -43,7 +43,8 @@ public class Role {
      *
      * @param role the role
      */
-    public Role(String username, String role) {
+    public Role(User user, String username, String role) {
+        this.user = user;
         this.username = username;
         this.role = role;
     }

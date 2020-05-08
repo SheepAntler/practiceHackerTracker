@@ -7,7 +7,7 @@
     <c:choose>
         <c:when test="${pageContext.request.isUserInRole('student') || pageContext.request.isUserInRole('practiceHacker')}">
             <div class="container textBox">
-                <h1 class="mainHeading">Welcome Back, ${pageContext.request.getRemoteUser()}!</h1>
+                <h1 class="mainHeading">Welcome, ${pageContext.request.getRemoteUser()}!</h1>
                 <h2 class="subHeading">You've practiced ${user.practiceCounter} days in a row!</h2>
                 <h2 class="subHeading">Your longest streak is ${user.longestStreak} days.</h2>
             </div>

@@ -125,3 +125,15 @@
 [DEBUG] 2020-05-08 00:56:03.692 [http-nio-8080-exec-32] GenericDao - Searching for entity with user = User(id=3, username=saveTheViola, password=password, firstName=Viola, lastName=Happenstance, email=violaViolist@gmail.com, practiceCounter=102, birthDate=1990-01-12, city=Madison, state=WI, zipCode=53711, longestStreak=101)
 [DEBUG] 2020-05-08 00:56:16.449 [http-nio-8080-exec-34] GenericDao - Searching for entity with user = User(id=3, username=saveTheViola, password=password, firstName=Viola, lastName=Happenstance, email=violaViolist@gmail.com, practiceCounter=102, birthDate=1990-01-12, city=Madison, state=WI, zipCode=53711, longestStreak=101)
 [DEBUG] 2020-05-08 00:56:33.146 [http-nio-8080-exec-36] GenericDao - Searching for entity with user = User(id=3, username=saveTheViola, password=password, firstName=Viola, lastName=Happenstance, email=violaViolist@gmail.com, practiceCounter=102, birthDate=1990-01-12, city=Madison, state=WI, zipCode=53711, longestStreak=101)
+[DEBUG] 2020-05-08 03:47:46.908 [http-nio-8080-exec-68] GenericDao - Searching for entity with username = null
+[DEBUG] 2020-05-08 03:49:57.611 [http-nio-8080-exec-83] GenericDao - Searching for entity with username = sillyBilly
+[DEBUG] 2020-05-08 03:49:58.388 [http-nio-8080-exec-83] GenericDao - Searching for entity with username = sillyBilly
+[DEBUG] 2020-05-08 03:50:58.764 [http-nio-8080-exec-95] GenericDao - Searching for entity with username = sillyBilly
+[DEBUG] 2020-05-08 03:56:20.260 [http-nio-8080-exec-99] GenericDao - Searching for entity with username = sillyBilly
+[DEBUG] 2020-05-08 03:56:20.490 [http-nio-8080-exec-99] CreateUserAction - username already exists...
+[DEBUG] 2020-05-08 03:56:20.492 [http-nio-8080-exec-99] CreateUserAction - newUser: User(id=0, username=sillyBilly, password=password, firstName=Silly, lastName=Billy, email=sillyBilly@gmail.com, practiceCounter=0, birthDate=null, city=Madison, state=WI, zipCode=53703, longestStreak=0)
+[DEBUG] 2020-05-08 03:56:20.524 [http-nio-8080-exec-99] CreateUserAction - newInstrument: Instrument(id=0, instrument=Bagpipes, skillLevel=Intermediate)
+[DEBUG] 2020-05-08 04:01:55.281 [http-nio-8080-exec-112] GenericDao - Searching for entity with username = sillyBilly
+[DEBUG] 2020-05-08 04:01:55.513 [http-nio-8080-exec-112] CreateUserAction - username already exists...
+[DEBUG] 2020-05-08 04:01:55.515 [http-nio-8080-exec-112] CreateUserAction - newUser: User(id=0, username=sillyBilly, password=password, firstName=Silly, lastName=Billy, email=sillyBilly@gmail.com, practiceCounter=0, birthDate=null, city=Madison, state=WI, zipCode=53715, longestStreak=0)
+[DEBUG] 2020-05-08 04:01:55.517 [http-nio-8080-exec-112] CreateUserAction - newInstrument: Instrument(id=0, instrument=Bagpipes, skillLevel=Intermediate)

@@ -107,7 +107,7 @@ label {
     color: white;
 }
 
-select, option {
+select, option, input {
     font-weight: bold;
 }
 
