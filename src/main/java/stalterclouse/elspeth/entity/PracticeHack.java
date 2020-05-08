@@ -25,7 +25,6 @@ public class PracticeHack {
     private String skillLevel;
 
     @Column(name = "instrument")
-    @OrderBy
     private String instrument;
 
     @Column(name = "text_body")

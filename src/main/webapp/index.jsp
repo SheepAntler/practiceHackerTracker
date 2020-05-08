@@ -18,7 +18,7 @@
                     <c:if test="${!empty studio.value && studio.value != null}">
                         <h1 class="mainHeading text-center">${studio.key}</h1>
                         <c:forEach var="student" items="${studio.value}">
-                            <p>${student.firstName} ${student.lastName}: Current Counter = ${student.practiceCounter} & Longest Streak = ${student.longestStreak} (they are ${user.age} years old)</p>
+                            <p>${student.firstName} ${student.lastName}: Current Counter = ${student.practiceCounter} & Longest Streak = ${student.longestStreak} (they are ${student.age} years old)</p>
                         </c:forEach>
                     </c:if>
                 </c:forEach>

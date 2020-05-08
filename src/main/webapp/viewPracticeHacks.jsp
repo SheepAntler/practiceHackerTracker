@@ -47,7 +47,7 @@
                 <label class="sr-only" for="practiceHackView">Please Select the Practice Hacks you'd like to View</label>
                 <select name="practiceHackView" id="practiceHackView" class="form-control">
                     <option value="allHacks">Show Me All Practice Hacks</option>
-                    <option value="authorMode">Show Me Practice Hacks I've Written</option>
+                    <option value="authorMode">Show Me Practice Hacks I've Written (Newest to Oldest)</option>
                     <option value="practiceMode">Show Me Practice Hacks for my Own Practice</option>
                 </select>
                 <button type="submit" class="btn btn-secondary">Get Practice Hacks</button>
@@ -70,7 +70,7 @@
                         <c:when test="${!empty myPracticeHacks}">
 <%--                            <p>These will have "edit" and "delete" buttons next to them</p>--%>
 <%--                            <p>${myPracticeHacks}</p>--%>
-                            <c:forEach var="practiceHack" items="${myPracticeHacks}">
+                            <c:forEach var="practiceHack" items="${user.practiceHacks}">
                                 <h3 class="minorHeading">${practiceHack.instrument}: ${practiceHack.skillLevel}</h3>
                                 <p>${practiceHack.practiceHack}</p>
                                 <form action="getPracticeHack">

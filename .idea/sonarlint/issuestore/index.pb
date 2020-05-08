@@ -8,8 +8,6 @@ U
 :
 
 TimeLog.md,9/c/9c5ce5185c75d478653cfefe009b7778d7a8c1eb
-Q
-!src/main/webapp/commentWriter.jsp,5/f/5f485753df588b018d5d13a54f9d93bc8a4219e0
 N
 src/main/webapp/css/master.css,f/b/fb058eb76e76dc2dc55a828d73eef837e455e506
 V
@@ -48,8 +46,6 @@ N
 src/main/webapp/studioInfo.jsp,1/1/11fef5af1d91df2b2579fa8b0b7a25d2ea78b5dc
 v
 Fsrc/main/java/stalterclouse/elspeth/controller/StudioSearchAction.java,4/c/4c58c8f73950c86a63a20eb02786edc1e190a3c3
-v
-Fsrc/main/java/stalterclouse/elspeth/controller/WriteCommentAction.java,9/5/955ff5f8cc8da3c09a9a7e250440a4cd98810a3f
 T
 $src/main/webapp/js/responsiveForm.js,6/e/6e44f53a9eee6f655175e577efb7152a39579cf5
 R
@@ -102,3 +98,25 @@ L
 src/main/webapp/403Error.jsp,c/f/cf215cb83b1bee3343a03fca0193f40654e699d4
 O
 src/main/webapp/WEB-INF/web.xml,2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+V
+&src/main/webapp/jQueryTableExample.jsp,d/6/d6510fd4374399a847fbfc375daf7f1d93f90e99
+P
+ src/main/webapp/accountTypes.jsp,4/e/4ef9869feb4abcaa72a0b7002ae6e4cd0c759d82
+K
+src/main/webapp/profile.jsp,3/9/3932b6a22a1db264677b40c5b9307e011739496b
+j
+:src/main/java/stalterclouse/elspeth/entity/Instrument.java,a/9/a935b30e3013448e99cb336544aa59921e0534b2
+u
+Esrc/main/java/stalterclouse/elspeth/controller/EditProfileAction.java,6/8/6868cdac624a9be3b71495e96c53102be094472b
+Q
+!src/main/webapp/confirmDelete.jsp,1/a/1ab4080c056085dbb26f95c22137a3dc4fe932c0
+w
+Gsrc/main/java/stalterclouse/elspeth/controller/DeleteProfileAction.java,b/f/bf8809cf6d141a0b6250d7f198df98e3f2126d3d
+K
+src/main/webapp/goodbye.jsp,1/e/1efb5e604b7ba67bf1751583b69fb1d77b543720
+S
+#src/main/webapp/js/passwordCheck.js,e/c/ec3668aefe82c11dbab4879dc9ea13162e996d37
+t
+Dsrc/main/java/stalterclouse/elspeth/controller/CreateUserAction.java,4/3/43e5e66721f7cb1bd53b0a26f9e0eb301bdbaeda
+x
+Hsrc/main/java/stalterclouse/elspeth/controller/RetrievePracticeHack.java,3/f/3f26a88e8f3da09b316f4873c26f389dcc69e633
