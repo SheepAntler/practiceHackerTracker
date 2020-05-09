@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.log4j.Log4j2;
 import stalterclouse.elspeth.entity.openopus.OpenOpusResponse;
+import stalterclouse.elspeth.utilities.PropertiesLoader;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;

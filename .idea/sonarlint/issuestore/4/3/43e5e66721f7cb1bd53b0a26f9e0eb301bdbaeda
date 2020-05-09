@@ -1,9 +1,35 @@
 
-O
-java:S1135"2Complete the task associated to this TODO comment.(²ÒïÓ8Ä‚—ŠŸ.
-O
-java:S1135"2Complete the task associated to this TODO comment.(„”ú½8¶†•ŠŸ.
-O
-java:S1135"2Complete the task associated to this TODO comment.(á‚ø8Ä‚—ŠŸ.
-O
-java:S1135"2Complete the task associated to this TODO comment.(œŒ¤û8Ä‚—ŠŸ.
+Q
+java:S3740&"/Provide the parametrized type for this generic.(¥‚›Àúÿÿÿÿ8”™®™Ÿ.
+Q
+java:S3740&"/Provide the parametrized type for this generic.(¥‚›Àúÿÿÿÿ8”™®™Ÿ.
+Q
+java:S3740%"/Provide the parametrized type for this generic.(»Éß·øÿÿÿÿ8€ı™Ÿ.
+{
+java:S1989S"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(†¬¢Ôÿÿÿÿÿ8½½Ø™Ÿ.
+p
+java:S1989k"SHandle the following exception that could be thrown by "sendRedirect": IOException.(çƒ„ù8ïß™šŸ.
+L
+java:S3740$"/Provide the parametrized type for this generic.(íÈ‡à8ŞÀÉ˜Ÿ.
+L
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8ñÄ÷™Ÿ.
+L
+java:S3740$"/Provide the parametrized type for this generic.(íÈ‡à8ŞÀÉ˜Ÿ.
+{
+java:S1989I"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(óÉ½êùÿÿÿÿ8 ÷Ç™Ÿ.
+~
+java:S1989y"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(òø½8”•œŸ.
+n
+java:S1989g"QHandle the following exception that could be thrown by "login": ServletException.(¬ıä–8Õ¬•šŸ.
+Q
+java:S3740#"/Provide the parametrized type for this generic.(Ôİôöùÿÿÿÿ8”ƒº˜Ÿ.
+Q
+java:S3740#"/Provide the parametrized type for this generic.(Ôİôöùÿÿÿÿ8”ƒº˜Ÿ.
+{
+java:S1989="YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ãğôñşÿÿÿÿ8–ñï˜Ÿ.
+Q
+java:S3740%"/Provide the parametrized type for this generic.(»Éß·øÿÿÿÿ8€ı™Ÿ.
+[
+java:S1155]">Use isEmpty() to check whether the collection is empty or not.(İø“ş8ÛÎú™Ÿ.
+e
+java:S11927"HDefine a constant instead of duplicating this literal "teacher" 3 times.(À¡ÔÖ8í¬šŸ.

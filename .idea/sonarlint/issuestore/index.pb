@@ -120,3 +120,9 @@ t
 Dsrc/main/java/stalterclouse/elspeth/controller/CreateUserAction.java,4/3/43e5e66721f7cb1bd53b0a26f9e0eb301bdbaeda
 x
 Hsrc/main/java/stalterclouse/elspeth/controller/RetrievePracticeHack.java,3/f/3f26a88e8f3da09b316f4873c26f389dcc69e633
+t
+Dsrc/main/java/stalterclouse/elspeth/controller/EditPracticeHack.java,a/8/a85f6abac40a14453f4984dd05fbd958b5055aa3
+d
+4src/main/java/stalterclouse/elspeth/entity/Role.java,4/f/4fbb42a315d40d1e67056495c8ffc99ff5004ae3
+|
+Lsrc/main/java/stalterclouse/elspeth/controller/DeletePracticeHackAction.java,8/b/8ba263b74264df9d14645d41110303ab21756855
