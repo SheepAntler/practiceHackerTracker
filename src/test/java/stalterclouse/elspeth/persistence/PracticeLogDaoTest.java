@@ -6,11 +6,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import stalterclouse.elspeth.utilities.Database;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -32,7 +29,7 @@ class PracticeLogDaoTest {
     }
 
     /**
-     * Verifies gets all users successfully.
+     * Verifies gets all logs successfully.
      */
     @Test
     void returnAllLogsSuccess() {
@@ -41,7 +38,7 @@ class PracticeLogDaoTest {
     }
 
     /**
-     * Verify successful retrieval of a user
+     * Verify successful retrieval of a log
      */
     @Test
     void getByIdSuccess() {
@@ -50,7 +47,7 @@ class PracticeLogDaoTest {
     }
 
     /**
-     * Verifies successful insert of a user
+     * Verifies successful insert of a log
      */
     @Test
     void insertSuccess() {
@@ -74,7 +71,7 @@ class PracticeLogDaoTest {
     }
 
     /**
-     * Verify successful delete of user
+     * Verify successful delete of a log
      */
     @Test
     void deleteSuccess() {
@@ -102,7 +99,7 @@ class PracticeLogDaoTest {
     }
 
     /**
-     * Verify successful update of user
+     * Verify successful update of a log
      */
     @Test
     void updateSuccess() {

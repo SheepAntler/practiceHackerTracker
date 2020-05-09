@@ -19,8 +19,8 @@
             <c:choose>
                 <c:when test="${!empty searchResults}">
                     <c:forEach var="result" items="${searchResults}">
-                        <iframe class="ytplayer" type="text/html" width="480" height="360"
-                                src="https://www.youtube.com/embed/${result.id.videoId}?autoplay=0&origin=http://example.com"
+                        <iframe title="youTubeVideoPlayer" class="ytplayer" type="text/html" width="480" height="360"
+                                src="https://www.youtube.com/embed/${result.id.videoId}?autoplay=0"
                                 frameborder="0"></iframe>
                     </c:forEach>
                 </c:when>

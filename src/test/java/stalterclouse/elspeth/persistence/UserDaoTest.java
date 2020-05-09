@@ -7,7 +7,9 @@ import stalterclouse.elspeth.utilities.Database;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -133,26 +135,7 @@ class UserDaoTest {
     }
 
     /**
-     * Verifies successful insert of a user with an associated studio
-     */
-//    @Test
-//    void insertWithInstrumentSuccess() {
-//        User newUser = new User("brandNew", "password", "Brad", "News", "bnews@gmail.com", 42, LocalDate.parse("1998-01-01"), "Portland", "OR", 97035, 100);
-//        Instrument banjo = new Instrument(newUser, "banjo", "beginner");
-//
-//        newUser.addInstrument(banjo);
-//
-//        int id = genericDao.insert(newUser);
-//        assertNotEquals(0,id);
-//        User insertedUser = (User)genericDao.getById(id);
-//        assertEquals(newUser, insertedUser);
-//        assertEquals(1, insertedUser.getInstruments().size());
-//
-//    }
-
-
-    /**
-     * Verify successful delete of user
+     * Verify successful delete of a user
      */
     @Test
     void deleteSuccess() {
@@ -180,7 +163,7 @@ class UserDaoTest {
     }
 
     /**
-     * Verify successful update of user
+     * Verify successful update of a user
      */
     @Test
     void updateSuccess() {
@@ -256,6 +239,21 @@ class UserDaoTest {
 
         assertEquals("beginner", testUser.getInstrument().getSkillLevel());
 
+    }
+
+    /**
+     * Verifies that I can get a user by a map of properties
+     */
+    @Test
+    void testGetByPropertiesEqual() {
+        Map<String, Object> propertyMap = new HashMap<String, Object>();
+
+        propertyMap.put("firstName", "Elaine");
+        propertyMap.put("practiceCounter", 12);
+
+        List<User> returnedUsers = genericDao.getByPropertiesEqual(propertyMap);
+
+        assertEquals(1, returnedUsers.size());
     }
 
 }

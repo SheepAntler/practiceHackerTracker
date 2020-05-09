@@ -2,7 +2,6 @@ package stalterclouse.elspeth.persistence;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import stalterclouse.elspeth.entity.imslp.JsonMember0;
 import stalterclouse.elspeth.entity.youtube.YouTubeResponse;
 
 import static org.junit.Assert.assertNotNull;

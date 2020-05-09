@@ -3,12 +3,9 @@ package stalterclouse.elspeth.persistence;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import stalterclouse.elspeth.entity.PracticeHack;
-import stalterclouse.elspeth.entity.PracticeLog;
 import stalterclouse.elspeth.entity.User;
 import stalterclouse.elspeth.utilities.Database;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -33,7 +30,7 @@ class PracticeHackDaoTest {
     }
 
     /**
-     * Verifies gets all users successfully.
+     * Verifies gets all hacks successfully.
      */
     @Test
     void returnAllHacksSuccess() {
@@ -42,7 +39,7 @@ class PracticeHackDaoTest {
     }
 
     /**
-     * Verify successful retrieval of a user
+     * Verify successful retrieval of a practice hack
      */
     @Test
     void getByIdSuccess() {
@@ -51,7 +48,7 @@ class PracticeHackDaoTest {
     }
 
     /**
-     * Verifies successful insert of a user
+     * Verifies successful insert of a practice hack
      */
     @Test
     void insertSuccess() {
@@ -72,7 +69,7 @@ class PracticeHackDaoTest {
     }
 
     /**
-     * Verify successful delete of user
+     * Verify successful delete of a practice hack
      */
     @Test
     void deleteSuccess() {
@@ -100,7 +97,7 @@ class PracticeHackDaoTest {
     }
 
     /**
-     * Verify successful update of user
+     * Verify successful update of a practice hack
      */
     @Test
     void updateSuccess() {

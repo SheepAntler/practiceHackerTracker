@@ -71,6 +71,16 @@
 
   <security-constraint>
     <web-resource-collection>
+      <web-resource-name>EditPracticeHack</web-resource-name>
+      <url-pattern>/editPracticeHack</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>teacher</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
       <web-resource-name>EditProfileAction</web-resource-name>
       <url-pattern>/editProfile</url-pattern>
     </web-resource-collection>
@@ -199,6 +209,18 @@
     </auth-constraint>
   </security-constraint>
 
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>YouTubeSearch</web-resource-name>
+      <url-pattern>/youTubeSearch</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+      <role-name>teacher</role-name>
+      <role-name>practiceHacker</role-name>
+    </auth-constraint>
+  </security-constraint>
+
   <!-- Protect the JSPs! -->
   <security-constraint>
     <web-resource-collection>
@@ -240,6 +262,18 @@
     <web-resource-collection>
       <web-resource-name>logWriter</web-resource-name>
       <url-pattern>/logWriter.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+      <role-name>teacher</role-name>
+      <role-name>practiceHacker</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>metronome</web-resource-name>
+      <url-pattern>/metronome.jsp</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>student</role-name>
@@ -321,6 +355,18 @@
     </web-resource-collection>
     <auth-constraint>
       <role-name>teacher</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>youTubeSearch</web-resource-name>
+      <url-pattern>/youTubeSearch.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>student</role-name>
+      <role-name>teacher</role-name>
+      <role-name>practiceHacker</role-name>
     </auth-constraint>
   </security-constraint>
 

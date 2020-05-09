@@ -60,7 +60,7 @@
 
 - [x] index JSP
 - [x] studio search JSP
-- [ ] YouTube Video Search?!?
+- [x] YouTube Video Search?!?
 - [x] Create database in AWS
 - [x] Deploy to AWS (Woohoo!)
 - [x] Set up local authentication 
@@ -82,40 +82,41 @@
 
 - [x] Make any/all Checkpoint 3 changes
 - [x] Make your JSPs BEAUTIFUL
-- [ ] Start reviewing your code...
-   - [ ] Javadoc
-   - [ ] Code coverage in tests
-   - [ ] Clean things up! 
+- [x] Start reviewing your code...
+   - [x] Javadoc
+   - [x] Code coverage in tests
+   - [x] Clean things up! 
 - [x] Review rubric - am I on target?
 
 ### Week 10
 
-- [ ] Process Search Results (*Note: Things got complicated with API Integration; I'm rethinking it quite a bit here) 
+- [x] Process Search Results (*UPDATE: I switched to YouTube API because of the following note: *Note: Things got complicated with API Integration; I'm rethinking it quite a bit here) 
 - [x] Limit Student Log results as specified by user (if you haven't already) 
-- [ ] Unit test API integration(s)
+- [x] Unit test API integration(s)
 
 ### Week 11 - Team Project Work Week 
 
 - [x] Begin "finishing touches" amidst team project work (IF you have time to spare)
 - [x] Put TODOs in your code! Prepare for the final push!
-- [ ] Review Rubric - am I STILL on target?
+- [x] Review Rubric - am I STILL on target?
 
 ### Week 12 - Team Project Due 
 
-- [ ] Review your project
-- [ ] Work through TODOs 
-- [ ] Review Rubric - am I STILL on target, even NOW?
+- [x] Review your project
+- [x] Work through TODOs 
+- [x] Review Rubric - am I STILL on target, even NOW?
 
 ### Week 13
 
-- [ ] Continue working through TODOs 
-- [ ] Prepare for week 13 peer code reviews
-- [ ] Code quality check
-- [ ] IMSLP might not work out right now...try YouTube?!?!?
+- [x] Continue working through TODOs 
+- [x] Prepare for week 13 peer code reviews
+- [x] Code quality check
+- [x] IMSLP might not work out right now...try YouTube?!?!? (5/9: YouTube is MOSTLY working)
 
 ### Week 14
  
 - [ ] Create final presentation
+- [ ] DEPLOY!!!! TO!!!! AWS!!!!
 - [ ] PRACTICE FINAL PRESENTATION
 - [x] CHECK THIS BOX IF YOU ARE JAZZED ABOUT HOW AWESOME YOUR JSPs MUST CERTAINLY LOOK AT THIS POINT.
 

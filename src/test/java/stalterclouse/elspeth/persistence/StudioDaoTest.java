@@ -2,16 +2,11 @@ package stalterclouse.elspeth.persistence;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import stalterclouse.elspeth.entity.PracticeLog;
 import stalterclouse.elspeth.entity.Studio;
 import stalterclouse.elspeth.entity.User;
 import stalterclouse.elspeth.utilities.Database;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -33,7 +28,7 @@ class StudioDaoTest {
     }
 
     /**
-     * Verifies gets all users successfully.
+     * Verifies gets all studios successfully.
      */
     @Test
     void returnAllStudiosSuccess() {
@@ -42,7 +37,7 @@ class StudioDaoTest {
     }
 
     /**
-     * Verify successful retrieval of a user
+     * Verify successful retrieval of a studio
      */
     @Test
     void getByIdSuccess() {
@@ -51,7 +46,7 @@ class StudioDaoTest {
     }
 
     /**
-     * Verifies successful insert of a user
+     * Verifies successful insert of a studio
      */
     @Test
     void insertSuccess() {
@@ -69,7 +64,7 @@ class StudioDaoTest {
     }
 
     /**
-     * Verify successful delete of studio
+     * Verify successful delete of a studio
      */
     @Test
     void deleteSuccess() {
@@ -97,7 +92,7 @@ class StudioDaoTest {
     }
 
     /**
-     * Verify successful update of user
+     * Verify successful update of a studio
      */
     @Test
     void updateSuccess() {
@@ -198,7 +193,7 @@ class StudioDaoTest {
     }
 
     /**
-     * Verifies that I can delete an entire studio without destroying my database
+     * Verifies that I can delete an entire studio and user without destroying my database
      */
     @Test
     void testDeleteStudio() {
@@ -209,6 +204,25 @@ class StudioDaoTest {
         userDao.delete(userDao.getById(1));
 
         assertNull(userDao.getById(1));
+        assertNotNull(userDao.getById(2));
+        assertNotNull(userDao.getById(3));
+        assertNotNull(userDao.getById(4));
+        assertNotNull(userDao.getById(5));
 
+    }
+
+    /**
+     * Verifies that I can get a studio by several properties
+     */
+    @Test
+    void testGetByPropertiesEqual() {
+        Map<String, Object> propertyMap = new HashMap<String, Object>();
+
+        propertyMap.put("instrument", "concertina");
+        propertyMap.put("organizationName", "The Suzuki House");
+
+        List<Studio> returnedStudios = genericDao.getByPropertiesEqual(propertyMap);
+
+        assertEquals(1, returnedStudios.size());
     }
 }
