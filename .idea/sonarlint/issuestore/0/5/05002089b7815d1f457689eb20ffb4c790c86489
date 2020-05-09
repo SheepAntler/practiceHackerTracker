@@ -1,19 +1,19 @@
 
-E
-java:S3740$"/Provide the parametrized type for this generic.(à»¸÷
 o
-java:S22931"YReplace the type specification in this constructor call with the diamond operator ("<>").(›ûŸÛ
-s
-java:S1192."VDefine a constant instead of duplicating this literal "personalPracticeHacks" 7 times.(ÁŸñî8Ã°İˆ.
-o
-java:S3776""RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(¹Â·Š8æâˆ.
-w
-java:S1989a"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(òø½
+java:S2293""YReplace the type specification in this constructor call with the diamond operator ("<>").(øœú®
 l
-java:S1192E"PDefine a constant instead of duplicating this literal "myPracticeHacks" 5 times.(»Êô\8àŞˆ.
+java:S1192?"PDefine a constant instead of duplicating this literal "myPracticeHacks" 5 times.(»Êô\8àŞˆ.
 s
-java:S1192K"QDefine a constant instead of duplicating this literal "allPracticeHacks" 5 times.(û¢²œùÿÿÿÿ8Â«Íˆ.
+java:S1192("VDefine a constant instead of duplicating this literal "personalPracticeHacks" 7 times.(ÁŸñî8Ã°İˆ.
 o
-java:S2293("YReplace the type specification in this constructor call with the diamond operator ("<>").(øœú®
+java:S2293+"YReplace the type specification in this constructor call with the diamond operator ("<>").(›ûŸÛ
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(¹Â·Š8æâˆ.
 E
-java:S3740$"/Provide the parametrized type for this generic.(à»¸÷
+java:S3740"/Provide the parametrized type for this generic.(à»¸÷
+E
+java:S3740"/Provide the parametrized type for this generic.(à»¸÷
+w
+java:S1989["aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(òø½
+s
+java:S1192E"QDefine a constant instead of duplicating this literal "allPracticeHacks" 5 times.(û¢²œùÿÿÿÿ8Â«Íˆ.

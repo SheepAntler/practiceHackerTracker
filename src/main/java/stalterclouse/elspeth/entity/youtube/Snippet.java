@@ -25,6 +25,9 @@ public class Snippet{
 	@JsonProperty("liveBroadcastContent")
 	private String liveBroadcastContent;
 
+	@JsonProperty("publishTime")
+	private String publishTime;
+
 	public void setPublishedAt(String publishedAt){
 		this.publishedAt = publishedAt;
 	}
@@ -81,6 +84,15 @@ public class Snippet{
 		return liveBroadcastContent;
 	}
 
+	public String getPublishTime() {
+		return publishTime;
+	}
+
+	public void setPublishTime(String publishTime) {
+		this.publishTime = publishTime;
+	}
+
+
 	@Override
  	public String toString(){
 		return 
@@ -91,7 +103,8 @@ public class Snippet{
 			",thumbnails = '" + thumbnails + '\'' + 
 			",channelId = '" + channelId + '\'' + 
 			",channelTitle = '" + channelTitle + '\'' + 
-			",liveBroadcastContent = '" + liveBroadcastContent + '\'' + 
+			",liveBroadcastContent = '" + liveBroadcastContent + '\'' +
+			",publishTime = '" + publishTime + '\'' +
 			"}";
 		}
 }

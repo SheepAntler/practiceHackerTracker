@@ -10,6 +10,9 @@ public class Id{
 	@JsonProperty("videoId")
 	private String videoId;
 
+	@JsonProperty("playlistId")
+	private String playlistId;
+
 	public void setKind(String kind){
 		this.kind = kind;
 	}
@@ -26,12 +29,22 @@ public class Id{
 		return videoId;
 	}
 
+
+	public String getPlaylistId() {
+		return playlistId;
+	}
+
+	public void setPlaylistId(String playlistId) {
+		this.playlistId = playlistId;
+	}
+
 	@Override
  	public String toString(){
 		return 
 			"Id{" + 
 			"kind = '" + kind + '\'' + 
-			",videoId = '" + videoId + '\'' + 
+			",videoId = '" + videoId + '\'' +
+			",playlistId = '" + playlistId + '\'' +
 			"}";
 		}
 }

@@ -7,7 +7,7 @@ import stalterclouse.elspeth.entity.youtube.YouTubeResponse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class YouTubeTest {
+public class YouTubeDaoTest {
 
     YouTubeDao dao;
 
@@ -27,8 +27,10 @@ public class YouTubeTest {
     @Test
     void getResultsNumberSuccess() {
 
+        String userQuery = ("long long ago").replaceAll("\\s","%20");
+
         int expectedResultsNumber = 4;
-        int actualResultsNumber = dao.getYouTubeResponse("long%20long%20ago").getItems().size();
+        int actualResultsNumber = dao.getYouTubeResponse(userQuery).getItems().size();
 
         assertEquals(expectedResultsNumber, actualResultsNumber);
     }
