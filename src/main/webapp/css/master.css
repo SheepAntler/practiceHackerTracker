@@ -75,6 +75,10 @@ p {
     display: none;
 }
 
+#youTubeContainer {
+    width: 90%;
+}
+
 /* forms */
 .formBox {
     width: 50%;

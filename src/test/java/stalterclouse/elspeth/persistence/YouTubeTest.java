@@ -28,7 +28,7 @@ public class YouTubeTest {
     @Test
     void getResultsNumberSuccess() {
 
-        int expectedResultsNumber = 5;
+        int expectedResultsNumber = 4;
         int actualResultsNumber = dao.getYouTubeResponse("long%20long%20ago").getItems().size();
 
         assertEquals(expectedResultsNumber, actualResultsNumber);

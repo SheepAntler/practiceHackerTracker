@@ -50,8 +50,15 @@
                             </div>
                         </li>
                     </c:if>
-                    <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/imslpSearch.jsp' ? ' active' : ''}">
-                        <a class="nav-link" href="imslpSearch.jsp">Music Search</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Practice Tools
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <a class="dropdown-item" href="youTubeSearch.jsp">YouTube</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="metronome.jsp">Metronome</a>
+                        </div>
                     </li>
                 </c:when>
                 <c:otherwise>

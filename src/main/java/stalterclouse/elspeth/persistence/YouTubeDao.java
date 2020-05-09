@@ -28,11 +28,11 @@ public class YouTubeDao implements PropertiesLoader {
     /**
      * Returns results from a YouTube search.
      */
-    YouTubeResponse getYouTubeResponse(String userQuery) {
+    public YouTubeResponse getYouTubeResponse(String userQuery) {
 
         Client client = ClientBuilder.newClient();
         WebTarget target =
-                client.target(youTubeProperties.getProperty("youTube.baseUrl") + "?part=snippet&maxResults=5&q="
+                client.target(youTubeProperties.getProperty("youTube.baseUrl") + "?part=snippet&maxResults=4&q="
                         + userQuery + "&key=" + youTubeProperties.getProperty("youTube.key"));
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
 
