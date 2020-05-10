@@ -1,52 +1,30 @@
 package stalterclouse.elspeth.entity.youtube;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
+import lombok.Setter;
 
 public class ItemsItem{
 
+	@Getter
+	@Setter
 	@JsonProperty("snippet")
 	private Snippet snippet;
 
+	@Getter
+	@Setter
 	@JsonProperty("kind")
 	private String kind;
 
+	@JsonIgnore
 	@JsonProperty("etag")
 	private String etag;
 
+	@Getter
+	@Setter
 	@JsonProperty("id")
 	private Id id;
-
-	public void setSnippet(Snippet snippet){
-		this.snippet = snippet;
-	}
-
-	public Snippet getSnippet(){
-		return snippet;
-	}
-
-	public void setKind(String kind){
-		this.kind = kind;
-	}
-
-	public String getKind(){
-		return kind;
-	}
-
-	public void setEtag(String etag){
-		this.etag = etag;
-	}
-
-	public String getEtag(){
-		return etag;
-	}
-
-	public void setId(Id id){
-		this.id = id;
-	}
-
-	public Id getId(){
-		return id;
-	}
 
 	@Override
  	public String toString(){

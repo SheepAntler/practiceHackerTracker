@@ -31,24 +31,26 @@ Let's make it a little easier, eh?
 
 * Security/Authentication
   * Tomcat's JDBC Realm Authentication
-  * Admin role: create/read/update/delete (crud) of all data TOTAL! 
-  * User (Teacher) role: create/read/update/delete all studio data
-  * User (Student/Pro/Hobbyist) role: log personal practice sessions
-  * All: anyone can view information about the application--why it exists, how it works, etc. Anyone can also view practice tips and tricks!
+  * User (Teacher) role: create/read/update/delete all studio data, log personal practice sessions, view and write practice hacks, and use practice tools
+  * User (Student) role: log personal practice sessions, view practice hacks, use practice tools, and join/leave a studio
+  * User (Pro/Hobbyist) role: log personal practice sessions, view practice hacks, and use practice tools
+  * All: anyone can view information about the application--why it exists, how it works, etc.
 * Database
   * MySQL
   * Stores users and roles
   * Stores studio data for teachers--who is in a teacher's studio? 
   * Stores practice data/goals for students 
+  * Stores instruments 
+  * Stores practice hacks--tips and tricks for practicing written by teachers
 * ORM Framework
   * Hibernate 5
 * Dependency Management
   * Maven
 * Web Services consumed using Java
-  * IMSLP--The Petrucci Music Library! Students can search for public-domain sheet music through this service. 
-  * YouTube, perhaps? Students will be able to look up/listen to recordings of pieces they are working on. It might also be a distraction, though...
-* CSS 
-  * Bootstrap
+  * YouTube: Students will be able to look up/listen to recordings of pieces they are working on.
+* Front-end 
+  * Bootstrap 4
+  * JavaScript/jQuery
 * Data Validation
   * Bootstrap Validator/RegEx for front end
   * Explore Hibernate's validation
@@ -57,8 +59,7 @@ Let's make it a little easier, eh?
 * Hosting
   * AWS
 * Independent Research Topic/s
-  * Materialize
-  * IMSLP/YouTube API
+  * IMSLP API/OpenOpus API/YouTube API
   * Project Lombok to streamline class-building. No more getters/setters!
 * Unit Testing
   * JUnit

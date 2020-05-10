@@ -89,6 +89,7 @@ p {
 }
 
 label {
+    color: white;
     font-size: 1.5em;
     font-weight: bold
 }
@@ -144,6 +145,18 @@ td {
     padding: 0.5em;
 }
 
+.indexCard {
+    padding: 0em;
+}
+
+.indexCardHeader {
+    padding: 1.5em 1em 1em 1em;
+}
+
+.bg-black {
+    background-color: #232323;
+}
+
 /* index */
 .homepageBox {
     position: absolute;
@@ -154,6 +167,12 @@ td {
 
 .indexHeading {
     margin-bottom: 2em;
+}
+
+.practiceCounter {
+    font-size: 7em;
+    font-weight: bold;
+    text-shadow: 1px 2px 3px black;
 }
 
 

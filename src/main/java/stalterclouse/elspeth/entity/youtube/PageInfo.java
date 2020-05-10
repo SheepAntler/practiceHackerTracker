@@ -1,30 +1,17 @@
 package stalterclouse.elspeth.entity.youtube;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class PageInfo{
 
+	@JsonIgnore
 	@JsonProperty("totalResults")
 	private int totalResults;
 
+	@JsonIgnore
 	@JsonProperty("resultsPerPage")
 	private int resultsPerPage;
-
-	public void setTotalResults(int totalResults){
-		this.totalResults = totalResults;
-	}
-
-	public int getTotalResults(){
-		return totalResults;
-	}
-
-	public void setResultsPerPage(int resultsPerPage){
-		this.resultsPerPage = resultsPerPage;
-	}
-
-	public int getResultsPerPage(){
-		return resultsPerPage;
-	}
 
 	@Override
  	public String toString(){

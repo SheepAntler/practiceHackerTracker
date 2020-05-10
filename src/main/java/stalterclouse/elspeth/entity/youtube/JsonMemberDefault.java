@@ -1,41 +1,25 @@
 package stalterclouse.elspeth.entity.youtube;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
+import lombok.Setter;
 
 public class JsonMemberDefault{
 
+	@Getter
+	@Setter
 	@JsonProperty("width")
 	private int width;
 
+	@Getter
+	@Setter
 	@JsonProperty("url")
 	private String url;
 
+	@Getter
+	@Setter
 	@JsonProperty("height")
 	private int height;
-
-	public void setWidth(int width){
-		this.width = width;
-	}
-
-	public int getWidth(){
-		return width;
-	}
-
-	public void setUrl(String url){
-		this.url = url;
-	}
-
-	public String getUrl(){
-		return url;
-	}
-
-	public void setHeight(int height){
-		this.height = height;
-	}
-
-	public int getHeight(){
-		return height;
-	}
 
 	@Override
  	public String toString(){
