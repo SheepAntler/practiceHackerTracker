@@ -3105,3 +3105,4 @@ com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized f
 [DEBUG] 2020-05-10 18:37:53.905 [http-nio-8080-exec-127] GenericDao - Searching for entity with username = saveTheViola
 [DEBUG] 2020-05-10 18:40:00.538 [http-nio-8080-exec-140] GenericDao - Searching for entity with username = sheepAntler
 [DEBUG] 2020-05-10 18:40:17.658 [http-nio-8080-exec-132] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-10 21:03:08.788 [http-nio-8080-exec-228] GenericDao - Searching for entity with username = sheepAntler
