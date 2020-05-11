@@ -165,3 +165,7 @@ s
 Csrc/main/java/stalterclouse/elspeth/utilities/PropertiesLoader.java,8/5/85bb92151cac748f7d501695857d505928f59ea6
 s
 Csrc/test/java/stalterclouse/elspeth/persistence/YouTubeDaoTest.java,5/f/5fd61860da7052b2a4350595bac768c9ff3b01cb
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+I
+src/main/webapp/about.jsp,9/c/9cfad79fedc294aa80b61650cbdd6365fe3bda92

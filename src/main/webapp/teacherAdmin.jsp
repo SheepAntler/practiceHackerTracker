@@ -5,13 +5,17 @@
     <%@include file="templates/navbar.jsp"%>
     <div class="container textBox">
         <h1 class="mainHeading text-center">Manage Your Studios</h1>
+        <hr />
+        <c:if test="${successMessage != null}">
+            <p class="text-success text-center">${successMessage}</p>
+        </c:if>
         <div class="hiddenDelete">
             <h2 class="text-warning text-center">Warning: deleting a studio cannot be undone!</h2>
             <p class="text-warning text-center">You will lose track of all students of the studio you choose to delete.</p>
         </div>
-        <div class="card-deck">
+        <div class="card-deck studioCards mt-4">
             <c:forEach var="studio" items="${user.studios}">
-                    <div class="card bg-dark mb-2" style="min-width: 18rem; max-width: 18rem;">
+                    <div class="card bg-dark mb-2" style="min-width: 18rem; max-width: 20rem;">
                         <div class="card-header">
                             <h3 class="card-title">${studio.instrument} Studio at ${studio.organizationName}</h3>
                         </div>
@@ -22,19 +26,24 @@
                         <div class="hiddenDelete">
                             <form action="closeStudio">
                                 <input type="hidden" name="studioToClose" value="${studio.id}"/>
-                                <button type="submit" class="btn btn-danger">Close Studio</button>
+                                <div class="row buttonContainer">
+                                    <button type="submit" class="btn btn-danger button smallButton col-12">Close Studio</button>
+                                </div>
                             </form>
-                            <button class="showHideDelete btn btn-secondary">Never mind!</button>
+                            <div class="row buttonContainer mt-2">
+                                <button class="showHideDelete btn btn-secondary button smallButton col-12">Never mind!</button>
+                            </div>
                         </div>
                     </div>
             </c:forEach>
         </div>
-        <div class="row">
-            <button class="showHideAdd btn btn-dark">Add a Studio</button>
-            <button class="showHideDelete btn btn-dark">Close a Studio</button>
+        <div class="row buttonContainer mt-4 mb-4">
+            <button class="showHideAdd btn btn-secondary button smallButton col-5">Add a Studio</button>
+            <button class="showHideDelete btn btn-danger button smallButton col-5">Close a Studio</button>
         </div>
         <div id="hiddenAdd">
-            <h2 class="subHeading">Create a New Studio</h2>
+            <hr />
+            <h2 class="subHeading text-center">Create a New Studio</h2>
             <form action="createStudio">
                 <div class="row">
                     <div class="form-group col-sm-6">
@@ -64,8 +73,10 @@
                         <input type="text" class="form-control" id="studioZip" name="studioZip" required>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-secondary">Create Studio</button>
-                <button class="showHideAdd btn btn-dark">Never Mind!</button>
+                <div class="row buttonContainer mt-2">
+                    <button type="submit" class="btn btn-success button smallButton col-5">Create Studio</button>
+                    <button class="showHideAdd btn btn-dark button smallButton col-5">Never Mind!</button>
+                </div>
             </form>
         </div>
 <%--        <div class="hiddenDelete">--%>

@@ -166,6 +166,11 @@ td {
     background-color: #232323;
 }
 
+.studioCards {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* index */
 .homepageBox {
     position: absolute;

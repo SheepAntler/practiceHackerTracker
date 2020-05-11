@@ -5,6 +5,7 @@ import stalterclouse.elspeth.entity.Studio;
 import stalterclouse.elspeth.entity.User;
 import stalterclouse.elspeth.persistence.GenericDao;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
@@ -45,7 +46,13 @@ public class CreateStudioAction extends HttpServlet {
         session.removeAttribute("user");
         session.setAttribute("user", updatedUser);
 
-        resp.sendRedirect(req.getContextPath() + "/teacherAdmin.jsp");
+        req.setAttribute("successMessage", "Your studio was successfully created, and students will now be able to join it.");
+
+//        resp.sendRedirect(req.getContextPath() + "/teacherAdmin.jsp");
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/teacherAdmin.jsp");
+        dispatcher.forward(req, resp);
+
 
     }
 }
