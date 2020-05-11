@@ -4,6 +4,7 @@ import stalterclouse.elspeth.entity.PracticeHack;
 import stalterclouse.elspeth.entity.User;
 import stalterclouse.elspeth.persistence.GenericDao;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
@@ -38,7 +39,12 @@ public class DeletePracticeHackAction extends HttpServlet {
 
         session.setAttribute("user", updatedUser);
 
-        resp.sendRedirect(req.getContextPath() + "/viewPracticeHacks.jsp");
+        //resp.sendRedirect(req.getContextPath() + "/viewPracticeHacks.jsp");
+
+        req.setAttribute("successMessage", "Your Practice Hack was successfully deleted.");
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/viewPracticeHacks.jsp");
+        dispatcher.forward(req, resp);
 
     }
 }

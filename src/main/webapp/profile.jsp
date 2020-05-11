@@ -59,11 +59,11 @@
                             <div class="form-group col-sm-4">
                                 <label for="skillLevel">Update Skill Level</label>
                                 <select name="skillLevel" class="form-control" id="skillLevel" required>
-                                    <option value="beginner">Beginner</option>
-                                    <option value="intermediate">Intermediate</option>
-                                    <option value="advanced">Advanced</option>
-                                    <option value="preProfessional">Collegiate/Pre-Professional</option>
-                                    <option value="professional">Professional</option>
+                                    <option value="Beginner">Beginner</option>
+                                    <option value="Intermediate">Intermediate</option>
+                                    <option value="Advanced">Advanced</option>
+                                    <option value="Pre-Professional">Collegiate/Pre-Professional</option>
+                                    <option value="Professional">Professional</option>
                                 </select>
                             </div>
                             <div class="form-group col-sm-6">

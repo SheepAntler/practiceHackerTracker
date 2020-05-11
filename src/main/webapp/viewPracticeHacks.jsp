@@ -5,6 +5,10 @@
     <%@include file="templates/navbar.jsp"%>
     <div class="container textBox">
         <h1 class="mainHeading text-center">Practice Hacks</h1>
+        <hr class="mb-4"/>
+        <c:if test="${successMessage != null}">
+            <p class="text-success text-center">${successMessage}</p>
+        </c:if>
         <%--if you're a practiceHacker you'll just see hacks for your instrument/skill level--%>
         <c:if test="${pageContext.request.isUserInRole('practiceHacker')}">
             <h2 class="subHeading text-center">Tips, Tricks, and Ideas for ${user.instrument.skillLevel} ${user.instrument.instrument} Players</h2>
@@ -42,7 +46,7 @@
             </c:choose>
         </c:if>
         <c:if test="${pageContext.request.isUserInRole('teacher')}">
-            <form action="practiceHacks">
+            <form action="practiceHacks" class="mb-4">
                 <h2 class="subHeading text-center">Please Select the Practice Hacks you'd like to View:</h2>
                 <label class="sr-only" for="practiceHackView">Please Select the Practice Hacks you'd like to View</label>
                 <select name="practiceHackView" id="practiceHackView" class="form-control">
@@ -50,9 +54,11 @@
                     <option value="authorMode">Show Me Practice Hacks I've Written (Newest to Oldest)</option>
                     <option value="practiceMode">Show Me Practice Hacks for my Own Practice</option>
                 </select>
-                <button type="submit" class="btn btn-secondary">Get Practice Hacks</button>
+                <div class="row buttonContainer mt-4">
+                    <button type="submit" class="btn btn-secondary button smallButton col-4">Get Practice Hacks</button>
+                </div>
             </form>
-
+            <hr class="mb-4"/>
             <c:if test="${practiceHackViewSelected == true}">
                 <c:if test="${allPracticeHacks != null}">
                     <c:choose>
@@ -61,7 +67,7 @@
                             <p>${allPracticeHacks}</p>
                         </c:when>
                         <c:otherwise>
-                            <p>Nobody has written any practice hacks yet. Would you like to <a href="practiceHackWriter.jsp">get the ball rolling</a>?</p>
+                            <p class="text-center">Nobody has written any practice hacks yet. Would you like to <a href="practiceHackWriter.jsp">get the ball rolling</a>?</p>
                         </c:otherwise>
                     </c:choose>
                 </c:if>
@@ -71,21 +77,27 @@
 <%--                            <p>These will have "edit" and "delete" buttons next to them</p>--%>
 <%--                            <p>${myPracticeHacks}</p>--%>
                             <c:forEach var="practiceHack" items="${user.practiceHacks}">
-                                <h3 class="minorHeading">${practiceHack.instrument}: ${practiceHack.skillLevel}</h3>
-                                <p>${practiceHack.practiceHack}</p>
-                                <form action="getPracticeHack">
+                                <h3 class="minorHeading text-center mt-4">${practiceHack.instrument}: ${practiceHack.skillLevel}</h3>
+                                <hr />
+                                <p class="text-center">${practiceHack.practiceHack}</p>
+                                <form action="getPracticeHack" class="mb-2">
                                     <input type="hidden" name="practiceHackToEdit" value="${practiceHack.id}">
-                                    <button type="submit" class="btn btn-secondary">Edit</button>
+                                    <div class="row buttonContainer">
+                                        <button type="submit" class="btn btn-secondary button tinyButton col-3">Edit</button>
+                                    </div>
                                 </form>
-                                <form action="deletePracticeHack">
+                                <form action="deletePracticeHack" class="mb-4">
                                     <input type="hidden" name="practiceHackToDelete" value="${practiceHack.id}">
-                                    <button type="submit" class="btn btn-danger">Delete*</button>
-                                    <small class="text-danger">*Think carefully before deleting; this action cannot be undone.</small>
+                                    <div class="row buttonContainer">
+                                        <button type="submit" class="btn btn-danger button tinyButton col-3">Delete*</button>
+                                    </div>
+                                    <p class="text-center"><small class="text-danger">*Think carefully before deleting; this action cannot be undone.</small></p>
                                 </form>
+                                <hr class="mb-4" />
                             </c:forEach>
                         </c:when>
                         <c:otherwise>
-                            <p>You haven't written any practice hacks yet. Would you like to <a href="practiceHackWriter.jsp">create one</a>?</p>
+                            <p class="text-center">You haven't written any practice hacks yet. Would you like to <a href="practiceHackWriter.jsp">create one</a>?</p>
                         </c:otherwise>
                     </c:choose>
                 </c:if>
@@ -96,7 +108,7 @@
                             <p>${personalPracticeHacks}</p>
                         </c:when>
                         <c:otherwise>
-                            <p>There's nothing to show here...yet. Would you like to <a href="practiceHackWriter.jsp">add your own idea</a>?</p>
+                            <p class="text-center">There's nothing to show here...yet. Would you like to <a href="practiceHackWriter.jsp">add your own idea</a>?</p>
                         </c:otherwise>
                     </c:choose>
                 </c:if>

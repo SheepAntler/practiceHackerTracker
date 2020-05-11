@@ -28,7 +28,7 @@
                 </div>
                 <div class="form-group col-sm-6">
                     <label for="instrument">Instrument: </label>
-                    <select name="instrument" class="form-control" id="instrument">
+                    <select name="instrument" class="form-control" id="instrument" required>
                         <option value="${user.instrument.instrument}">${user.instrument.instrument}</option>
                     </select>
                 </div>
@@ -40,12 +40,16 @@
             <br><br>
             <c:choose>
                 <c:when test="${practiceHackToEdit != null}">
-                    <button type="submit" class="btn btn-secondary">Update Practice Hack</button>
-                    <a class="btn btn-dark" href="viewPracticeHacks.jsp">Back</a>
+                    <div class="row buttonContainer">
+                        <button type="submit" class="btn btn-secondary button smallButton col-4">Update Practice Hack</button>
+                        <a class="btn btn-dark button smallButton col-4" href="viewPracticeHacks.jsp">Back</a>
+                    </div>
                 </c:when>
                 <c:otherwise>
-                    <button type="submit" class="btn btn-secondary">Save Practice Hack</button>
-                    <button type="reset" class="btn btn-dark">Start Over</button>
+                    <div class="row buttonContainer">
+                        <button type="submit" class="btn btn-secondary button smallButton col-4">Save Practice Hack</button>
+                        <button type="reset" class="btn btn-dark button smallButton col-4">Start Over</button>
+                    </div>
                 </c:otherwise>
             </c:choose>
         </form>
