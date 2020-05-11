@@ -5,6 +5,7 @@ import stalterclouse.elspeth.entity.PracticeLog;
 import stalterclouse.elspeth.entity.User;
 import stalterclouse.elspeth.persistence.GenericDao;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
@@ -97,6 +98,12 @@ public class WriteLogAction extends HttpServlet {
         session.removeAttribute("user");
         session.setAttribute("user", updatedUser);
 
-        resp.sendRedirect(req.getContextPath() + "/viewMyLog.jsp");
+//        resp.sendRedirect(req.getContextPath() + "/viewMyLog.jsp");
+
+        req.setAttribute("successMessage", "Congratulations! Your session has been logged.");
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/viewMyLog.jsp");
+        dispatcher.forward(req, resp);
+
     }
 }

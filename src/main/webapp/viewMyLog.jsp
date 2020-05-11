@@ -6,6 +6,10 @@
     <div class="container textBox">
         <h1 class="mainHeading text-center">My Logs</h1>
 
+        <c:if test="${successMessage != null}">
+            <p class="text-success text-center">${successMessage}</p>
+        </c:if>
+
         <c:forEach var="log" items="${user.practiceLogs}">
             <p>${f:formatLocalDateTime(log.practiceDate, 'MM-dd-yyyy')}</p>
             <p>${log.practiceDuration} minutes</p>

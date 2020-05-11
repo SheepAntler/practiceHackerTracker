@@ -35,8 +35,10 @@
                 <textarea id="editor" name="notes"></textarea>
             </div>
             <br><br>
-            <button type="submit" class="btn btn-secondary">Save Log</button>
-            <button type="reset" class="btn btn-dark">Start Over</button>
+            <div class="row buttonContainer">
+                <button type="submit" class="btn btn-secondary button smallButton col-4">Save Log</button>
+                <button type="reset" class="btn btn-dark button smallButton col-4">Start Over</button>
+            </div>
         </form>
     </div>
     <script>

@@ -3106,3 +3106,17 @@ com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized f
 [DEBUG] 2020-05-10 18:40:00.538 [http-nio-8080-exec-140] GenericDao - Searching for entity with username = sheepAntler
 [DEBUG] 2020-05-10 18:40:17.658 [http-nio-8080-exec-132] GenericDao - Searching for entity with username = saveTheViola
 [DEBUG] 2020-05-10 21:03:08.788 [http-nio-8080-exec-228] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-10 23:20:14.272 [http-nio-8080-exec-4] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-10 23:22:14.765 [http-nio-8080-exec-6] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-10 23:25:11.131 [http-nio-8080-exec-13] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-10 23:27:04.151 [http-nio-8080-exec-23] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-10 23:38:33.574 [http-nio-8080-exec-53] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-10 23:39:05.864 [http-nio-8080-exec-55] GenericDao - Searching for entity with user = 1
+[DEBUG] 2020-05-10 23:39:05.904 [http-nio-8080-exec-55] WriteLogAction - finding last practice date: 2020-05-09T00:00:12
+[DEBUG] 2020-05-10 23:39:05.904 [http-nio-8080-exec-55] WriteLogAction - last practice date is NOT the same as current practice date!
+[DEBUG] 2020-05-10 23:39:05.905 [http-nio-8080-exec-55] WriteLogAction - calculating days since last practice: 1
+[DEBUG] 2020-05-10 23:39:05.905 [http-nio-8080-exec-55] WriteLogAction - last practice was yesterday--awesome!
+[DEBUG] 2020-05-10 23:39:05.905 [http-nio-8080-exec-55] WriteLogAction - user counter was incremented to: 3
+[DEBUG] 2020-05-10 23:39:06.133 [http-nio-8080-exec-55] WriteLogAction - user before update: User(id=1, username=sheepAntler, password=password, firstName=Elspeth, lastName=Stalter, email=sheepantler@gmail.com, practiceCounter=3, birthDate=1989-12-25, city=Madison, state=WI, zipCode=53703, longestStreak=100)
+[DEBUG] 2020-05-10 23:39:06.251 [http-nio-8080-exec-55] WriteLogAction - user after update: User(id=1, username=sheepAntler, password=password, firstName=Elspeth, lastName=Stalter, email=sheepantler@gmail.com, practiceCounter=3, birthDate=1989-12-25, city=Madison, state=WI, zipCode=53703, longestStreak=100)
+[DEBUG] 2020-05-10 23:39:13.781 [http-nio-8080-exec-56] GenericDao - Searching for entity with username = sheepAntler
