@@ -17,6 +17,9 @@
                 </div>
                 <div id="teacherInfo" class="collapse show" aria-labelledby="viewProfile" data-parent="#profileViewer">
                     <div class="card-body">
+                        <c:if test="${successMessage != null}">
+                            <p class="text-success text-center">${successMessage}</p>
+                        </c:if>
                         <table class="table table-striped table-dark">
                             <thead class="thead-dark">
                             <tr>
@@ -55,7 +58,7 @@
                         <form action="editProfile">
                             <div class="form-group col-sm-4">
                                 <label for="skillLevel">Update Skill Level</label>
-                                <select name="skillLevel" class="form-control" id="skillLevel">
+                                <select name="skillLevel" class="form-control" id="skillLevel" required>
                                     <option value="beginner">Beginner</option>
                                     <option value="intermediate">Intermediate</option>
                                     <option value="advanced">Advanced</option>
@@ -65,21 +68,23 @@
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="email">Update Email: </label>
-                                <input type="text" class="form-control" id="email" name="email" value="${user.email}">
+                                <input type="text" class="form-control" id="email" name="email" value="${user.email}" required>
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="city">Update City: </label>
-                                <input type="text" class="form-control" id="city" name="city" value="${user.city}">
+                                <input type="text" class="form-control" id="city" name="city" value="${user.city}" required>
                             </div>
                             <div class="form-group col-sm-4">
                                 <label for="state">Update State: </label>
-                                <input type="text" class="form-control" id="state" name="state" value="${user.state}">
+                                <input type="text" class="form-control" id="state" name="state" value="${user.state}" required>
                             </div>
                             <div class="form-group col-sm-4">
                                 <label for="zip">Update Zip Code: </label>
-                                <input type="text" class="form-control" id="zip" name="zip" value="${user.zipCode}">
+                                <input type="text" class="form-control" id="zip" name="zip" value="${user.zipCode}" required>
                             </div>
-                            <button type="submit" class="btn btn-secondary">Save Changes</button>
+                            <div class="row buttonContainer">
+                                <button type="submit" class="btn btn-secondary button smallButton">Save Changes</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -106,7 +111,9 @@
                                 <p class="text-center text-warning">Once you delete your account, you will lose all of your logs.</p>
                             </c:when>
                         </c:choose>
-                        <a class="btn btn-danger" href="confirmDelete.jsp">I understand; but I'd like to continue</a>
+                        <div class="row buttonContainer">
+                            <a class="btn btn-danger button smallButton" href="confirmDelete.jsp">I understand; but I'd like to continue</a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -5,6 +5,7 @@ import stalterclouse.elspeth.entity.Instrument;
 import stalterclouse.elspeth.entity.User;
 import stalterclouse.elspeth.persistence.GenericDao;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
@@ -48,7 +49,12 @@ public class EditProfileAction extends HttpServlet {
 
         session.setAttribute("user", updatedUser);
 
-        resp.sendRedirect(req.getContextPath() + "/profile.jsp");
+        req.setAttribute("successMessage", "Success! Your profile has been updated.");
+
+//        resp.sendRedirect(req.getContextPath() + "/profile.jsp");
+
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/profile.jsp");
+        dispatcher.forward(req, resp);
 
     }
 }
