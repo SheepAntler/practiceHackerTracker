@@ -22,8 +22,8 @@
             <c:choose>
                 <c:when test="${!empty personalPracticeHacks}">
                     <div class="container-fluid">
-                        <table class="display practiceHackTable" cellspacing="0" width="100%">
-                            <thead>
+                        <table class="display practiceHackTable text-center" cellspacing="0" width="100%">
+                            <thead class="bg-black">
                                 <th>Author</th>
                                 <th>Practice Hack</th>
                             </thead>
@@ -50,8 +50,8 @@
                     <h2 class="subHeading text-center">Here are your teacher's tips, tricks, and ideas for ${user.instrument.skillLevel} ${user.instrument.instrument} Players</h2>
                     <hr />
                     <div class="container-fluid">
-                        <table class="display practiceHackTable" cellspacing="0" width="100%">
-                            <thead>
+                        <table class="display practiceHackTable text-center" cellspacing="0" width="100%">
+                            <thead class="bg-black">
                                 <th>Practice Hack</th>
                             </thead>
                             <tbody>
@@ -69,8 +69,8 @@
                     <hr />
                     <h2 class="subHeading text-center">Tips, Tricks, and Ideas for ${user.instrument.skillLevel} ${user.instrument.instrument} Players</h2>
                     <div class="container-fluid">
-                        <table class="display practiceHackTable" cellspacing="0" width="100%">
-                            <thead>
+                        <table class="display practiceHackTable text-center" cellspacing="0" width="100%">
+                            <thead class="bg-black">
                                 <th>Author</th>
                                 <th>Practice Hack</th>
                             </thead>
@@ -112,8 +112,8 @@
                             <h2 class="subHeading text-center">All Practice Hacks</h2>
                             <hr />
                             <div class="container-fluid">
-                                <table class="display practiceHackTable" cellspacing="0" width="100%">
-                                    <thead>
+                                <table class="display practiceHackTable text-center" cellspacing="0" width="100%">
+                                    <thead class="bg-black">
                                         <th>Instrument</th>
                                         <th>Skill Level</th>
                                         <th>Practice Hack</th>
@@ -171,8 +171,8 @@
                             <h2 class="subHeading text-center">Practice Hacks Tailored to You</h2>
                             <hr />
                             <div class="container-fluid">
-                                <table class="display practiceHackTable" cellspacing="0" width="100%">
-                                    <thead>
+                                <table class="display practiceHackTable text-center" cellspacing="0" width="100%">
+                                    <thead class="bg-black">
                                         <th>Author</th>
                                         <th>Practice Hack</th>
                                     </thead>

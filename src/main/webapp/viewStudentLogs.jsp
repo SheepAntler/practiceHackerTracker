@@ -39,8 +39,8 @@
             <c:choose>
                 <c:when test="${!empty studentLog.practiceLogs}">
                     <div class="container-fluid">
-                        <table id="practiceLogTable" class="display" cellspacing="0" width="100%">
-                            <thead>
+                        <table id="practiceLogTable" class="display text-center" cellspacing="0" width="100%">
+                            <thead class="bg-black">
                                 <th>Date</th>
                                 <th>Duration</th>
                                 <th>Activities</th>

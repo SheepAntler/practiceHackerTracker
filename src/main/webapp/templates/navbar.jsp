@@ -71,9 +71,6 @@
                     <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/accountTypes.jsp' ? ' active' : ''}">
                         <a class="nav-link" href="accountTypes.jsp">Account Types</a>
                     </li>
-                    <li class="nav-item ${pageContext.request.requestURI eq '/practiceHackerTracker_war/faq.jsp' ? ' active' : ''}">
-                        <a class="nav-link" href="faq.jsp">FAQ</a>
-                    </li>
                 </c:otherwise>
             </c:choose>
         </ul>
