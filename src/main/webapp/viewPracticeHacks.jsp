@@ -1,9 +1,15 @@
 <%@include file="templates/head.jsp"%>
 
+<script type="text/javascript" class="init">
+    $(document).ready( function () {
+        $('.practiceHackTable').DataTable();
+    });
+</script>
+
 <html>
 <body>
     <%@include file="templates/navbar.jsp"%>
-    <div class="container textBox">
+    <div class="textBox writerBox">
         <h1 class="mainHeading text-center">Practice Hacks</h1>
         <hr class="mb-4"/>
         <c:if test="${successMessage != null}">
@@ -12,39 +18,79 @@
         <%--if you're a practiceHacker you'll just see hacks for your instrument/skill level--%>
         <c:if test="${pageContext.request.isUserInRole('practiceHacker')}">
             <h2 class="subHeading text-center">Tips, Tricks, and Ideas for ${user.instrument.skillLevel} ${user.instrument.instrument} Players</h2>
+            <hr />
             <c:choose>
                 <c:when test="${!empty personalPracticeHacks}">
-                    <c:forEach var="practiceHack" items="${personalPracticeHacks}">
-                        <p>Author: ${practiceHack.user.firstName} ${practiceHack.user.lastName}</p>
-                        <p>${practiceHack.practiceHack}</p>
-                    </c:forEach>
+                    <div class="container-fluid">
+                        <table class="display practiceHackTable" cellspacing="0" width="100%">
+                            <thead>
+                                <th>Author</th>
+                                <th>Practice Hack</th>
+                            </thead>
+                            <tbody>
+                                <c:forEach var="practiceHack" items="${personalPracticeHacks}">
+                                    <tr>
+                                        <td>${practiceHack.user.firstName} ${practiceHack.user.lastName}</td>
+                                        <td>${practiceHack.practiceHack}</td>
+                                    </tr>
+                                </c:forEach>
+                            </tbody>
+                        </table>
+                    </div>
                 </c:when>
                 <c:otherwise>
-                    <h2>There isn't any content to display yet.</h2>
+                    <h2 class="text-center">There isn't any content to display yet.</h2>
                 </c:otherwise>
             </c:choose>
         </c:if>
+        <%-- If you're a student, you will see either just your teacher's practice hacks for your instrument/skill level, or all practice hacks for your instrument/skill level if your teacher hasn't written any hacks yet--%>
         <c:if test="${pageContext.request.isUserInRole('student')}">
             <c:choose>
                 <c:when test="${practiceHacksFromTeacher != null}">
                     <h2 class="subHeading text-center">Here are your teacher's tips, tricks, and ideas for ${user.instrument.skillLevel} ${user.instrument.instrument} Players</h2>
-                    <c:forEach var="practiceHack" items="${practiceHacksFromTeacher}">
-                        <p>${practiceHack.practiceHack}</p>
-                    </c:forEach>
+                    <hr />
+                    <div class="container-fluid">
+                        <table class="display practiceHackTable" cellspacing="0" width="100%">
+                            <thead>
+                                <th>Practice Hack</th>
+                            </thead>
+                            <tbody>
+                                <c:forEach var="practiceHack" items="${practiceHacksFromTeacher}">
+                                    <tr>
+                                        <td>${practiceHack.practiceHack}</td>
+                                    </tr>
+                                </c:forEach>
+                            </tbody>
+                        </table>
+                    </div>
                 </c:when>
                 <c:when test="${practiceHacksFromTeacher == null && personalPracticeHacks != null}">
                     <h2 class="subHeading text-center">Looks like your teacher hasn't added any Practice Hacks yet. Here are some other teachers' ideas in the meantime!</h2>
+                    <hr />
                     <h2 class="subHeading text-center">Tips, Tricks, and Ideas for ${user.instrument.skillLevel} ${user.instrument.instrument} Players</h2>
-                    <c:forEach var="practiceHack" items="${personalPracticeHacks}">
-                        <p>Author: ${practiceHack.user.firstName} ${practiceHack.user.lastName} from ${practiceHack.user.city}, ${practiceHack.user.state}</p>
-                        <p>${practiceHack.practiceHack}</p>
-                    </c:forEach>
+                    <div class="container-fluid">
+                        <table class="display practiceHackTable" cellspacing="0" width="100%">
+                            <thead>
+                                <th>Author</th>
+                                <th>Practice Hack</th>
+                            </thead>
+                            <tbody>
+                                <c:forEach var="practiceHack" items="${personalPracticeHacks}">
+                                    <tr>
+                                        <td>${practiceHack.user.firstName} ${practiceHack.user.lastName}</td>
+                                        <td>${practiceHack.practiceHack}</td>
+                                    </tr>
+                                </c:forEach>
+                            </tbody>
+                        </table>
+                    </div>
                 </c:when>
                 <c:otherwise>
                     <h2>There isn't any content to display yet.</h2>
                 </c:otherwise>
             </c:choose>
         </c:if>
+        <%-- If you're a teacher, you will be able to choose between three practice hack views --%>
         <c:if test="${pageContext.request.isUserInRole('teacher')}">
             <form action="practiceHacks" class="mb-4">
                 <h2 class="subHeading text-center">Please Select the Practice Hacks you'd like to View:</h2>
@@ -63,8 +109,28 @@
                 <c:if test="${allPracticeHacks != null}">
                     <c:choose>
                         <c:when test="${!empty allPracticeHacks}">
-                            <p>This will be a jQuery table</p>
-                            <p>${allPracticeHacks}</p>
+                            <h2 class="subHeading text-center">All Practice Hacks</h2>
+                            <hr />
+                            <div class="container-fluid">
+                                <table class="display practiceHackTable" cellspacing="0" width="100%">
+                                    <thead>
+                                        <th>Instrument</th>
+                                        <th>Skill Level</th>
+                                        <th>Practice Hack</th>
+                                        <th>Author</th>
+                                    </thead>
+                                    <tbody>
+                                        <c:forEach var="practiceHack" items="${allPracticeHacks}">
+                                            <tr>
+                                                <td>${practiceHack.instrument}</td>
+                                                <td>${practiceHack.skillLevel}</td>
+                                                <td>${practiceHack.practiceHack}</td>
+                                                <td>${practiceHack.user.firstName} ${practiceHack.user.lastName}</td>
+                                            </tr>
+                                        </c:forEach>
+                                    </tbody>
+                                </table>
+                            </div>
                         </c:when>
                         <c:otherwise>
                             <p class="text-center">Nobody has written any practice hacks yet. Would you like to <a href="practiceHackWriter.jsp">get the ball rolling</a>?</p>
@@ -74,8 +140,6 @@
                 <c:if test="${myPracticeHacks != null}">
                     <c:choose>
                         <c:when test="${!empty myPracticeHacks}">
-<%--                            <p>These will have "edit" and "delete" buttons next to them</p>--%>
-<%--                            <p>${myPracticeHacks}</p>--%>
                             <c:forEach var="practiceHack" items="${user.practiceHacks}">
                                 <h3 class="minorHeading text-center mt-4">${practiceHack.instrument}: ${practiceHack.skillLevel}</h3>
                                 <hr />
@@ -104,8 +168,24 @@
                 <c:if test="${personalPracticeHacks != null}">
                     <c:choose>
                         <c:when test="${!empty personalPracticeHacks}">
-                            <p>These will be output in a jQuery table like the other views</p>
-                            <p>${personalPracticeHacks}</p>
+                            <h2 class="subHeading text-center">Practice Hacks Tailored to You</h2>
+                            <hr />
+                            <div class="container-fluid">
+                                <table class="display practiceHackTable" cellspacing="0" width="100%">
+                                    <thead>
+                                        <th>Author</th>
+                                        <th>Practice Hack</th>
+                                    </thead>
+                                    <tbody>
+                                        <c:forEach var="practiceHack" items="${personalPracticeHacks}">
+                                            <tr>
+                                                <td>${practiceHack.user.firstName} ${practiceHack.user.lastName}</td>
+                                                <td>${practiceHack.practiceHack}</td>
+                                            </tr>
+                                        </c:forEach>
+                                    </tbody>
+                                </table>
+                            </div>
                         </c:when>
                         <c:otherwise>
                             <p class="text-center">There's nothing to show here...yet. Would you like to <a href="practiceHackWriter.jsp">add your own idea</a>?</p>

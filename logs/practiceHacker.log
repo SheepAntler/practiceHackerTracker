@@ -3233,3 +3233,12 @@ com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized f
 [DEBUG] 2020-05-11 13:01:22.315 [http-nio-8080-exec-9] GenericDao - Searching for entity with username = saveTheViola
 [DEBUG] 2020-05-11 13:01:38.067 [http-nio-8080-exec-7] GenericDao - Searching for entity with username = madBratsche
 [DEBUG] 2020-05-11 13:02:06.861 [http-nio-8080-exec-15] GenericDao - Searching for entity with username = anaBanana
+[DEBUG] 2020-05-11 13:36:01.789 [http-nio-8080-exec-15] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-11 13:56:19.022 [http-nio-8080-exec-25] GenericDao - Searching for entity with user = User(id=3, username=saveTheViola, password=password, firstName=Viola, lastName=Happenstance, email=violaViolist@gmail.com, practiceCounter=1, birthDate=1990-01-12, city=Madison, state=WI, zipCode=53711, longestStreak=1)
+[DEBUG] 2020-05-11 13:58:29.433 [http-nio-8080-exec-34] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-11 14:07:44.636 [http-nio-8080-exec-44] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-11 14:21:30.740 [http-nio-8080-exec-53] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 14:22:06.008 [http-nio-8080-exec-64] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-11 14:25:03.877 [http-nio-8080-exec-62] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 14:25:28.815 [http-nio-8080-exec-68] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 14:27:04.271 [http-nio-8080-exec-77] GenericDao - Searching for entity with username = saveTheViola
