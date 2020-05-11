@@ -5,6 +5,7 @@
     <%@include file="templates/navbar.jsp"%>
     <div class="container textBox">
         <h1 class="mainHeading text-center">My Logs</h1>
+        <hr />
 
         <c:if test="${successMessage != null}">
             <p class="text-success text-center">${successMessage}</p>

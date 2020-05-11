@@ -6,6 +6,7 @@
     <%@include file="templates/navbar.jsp"%>
     <div class="container textBox">
         <h1 class="mainHeading text-center">My Profile</h1>
+        <hr />
         <div class="accordion" id="profileViewer">
             <div class="card bg-dark text-light">
                 <div class="card-header" id="viewProfile">
