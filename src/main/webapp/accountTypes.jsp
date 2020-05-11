@@ -21,8 +21,31 @@
                 </div>
                 <div id="teacherInfo" class="collapse show" aria-labelledby="forTeachers" data-parent="#accountTypes">
                     <div class="card-body">
-                        <p>//TODO add a brief description</p>
-                        <p>//TODO add a table listing teacher features</p>
+                        <hr />
+                        <h3 class="minorHeading text-center">Studio Administration</h3>
+                        <hr />
+                        <ul>
+                            <li>Create new studios</li>
+                            <li>Close studios when you move on</li>
+                            <li>Track your students' practice progress, studio by studio</li>
+                        </ul>
+                        <hr />
+                        <h3 class="minorHeading text-center">Practice Logging</h3>
+                        <hr />
+                        <ul>
+                            <li>Log practice sessions</li>
+                            <li>Read your past logs</li>
+                            <li>Track your longest practice streaks</li>
+                            <li>Review the logs of your students</li>
+                        </ul>
+                        <hr />
+                        <h3 class="minorHeading text-center">Practice Hacks</h3>
+                        <hr />
+                        <ul>
+                            <li>Read practice hacks tailored to you</li>
+                            <li>Write practice hacks for your students, and for musicians nationwide</li>
+                            <li>Edit or delete practice hacks you've created</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -36,8 +59,21 @@
                 </div>
                 <div id="studentInfo" class="collapse" aria-labelledby="forStudents" data-parent="#accountTypes">
                     <div class="card-body">
-                        <p>//TODO add a brief description</p>
-                        <p>//TODO add a table listing student features</p>
+                        <hr />
+                        <h3 class="minorHeading text-center">Practice Logging</h3>
+                        <hr />
+                        <ul>
+                            <li>Log practice sessions</li>
+                            <li>Read your past logs</li>
+                            <li>Track your longest practice streaks</li>
+                            <li>Share your practice progress with your teacher</li>
+                        </ul>
+                        <hr />
+                        <h3 class="minorHeading text-center">Practice Hacks</h3>
+                        <hr />
+                        <ul>
+                            <li>Read practice hacks tailored to you, written by your teacher</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -51,8 +87,20 @@
                 </div>
                 <div id="otherInfo" class="collapse" aria-labelledby="forOthers" data-parent="#accountTypes">
                     <div class="card-body">
-                        <p>//TODO add a brief description</p>
-                        <p>//TODO add a table listing practiceHacker features</p>
+                        <hr />
+                        <h3 class="minorHeading text-center">Practice Logging</h3>
+                        <hr />
+                        <ul class="mb-2">
+                            <li>Log practice sessions</li>
+                            <li>Read your past logs</li>
+                            <li>Track your longest practice streaks</li>
+                        </ul>
+                        <hr />
+                        <h3 class="minorHeading text-center">Practice Hacks</h3>
+                        <hr />
+                        <ul>
+                            <li>Read practice hacks tailored to you, written by teachers all over the country</li>
+                        </ul>
                     </div>
                 </div>
             </div>
