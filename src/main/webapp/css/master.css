@@ -100,6 +100,10 @@ small {
     width: 30%;
 }
 
+.logBox {
+    width: 95%;
+}
+
 label {
     color: white;
     font-size: 1.5em;

@@ -1,5 +1,14 @@
 <%@include file="templates/head.jsp"%>
 <%@taglib uri="http://practiceHacker.com/functions" prefix="f" %>
+
+<script type="text/javascript" class="init">
+    $(document).ready( function () {
+        $('#practiceLogTable').DataTable({
+            order: [[ 0, 'desc' ]]
+        });
+    });
+</script>
+
 <html>
 <body>
     <%@include file="templates/navbar.jsp"%>
@@ -24,17 +33,31 @@
         </form>
     </div>
     <c:if test="${logAcquired != null}">
-        <div class="container textBox">
+        <div class="textBox logBox">
             <h2 class="mainHeading text-center">${studentLog.firstName} ${studentLog.lastName}'s Log</h2>
             <hr />
             <c:choose>
                 <c:when test="${!empty studentLog.practiceLogs}">
-                    <c:forEach var="log" items="${studentLog.practiceLogs}">
-                        <p>${f:formatLocalDateTime(log.practiceDate, 'MM-dd-yyyy')}</p>
-                        <p>${log.practiceDuration}</p>
-                        <p>${log.activities}</p>
-                        <p>${log.notes}</p>
-                    </c:forEach>
+                    <div class="container-fluid">
+                        <table id="practiceLogTable" class="display" cellspacing="0" width="100%">
+                            <thead>
+                                <th>Date</th>
+                                <th>Duration</th>
+                                <th>Activities</th>
+                                <th>Notes</th>
+                            </thead>
+                            <tbody>
+                                <c:forEach var="log" items="${studentLog.practiceLogs}">
+                                    <tr>
+                                        <td>${f:formatLocalDateTime(log.practiceDate, 'MM-dd-yyyy')}</td>
+                                        <td>${log.practiceDuration} min</td>
+                                        <td>${log.activities}</td>
+                                        <td>${log.notes}</td>
+                                    </tr>
+                                </c:forEach>
+                            </tbody>
+                        </table>
+                    </div>
                 </c:when>
                 <c:otherwise>
                     <p class="text-center">This student hasn't logged any practice sessions yet.</p>

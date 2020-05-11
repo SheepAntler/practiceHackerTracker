@@ -3,8 +3,10 @@
 
 <script type="text/javascript" class="init">
     $(document).ready( function () {
-        $('#studentTable').DataTable();
-    } );
+        $('#studentTable').DataTable({
+            order: [[ 3, 'desc' ]]
+        });
+    });
 </script>
 
 <html>
@@ -44,19 +46,19 @@
                             <div class="container-fluid text-light">
                                 <table id="studentTable" class="display text-center" cellspacing="0" width="100%">
                                     <thead class="bg-black">
-                                        <th>Practice Count</th>
                                         <th>Student</th>
                                         <th>Username</th>
                                         <th>Age</th>
+                                        <th>Practice Counter</th>
                                         <th>Longest Practice Streak</th>
                                     </thead>
                                     <tbody>
                                         <c:forEach var="student" items="${studio.value}">
                                             <tr>
-                                                <td>${student.practiceCounter}</td>
                                                 <td>${student.firstName} ${student.lastName}</td>
                                                 <td>${student.username}</td>
                                                 <td>${student.age}</td>
+                                                <td>${student.practiceCounter}</td>
                                                 <td>${student.longestStreak}</td>
                                             </tr>
                                         </c:forEach>

@@ -15,12 +15,12 @@
     <div class="container-fluid">
         <table id="userTable" class="display" cellspacing="0" width="100%">
             <thead>
-            <th>User ID</th>
-            <th>Username</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Instrument</th>
-            <th>Role</th>
+                <th>User ID</th>
+                <th>Username</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Instrument</th>
+                <th>Role</th>
             </thead>
             <tbody>
             <c:forEach var="user" items="${users}">
