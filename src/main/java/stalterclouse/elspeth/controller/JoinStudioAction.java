@@ -41,6 +41,10 @@ public class JoinStudioAction extends HttpServlet {
 
         session.setAttribute("studentStudio", studioToJoin);
 
+        req.setAttribute("successMessage", "Congratulations! You've successfully joined"
+                + studioToJoin.getTeacher().getFirstName() + " " + studioToJoin.getTeacher().getLastName() + "'s "
+                + studioToJoin.getInstrument() + " studio!");
+
         RequestDispatcher dispatcher = req.getRequestDispatcher("studioInfo.jsp");
         dispatcher.forward(req, resp);
     }

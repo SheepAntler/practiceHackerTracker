@@ -3125,3 +3125,17 @@ com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized f
 [DEBUG] 2020-05-10 23:58:11.454 [http-nio-8080-exec-77] GenericDao - Searching for entity with username = sheepAntler
 [DEBUG] 2020-05-11 00:04:44.274 [http-nio-8080-exec-77] GenericDao - Searching for entity with username = sheepAntler
 [DEBUG] 2020-05-11 00:06:43.902 [http-nio-8080-exec-91] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-11 00:09:17.609 [http-nio-8080-exec-103] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 00:15:22.879 [http-nio-8080-exec-104] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 00:21:21.905 [http-nio-8080-exec-122] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 00:21:35.326 [http-nio-8080-exec-112] GenericDao - Searching for entity with instrument = viola
+[DEBUG] 2020-05-11 00:23:11.601 [http-nio-8080-exec-129] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 00:23:39.642 [http-nio-8080-exec-126] GenericDao - Searching for entity with instrument = viola
+[DEBUG] 2020-05-11 00:29:20.633 [http-nio-8080-exec-133] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 00:29:58.789 [http-nio-8080-exec-143] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 00:31:32.601 [http-nio-8080-exec-150] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 00:31:46.516 [http-nio-8080-exec-152] GenericDao - Searching for entity with instrument = viola
+[DEBUG] 2020-05-11 00:32:03.031 [http-nio-8080-exec-153] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 00:33:28.847 [http-nio-8080-exec-157] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 00:33:52.155 [http-nio-8080-exec-164] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 00:34:44.004 [http-nio-8080-exec-170] GenericDao - Searching for entity with username = saveTheViola

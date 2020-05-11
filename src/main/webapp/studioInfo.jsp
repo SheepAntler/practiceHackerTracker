@@ -5,32 +5,46 @@
     <%@include file="templates/navbar.jsp"%>
     <div class="container textBox">
         <h1 class="mainHeading text-center">My Studio</h1>
+        <hr />
+
+        <c:if test="${successMessage != null}">
+            <p class="text-success text-center">${successMessage}</p>
+        </c:if>
 
         <c:choose>
             <c:when test="${studentStudio != null}">
-                <p>${studentStudio.teacher.firstName} ${studentStudio.teacher.lastName}'s ${studentStudio.instrument} Studio</p>
-                <p>${studentStudio.organizationName}</p>
-                <p>${studentStudio.streetAddress}</p>
-                <p>${studentStudio.city}, ${studentStudio.state} ${studentStudio.zipCode}</p>
-                <button class="hideShow btn btn-secondary">Leave this Studio</button>
+                <h2 class="subHeading text-center">${studentStudio.teacher.firstName} ${studentStudio.teacher.lastName}'s ${studentStudio.instrument} Studio</h2>
+                <p class="text-center">${studentStudio.organizationName}</p>
+                <p class="text-center">${studentStudio.streetAddress}</p>
+                <p class="text-center">${studentStudio.city}, ${studentStudio.state} ${studentStudio.zipCode}</p>
+                <div class="row buttonContainer">
+                    <button class="hideShow btn btn-danger button smallButton">Leave this Studio</button>
+                </div>
+                <hr />
                 <div class="container" id="hiddenDiv">
-                    <p class="text-danger text-center">We're sorry to see you go; are you <i>certain</i> you wish to leave this studio?</p>
-                    <form action="leaveStudio">
-                        <button type="submit" class="btn btn-danger">Yes, I'm sure</button>
-                    </form>
-                    <button class="hideShow btn btn-dark">No; I'd like to stay</button>
+                    <h3 class="minorHeading text-danger text-center">We're sorry to see you go; are you <i>certain</i> you wish to leave this studio?</h3>
+                        <form action="leaveStudio" class="mt-2">
+                            <div class="row buttonContainer">
+                                <button type="submit" class="btn btn-danger button smallButton">Yes, I'm sure</button>
+                            </div>
+                        </form>
+                    <div class="row buttonContainer mt-4">
+                        <button class="hideShow btn btn-dark button smallButton">No; I'd like to stay</button>
+                    </div>
                 </div>
             </c:when>
             <c:otherwise>
                 <h2 class="subHeading text-center">It looks like you aren't a member of any studios. Find one to join here!</h2>
-                <form action="studioSearch">
+                <form action="studioSearch" class="mb-4">
                     <label for="searchParameter">Search for ${user.instrument.instrument} studios in: </label>
                     <select name="searchParameter" id="searchParameter" class="form-control" required>
                         <option value="allStudios">All 50 States!</option>
                         <option value="state">${user.state}</option>
                         <option value="city">${user.city}, ${user.state}</option>
                     </select>
-                    <button type="submit" class="btn btn-secondary">Find Studios</button>
+                    <div class="row buttonContainer mt-2">
+                        <button type="submit" class="btn btn-secondary button smallButton col-4">Find Studios</button>
+                    </div>
                 </form>
                 <c:if test="${studiosFound == true}">
                     <c:choose>
@@ -41,7 +55,9 @@
                                         <option value="${studio.id}">${studio.teacher.firstName} ${studio.teacher.lastName}'s Studio at ${studio.organizationName}</option>
                                     </c:forEach>
                                 </select>
-                                <button type="submit" class="btn btn-secondary">Join Studio</button>
+                                <div class="row buttonContainer mt-2">
+                                    <button type="submit" class="btn btn-success button smallButton col-4">Join Studio</button>
+                                </div>
                             </form>
                         </c:when>
                         <c:otherwise>

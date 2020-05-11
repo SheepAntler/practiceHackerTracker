@@ -37,6 +37,8 @@ public class LeaveStudioAction extends HttpServlet {
         session.removeAttribute("studentStudio");
         session.setAttribute("practiceHacksFromTeacher", null);
 
+        req.setAttribute("successMessage", "You have successfully left a studio. You can add another anytime!");
+
         RequestDispatcher dispatcher = req.getRequestDispatcher("studioInfo.jsp");
         dispatcher.forward(req, resp);
     }
