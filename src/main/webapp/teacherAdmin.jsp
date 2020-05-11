@@ -15,23 +15,24 @@
         </div>
         <div class="card-deck studioCards mt-4">
             <c:forEach var="studio" items="${user.studios}">
-                    <div class="card bg-dark mb-2" style="min-width: 18rem; max-width: 20rem;">
-                        <div class="card-header">
+                    <div class="card bg-dark mb-2 text-center indexCard" style="min-width: 18rem; max-width: 20rem;">
+                        <div class="card-header indexCardHeader bg-black">
                             <h3 class="card-title">${studio.instrument} Studio at ${studio.organizationName}</h3>
                         </div>
                         <div class="card-body">
                             <p>${studio.streetAddress}</p>
                             <p>${studio.city}, ${studio.state} ${studio.zipCode}</p>
+                            <p>${studio.studentsInStudio.size()} students</p>
                         </div>
                         <div class="hiddenDelete">
                             <form action="closeStudio">
                                 <input type="hidden" name="studioToClose" value="${studio.id}"/>
                                 <div class="row buttonContainer">
-                                    <button type="submit" class="btn btn-danger button smallButton col-12">Close Studio</button>
+                                    <button type="submit" class="btn btn-danger button smallButton col-10">Close Studio</button>
                                 </div>
                             </form>
-                            <div class="row buttonContainer mt-2">
-                                <button class="showHideDelete btn btn-secondary button smallButton col-12">Never mind!</button>
+                            <div class="row buttonContainer mt-2 mb-2">
+                                <button class="showHideDelete btn btn-secondary button smallButton col-10">Never mind!</button>
                             </div>
                         </div>
                     </div>
