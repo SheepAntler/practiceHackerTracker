@@ -1,10 +1,11 @@
 <%@include file="templates/head.jsp"%>
-
+<%@taglib uri="http://practiceHacker.com/functions" prefix="f" %>
 <html>
 <body>
     <%@include file="templates/navbar.jsp"%>
     <div class="container textBox">
         <h1 class="mainHeading text-center">Student Logs</h1>
+        <hr />
         <form action="viewStudentLogs">
             <h2 class="subHeading">Students</h2>
             <label class="sr-only" for="studentsInStudio">Students</label>
@@ -17,21 +18,29 @@
                     </c:forEach>
                 </c:forEach>
             </select>
-            <button type="submit" class="btn btn-secondary">View Student's Log</button>
+            <div class="row buttonContainer mt-4">
+                <button type="submit" class="btn btn-secondary button smallButton">View Student's Log</button>
+            </div>
         </form>
     </div>
     <c:if test="${logAcquired != null}">
         <div class="container textBox">
-            <h2 class="subHeading">${studentLog.firstName} ${studentLog.lastName}'s Log</h2>
-            <c:forEach var="log" items="${studentLog.practiceLogs}">
-                <p>${log.practiceDate}</p>
-                <p>Calculated Duration</p>
-                <p>${log.activities}</p>
-                <p>${log.notes}</p>
-                <%-- TODO generate a column that links to comments form IF the comments field is null --%>
-            </c:forEach>
+            <h2 class="mainHeading text-center">${studentLog.firstName} ${studentLog.lastName}'s Log</h2>
+            <hr />
+            <c:choose>
+                <c:when test="${!empty studentLog.practiceLogs}">
+                    <c:forEach var="log" items="${studentLog.practiceLogs}">
+                        <p>${f:formatLocalDateTime(log.practiceDate, 'MM-dd-yyyy')}</p>
+                        <p>${log.practiceDuration}</p>
+                        <p>${log.activities}</p>
+                        <p>${log.notes}</p>
+                    </c:forEach>
+                </c:when>
+                <c:otherwise>
+                    <p class="text-center">This student hasn't logged any practice sessions yet.</p>
+                </c:otherwise>
+            </c:choose>
     </c:if>
-    <c:remove var="logAcquired" scope="session" />
     </div>
 </body>
 </html>

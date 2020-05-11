@@ -6,13 +6,8 @@
 
 body {
     background-image: url("piano1.jpg");
-    /*background-repeat: no-repeat;*/
     background-size: cover;
-    /*font-family: 'Charm', cursive;*/
-    /*font-family: 'Kavivanar', cursive;*/
-    /*font-family: 'Caveat', cursive;*/
     font-family: 'Poiret One', cursive;
-    /*font-family: 'Pompiere', cursive;*/
     font-weight: bold;
     /*position: relative;*/
 }

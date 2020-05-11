@@ -23,14 +23,12 @@ public class StudentLogDisplay extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         GenericDao userDao = new GenericDao(User.class);
-        HttpSession session = req.getSession();
         String requestedStudent = req.getParameter("studentsInStudio");
 
         List<User> student = userDao.getByPropertyEqual("username", requestedStudent);
 
-        //TODO use this to dynamically output student logs when a search has happened...find a way to clear the log afterwards, though
-        session.setAttribute("studentLog", student.get(0));
-        session.setAttribute("logAcquired", true);
+        req.setAttribute("studentLog", student.get(0));
+        req.setAttribute("logAcquired", true);
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/viewStudentLogs.jsp");
         dispatcher.forward(req, resp);

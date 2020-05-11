@@ -3152,3 +3152,29 @@ com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized f
 [DEBUG] 2020-05-11 01:29:08.099 [http-nio-8080-exec-2] CloseStudioAction - 12
 [DEBUG] 2020-05-11 01:32:41.490 [http-nio-8080-exec-8] GenericDao - Searching for entity with username = saveTheViola
 [DEBUG] 2020-05-11 01:33:53.029 [http-nio-8080-exec-18] CloseStudioAction - 13
+[DEBUG] 2020-05-11 01:47:43.241 [http-nio-8080-exec-16] GenericDao - Searching for entity with username = philFrond
+[DEBUG] 2020-05-11 01:51:03.722 [http-nio-8080-exec-12] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-11 01:51:11.045 [http-nio-8080-exec-15] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 01:51:13.585 [http-nio-8080-exec-24] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-11 01:51:31.953 [http-nio-8080-exec-26] GenericDao - Searching for entity with username = anaBanana
+[DEBUG] 2020-05-11 01:51:34.907 [http-nio-8080-exec-22] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 01:53:08.834 [http-nio-8080-exec-33] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-11 01:53:15.839 [http-nio-8080-exec-30] GenericDao - Searching for entity with username = philFrond
+[DEBUG] 2020-05-11 01:53:19.571 [http-nio-8080-exec-34] GenericDao - Searching for entity with username = anaBanana
+[DEBUG] 2020-05-11 01:53:22.723 [http-nio-8080-exec-24] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 01:53:29.668 [http-nio-8080-exec-31] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-11 01:54:25.259 [http-nio-8080-exec-38] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 01:57:16.151 [http-nio-8080-exec-34] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-11 01:58:57.172 [http-nio-8080-exec-44] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-11 01:59:05.343 [http-nio-8080-exec-45] GenericDao - Searching for entity with username = null
+[DEBUG] 2020-05-11 01:59:16.620 [http-nio-8080-exec-55] GenericDao - Searching for entity with username = philFrond
+[DEBUG] 2020-05-11 01:59:18.841 [http-nio-8080-exec-53] GenericDao - Searching for entity with username = null
+[DEBUG] 2020-05-11 02:03:33.852 [http-nio-8080-exec-55] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-11 02:03:41.186 [http-nio-8080-exec-61] GenericDao - Searching for entity with username = philFrond
+[DEBUG] 2020-05-11 02:03:45.912 [http-nio-8080-exec-67] GenericDao - Searching for entity with username = philFrond
+[DEBUG] 2020-05-11 02:03:48.315 [http-nio-8080-exec-64] GenericDao - Searching for entity with username = anaBanana
+[DEBUG] 2020-05-11 02:03:52.532 [http-nio-8080-exec-68] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 02:07:35.526 [http-nio-8080-exec-77] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-11 02:07:42.054 [http-nio-8080-exec-74] GenericDao - Searching for entity with username = philFrond
+[DEBUG] 2020-05-11 02:07:46.599 [http-nio-8080-exec-80] GenericDao - Searching for entity with username = madBratsche
+[DEBUG] 2020-05-11 02:07:58.134 [http-nio-8080-exec-69] GenericDao - Searching for entity with username = saveTheViola

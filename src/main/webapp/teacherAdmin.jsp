@@ -44,6 +44,7 @@
         <div id="hiddenAdd">
             <hr />
             <h2 class="subHeading text-center">Create a New Studio</h2>
+            <hr />
             <form action="createStudio">
                 <div class="row">
                     <div class="form-group col-sm-6">
