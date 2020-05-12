@@ -46,9 +46,14 @@ public class CreateUserAction extends HttpServlet {
         String firstName = req.getParameter("firstName");
         String lastName = req.getParameter("lastName");
         String email = req.getParameter("email");
+        String city = req.getParameter("city");
+        String state = req.getParameter("state");
+        int zipCode = Integer.parseInt(req.getParameter("zip"));
+        String instrument = req.getParameter("instrument");
+        String skillLevel = req.getParameter("skillLevel");
         String role = req.getParameter("accountType");
 
-        // Get the appropriate additional form entries for each user type
+        // Create a new User and Role based on the role type
         if (role.equals("teacher")) {
             String studioInstrument = req.getParameter("studioInstrument");
             String studioOrganization = req.getParameter("studioName");
@@ -57,34 +62,37 @@ public class CreateUserAction extends HttpServlet {
             String studioState = req.getParameter("studioState");
             int studioZip = Integer.parseInt(req.getParameter("studioZip"));
 
-            newUser = new User(username, password, firstName, lastName, email, 0, null, null, null, 0, 0);
-            newUserInstrument = new Instrument(newUser, studioInstrument, "Professional");
+            newUser = new User(username, password, firstName, lastName, email, 0, null, city, state, zipCode, 0);
+//            newUserInstrument = new Instrument(newUser, instrument, skillLevel);
             newStudio = new Studio(newUser, studioInstrument, studioOrganization, studioAddress, studioCity, studioState, studioZip);
             newUserRole = new Role(newUser, username, role);
         } else if (role.equals("student")) {
-            String studentInstrument = req.getParameter("studentInstrument");
-            String studentSkillLevel = req.getParameter("studentSkillLevel");
+//            String studentInstrument = req.getParameter("studentInstrument");
+//            String studentSkillLevel = req.getParameter("studentSkillLevel");
             LocalDate birthDate = LocalDate.parse(req.getParameter("birthDate"));
-            String studentCity = req.getParameter("studentCity");
-            String studentState = req.getParameter("studentState");
-            int studentZip = Integer.parseInt(req.getParameter("studentZip"));
+//            String studentCity = req.getParameter("studentCity");
+//            String studentState = req.getParameter("studentState");
+//            int studentZip = Integer.parseInt(req.getParameter("studentZip"));
 
-            newUser = new User(username, password, firstName, lastName, email, 0, birthDate, studentCity, studentState, studentZip, 0);
-            newUserInstrument = new Instrument(newUser, studentInstrument, studentSkillLevel);
+            newUser = new User(username, password, firstName, lastName, email, 0, birthDate, city, state, zipCode, 0);
+//            newUserInstrument = new Instrument(newUser, instrument, skillLevel);
             newUserRole = new Role(newUser, username, role);
         } else if (role.equals("practiceHacker")) {
-            String userInstrument = req.getParameter("instrument");
-            String userSkillLevel = req.getParameter("skillLevel");
-            String userCity = req.getParameter("city");
-            String userState = req.getParameter("state");
-            int userZip = Integer.parseInt(req.getParameter("zip"));
+//            String userInstrument = req.getParameter("instrument");
+//            String userSkillLevel = req.getParameter("skillLevel");
+//            String userCity = req.getParameter("city");
+//            String userState = req.getParameter("state");
+//            int userZip = Integer.parseInt(req.getParameter("zip"));
 
-            newUser = new User(username, password, firstName, lastName, email, 0, null, userCity, userState, userZip, 0);
-            newUserInstrument = new Instrument(newUser, userInstrument, userSkillLevel);
+            newUser = new User(username, password, firstName, lastName, email, 0, null, city, state, zipCode, 0);
+//            newUserInstrument = new Instrument(newUser, instrument, skillLevel);
             newUserRole = new Role(newUser, username, role);
         }
 
-        // Check to see if the username already exists
+        // Next, create a new instrument for the new User
+        newUserInstrument = new Instrument(newUser, instrument, skillLevel);
+
+        // Finally, check to see if the username already exists--if it doesn't, log the user in!
         List<User> usernamesFromDatabase = userDao.getByPropertyEqual("username", username);
 
         if (usernamesFromDatabase.size() == 0) {
@@ -95,16 +103,20 @@ public class CreateUserAction extends HttpServlet {
                 studioDao.insert(newStudio);
             }
 
-            String welcomeMessage = "This will be a message to welcome a first-time user. It will have helpful links.";
+            String welcomeMessage = "Welcome to your PracticeHacker Dashboard! Have a look around&mdash;check out "
+                    + "the tabs in the nav bar to get the lay of the land, and then hop to it and start logging!";
 
             req.login(username, password);
 
             req.setAttribute("welcomeMessage", welcomeMessage);
 
-            resp.sendRedirect("dashboard");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("dashboard");
+            dispatcher.forward(req, resp);
+
+//            resp.sendRedirect("dashboard");
 
         } else {
-            String errorMessage = "We're so sorry; that username was already taken! Please try again (and make sure you double check your account type!)";
+            String errorMessage = "We're so sorry; that username was already taken! Please try again.";
 
             req.setAttribute("newUser", newUser);
             req.setAttribute("newInstrument", newUserInstrument);

@@ -1,5 +1,5 @@
 <%@include file="templates/head.jsp"%>
-<%-- TODO add a little RegEx to this form --%>
+
 <html>
 <body>
 <%@include file="templates/navbar.jsp"%>
@@ -40,6 +40,43 @@
                 <input type="email" class="form-control" id="email" aria-describedby="emailInfo" name="email" required value="${newUser.email}">
                 <small id="emailInfo" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label for="city">City: </label>
+                    <input type="text" class="form-control" id="city" name="city" required pattern="[A-Z][a-z]+" value="${newUser.city}"
+                           oninvalid="setCustomValidity('Please enter a capitalized city name.')" oninput="setCustomValidity('')">
+                </div>
+                <div class="form-group col-sm-2">
+                    <label for="state">State: </label>
+                    <input type="text" class="form-control" id="state" name="state" required pattern="[A-Z]{2}" value="${newUser.state}"
+                           oninvalid="setCustomValidity('Please enter a fully-capitalized state abbreviation.')" oninput="setCustomValidity('')">
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="zip">Zip Code: </label>
+                    <input type="text" class="form-control" id="zip" name="zip" required pattern="\d{5}" value="${newUser.zipCode}"
+                           oninvalid="setCustomValidity('Please enter a 5-digit zip code.')" oninput="setCustomValidity('')">
+                </div>
+            </div>
+            <hr />
+            <h3 class="minorHeading text-center">...and a Little Instrumental Info</h3>
+            <hr />
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label for="instrument">Primary Instrument: </label>
+                    <input type="text" class="form-control" id="instrument" name="instrument" required pattern="[A-Z][a-z]+" value="${newInstrument.instrument}"
+                           oninvalid="setCustomValidity('Please enter a capitalized instrument name.')" oninput="setCustomValidity('')">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="skillLevel">Skill Level: </label>
+                    <select name="skillLevel" class="form-control" id="skillLevel" required>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="Pre-Professional">Pre-Professional</option>
+                        <option value="Professional">Professional</option>
+                    </select>
+                </div>
+            </div>
             <div class="form-group">
                 <label for="accountType">Account Type</label>
                 <select name="accountType" class="form-control" id="accountType" required>
@@ -57,7 +94,8 @@
                 <div class="row">
                     <div class="form-group col-sm-6">
                         <label for="studioInstrument">Instrument: </label>
-                        <input type="text" class="form-control" id="studioInstrument" name="studioInstrument" value="${newInstrument.instrument}">
+                        <input type="text" class="form-control" id="studioInstrument" name="studioInstrument" pattern="[A-Z][a-z]+" value="${newStudio.instrument}"
+                               oninvalid="setCustomValidity('Please enter a capitalized instrument name.')" oninput="setCustomValidity('')">
                     </div>
                     <div class="form-group col-sm-6">
                         <label for="studioName">Studio Organization: </label>
@@ -71,15 +109,18 @@
                 <div class="row">
                     <div class="form-group col-sm-6">
                         <label for="studioCity">City: </label>
-                        <input type="text" class="form-control" id="studioCity" name="studioCity" value="${newStudio.city}">
+                        <input type="text" class="form-control" id="studioCity" name="studioCity" pattern="[A-Z][a-z]+" value="${newStudio.city}"
+                               oninvalid="setCustomValidity('Please enter a capitalized city name.')" oninput="setCustomValidity('')">
                     </div>
                     <div class="form-group col-sm-2">
                         <label for="studioState">State: </label>
-                        <input type="text" class="form-control" id="studioState" name="studioState" value="${newStudio.state}">
+                        <input type="text" class="form-control" id="studioState" name="studioState" pattern="[A-Z]{2}" value="${newStudio.state}"
+                               oninvalid="setCustomValidity('Please enter a fully-capitalized state abbreviation.')" oninput="setCustomValidity('')">
                     </div>
                     <div class="form-group col-sm-4">
                         <label for="studioZip">Zip Code: </label>
-                        <input type="text" class="form-control" id="studioZip" name="studioZip" value="${newStudio.zipCode}">
+                        <input type="text" class="form-control" id="studioZip" name="studioZip" pattern="\d{5}" value="${newStudio.zipCode}"
+                               oninvalid="setCustomValidity('Please enter a 5-digit zip code.')" oninput="setCustomValidity('')">
                     </div>
                 </div>
             </div>
@@ -88,79 +129,16 @@
                 <hr />
                 <h3 class="minorHeading text-center">Additional Information</h3>
                 <hr />
-                <div class="row">
-                    <div class="form-group col-sm-4">
-                        <label for="studentInstrument">Primary Instrument: </label>
-                        <input type="text" class="form-control" id="studentInstrument" name="studentInstrument" value="${newInstrument.instrument}">
-                    </div>
-                    <div class="form-group col-sm-4">
-                    <label for="studentSkillLevel">Skill Level: </label>
-                        <select name="studentSkillLevel" class="form-control" id="studentSkillLevel">
-                            <option value="Beginner">Beginner</option>
-                            <option value="Intermediate">Intermediate</option>
-                            <option value="Advanced">Advanced</option>
-                            <option value="Pre-Professional">Collegiate/Pre-Professional</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-sm-4">
-                        <label for="birthDate">Date of Birth: </label>
-                        <input type="date" class="form-control" id="birthDate" name="birthDate" value="${newUser.birthDate}">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-sm-6">
-                        <label for="studentCity">City: </label>
-                        <input type="text" class="form-control" id="studentCity" name="studentCity" value="${newUser.city}">
-                    </div>
-                    <div class="form-group col-sm-2">
-                        <label for="studentState">State: </label>
-                        <input type="text" class="form-control" id="studentState" name="studentState" value="${newUser.state}">
-                    </div>
-                    <div class="form-group col-sm-4">
-                        <label for="studentZip">Zip Code: </label>
-                        <input type="text" class="form-control" id="studentZip" name="studentZip" value="${newUser.zipCode}">
-                    </div>
-                </div>
-            </div>
-
-            <div class="hidden" id="practiceHacker">
-                <hr />
-                <h3 class="minorHeading text-center">Additional Information</h3>
-                <hr />
-                <div class="row">
-                    <div class="form-group col-sm-6">
-                        <label for="instrument">Primary Instrument: </label>
-                        <input type="text" class="form-control col-sm-6" id="instrument" name="instrument" value="${newInstrument.instrument}">
-                    </div>
-                    <div class="form-group col-sm-6">
-                    <label for="skillLevel">Skill Level: </label>
-                        <select name="skillLevel" class="form-control col-sm-6" id="skillLevel">
-                            <option value="Beginner">Beginner</option>
-                            <option value="Intermediate">Intermediate</option>
-                            <option value="Advanced">Advanced</option>
-                            <option value="Pre-Professional">Pre-Professional</option>
-                            <option value="Professional">Professional</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-sm-6">
-                        <label for="city">City: </label>
-                        <input type="text" class="form-control" id="city" name="city" value="${newUser.city}">
-                    </div>
-                    <div class="form-group col-sm-2">
-                        <label for="state">State: </label>
-                        <input type="text" class="form-control" id="state" name="state" value="${newUser.state}">
-                    </div>
-                    <div class="form-group col-sm-4">
-                        <label for="zip">Zip Code: </label>
-                        <input type="text" class="form-control" id="zip" name="zip" value="${newUser.zipCode}">
-                    </div>
+                <div class="form-group">
+                    <label for="birthDate">Date of Birth: </label>
+                    <input type="date" class="form-control" id="birthDate" name="birthDate" value="${newUser.birthDate}">
                 </div>
             </div>
             <br><br>
-            <button type="submit" class="btn btn-secondary">Create My Account</button>
-            <button type="reset" class="btn btn-dark">Start Over</button>
+            <div class="row buttonContainer">
+                <button type="submit" class="btn btn-secondary button smallButton col-5">Create My Account</button>
+                <button type="reset" class="btn btn-dark button smallButton col-5">Start Over</button>
+            </div>
         </form>
     </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

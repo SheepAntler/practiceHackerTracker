@@ -30,8 +30,11 @@ public class DeleteProfileAction extends HttpServlet {
         session.removeAttribute("user");
         userDao.delete(currentUser);
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/goodbye.jsp");
-        dispatcher.forward(req, resp);
+        req.getSession().invalidate();
+        resp.sendRedirect(req.getContextPath() + "/goodbye.jsp");
+
+//        RequestDispatcher dispatcher = req.getRequestDispatcher("/goodbye.jsp");
+//        dispatcher.forward(req, resp);
 
     }
 }

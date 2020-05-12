@@ -17,6 +17,9 @@
         <c:when test="${pageContext.request.remoteUser != null}">
             <div class="container textBox">
                 <h1 class="mainHeading text-center">Welcome, ${pageContext.request.getRemoteUser()}!</h1>
+                <c:if test="${welcomeMessage != null}">
+                    <p class="text-info text-center">${welcomeMessage}</p>
+                </c:if>
                 <div class="card-deck mt-4 mb-4">
                     <div class="card bg-dark mb-2 indexCard">
                         <div class="card-header indexCardHeader bg-black">
@@ -39,9 +42,10 @@
                 </div>
             </div>
             <c:if test="${pageContext.request.isUserInRole('teacher')}">
-                <div class="container textBox">
+<%--                <div class="container textBox">--%>
                     <c:forEach var="studio" items="${studios}">
                         <c:if test="${!empty studio.value && studio.value != null}">
+                            <div class="container textBox">
                             <h1 class="mainHeading text-center">${studio.key}</h1>
                             <div class="container-fluid text-light">
                                 <table id="studentTable" class="display text-center" cellspacing="0" width="100%">
@@ -65,9 +69,10 @@
                                     </tbody>
                                 </table>
                             </div>
+                            </div>
                         </c:if>
                     </c:forEach>
-                </div>
+<%--                </div>--%>
             </c:if>
         </c:when>
         <c:otherwise>
