@@ -63,7 +63,7 @@
                     <p class="text-center">This student hasn't logged any practice sessions yet.</p>
                 </c:otherwise>
             </c:choose>
+        </div>
     </c:if>
-    </div>
 </body>
 </html>

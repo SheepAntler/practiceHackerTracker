@@ -98,8 +98,6 @@ public class WriteLogAction extends HttpServlet {
         session.removeAttribute("user");
         session.setAttribute("user", updatedUser);
 
-//        resp.sendRedirect(req.getContextPath() + "/viewMyLog.jsp");
-
         req.setAttribute("successMessage", "Congratulations! Your session has been logged.");
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/viewMyLog.jsp");

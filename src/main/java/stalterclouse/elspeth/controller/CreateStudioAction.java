@@ -48,8 +48,6 @@ public class CreateStudioAction extends HttpServlet {
 
         req.setAttribute("successMessage", "Your studio was successfully created, and students will now be able to join it.");
 
-//        resp.sendRedirect(req.getContextPath() + "/teacherAdmin.jsp");
-
         RequestDispatcher dispatcher = req.getRequestDispatcher("/teacherAdmin.jsp");
         dispatcher.forward(req, resp);
 

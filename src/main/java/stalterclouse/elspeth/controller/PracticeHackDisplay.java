@@ -60,27 +60,12 @@ public class PracticeHackDisplay extends HttpServlet {
             String requestedHackView = req.getParameter("practiceHackView");
 
             if (requestedHackView.equals("allHacks")) {
-//                if (session.getAttribute("myPracticeHacks") != null) {
-//                    session.setAttribute("myPracticeHacks", null);
-//                } else if (session.getAttribute("personalPracticeHacks") != null) {
-//                    session.setAttribute("personalPracticeHacks", null);
-//                }
                 List<PracticeHack> allPracticeHacks = practiceHackDao.getAllEntities();
                 req.setAttribute("allPracticeHacks", allPracticeHacks);
             } else if (requestedHackView.equals("authorMode")) {
-//                if (session.getAttribute("allPracticeHacks") != null) {
-//                    session.setAttribute("allPracticeHacks", null);
-//                } else if (session.getAttribute("personalPracticeHacks") != null) {
-//                    session.setAttribute("personalPracticeHacks", null);
-//                }
                 List<PracticeHack> myPracticeHacks = practiceHackDao.getByPropertyEqual("user", currentUser);
                 req.setAttribute("myPracticeHacks", myPracticeHacks);
             } else if (requestedHackView.equals("practiceMode")) {
-//                if (session.getAttribute("allPracticeHacks") != null) {
-//                    session.setAttribute("allPracticeHacks", null);
-//                } else if (session.getAttribute("myPracticeHacks") != null) {
-//                    session.setAttribute("myPracticeHacks", null);
-//                }
                 req.setAttribute("personalPracticeHacks", personalPracticeHacks);
             }
 

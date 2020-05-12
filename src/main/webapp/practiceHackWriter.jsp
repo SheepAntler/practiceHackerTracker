@@ -14,7 +14,6 @@
                 <form action="writePracticeHack">
             </c:otherwise>
         </c:choose>
-<%--        <form action="writePracticeHack">--%>
             <div class="row">
                 <div class="form-group col-sm-6">
                     <label for="skillLevel">This practice hack is for: </label>
@@ -29,7 +28,6 @@
                 <div class="form-group col-sm-6">
                     <label for="instrument">Instrument: </label>
                     <select name="instrument" class="form-control" id="instrument" required>
-<%--                        <option value="${user.instrument.instrument}">${user.instrument.instrument}</option>--%>
                         <c:forEach var="studio" items="${user.studios}">
                             <option value="${studio.instrument}">${studio.instrument}</option>
                         </c:forEach>

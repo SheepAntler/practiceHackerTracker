@@ -63,29 +63,14 @@ public class CreateUserAction extends HttpServlet {
             int studioZip = Integer.parseInt(req.getParameter("studioZip"));
 
             newUser = new User(username, password, firstName, lastName, email, 0, null, city, state, zipCode, 0);
-//            newUserInstrument = new Instrument(newUser, instrument, skillLevel);
             newStudio = new Studio(newUser, studioInstrument, studioOrganization, studioAddress, studioCity, studioState, studioZip);
             newUserRole = new Role(newUser, username, role);
         } else if (role.equals("student")) {
-//            String studentInstrument = req.getParameter("studentInstrument");
-//            String studentSkillLevel = req.getParameter("studentSkillLevel");
             LocalDate birthDate = LocalDate.parse(req.getParameter("birthDate"));
-//            String studentCity = req.getParameter("studentCity");
-//            String studentState = req.getParameter("studentState");
-//            int studentZip = Integer.parseInt(req.getParameter("studentZip"));
-
             newUser = new User(username, password, firstName, lastName, email, 0, birthDate, city, state, zipCode, 0);
-//            newUserInstrument = new Instrument(newUser, instrument, skillLevel);
             newUserRole = new Role(newUser, username, role);
         } else if (role.equals("practiceHacker")) {
-//            String userInstrument = req.getParameter("instrument");
-//            String userSkillLevel = req.getParameter("skillLevel");
-//            String userCity = req.getParameter("city");
-//            String userState = req.getParameter("state");
-//            int userZip = Integer.parseInt(req.getParameter("zip"));
-
             newUser = new User(username, password, firstName, lastName, email, 0, null, city, state, zipCode, 0);
-//            newUserInstrument = new Instrument(newUser, instrument, skillLevel);
             newUserRole = new Role(newUser, username, role);
         }
 
@@ -112,8 +97,6 @@ public class CreateUserAction extends HttpServlet {
 
             RequestDispatcher dispatcher = req.getRequestDispatcher("dashboard");
             dispatcher.forward(req, resp);
-
-//            resp.sendRedirect("dashboard");
 
         } else {
             String errorMessage = "We're so sorry; that username was already taken! Please try again.";

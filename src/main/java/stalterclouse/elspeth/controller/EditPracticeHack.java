@@ -51,8 +51,6 @@ public class EditPracticeHack extends HttpServlet {
 
         session.setAttribute("user", updatedUser);
 
-        //resp.sendRedirect(req.getContextPath() + "/viewPracticeHacks.jsp");
-
         req.setAttribute("successMessage", "Your Practice Hack was successfully updated.");
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/viewPracticeHacks.jsp");

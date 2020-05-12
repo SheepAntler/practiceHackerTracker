@@ -246,18 +246,6 @@
     </auth-constraint>
   </security-constraint>
 
-<!--  <security-constraint>-->
-<!--    <web-resource-collection>-->
-<!--      <web-resource-name>goodbye</web-resource-name>-->
-<!--      <url-pattern>/goodbye.jsp</url-pattern>-->
-<!--    </web-resource-collection>-->
-<!--    <auth-constraint>-->
-<!--      <role-name>student</role-name>-->
-<!--      <role-name>teacher</role-name>-->
-<!--      <role-name>practiceHacker</role-name>-->
-<!--    </auth-constraint>-->
-<!--  </security-constraint>-->
-
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>logWriter</web-resource-name>

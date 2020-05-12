@@ -41,8 +41,6 @@ public class WritePracticeHackAction extends HttpServlet {
 
         session.setAttribute("user", updatedUser);
 
-        //resp.sendRedirect(req.getContextPath() + "/viewPracticeHacks.jsp");
-
         req.setAttribute("successMessage", "Thank you! Your Practice Hack has been added to the board.");
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/viewPracticeHacks.jsp");

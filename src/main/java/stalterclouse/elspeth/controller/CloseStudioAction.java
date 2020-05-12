@@ -43,8 +43,6 @@ public class CloseStudioAction extends HttpServlet {
 
         req.setAttribute("successMessage", "Your studio was successfully closed. You can create another one anytime!");
 
-//        resp.sendRedirect(req.getContextPath() + "/teacherAdmin.jsp");
-
         RequestDispatcher dispatcher = req.getRequestDispatcher("/teacherAdmin.jsp");
         dispatcher.forward(req, resp);
 

@@ -53,8 +53,6 @@ public class EditProfileAction extends HttpServlet {
 
         req.setAttribute("successMessage", "Success! Your profile has been updated.");
 
-//        resp.sendRedirect(req.getContextPath() + "/profile.jsp");
-
         RequestDispatcher dispatcher = req.getRequestDispatcher("/profile.jsp");
         dispatcher.forward(req, resp);
 

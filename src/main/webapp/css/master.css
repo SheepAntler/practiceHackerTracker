@@ -1,15 +1,8 @@
-/* general */
-/*html, body {*/
-/*    margin: 0;*/
-/*    height: 100vh;*/
-/*}*/
-
 body {
-    background-image: url("piano1.jpg");
+    background-image: url("../images/piano1.jpg");
     background-size: cover;
     font-family: 'Poiret One', cursive;
     font-weight: bold;
-    /*position: relative;*/
 }
 
 hr {
@@ -27,7 +20,6 @@ nav {
 .mainHeading {
     font-size: 5em;
     font-weight: bold;
-    /*margin: 1em;*/
     text-shadow: 1px 2px 3px black;
 }
 
@@ -155,11 +147,6 @@ td {
 /* cards */
 .card {
     font-size: 1em;
-    /*padding: 1.5em;*/
-}
-
-.card-header {
-    /*padding: 0.5em;*/
 }
 
 .indexCard {

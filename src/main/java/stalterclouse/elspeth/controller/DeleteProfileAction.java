@@ -33,8 +33,5 @@ public class DeleteProfileAction extends HttpServlet {
         req.getSession().invalidate();
         resp.sendRedirect(req.getContextPath() + "/goodbye.jsp");
 
-//        RequestDispatcher dispatcher = req.getRequestDispatcher("/goodbye.jsp");
-//        dispatcher.forward(req, resp);
-
     }
 }

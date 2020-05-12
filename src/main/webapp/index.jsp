@@ -42,10 +42,9 @@
                 </div>
             </div>
             <c:if test="${pageContext.request.isUserInRole('teacher')}">
-<%--                <div class="container textBox">--%>
-                    <c:forEach var="studio" items="${studios}">
-                        <c:if test="${!empty studio.value && studio.value != null}">
-                            <div class="container textBox">
+                <c:forEach var="studio" items="${studios}">
+                    <c:if test="${!empty studio.value && studio.value != null}">
+                        <div class="container textBox">
                             <h1 class="mainHeading text-center">${studio.key}</h1>
                             <div class="container-fluid text-light">
                                 <table id="studentTable" class="display text-center" cellspacing="0" width="100%">
@@ -69,10 +68,9 @@
                                     </tbody>
                                 </table>
                             </div>
-                            </div>
-                        </c:if>
-                    </c:forEach>
-<%--                </div>--%>
+                        </div>
+                    </c:if>
+                </c:forEach>
             </c:if>
         </c:when>
         <c:otherwise>

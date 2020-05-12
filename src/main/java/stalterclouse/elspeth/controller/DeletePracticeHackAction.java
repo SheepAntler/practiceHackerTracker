@@ -39,8 +39,6 @@ public class DeletePracticeHackAction extends HttpServlet {
 
         session.setAttribute("user", updatedUser);
 
-        //resp.sendRedirect(req.getContextPath() + "/viewPracticeHacks.jsp");
-
         req.setAttribute("successMessage", "Your Practice Hack was successfully deleted.");
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/viewPracticeHacks.jsp");
