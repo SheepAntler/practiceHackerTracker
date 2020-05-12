@@ -82,8 +82,6 @@ M
 src/main/webapp/viewMyLog.jsp,b/1/b1c15e505d1b494f2b3393b3aa002b25e5fc5b47
 L
 src/main/webapp/500Error.jsp,3/6/36bb03f3e4b2b2ad7c0724be0680a8f92166dc0a
-G
-src/main/webapp/faq.jsp,a/2/a20ad7988929981061b5fe8f5d70a76c17fc4175
 Q
 !src/main/webapp/confirmLogout.jsp,1/f/1f239d0b9d03c5e8ed421754aabfa6fbde3baa1f
 i
@@ -98,8 +96,6 @@ L
 src/main/webapp/403Error.jsp,c/f/cf215cb83b1bee3343a03fca0193f40654e699d4
 O
 src/main/webapp/WEB-INF/web.xml,2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392
-V
-&src/main/webapp/jQueryTableExample.jsp,d/6/d6510fd4374399a847fbfc375daf7f1d93f90e99
 P
  src/main/webapp/accountTypes.jsp,4/e/4ef9869feb4abcaa72a0b7002ae6e4cd0c759d82
 K
