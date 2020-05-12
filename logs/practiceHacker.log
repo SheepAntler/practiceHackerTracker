@@ -3256,3 +3256,12 @@ com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized f
 [DEBUG] 2020-05-11 17:07:18.678 [http-nio-8080-exec-173] GenericDao - Searching for entity with username = sheepAntler
 [DEBUG] 2020-05-11 23:09:56.190 [http-nio-8080-exec-4] GenericDao - Searching for entity with username = saveTheViola
 [DEBUG] 2020-05-11 23:18:48.163 [http-nio-8080-exec-8] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-11 23:37:00.951 [http-nio-8080-exec-16] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-11 23:38:03.076 [http-nio-8080-exec-25] GenericDao - Searching for entity with user = 1
+[DEBUG] 2020-05-11 23:38:03.110 [http-nio-8080-exec-25] WriteLogAction - finding last practice date: 2020-05-10T23:39:06
+[DEBUG] 2020-05-11 23:38:03.110 [http-nio-8080-exec-25] WriteLogAction - last practice date is NOT the same as current practice date!
+[DEBUG] 2020-05-11 23:38:03.111 [http-nio-8080-exec-25] WriteLogAction - calculating days since last practice: 0
+[DEBUG] 2020-05-11 23:38:03.111 [http-nio-8080-exec-25] WriteLogAction - last practice was yesterday--awesome!
+[DEBUG] 2020-05-11 23:38:03.111 [http-nio-8080-exec-25] WriteLogAction - user counter was incremented to: 4
+[DEBUG] 2020-05-11 23:38:03.154 [http-nio-8080-exec-25] WriteLogAction - user before update: User(id=1, username=sheepAntler, password=password, firstName=Elspeth, lastName=Stalter, email=sheepantler@gmail.com, practiceCounter=4, birthDate=1989-12-25, city=Madison, state=WI, zipCode=53703, longestStreak=100)
+[DEBUG] 2020-05-11 23:38:03.238 [http-nio-8080-exec-25] WriteLogAction - user after update: User(id=1, username=sheepAntler, password=password, firstName=Elspeth, lastName=Stalter, email=sheepantler@gmail.com, practiceCounter=4, birthDate=1989-12-25, city=Madison, state=WI, zipCode=53703, longestStreak=100)

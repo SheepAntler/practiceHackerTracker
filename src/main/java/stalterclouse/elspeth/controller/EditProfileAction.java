@@ -31,12 +31,14 @@ public class EditProfileAction extends HttpServlet {
         Instrument userInstrument = (Instrument)instrumentDao.getById(currentUser.getInstrument().getId());
 
         // Get any changes from the form fields
+        String instrument = req.getParameter("instrument");
         String skillLevel = req.getParameter("skillLevel");
         String email = req.getParameter("email");
         String city = req.getParameter("city");
         String state = req.getParameter("state");
         int zipCode = Integer.parseInt(req.getParameter("zip"));
 
+        userInstrument.setInstrument(instrument);
         userInstrument.setSkillLevel(skillLevel);
         currentUser.setEmail(email);
         currentUser.setCity(city);

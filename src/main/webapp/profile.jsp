@@ -57,6 +57,11 @@
                 <div id="studentInfo" class="collapse" aria-labelledby="editProfile" data-parent="#profileViewer">
                     <div class="card-body">
                         <form action="editProfile">
+                            <div class="form-group col-sm-6">
+                                <label for="instrument">Update Instrument: </label>
+                                <input type="text" class="form-control" id="instrument" name="instrument" value="${user.instrument.instrument}" required pattern="[A-Z][a-z]+"
+                                       oninvalid="setCustomValidity('Please enter a capitalized instrument name here.')" oninput="setCustomValidity('')">
+                            </div>
                             <div class="form-group col-sm-4">
                                 <label for="skillLevel">Update Skill Level</label>
                                 <select name="skillLevel" class="form-control" id="skillLevel" required>
@@ -69,19 +74,22 @@
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="email">Update Email: </label>
-                                <input type="text" class="form-control" id="email" name="email" value="${user.email}" required>
+                                <input type="email" class="form-control" id="email" name="email" value="${user.email}" required>
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="city">Update City: </label>
-                                <input type="text" class="form-control" id="city" name="city" value="${user.city}" required>
+                                <input type="text" class="form-control" id="city" name="city" value="${user.city}" required pattern="[A-Z][a-z]+"
+                                       oninvalid="setCustomValidity('Please enter a capitalized city name.')" oninput="setCustomValidity('')">
                             </div>
                             <div class="form-group col-sm-4">
                                 <label for="state">Update State: </label>
-                                <input type="text" class="form-control" id="state" name="state" value="${user.state}" required>
+                                <input type="text" class="form-control" id="state" name="state" value="${user.state}" required pattern="[A-Z]{2}"
+                                       oninvalid="setCustomValidity('Please enter a fully-capitalized state abbreviation.')" oninput="setCustomValidity('')">
                             </div>
                             <div class="form-group col-sm-4">
                                 <label for="zip">Update Zip Code: </label>
-                                <input type="text" class="form-control" id="zip" name="zip" value="${user.zipCode}" required>
+                                <input type="text" class="form-control" id="zip" name="zip" value="${user.zipCode}" required pattern="\d{5}"
+                                       oninvalid="setCustomValidity('Please enter a 5-digit zip code.')" oninput="setCustomValidity('')">
                             </div>
                             <div class="row buttonContainer">
                                 <button type="submit" class="btn btn-secondary button smallButton">Save Changes</button>
