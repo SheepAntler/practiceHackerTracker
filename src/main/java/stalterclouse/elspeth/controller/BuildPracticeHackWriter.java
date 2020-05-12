@@ -17,6 +17,11 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * Dynamically generates a list of instruments from teacher's studio set
+ *
+ * @author Elspeth Stalter-Clouse
+ */
 @WebServlet(
         urlPatterns = {"/practiceHackWriter"}
 )

@@ -28,9 +28,6 @@
                 <div class="form-group col-sm-6">
                     <label for="instrument">Instrument: </label>
                     <select name="instrument" class="form-control" id="instrument" required>
-<%--                        <c:forEach var="studio" items="${user.studios}">--%>
-<%--                            <option value="${studio.instrument}">${studio.instrument}</option>--%>
-<%--                        </c:forEach>--%>
                         <c:forEach var="instrument" items="${teacherInstruments}">
                             <option value="${instrument}">${instrument}</option>
                         </c:forEach>
@@ -46,7 +43,7 @@
                 <c:when test="${practiceHackToEdit != null}">
                     <div class="row buttonContainer">
                         <button type="submit" class="btn btn-secondary button smallButton col-4">Update Practice Hack</button>
-                        <a class="btn btn-dark button smallButton col-4" href="viewPracticeHacks.jsp">Back</a>
+                        <a class="btn btn-dark button smallButton col-4" href="exitEditMode">Back</a>
                     </div>
                 </c:when>
                 <c:otherwise>
