@@ -3,6 +3,7 @@ package stalterclouse.elspeth.controller;
 import stalterclouse.elspeth.entity.PracticeHack;
 import stalterclouse.elspeth.persistence.GenericDao;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
@@ -24,7 +25,7 @@ public class RetrievePracticeHack extends HttpServlet {
 
         session.setAttribute("practiceHackToEdit", practiceHackToEdit);
 
-        resp.sendRedirect(req.getContextPath() + "/practiceHackWriter.jsp");
+        resp.sendRedirect(req.getContextPath() + "/practiceHackWriter");
 
     }
 }

@@ -44,7 +44,7 @@
                                 Practice Hacks
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                                <a class="dropdown-item" href="practiceHackWriter.jsp">Hack Writer</a>
+                                <a class="dropdown-item" href="practiceHackWriter">Hack Writer</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="viewPracticeHacks.jsp">View Hacks</a>
                             </div>

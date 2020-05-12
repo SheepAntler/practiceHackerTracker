@@ -3353,3 +3353,27 @@ com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized f
 [DEBUG] 2020-05-12 17:42:13.607 [http-nio-8080-exec-107] GenericDao - Searching for entity with user = User(id=12, username=pianoPedagogue, password=password, firstName=Piano, lastName=Pianola, email=fortePiano@gmail.com, practiceCounter=0, birthDate=null, city=Madison, state=WI, zipCode=53703, longestStreak=0)
 [DEBUG] 2020-05-12 17:44:32.896 [http-nio-8080-exec-102] GenericDao - Searching for entity with username = Zachammer
 [DEBUG] 2020-05-12 17:45:16.866 [http-nio-8080-exec-102] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 18:16:51.948 [http-nio-8080-exec-7] GenericDao - Searching for entity with username = pianoPedagogue
+[DEBUG] 2020-05-12 18:16:56.949 [http-nio-8080-exec-5] GenericDao - Searching for entity with teacher = 12
+[DEBUG] 2020-05-12 18:19:14.084 [http-nio-8080-exec-14] GenericDao - Searching for entity with username = pianoPedagogue
+[DEBUG] 2020-05-12 18:19:19.427 [http-nio-8080-exec-3] GenericDao - Searching for entity with teacher = 12
+[DEBUG] 2020-05-12 18:22:30.904 [http-nio-8080-exec-21] GenericDao - Searching for entity with username = pianoPedagogue
+[DEBUG] 2020-05-12 18:22:34.353 [http-nio-8080-exec-18] GenericDao - Searching for entity with teacher = 12
+[DEBUG] 2020-05-12 18:25:02.505 [http-nio-8080-exec-23] GenericDao - Searching for entity with username = pianoPedagogue
+[DEBUG] 2020-05-12 18:25:07.616 [http-nio-8080-exec-28] GenericDao - Searching for entity with teacher = 12
+[DEBUG] 2020-05-12 18:25:28.223 [http-nio-8080-exec-26] GenericDao - Searching for entity with user = User(id=12, username=pianoPedagogue, password=password, firstName=Piano, lastName=Pianola, email=fortePiano@gmail.com, practiceCounter=0, birthDate=null, city=Madison, state=WI, zipCode=53703, longestStreak=0)
+[DEBUG] 2020-05-12 18:25:32.203 [http-nio-8080-exec-38] GenericDao - Searching for entity with teacher = 12
+[DEBUG] 2020-05-12 18:26:19.123 [http-nio-8080-exec-42] GenericDao - Searching for entity with teacher = 12
+[DEBUG] 2020-05-12 18:27:01.582 [http-nio-8080-exec-34] GenericDao - Searching for entity with teacher = 12
+[DEBUG] 2020-05-12 18:30:11.719 [http-nio-8080-exec-42] GenericDao - Searching for entity with username = pianoPedagogue
+[DEBUG] 2020-05-12 18:30:19.309 [http-nio-8080-exec-45] GenericDao - Searching for entity with teacher = 12
+[DEBUG] 2020-05-12 18:30:27.728 [http-nio-8080-exec-48] GenericDao - Searching for entity with user = User(id=12, username=pianoPedagogue, password=password, firstName=Piano, lastName=Pianola, email=fortePiano@gmail.com, practiceCounter=0, birthDate=null, city=Madison, state=WI, zipCode=53703, longestStreak=0)
+[DEBUG] 2020-05-12 18:30:29.407 [http-nio-8080-exec-49] GenericDao - Searching for entity with teacher = 12
+[DEBUG] 2020-05-12 18:32:59.956 [http-nio-8080-exec-51] GenericDao - Searching for entity with username = pianoPedagogue
+[DEBUG] 2020-05-12 18:33:03.157 [http-nio-8080-exec-52] GenericDao - Searching for entity with teacher = 12
+[DEBUG] 2020-05-12 18:33:22.630 [http-nio-8080-exec-58] GenericDao - Searching for entity with user = User(id=12, username=pianoPedagogue, password=password, firstName=Piano, lastName=Pianola, email=fortePiano@gmail.com, practiceCounter=0, birthDate=null, city=Madison, state=WI, zipCode=53703, longestStreak=0)
+[DEBUG] 2020-05-12 18:33:25.615 [http-nio-8080-exec-60] GenericDao - Searching for entity with teacher = 12
+[DEBUG] 2020-05-12 18:33:31.953 [http-nio-8080-exec-62] GenericDao - Searching for entity with teacher = 12
+[DEBUG] 2020-05-12 18:33:46.344 [http-nio-8080-exec-57] GenericDao - Searching for entity with user = User(id=12, username=pianoPedagogue, password=password, firstName=Piano, lastName=Pianola, email=fortePiano@gmail.com, practiceCounter=0, birthDate=null, city=Madison, state=WI, zipCode=53703, longestStreak=0)
+[DEBUG] 2020-05-12 18:34:02.527 [http-nio-8080-exec-59] GenericDao - Searching for entity with user = User(id=12, username=pianoPedagogue, password=password, firstName=Piano, lastName=Pianola, email=fortePiano@gmail.com, practiceCounter=0, birthDate=null, city=Madison, state=WI, zipCode=53703, longestStreak=0)
+[DEBUG] 2020-05-12 18:34:09.240 [http-nio-8080-exec-61] GenericDao - Searching for entity with teacher = 12

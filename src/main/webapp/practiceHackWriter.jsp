@@ -28,8 +28,11 @@
                 <div class="form-group col-sm-6">
                     <label for="instrument">Instrument: </label>
                     <select name="instrument" class="form-control" id="instrument" required>
-                        <c:forEach var="studio" items="${user.studios}">
-                            <option value="${studio.instrument}">${studio.instrument}</option>
+<%--                        <c:forEach var="studio" items="${user.studios}">--%>
+<%--                            <option value="${studio.instrument}">${studio.instrument}</option>--%>
+<%--                        </c:forEach>--%>
+                        <c:forEach var="instrument" items="${teacherInstruments}">
+                            <option value="${instrument}">${instrument}</option>
                         </c:forEach>
                     </select>
                 </div>
