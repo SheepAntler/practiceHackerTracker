@@ -61,7 +61,7 @@
                             </form>
                         </c:when>
                         <c:otherwise>
-                            <p>There are no available studios in your area at this time.</p>
+                            <p class="text-center">There are no available studios in your area at this time.</p>
                         </c:otherwise>
                     </c:choose>
                 </c:if>

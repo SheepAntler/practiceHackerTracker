@@ -38,7 +38,7 @@ public class WriteLogAction extends HttpServlet {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 
         // Create a new log with the form inputs
-        LocalDate simplePracticeDate = LocalDate.now();
+        String simplePracticeDate = LocalDate.now().toString();
         LocalDateTime practiceDate = LocalDateTime.now();
         String startTime = simplePracticeDate.toString() + " " + req.getParameter("startTime");
         String endTime = simplePracticeDate.toString() + " " + req.getParameter("endTime");
@@ -57,13 +57,15 @@ public class WriteLogAction extends HttpServlet {
             currentUser.setPracticeCounter(1);
             currentUser.setLongestStreak(1);
         } else {
-            LocalDateTime lastPracticeDate = currentUserLogs.get(currentUserLogs.size() - 1).getPracticeDate();
+            LocalDateTime lastPracticeDateTime = currentUserLogs.get(currentUserLogs.size() - 1).getPracticeDate();
+            String lastPracticeDate = lastPracticeDateTime.toLocalDate().toString();
             log.debug("finding last practice date: {}", lastPracticeDate);
+            log.debug("finding current practice date: {}", simplePracticeDate);
             // If the user isn't logging two sessions in the same day...
-            if (practiceDate != lastPracticeDate) {
+            if (!simplePracticeDate.equals(lastPracticeDate)) {
                 log.debug("last practice date is NOT the same as current practice date!");
                 // calculate the difference between the two dates
-                int daysSinceLastPractice = (int) ChronoUnit.DAYS.between(lastPracticeDate, practiceDate);
+                int daysSinceLastPractice = (int) ChronoUnit.DAYS.between(lastPracticeDateTime, practiceDate);
                 log.debug("calculating days since last practice: {}", daysSinceLastPractice);
                 // if the timeSinceLastPractice date is greater than 1 day, reset practice counter and update user
                 if (daysSinceLastPractice > 1) {

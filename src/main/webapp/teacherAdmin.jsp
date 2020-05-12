@@ -22,7 +22,7 @@
                         <div class="card-body">
                             <p>${studio.streetAddress}</p>
                             <p>${studio.city}, ${studio.state} ${studio.zipCode}</p>
-                            <p>${studio.studentsInStudio.size()} students</p>
+                            <p>students: ${studio.studentsInStudio.size()}</p>
                         </div>
                         <div class="hiddenDelete">
                             <form action="closeStudio">

@@ -3279,3 +3279,77 @@ com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized f
 [DEBUG] 2020-05-12 16:29:54.463 [http-nio-8080-exec-32] GenericDao - Searching for entity with username = saveTheViola
 [DEBUG] 2020-05-12 16:30:09.268 [http-nio-8080-exec-48] GenericDao - Searching for entity with username = testTeacher
 [DEBUG] 2020-05-12 16:31:26.361 [http-nio-8080-exec-49] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-12 17:07:52.320 [http-nio-8080-exec-65] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 17:07:52.672 [http-nio-8080-exec-65] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 17:08:14.849 [http-nio-8080-exec-64] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 17:08:17.711 [http-nio-8080-exec-57] GenericDao - Searching for entity with instrument = Piano
+[DEBUG] 2020-05-12 17:09:10.540 [http-nio-8080-exec-70] GenericDao - Searching for entity with instrument = Piano
+[DEBUG] 2020-05-12 17:10:26.247 [http-nio-8080-exec-63] GenericDao - Searching for entity with user = 11
+[DEBUG] 2020-05-12 17:10:26.270 [http-nio-8080-exec-63] WriteLogAction - starting user log for the first time
+[DEBUG] 2020-05-12 17:10:26.287 [http-nio-8080-exec-63] WriteLogAction - user before update: User(id=11, username=Zachammer, password=password, firstName=Zach, lastName=Hammer, email=zachammer@gmail.com, practiceCounter=1, birthDate=1989-12-19, city=Madison, state=WI, zipCode=53703, longestStreak=1)
+[DEBUG] 2020-05-12 17:10:26.345 [http-nio-8080-exec-63] WriteLogAction - user after update: User(id=11, username=Zachammer, password=password, firstName=Zach, lastName=Hammer, email=zachammer@gmail.com, practiceCounter=1, birthDate=1989-12-19, city=Madison, state=WI, zipCode=53703, longestStreak=1)
+[DEBUG] 2020-05-12 17:10:31.072 [http-nio-8080-exec-68] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 17:11:25.645 [http-nio-8080-exec-66] GenericDao - Searching for entity with user = 11
+[DEBUG] 2020-05-12 17:11:25.714 [http-nio-8080-exec-66] WriteLogAction - finding last practice date: 2020-05-12T17:10:26
+[DEBUG] 2020-05-12 17:11:25.714 [http-nio-8080-exec-66] WriteLogAction - last practice date is NOT the same as current practice date!
+[DEBUG] 2020-05-12 17:11:25.714 [http-nio-8080-exec-66] WriteLogAction - calculating days since last practice: 0
+[DEBUG] 2020-05-12 17:11:25.714 [http-nio-8080-exec-66] WriteLogAction - last practice was yesterday--awesome!
+[DEBUG] 2020-05-12 17:11:25.714 [http-nio-8080-exec-66] WriteLogAction - user counter was incremented to: 2
+[DEBUG] 2020-05-12 17:11:25.724 [http-nio-8080-exec-66] WriteLogAction - user before update: User(id=11, username=Zachammer, password=password, firstName=Zach, lastName=Hammer, email=zachammer@gmail.com, practiceCounter=2, birthDate=1989-12-19, city=Madison, state=WI, zipCode=53703, longestStreak=2)
+[DEBUG] 2020-05-12 17:11:25.751 [http-nio-8080-exec-66] WriteLogAction - user after update: User(id=11, username=Zachammer, password=password, firstName=Zach, lastName=Hammer, email=zachammer@gmail.com, practiceCounter=2, birthDate=1989-12-19, city=Madison, state=WI, zipCode=53703, longestStreak=2)
+[DEBUG] 2020-05-12 17:11:28.094 [http-nio-8080-exec-67] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 17:11:39.114 [http-nio-8080-exec-68] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 17:20:16.167 [http-nio-8080-exec-64] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 17:20:44.240 [http-nio-8080-exec-75] GenericDao - Searching for entity with user = 11
+[DEBUG] 2020-05-12 17:20:44.288 [http-nio-8080-exec-75] WriteLogAction - finding last practice date: 2020-05-12
+[DEBUG] 2020-05-12 17:20:44.289 [http-nio-8080-exec-75] WriteLogAction - last practice date is NOT the same as current practice date!
+[DEBUG] 2020-05-12 17:20:44.290 [http-nio-8080-exec-75] WriteLogAction - calculating days since last practice: 0
+[DEBUG] 2020-05-12 17:20:44.292 [http-nio-8080-exec-75] WriteLogAction - last practice was yesterday--awesome!
+[DEBUG] 2020-05-12 17:20:44.292 [http-nio-8080-exec-75] WriteLogAction - user counter was incremented to: 3
+[DEBUG] 2020-05-12 17:20:44.330 [http-nio-8080-exec-75] WriteLogAction - user before update: User(id=11, username=Zachammer, password=password, firstName=Zach, lastName=Hammer, email=zachammer@gmail.com, practiceCounter=3, birthDate=1989-12-19, city=Madison, state=WI, zipCode=53703, longestStreak=3)
+[DEBUG] 2020-05-12 17:20:44.403 [http-nio-8080-exec-75] WriteLogAction - user after update: User(id=11, username=Zachammer, password=password, firstName=Zach, lastName=Hammer, email=zachammer@gmail.com, practiceCounter=3, birthDate=1989-12-19, city=Madison, state=WI, zipCode=53703, longestStreak=3)
+[DEBUG] 2020-05-12 17:20:49.101 [http-nio-8080-exec-76] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 17:23:55.029 [http-nio-8080-exec-78] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 17:24:14.985 [http-nio-8080-exec-87] GenericDao - Searching for entity with user = 11
+[DEBUG] 2020-05-12 17:24:15.065 [http-nio-8080-exec-87] WriteLogAction - finding last practice date: 2020-05-12
+[DEBUG] 2020-05-12 17:24:15.065 [http-nio-8080-exec-87] WriteLogAction - finding current practice date: 2020-05-12
+[DEBUG] 2020-05-12 17:24:15.065 [http-nio-8080-exec-87] WriteLogAction - last practice date is NOT the same as current practice date!
+[DEBUG] 2020-05-12 17:24:15.066 [http-nio-8080-exec-87] WriteLogAction - calculating days since last practice: 0
+[DEBUG] 2020-05-12 17:24:15.066 [http-nio-8080-exec-87] WriteLogAction - last practice was yesterday--awesome!
+[DEBUG] 2020-05-12 17:24:15.066 [http-nio-8080-exec-87] WriteLogAction - user counter was incremented to: 4
+[DEBUG] 2020-05-12 17:24:15.111 [http-nio-8080-exec-87] WriteLogAction - user before update: User(id=11, username=Zachammer, password=password, firstName=Zach, lastName=Hammer, email=zachammer@gmail.com, practiceCounter=4, birthDate=1989-12-19, city=Madison, state=WI, zipCode=53703, longestStreak=4)
+[DEBUG] 2020-05-12 17:24:15.179 [http-nio-8080-exec-87] WriteLogAction - user after update: User(id=11, username=Zachammer, password=password, firstName=Zach, lastName=Hammer, email=zachammer@gmail.com, practiceCounter=4, birthDate=1989-12-19, city=Madison, state=WI, zipCode=53703, longestStreak=4)
+[DEBUG] 2020-05-12 17:24:17.826 [http-nio-8080-exec-82] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 17:29:27.927 [http-nio-8080-exec-86] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 17:29:46.906 [http-nio-8080-exec-100] GenericDao - Searching for entity with user = 11
+[DEBUG] 2020-05-12 17:29:46.937 [http-nio-8080-exec-100] WriteLogAction - finding last practice date: 2020-05-12
+[DEBUG] 2020-05-12 17:29:46.938 [http-nio-8080-exec-100] WriteLogAction - finding current practice date: 2020-05-12
+[DEBUG] 2020-05-12 17:29:46.976 [http-nio-8080-exec-100] WriteLogAction - user before update: User(id=11, username=Zachammer, password=password, firstName=Zach, lastName=Hammer, email=zachammer@gmail.com, practiceCounter=4, birthDate=1989-12-19, city=Madison, state=WI, zipCode=53703, longestStreak=4)
+[DEBUG] 2020-05-12 17:29:47.073 [http-nio-8080-exec-100] WriteLogAction - user after update: User(id=11, username=Zachammer, password=password, firstName=Zach, lastName=Hammer, email=zachammer@gmail.com, practiceCounter=4, birthDate=1989-12-19, city=Madison, state=WI, zipCode=53703, longestStreak=4)
+[DEBUG] 2020-05-12 17:29:50.501 [http-nio-8080-exec-101] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 17:33:35.901 [http-nio-8080-exec-102] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 17:34:07.308 [http-nio-8080-exec-101] GenericDao - Searching for entity with user = 11
+[DEBUG] 2020-05-12 17:34:07.346 [http-nio-8080-exec-101] WriteLogAction - finding last practice date: 2020-05-11
+[DEBUG] 2020-05-12 17:34:07.346 [http-nio-8080-exec-101] WriteLogAction - finding current practice date: 2020-05-12
+[DEBUG] 2020-05-12 17:34:07.346 [http-nio-8080-exec-101] WriteLogAction - last practice date is NOT the same as current practice date!
+[DEBUG] 2020-05-12 17:34:07.346 [http-nio-8080-exec-101] WriteLogAction - calculating days since last practice: 1
+[DEBUG] 2020-05-12 17:34:07.346 [http-nio-8080-exec-101] WriteLogAction - last practice was yesterday--awesome!
+[DEBUG] 2020-05-12 17:34:07.346 [http-nio-8080-exec-101] WriteLogAction - user counter was incremented to: 5
+[DEBUG] 2020-05-12 17:34:07.362 [http-nio-8080-exec-101] WriteLogAction - user before update: User(id=11, username=Zachammer, password=password, firstName=Zach, lastName=Hammer, email=zachammer@gmail.com, practiceCounter=5, birthDate=1989-12-19, city=Madison, state=WI, zipCode=53703, longestStreak=5)
+[DEBUG] 2020-05-12 17:34:07.421 [http-nio-8080-exec-101] WriteLogAction - user after update: User(id=11, username=Zachammer, password=password, firstName=Zach, lastName=Hammer, email=zachammer@gmail.com, practiceCounter=5, birthDate=1989-12-19, city=Madison, state=WI, zipCode=53703, longestStreak=5)
+[DEBUG] 2020-05-12 17:34:10.509 [http-nio-8080-exec-106] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 17:34:29.749 [http-nio-8080-exec-102] GenericDao - Searching for entity with user = 11
+[DEBUG] 2020-05-12 17:34:29.776 [http-nio-8080-exec-102] WriteLogAction - finding last practice date: 2020-05-12
+[DEBUG] 2020-05-12 17:34:29.776 [http-nio-8080-exec-102] WriteLogAction - finding current practice date: 2020-05-12
+[DEBUG] 2020-05-12 17:34:29.798 [http-nio-8080-exec-102] WriteLogAction - user before update: User(id=11, username=Zachammer, password=password, firstName=Zach, lastName=Hammer, email=zachammer@gmail.com, practiceCounter=5, birthDate=1989-12-19, city=Madison, state=WI, zipCode=53703, longestStreak=5)
+[DEBUG] 2020-05-12 17:34:29.862 [http-nio-8080-exec-102] WriteLogAction - user after update: User(id=11, username=Zachammer, password=password, firstName=Zach, lastName=Hammer, email=zachammer@gmail.com, practiceCounter=5, birthDate=1989-12-19, city=Madison, state=WI, zipCode=53703, longestStreak=5)
+[DEBUG] 2020-05-12 17:34:32.980 [http-nio-8080-exec-103] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 17:36:17.764 [http-nio-8080-exec-108] GenericDao - Searching for entity with username = pianoPedagogue
+[DEBUG] 2020-05-12 17:36:17.903 [http-nio-8080-exec-108] GenericDao - Searching for entity with username = pianoPedagogue
+[DEBUG] 2020-05-12 17:36:38.626 [http-nio-8080-exec-101] GenericDao - Searching for entity with user = User(id=12, username=pianoPedagogue, password=password, firstName=Piano, lastName=Pianola, email=fortePiano@gmail.com, practiceCounter=0, birthDate=null, city=Madison, state=WI, zipCode=53703, longestStreak=0)
+[DEBUG] 2020-05-12 17:38:31.436 [http-nio-8080-exec-105] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 17:38:37.843 [http-nio-8080-exec-106] GenericDao - Searching for entity with instrument = Piano
+[DEBUG] 2020-05-12 17:40:33.731 [http-nio-8080-exec-104] GenericDao - Searching for entity with username = pianoPedagogue
+[DEBUG] 2020-05-12 17:42:13.607 [http-nio-8080-exec-107] GenericDao - Searching for entity with user = User(id=12, username=pianoPedagogue, password=password, firstName=Piano, lastName=Pianola, email=fortePiano@gmail.com, practiceCounter=0, birthDate=null, city=Madison, state=WI, zipCode=53703, longestStreak=0)
+[DEBUG] 2020-05-12 17:44:32.896 [http-nio-8080-exec-102] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 17:45:16.866 [http-nio-8080-exec-102] GenericDao - Searching for entity with username = Zachammer
