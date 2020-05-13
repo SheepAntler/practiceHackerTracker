@@ -75,4 +75,6 @@ Let's make it a little easier, eh?
 
 ### [Project Plan](ProjectPlan.md)
 
+### [Walkthrough Video](https://youtu.be/pSSnLtiFlz0)
+
 
