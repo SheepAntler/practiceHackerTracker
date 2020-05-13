@@ -3413,3 +3413,31 @@ com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized f
 [DEBUG] 2020-05-12 22:24:36.816 [http-nio-8080-exec-10] GenericDao - Searching for entity with username = Zachammer
 [DEBUG] 2020-05-12 22:33:56.944 [http-nio-8080-exec-5] GenericDao - Searching for entity with username = Zachammer
 [DEBUG] 2020-05-12 22:34:03.719 [http-nio-8080-exec-12] GenericDao - Searching for entity with instrument = Piano
+[DEBUG] 2020-05-12 22:49:52.131 [http-nio-8080-exec-15] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-12 22:51:19.369 [http-nio-8080-exec-20] GenericDao - Searching for entity with user = 1
+[DEBUG] 2020-05-12 22:51:19.470 [http-nio-8080-exec-20] WriteLogAction - finding last practice date: 2020-05-11
+[DEBUG] 2020-05-12 22:51:19.470 [http-nio-8080-exec-20] WriteLogAction - finding current practice date: 2020-05-12
+[DEBUG] 2020-05-12 22:51:19.470 [http-nio-8080-exec-20] WriteLogAction - last practice date is NOT the same as current practice date!
+[DEBUG] 2020-05-12 22:51:19.470 [http-nio-8080-exec-20] WriteLogAction - calculating days since last practice: 1
+[DEBUG] 2020-05-12 22:51:19.470 [http-nio-8080-exec-20] WriteLogAction - last practice was yesterday--awesome!
+[DEBUG] 2020-05-12 22:51:19.470 [http-nio-8080-exec-20] WriteLogAction - user counter was incremented to: 6
+[DEBUG] 2020-05-12 22:51:19.525 [http-nio-8080-exec-20] WriteLogAction - user before update: User(id=1, username=sheepAntler, password=password, firstName=Elspeth, lastName=Stalter, email=sheepantler@gmail.com, practiceCounter=6, birthDate=1989-12-25, city=Madison, state=WI, zipCode=53703, longestStreak=100)
+[DEBUG] 2020-05-12 22:51:19.618 [http-nio-8080-exec-20] WriteLogAction - user after update: User(id=1, username=sheepAntler, password=password, firstName=Elspeth, lastName=Stalter, email=sheepantler@gmail.com, practiceCounter=6, birthDate=1989-12-25, city=Madison, state=WI, zipCode=53703, longestStreak=100)
+[DEBUG] 2020-05-12 22:51:24.694 [http-nio-8080-exec-15] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-12 22:55:20.425 [http-nio-8080-exec-20] GenericDao - Searching for entity with username = testTeacher
+[DEBUG] 2020-05-12 22:55:20.583 [http-nio-8080-exec-20] GenericDao - Searching for entity with username = testTeacher
+[DEBUG] 2020-05-12 22:57:41.998 [http-nio-8080-exec-18] GenericDao - Searching for entity with teacher = 13
+[DEBUG] 2020-05-12 22:58:24.547 [http-nio-8080-exec-20] GenericDao - Searching for entity with teacher = 13
+[DEBUG] 2020-05-12 22:59:11.314 [http-nio-8080-exec-12] GenericDao - Searching for entity with user = User(id=13, username=testTeacher, password=password, firstName=Test, lastName=Teacher, email=test@teacher.com, practiceCounter=0, birthDate=null, city=Madison, state=WI, zipCode=12345, longestStreak=0)
+[DEBUG] 2020-05-12 22:59:15.814 [http-nio-8080-exec-20] GenericDao - Searching for entity with teacher = 13
+[DEBUG] 2020-05-12 22:59:37.338 [http-nio-8080-exec-17] GenericDao - Searching for entity with user = User(id=13, username=testTeacher, password=password, firstName=Test, lastName=Teacher, email=test@teacher.com, practiceCounter=0, birthDate=null, city=Madison, state=WI, zipCode=12345, longestStreak=0)
+[DEBUG] 2020-05-12 22:59:46.571 [http-nio-8080-exec-18] GenericDao - Searching for entity with username = testTeacher
+[DEBUG] 2020-05-12 23:00:45.208 [http-nio-8080-exec-17] GenericDao - Searching for entity with username = testStudent
+[DEBUG] 2020-05-12 23:00:45.298 [http-nio-8080-exec-17] GenericDao - Searching for entity with username = testStudent
+[DEBUG] 2020-05-12 23:01:38.910 [http-nio-8080-exec-20] GenericDao - Searching for entity with instrument = Clarinet
+[DEBUG] 2020-05-12 23:03:08.497 [http-nio-8080-exec-20] GenericDao - Searching for entity with username = testStudent
+[DEBUG] 2020-05-12 23:03:20.512 [http-nio-8080-exec-18] GenericDao - Searching for entity with username = testTeacher
+[DEBUG] 2020-05-12 23:03:44.664 [http-nio-8080-exec-20] GenericDao - Searching for entity with username = testTeacher
+[DEBUG] 2020-05-12 23:04:05.488 [http-nio-8080-exec-18] GenericDao - Searching for entity with username = saveTheViola
+[DEBUG] 2020-05-12 23:04:56.605 [http-nio-8080-exec-16] GenericDao - Searching for entity with username = anaBanana
+[DEBUG] 2020-05-12 23:05:05.246 [http-nio-8080-exec-21] GenericDao - Searching for entity with username = madBratsche

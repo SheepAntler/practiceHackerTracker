@@ -115,18 +115,18 @@
 
 ### Week 14
  
-- [ ] Create final presentation
-- [ ] DEPLOY!!!! TO!!!! AWS!!!!
-- [ ] PRACTICE FINAL PRESENTATION
+- [x] Create final presentation
+- [x] DEPLOY!!!! TO!!!! AWS!!!!
+- [x] PRACTICE FINAL PRESENTATION
 - [x] CHECK THIS BOX IF YOU ARE JAZZED ABOUT HOW AWESOME YOUR JSPs MUST CERTAINLY LOOK AT THIS POINT.
 
 ### Week 15
 
 - [ ] PRESENTATION! 
 - [ ] Create video of application running 
-- [ ] Finalize documentation 
-- [ ] Code quality check
+- [x] Finalize documentation 
+- [x] Code quality check
 
 ### Week 16 - Indie Project Due
 
-- [ ] Last fixes before code completion
+- [x] Last fixes before code completion
