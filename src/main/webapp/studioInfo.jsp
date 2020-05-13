@@ -47,6 +47,7 @@
                     </div>
                 </form>
                 <c:if test="${studiosFound == true}">
+                    <h2 class="subHeading text-center">${studioViewMessage}</h2>
                     <c:choose>
                         <c:when test="${availableStudios != null && !empty availableStudios}">
                             <form action="joinStudio">

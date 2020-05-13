@@ -32,22 +32,27 @@ public class StudioSearchAction extends HttpServlet {
         String userInstrument = currentUser.getInstrument().getInstrument();
         String userState = currentUser.getState();
         String userCity = currentUser.getCity();
+        String studioViewMessage = "";
 
         if (searchParameter.equals("allStudios")) {
             availableStudios = new ArrayList<Studio>(studioDao.getByPropertyEqual("instrument", userInstrument));
+            studioViewMessage = "Viewing Studios all over the Country";
         } else if (searchParameter.equals("state")) {
             propertyMap.put("instrument", userInstrument);
             propertyMap.put("state", userState);
             availableStudios = new ArrayList<Studio>(studioDao.getByPropertiesEqual(propertyMap));
+            studioViewMessage = "Viewing Studios in " + userState;
         } else if (searchParameter.equals("city")) {
             propertyMap.put("instrument", userInstrument);
             propertyMap.put("state", userState);
             propertyMap.put("city", userCity);
             availableStudios = new ArrayList<Studio>(studioDao.getByPropertiesEqual(propertyMap));
+            studioViewMessage = "Viewing Studios in " + userCity + ", " + userState;
         }
 
         session.setAttribute("availableStudios", availableStudios);
         session.setAttribute("studiosFound", true);
+        req.setAttribute("studioViewMessage", studioViewMessage);
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/studioInfo.jsp");
         dispatcher.forward(req, resp);

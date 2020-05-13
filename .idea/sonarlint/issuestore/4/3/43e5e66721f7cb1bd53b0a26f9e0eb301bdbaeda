@@ -1,33 +1,31 @@
 
-~
-java:S1989v"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(òø½8”•œŸ.
-{
-java:S1989P"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(†¬¢Ôÿÿÿÿÿ8½½Ø™Ÿ.
 Q
-java:S3740""/Provide the parametrized type for this generic.(»Éß·øÿÿÿÿ8€ı™Ÿ.
-{
-java:S1989:"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ãğôñşÿÿÿÿ8–ñï˜Ÿ.
-L
-java:S3740!"/Provide the parametrized type for this generic.(íÈ‡à8ŞÀÉ˜Ÿ.
-Q
-java:S3740""/Provide the parametrized type for this generic.(»Éß·øÿÿÿÿ8€ı™Ÿ.
-Q
-java:S3740#"/Provide the parametrized type for this generic.(¥‚›Àúÿÿÿÿ8”™®™Ÿ.
-[
-java:S1155Z">Use isEmpty() to check whether the collection is empty or not.(İø“ş8ÛÎú™Ÿ.
-{
-java:S1989F"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(óÉ½êùÿÿÿÿ8 ÷Ç™Ÿ.
+java:S3740 "/Provide the parametrized type for this generic.(Ôİôöùÿÿÿÿ8”ƒº˜Ÿ.
 n
-java:S1989d"QHandle the following exception that could be thrown by "login": ServletException.(¬ıä–8Õ¬•šŸ.
-e
-java:S11924"HDefine a constant instead of duplicating this literal "teacher" 3 times.(À¡ÔÖ8í¬šŸ.
-p
-java:S1989h"SHandle the following exception that could be thrown by "sendRedirect": IOException.(çƒ„ù8ïß™šŸ.
+java:S1989^"QHandle the following exception that could be thrown by "login": ServletException.(¬ıä–8Õ¬•šŸ.
 Q
-java:S3740 "/Provide the parametrized type for this generic.(Ôİôöùÿÿÿÿ8”ƒº˜Ÿ.
+java:S3740""/Provide the parametrized type for this generic.(»Éß·øÿÿÿÿ8€ı™Ÿ.
+{
+java:S1989?"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(ãğôñşÿÿÿÿ8–ñï˜Ÿ.
 Q
-java:S3740 "/Provide the parametrized type for this generic.(Ôİôöùÿÿÿÿ8”ƒº˜Ÿ.
-Q
-java:S3740#"/Provide the parametrized type for this generic.(¥‚›Àúÿÿÿÿ8”™®™Ÿ.
+java:S3740""/Provide the parametrized type for this generic.(»Éß·øÿÿÿÿ8€ı™Ÿ.
+~
+java:S1989c"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(òø½8–íäÒ .
 L
 java:S3740!"/Provide the parametrized type for this generic.(íÈ‡à8ŞÀÉ˜Ÿ.
+Q
+java:S3740#"/Provide the parametrized type for this generic.(¥‚›Àúÿÿÿÿ8”™®™Ÿ.
+e
+java:S11929"HDefine a constant instead of duplicating this literal "teacher" 3 times.(À¡ÔÖ8í¬šŸ.
+Q
+java:S3740#"/Provide the parametrized type for this generic.(¥‚›Àúÿÿÿÿ8”™®™Ÿ.
+Q
+java:S3740 "/Provide the parametrized type for this generic.(Ôİôöùÿÿÿÿ8”ƒº˜Ÿ.
+~
+java:S1989q"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(òø½8”•œŸ.
+L
+java:S3740!"/Provide the parametrized type for this generic.(íÈ‡à8ŞÀÉ˜Ÿ.
+[
+java:S1155S">Use isEmpty() to check whether the collection is empty or not.(İø“ş8ÛÎú™Ÿ.
+v
+java:S19893"YHandle the following exception that could be thrown by "parseInt": NumberFormatException.(öšß…8¸ÕúĞ .

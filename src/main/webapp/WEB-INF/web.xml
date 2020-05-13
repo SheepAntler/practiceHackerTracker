@@ -29,6 +29,26 @@
   <!-- Protect the Servlets! -->
   <security-constraint>
     <web-resource-collection>
+      <web-resource-name>BuildPracticeHackWriter</web-resource-name>
+      <url-pattern>/practiceHackWriter</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>teacher</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>ClearPracticeHackEdit</web-resource-name>
+      <url-pattern>/exitEditMode</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>teacher</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
       <web-resource-name>CloseStudioAction</web-resource-name>
       <url-pattern>/closeStudio</url-pattern>
     </web-resource-collection>
@@ -372,17 +392,17 @@
   </security-role>
 
   <!-- Error Handling -->
-<!--  <error-page>-->
-<!--    <error-code>403</error-code>-->
-<!--    <location>/403Error.jsp</location>-->
-<!--  </error-page>-->
-<!--  <error-page>-->
-<!--    <error-code>404</error-code>-->
-<!--    <location>/404Error.jsp</location>-->
-<!--  </error-page>-->
-<!--  <error-page>-->
-<!--    <error-code>500</error-code>-->
-<!--    <location>/500Error.jsp</location>-->
-<!--  </error-page>-->
+  <error-page>
+    <error-code>403</error-code>
+    <location>/403Error.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/404Error.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/500Error.jsp</location>
+  </error-page>
 
 </web-app>

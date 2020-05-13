@@ -3386,3 +3386,30 @@ com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized f
 [DEBUG] 2020-05-12 18:47:13.926 [http-nio-8080-exec-4] GenericDao - Searching for entity with teacher = 12
 [DEBUG] 2020-05-12 18:47:21.582 [http-nio-8080-exec-9] GenericDao - Searching for entity with user = User(id=12, username=pianoPedagogue, password=password, firstName=Piano, lastName=Pianola, email=fortePiano@gmail.com, practiceCounter=0, birthDate=null, city=Madison, state=WI, zipCode=53703, longestStreak=0)
 [DEBUG] 2020-05-12 18:47:28.752 [http-nio-8080-exec-2] GenericDao - Searching for entity with user = User(id=12, username=pianoPedagogue, password=password, firstName=Piano, lastName=Pianola, email=fortePiano@gmail.com, practiceCounter=0, birthDate=null, city=Madison, state=WI, zipCode=53703, longestStreak=0)
+[DEBUG] 2020-05-12 18:56:06.757 [main] GenericDao - Searching for entity with teacher = 5
+[DEBUG] 2020-05-12 18:56:07.643 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-05-12 18:56:11.232 [main] GenericDao - Searching for entity with username = fluffybunny
+[DEBUG] 2020-05-12 18:56:11.348 [main] GenericDao - Searching for order with username = fluff
+[DEBUG] 2020-05-12 18:56:12.755 [main] GenericDao - Searching for entity with notes = Nat's Knapsack Strap Snapped
+[DEBUG] 2020-05-12 18:56:12.984 [main] GenericDao - Searching for order with activities = scales
+[DEBUG] 2020-05-12 18:56:14.999 [main] GenericDao - Searching for entity with email = yesitiscalledaflugelhorn@gmail.com
+[DEBUG] 2020-05-12 18:56:15.395 [main] GenericDao - Searching for order with username = s
+[DEBUG] 2020-05-12 18:56:16.892 [main] GenericDao - Searching for entity with skillLevel = intermediate
+[DEBUG] 2020-05-12 18:56:17.028 [main] GenericDao - Searching for order with instrument = viol
+[DEBUG] 2020-05-12 18:56:21.003 [main] GenericDao - Searching for entity with instrument = cello
+[DEBUG] 2020-05-12 18:56:21.157 [main] GenericDao - Searching for order with instrument = cell
+[DEBUG] 2020-05-12 19:04:36.632 [http-nio-8080-exec-3] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-12 19:05:47.654 [http-nio-8080-exec-9] GenericDao - Searching for entity with user = 1
+[DEBUG] 2020-05-12 19:05:47.730 [http-nio-8080-exec-9] WriteLogAction - finding last practice date: 2020-05-11
+[DEBUG] 2020-05-12 19:05:47.731 [http-nio-8080-exec-9] WriteLogAction - finding current practice date: 2020-05-12
+[DEBUG] 2020-05-12 19:05:47.731 [http-nio-8080-exec-9] WriteLogAction - last practice date is NOT the same as current practice date!
+[DEBUG] 2020-05-12 19:05:47.731 [http-nio-8080-exec-9] WriteLogAction - calculating days since last practice: 0
+[DEBUG] 2020-05-12 19:05:47.731 [http-nio-8080-exec-9] WriteLogAction - last practice was yesterday--awesome!
+[DEBUG] 2020-05-12 19:05:47.731 [http-nio-8080-exec-9] WriteLogAction - user counter was incremented to: 5
+[DEBUG] 2020-05-12 19:05:47.789 [http-nio-8080-exec-9] WriteLogAction - user before update: User(id=1, username=sheepAntler, password=password, firstName=Elspeth, lastName=Stalter, email=sheepantler@gmail.com, practiceCounter=5, birthDate=1989-12-25, city=Madison, state=WI, zipCode=53703, longestStreak=100)
+[DEBUG] 2020-05-12 19:05:47.982 [http-nio-8080-exec-9] WriteLogAction - user after update: User(id=1, username=sheepAntler, password=password, firstName=Elspeth, lastName=Stalter, email=sheepantler@gmail.com, practiceCounter=5, birthDate=1989-12-25, city=Madison, state=WI, zipCode=53703, longestStreak=100)
+[DEBUG] 2020-05-12 19:05:50.242 [http-nio-8080-exec-10] GenericDao - Searching for entity with username = sheepAntler
+[DEBUG] 2020-05-12 22:22:58.112 [http-nio-8080-exec-7] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 22:24:36.816 [http-nio-8080-exec-10] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 22:33:56.944 [http-nio-8080-exec-5] GenericDao - Searching for entity with username = Zachammer
+[DEBUG] 2020-05-12 22:34:03.719 [http-nio-8080-exec-12] GenericDao - Searching for entity with instrument = Piano

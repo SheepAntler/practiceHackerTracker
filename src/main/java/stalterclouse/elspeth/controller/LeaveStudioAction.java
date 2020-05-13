@@ -37,6 +37,9 @@ public class LeaveStudioAction extends HttpServlet {
         session.removeAttribute("studentStudio");
         session.setAttribute("practiceHacksFromTeacher", null);
 
+        User updatedStudent = (User)studentDao.getById(currentUser.getId());
+        session.setAttribute("user", updatedStudent);
+
         req.setAttribute("successMessage", "You have successfully left a studio. You can add another anytime!");
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("studioInfo.jsp");
