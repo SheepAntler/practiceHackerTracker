@@ -53,7 +53,7 @@
                             <form action="joinStudio">
                                 <select name="studioOption" id="studioOption" class="form-control" required>
                                     <c:forEach var="studio" items="${availableStudios}">
-                                        <option value="${studio.id}">${studio.teacher.firstName} ${studio.teacher.lastName}'s Studio at ${studio.organizationName}</option>
+                                        <option value="${studio.id}">${studio.teacher.firstName} ${studio.teacher.lastName}'s Studio at ${studio.organizationName} in ${studio.city}, ${studio.state}</option>
                                     </c:forEach>
                                 </select>
                                 <div class="row buttonContainer mt-2">

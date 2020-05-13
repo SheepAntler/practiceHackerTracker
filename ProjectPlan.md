@@ -122,8 +122,8 @@
 
 ### Week 15
 
-- [ ] PRESENTATION! 
-- [ ] Create video of application running 
+- [x] PRESENTATION! 
+- [x] Create video of application running 
 - [x] Finalize documentation 
 - [x] Code quality check
 
