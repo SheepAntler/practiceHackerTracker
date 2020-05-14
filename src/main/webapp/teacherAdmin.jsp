@@ -50,7 +50,7 @@
                 <div class="row">
                     <div class="form-group col-sm-6">
                         <label for="studioInstrument">Instrument: </label>
-                        <input type="text" class="form-control" id="studioInstrument" name="studioInstrument" required pattern="([A-Z][a-z]+)\s*"
+                        <input type="text" class="form-control" id="studioInstrument" name="studioInstrument" required pattern="[A-Z][a-z]*(\s[A-Z][a-z]*)*"
                                oninvalid="setCustomValidity('Please enter a capitalized instrument name here.')" oninput="setCustomValidity('')">
                     </div>
                     <div class="form-group col-sm-6">
@@ -65,7 +65,7 @@
                 <div class="row">
                     <div class="form-group col-sm-6">
                         <label for="studioCity">City: </label>
-                        <input type="text" class="form-control" id="studioCity" name="studioCity" required pattern="([A-Z][a-z]+)\s*"
+                        <input type="text" class="form-control" id="studioCity" name="studioCity" required pattern="[A-Z][a-z]*(\s[A-Z][a-z]*)*"
                                oninvalid="setCustomValidity('Please enter a capitalized city name.')" oninput="setCustomValidity('')">
                     </div>
                     <div class="form-group col-sm-2">

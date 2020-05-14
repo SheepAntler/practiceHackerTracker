@@ -43,7 +43,7 @@
             <div class="row">
                 <div class="form-group col-sm-6">
                     <label for="city">City: </label>
-                    <input type="text" class="form-control" id="city" name="city" required pattern="([A-Z][a-z]+)\s*" value="${newUser.city}"
+                    <input type="text" class="form-control" id="city" name="city" required pattern="[A-Z][a-z]*(\s[A-Z][a-z]*)*" value="${newUser.city}"
                            oninvalid="setCustomValidity('Please enter a capitalized city name.')" oninput="setCustomValidity('')">
                 </div>
                 <div class="form-group col-sm-2">
@@ -63,7 +63,7 @@
             <div class="row">
                 <div class="form-group col-sm-6">
                     <label for="instrument">Primary Instrument: </label>
-                    <input type="text" class="form-control" id="instrument" name="instrument" required pattern="([A-Z][a-z]+)\s*" value="${newInstrument.instrument}"
+                    <input type="text" class="form-control" id="instrument" name="instrument" required pattern="[A-Z][a-z]*(\s[A-Z][a-z]*)*" value="${newInstrument.instrument}"
                            oninvalid="setCustomValidity('Please enter a capitalized instrument name.')" oninput="setCustomValidity('')">
                 </div>
                 <div class="form-group col-sm-6">
@@ -94,7 +94,7 @@
                 <div class="row">
                     <div class="form-group col-sm-6">
                         <label for="studioInstrument">Instrument: </label>
-                        <input type="text" class="form-control" id="studioInstrument" name="studioInstrument" pattern="([A-Z][a-z]+)\s*" value="${newStudio.instrument}"
+                        <input type="text" class="form-control" id="studioInstrument" name="studioInstrument" pattern="[A-Z][a-z]*(\s[A-Z][a-z]*)*" value="${newStudio.instrument}"
                                oninvalid="setCustomValidity('Please enter a capitalized instrument name.')" oninput="setCustomValidity('')">
                     </div>
                     <div class="form-group col-sm-6">
@@ -109,7 +109,7 @@
                 <div class="row">
                     <div class="form-group col-sm-6">
                         <label for="studioCity">City: </label>
-                        <input type="text" class="form-control" id="studioCity" name="studioCity" pattern="([A-Z][a-z]+)\s*" value="${newStudio.city}"
+                        <input type="text" class="form-control" id="studioCity" name="studioCity" pattern="[A-Z][a-z]*(\s[A-Z][a-z]*)*" value="${newStudio.city}"
                                oninvalid="setCustomValidity('Please enter a capitalized city name.')" oninput="setCustomValidity('')">
                     </div>
                     <div class="form-group col-sm-2">

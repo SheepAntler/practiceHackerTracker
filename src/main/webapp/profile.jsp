@@ -59,7 +59,7 @@
                         <form action="editProfile">
                             <div class="form-group col-sm-6">
                                 <label for="instrument">Update Instrument: </label>
-                                <input type="text" class="form-control" id="instrument" name="instrument" value="${user.instrument.instrument}" required pattern="([A-Z][a-z]+)\s*"
+                                <input type="text" class="form-control" id="instrument" name="instrument" value="${user.instrument.instrument}" required pattern="[A-Z][a-z]*(\s[A-Z][a-z]*)*"
                                        oninvalid="setCustomValidity('Please enter a capitalized instrument name here.')" oninput="setCustomValidity('')">
                             </div>
                             <div class="form-group col-sm-4">
@@ -78,7 +78,7 @@
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="city">Update City: </label>
-                                <input type="text" class="form-control" id="city" name="city" value="${user.city}" required pattern="([A-Z][a-z]+)\s*"
+                                <input type="text" class="form-control" id="city" name="city" value="${user.city}" required pattern="[A-Z][a-z]*(\s[A-Z][a-z]*)*"
                                        oninvalid="setCustomValidity('Please enter a capitalized city name.')" oninput="setCustomValidity('')">
                             </div>
                             <div class="form-group col-sm-4">
