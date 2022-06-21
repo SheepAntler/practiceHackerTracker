@@ -21,7 +21,7 @@
     <log4j-version>2.10.0</log4j-version>
     <javax.version>7.0</javax.version>
     <jstl-version>1.2</jstl-version>
-    <mysql-version>8.0.19</mysql-version>
+    <mysql-version>8.0.28</mysql-version>
     <maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
     <junit-platform-runner-version>1.0.0</junit-platform-runner-version>
     <maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
